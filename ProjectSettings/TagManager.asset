@@ -6,14 +6,15 @@ TagManager:
   tags:
   - Props
   - Building
+  - Ball
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Ball
   - 
   - 
   - 
