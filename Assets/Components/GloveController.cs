@@ -5,9 +5,12 @@ using UnityEngine;
 public class GloveController : MonoBehaviour
 {
     [SerializeField] Transform projectionPos;
+    [SerializeField] Transform shootPos;
+    [SerializeField] GameObject ballPrefab;
+
     GameObject projection;
 
-    List<GameObject> balls = new();
+    [SerializeField] List<Ball> balls = new();
     int selectedBall = 0;
     bool shot = false;
 
@@ -31,7 +34,7 @@ public class GloveController : MonoBehaviour
         else if (selectedBall >= balls.Count) selectedBall = 0;
     }
 
-    public void GetBall(GameObject ball)
+    public void ObtainBall(Ball ball)
     {
         balls.Add(ball);
     }
@@ -42,7 +45,7 @@ public class GloveController : MonoBehaviour
 
         projection = null;
 
-        if (balls.Count > 0) projection = balls[selectedBall];
+        if (balls.Count > 0) projection.GetComponent<MeshFilter>().sharedMesh = balls[selectedBall].mesh;
 
         if (projection != null) projection.SetActive(false);
     }
@@ -51,7 +54,9 @@ public class GloveController : MonoBehaviour
     {
         shot = true;
 
-        GameObject ball = Instantiate(balls[selectedBall]);
+        projection.SetActive(false);
+
+        GameObject ball = Instantiate(ballPrefab);
 
         ball.transform.position = OVRControllerManager.instance.RTouchPosition;
 

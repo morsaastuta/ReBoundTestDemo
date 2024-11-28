@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Props
   - Building
-  - Ball
+  - Reboundable
   layers:
   - Default
   - TransparentFX
