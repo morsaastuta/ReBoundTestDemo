@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class GloveController : MonoBehaviour
 {
-    [SerializeField] Transform projectionPos;
-    [SerializeField] Transform shootPos;
+    [SerializeField] GameObject projection;
+
+    [SerializeField] Transform shotOrigin;
     [SerializeField] GameObject ballPrefab;
 
-    GameObject projection;
-
     [SerializeField] List<Ball> balls = new();
+
     int selectedBall = 0;
     bool shot = false;
 
-    void Update()
+    private void Start()
     {
-        if (!shot && InputManager.instance.Pressed(InputManager.instance.shoot)) StartCoroutine(Shoot());
-
-        if (InputManager.instance.Pressed(InputManager.instance.switchL)) SwitchBall(false);
-
-        if (InputManager.instance.Pressed(InputManager.instance.switchR)) SwitchBall(true);
-
-        UpdateVisuals();
+        projection.SetActive(false);
     }
 
-    void SwitchBall(bool right)
+    public void SwitchBall(bool right)
     {
         if (right) selectedBall++;
         else selectedBall--;
@@ -39,26 +33,37 @@ public class GloveController : MonoBehaviour
         balls.Add(ball);
     }
 
-    public void UpdateVisuals()
+    public void ShowProjection()
     {
-        projection.SetActive(false);
+        if (balls.Count > 0) projection.GetComponent<ProjectionBehaviour>().ball = balls[selectedBall];
 
-        projection = null;
-
-        if (balls.Count > 0) projection.GetComponent<MeshFilter>().sharedMesh = balls[selectedBall].mesh;
-
-        if (projection != null) projection.SetActive(false);
+        projection.SetActive(true);
     }
 
-    IEnumerator Shoot()
+    public void HideProjection()
     {
-        shot = true;
-
         projection.SetActive(false);
+    }
+
+    public void Shoot()
+    {
+        if (!shot)
+        {
+            shot = true;
+            StartCoroutine(Shot());
+        }
+    }
+
+    IEnumerator Shot()
+    {
+        HideProjection();
 
         GameObject ball = Instantiate(ballPrefab);
 
-        ball.transform.position = OVRControllerManager.instance.RTouchPosition;
+        ball.GetComponent<BallBehaviour>().ball = balls[selectedBall];
+
+        ball.transform.position = shotOrigin.position;
+        ball.transform.rotation = shotOrigin.rotation;
 
         yield return new WaitForSeconds(1f);
 

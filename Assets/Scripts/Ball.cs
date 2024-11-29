@@ -4,9 +4,9 @@ using UnityEngine;
 public class Ball : ScriptableObject
 {
     [Header("Identity")]
-    public string name;
+    public string title;
     public Mesh mesh;
-    public Texture3D texture;
+    public Material material;
 
     [Header("Rebound")]
     public float reboundAngles;

@@ -1,9 +1,8 @@
-using Oculus.Interaction;
 using UnityEngine;
 
 public class BallBehaviour : MonoBehaviour
 {
-    [SerializeField] Ball ball;
+    public Ball ball;
 
     bool collided = false;
 
@@ -11,11 +10,12 @@ public class BallBehaviour : MonoBehaviour
     {
         GetComponent<MeshFilter>().sharedMesh = ball.mesh;
         GetComponent<MeshCollider>().sharedMesh = ball.mesh;
+        GetComponent<MeshRenderer>().material = ball.material;
     }
 
     void FixedUpdate()
     {
-        if (!ball.stopsOnContact || (ball.stopsOnContact && !collided)) transform.position += Vector3.forward * ball.TranslationSpeed();
+        if (!ball.stopsOnContact || (ball.stopsOnContact && !collided)) transform.position += transform.forward * ball.TranslationSpeed();
     }
 
     void OnCollisionEnter(Collision collision)
