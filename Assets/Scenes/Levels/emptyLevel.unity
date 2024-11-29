@@ -1548,6 +1548,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f41eff35fddb8c54083758053504503f,
         type: 2}
+    - target: {fileID: 3010131393746352936, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010131393746352936, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010131393746352936, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010131393746352936, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3010131393747902910, guid: 827f2bc2d6e35714a88e9b91f1130073,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1642,6 +1662,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947255120507067491, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128730588550192535, guid: 827f2bc2d6e35714a88e9b91f1130073,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8821684777211843271, guid: 827f2bc2d6e35714a88e9b91f1130073,
         type: 3}
