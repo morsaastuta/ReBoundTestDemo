@@ -1,22 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class GloveController : MonoBehaviour
 {
     [SerializeField] GameObject projection;
-
     [SerializeField] Transform shotOrigin;
+    [SerializeField] AimBeam aimBeam;
     [SerializeField] GameObject ballPrefab;
 
     [SerializeField] List<Ball> balls = new();
 
     int selectedBall = 0;
+    bool aiming = false;
     bool shot = false;
 
-    private void Start()
+    void Start()
     {
         projection.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (aiming) aimBeam.Cast(balls[selectedBall]);
+        else aimBeam.Clear();
     }
 
     public void SwitchBall(bool right)
@@ -35,14 +44,22 @@ public class GloveController : MonoBehaviour
 
     public void ShowProjection()
     {
-        if (balls.Count > 0) projection.GetComponent<ProjectionBehaviour>().ball = balls[selectedBall];
-
-        projection.SetActive(true);
+        if (balls.Count > 0)
+        {
+            projection.SetActive(true);
+            projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        }
     }
 
     public void HideProjection()
     {
         projection.SetActive(false);
+    }
+
+    public void Aim(bool on)
+    {
+        aiming = on;
+        Debug.Log(on);
     }
 
     public void Shoot()

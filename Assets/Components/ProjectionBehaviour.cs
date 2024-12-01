@@ -6,12 +6,23 @@ public class ProjectionBehaviour : MonoBehaviour
 
     void Start()
     {
-        GetComponent<MeshFilter>().sharedMesh = ball.mesh;
-        GetComponent<MeshRenderer>().material = ball.material;
+        UpdateVisuals();
     }
 
     void FixedUpdate()
     {
-        transform.rotation = transform.rotation *= Quaternion.Euler(0, ball.angularSpeed, 0);
+        transform.rotation *= Quaternion.Euler(0, ball.angularSpeed, 0);
+    }
+
+    public void UpdateVisuals()
+    {
+        GetComponent<MeshFilter>().sharedMesh = ball.mesh;
+        GetComponent<MeshRenderer>().material = ball.material;
+    }
+
+    public void UpdateBall(Ball b)
+    {
+        ball = b;
+        UpdateVisuals();
     }
 }

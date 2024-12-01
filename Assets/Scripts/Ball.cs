@@ -3,8 +3,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Ball", menuName = "Scriptable Objects/Ball")]
 public class Ball : ScriptableObject
 {
+    public enum BallType
+    {
+        Sphere, Cube, Object
+    }
+
     [Header("Identity")]
     public string title;
+    public BallType ballType;
     public Mesh mesh;
     public Material material;
 
