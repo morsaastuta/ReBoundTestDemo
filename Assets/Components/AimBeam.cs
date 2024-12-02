@@ -36,7 +36,7 @@ public class AimBeam : MonoBehaviour
         {
             beamIndices.Add(hit.point);
 
-            if (hit.collider.CompareTag(Glossary.GetTag(Glossary.Tag.Reboundable)))
+            if (ball.reboundAngles != 0 && hit.collider.CompareTag(Glossary.GetTag(Glossary.Tag.Reboundable)))
             {
                 // Copy of the code in BallBehaviour's SphereRebound()
 

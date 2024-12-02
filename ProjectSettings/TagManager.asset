@@ -4,9 +4,30 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Props
-  - Building
+  - QDSUIToggleButton
+  - QDSUIIcon
+  - QDSUITextSecondaryColor
+  - QDSUIPrimaryButton
+  - QDSUISharedThemeColor
+  - QDSUIAccentColor
+  - QDSUISecondaryButton
+  - QDSUIDestructiveButton
+  - QDSUIBorderlessButton
+  - QDSUIToggleBorderlessButton
+  - QDSUITooltip
+  - QDSUIToggleSwitch
+  - Locomotion
+  - LocoButton
+  - LocoText
+  - PassThroughButton
+  - PassThrough
+  - QDSUITextInputField
+  - SamplesInfoPanel
+  - QDSUIToggleCheckboxRadio
+  - QDSUISection
   - Reboundable
+  - Building
+  - Props
   layers:
   - Default
   - TransparentFX
@@ -14,7 +35,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - Ball
+  - 
   - 
   - 
   - 

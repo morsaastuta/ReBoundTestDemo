@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-981279047152248934
+--- !u!114 &-6470274189034277130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-  - {fileID: 11400000, guid: 676786641946a274bb4e60c5d1c07105, type: 2}
+  - {fileID: 11400000, guid: 14c529b056896e64590f51402e89df37, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,11 +29,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
-  Keys: 0700000001000000
+  Keys: 0100000007000000
   Values:
-  - {fileID: 8951369431066819369}
-  - {fileID: 2384669431948807445}
---- !u!114 &2384669431948807445
+  - {fileID: 6750031327284060022}
+  - {fileID: 684292184886376544}
+--- !u!114 &684292184886376544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +43,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
-  m_Name: Standalone Settings
+  m_Name: Android Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: -981279047152248934}
+  m_LoaderManagerInstance: {fileID: 3352958871808584454}
   m_InitManagerOnStart: 1
---- !u!114 &4917079299281744798
+--- !u!114 &3352958871808584454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,8 +63,8 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-  - {fileID: 11400000, guid: 676786641946a274bb4e60c5d1c07105, type: 2}
---- !u!114 &8951369431066819369
+  - {fileID: 11400000, guid: 14c529b056896e64590f51402e89df37, type: 2}
+--- !u!114 &6750031327284060022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
-  m_Name: Android Settings
+  m_Name: Standalone Settings
   m_EditorClassIdentifier: 
-  m_LoaderManagerInstance: {fileID: 4917079299281744798}
+  m_LoaderManagerInstance: {fileID: -6470274189034277130}
   m_InitManagerOnStart: 1

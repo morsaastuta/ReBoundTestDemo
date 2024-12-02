@@ -5,7 +5,7 @@ public class Ball : ScriptableObject
 {
     public enum BallType
     {
-        Sphere, Cube, Object
+        Sphere, Prism, Object
     }
 
     [Header("Identity")]
@@ -19,7 +19,10 @@ public class Ball : ScriptableObject
     public int reboundCount;
     public int reboundCounter;
     public bool reboundInfinitely = false;
+
+    [Header("Auxiliar")]
     public bool stopsOnContact = false;
+    public bool persistent = false;
 
     [Header("Traslation")]
     public bool translates = true;

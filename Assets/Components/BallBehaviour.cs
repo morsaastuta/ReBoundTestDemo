@@ -37,12 +37,14 @@ public class BallBehaviour : MonoBehaviour
             switch (ball.ballType)
             {
                 case Ball.BallType.Sphere: ReboundSphere(collision.collider.transform, collision.GetContact(0)); break;
+                case Ball.BallType.Prism: ReboundPrism(collision.collider.transform, collision.GetContact(0)); break;
+                case Ball.BallType.Object: ReboundObject(collision.collider.transform, collision.GetContact(0)); break;
             }
 
             lastPoint = transform.position;
             ball.Rebound();
         }
-        else Destroy(gameObject);
+        else if (!ball.persistent) Destroy(gameObject);
     }
 
     void ReboundSphere(Transform plane, ContactPoint contact)
@@ -83,5 +85,13 @@ public class BallBehaviour : MonoBehaviour
             if (yAmplitude > 90) transform.rotation *= Quaternion.Euler(-90 + ball.reboundAngles, 0, 0);
             else transform.rotation *= Quaternion.Euler(90 - ball.reboundAngles, 0, 0);
         }
+    }
+
+    void ReboundPrism(Transform plane, ContactPoint contact)
+    {
+    }
+
+    void ReboundObject(Transform plane, ContactPoint contact)
+    {
     }
 }
