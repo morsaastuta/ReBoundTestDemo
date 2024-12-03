@@ -3,7 +3,7 @@ public static class Glossary
 {
     public enum Tag
     {
-        Reboundable
+        Reboundable, LeftHand
     }
 
     public static string GetTag(Tag tag)
@@ -11,6 +11,7 @@ public static class Glossary
         switch(tag)
         {
             case Tag.Reboundable: return "Reboundable";
+            case Tag.LeftHand: return "LeftHand";
         }
 
         return "";

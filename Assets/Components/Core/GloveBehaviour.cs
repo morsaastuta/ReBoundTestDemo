@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class GloveBehaviour : MonoBehaviour
 {
-    [Header("Canvas")]
-    [SerializeField] Transform eyes;
-    [SerializeField] Transform canvas;
-
     [Header("Preview & calculations")]
     [SerializeField] GameObject projection;
     [SerializeField] Transform wrist;
     [SerializeField] Transform palm;
+    [SerializeField] PalmRegionBehaviour palmRegion;
 
     [Header("Debug")]
     [SerializeField] List<Ball> demoBalls = new();
@@ -28,12 +25,6 @@ public class GloveBehaviour : MonoBehaviour
         // Get aim beam
         aimBeam = palm.GetComponent<AimBeam>();
 
-        // Get ball selector
-        ballSelector = canvas.GetComponentInChildren<BallSelectorController>();
-
-        // Turn off Canvas by default
-        ShowCanvas(false);
-
         // Add demo balls
         foreach (Ball ball in demoBalls) ObtainBall(ball);
 
@@ -43,10 +34,6 @@ public class GloveBehaviour : MonoBehaviour
 
     void Update()
     {
-        // Set canvas to always be towards the player
-        canvas.LookAt(eyes);
-        canvas.localRotation *= new Quaternion(0, 180, 0, 0);
-
         // Update the aim beam rendering
         if (aiming) aimBeam.Cast(balls[selectedBall]);
         else aimBeam.Clear();
@@ -70,22 +57,16 @@ public class GloveBehaviour : MonoBehaviour
                     projection.transform.position = palm.position;
                     projection.transform.rotation = palm.rotation;
                     projection.transform.localScale = palm.localScale;
-                    ShowCanvas(false);
                 }
                 else
                 {
                     projection.transform.position = wrist.position;
                     projection.transform.rotation = wrist.rotation;
                     projection.transform.localScale = wrist.localScale;
-                    ShowCanvas(true);
                 }
                 ShowProjection(true);
             }
-            else
-            {
-                ShowProjection(false);
-                ShowCanvas(false);
-            }
+            else ShowProjection(false);
         }
     }
 
@@ -94,19 +75,11 @@ public class GloveBehaviour : MonoBehaviour
         projection.SetActive(on);
     }
 
-    void ShowCanvas(bool on)
-    {
-        if (on) foreach (Ball ball in balls) ballSelector.AddButton(ball, balls.IndexOf(ball));
-        else ballSelector.ClearList();
-
-        ballSelector.gameObject.SetActive(on);
-    }
-
     public void SwitchBall(bool right)
     {
-        Debug.Log("switch");
-        if (projection.activeInHierarchy)
+        if (palmRegion.entered && projection.activeInHierarchy && projection.transform.position == palm.position)
         {
+            Debug.Log("switch");
             if (balls.Count > 0)
             {
                 if (right) selectedBall++;

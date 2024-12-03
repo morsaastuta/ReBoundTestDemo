@@ -28,6 +28,7 @@ TagManager:
   - Reboundable
   - Building
   - Props
+  - LeftHand
   layers:
   - Default
   - TransparentFX
