@@ -9,45 +9,44 @@ public class Ball : ScriptableObject
     }
 
     [Header("Identity")]
-    public string title;
-    public BallType ballType;
-    public Mesh mesh;
-    public Material material;
+    [SerializeField] public string title;
+    [SerializeField] public string description;
+    [SerializeField] public BallType ballType;
+    [SerializeField] public GameObject prefab;
+    [SerializeField] public Mesh mesh;
+    [SerializeField] public Material material;
 
     [Header("Rebound")]
-    public float reboundAngles;
-    public int reboundCount;
-    public int reboundCounter;
-    public bool reboundInfinitely = false;
+    [SerializeField] public float reboundAngles;
+    [SerializeField] public int reboundCount;
+    [SerializeField] public int reboundLimit;
+    [SerializeField] public bool reboundInfinitely = false;
 
     [Header("Auxiliar")]
-    public bool stopsOnContact = false;
-    public bool persistent = false;
+    [SerializeField] public bool sticky = false;
+    [SerializeField] public bool gyroscope = false;
+    [SerializeField] public bool persistent = false;
 
     [Header("Traslation")]
-    public bool translates = true;
-    public float linearSpeed;
-    public float linearFriction;
+    [SerializeField] public bool translates = true;
+    [SerializeField] public float linearSpeed;
+    [SerializeField] public float linearFriction;
 
     [Header("Curve")]
-    public bool curves = false;
-    public float angularSpeed;
-    public float angularFriction;
+    [SerializeField] public bool curves = false;
+    [SerializeField] public float angularSpeed;
+    [SerializeField] public float angularFriction;
 
     public void Rebound()
     {
-        if (reboundCounter >= 0)
-        {
-            reboundCounter--;
-            reboundCount++;
-        }
+        if (reboundCount <= reboundLimit) reboundCount++;
     }
 
     public float TranslationSpeed()
     {
         if (translates)
         {
-            float value = linearSpeed + linearFriction * reboundCounter;
+            float value = linearSpeed + linearFriction * reboundLimit;
 
             if (value < 0) return 0;
 
@@ -60,7 +59,7 @@ public class Ball : ScriptableObject
     {
         if (curves)
         {
-            float value = angularSpeed + angularFriction * reboundCounter;
+            float value = angularSpeed + angularFriction * reboundLimit;
 
             if (value < 0) return 0;
 
