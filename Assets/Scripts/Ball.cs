@@ -1,44 +1,58 @@
+using System.Collections.Generic;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using static Glossary;
 
 [CreateAssetMenu(fileName = "Ball", menuName = "Scriptable Objects/Ball")]
 public class Ball : ScriptableObject
 {
+    public enum BallType
+    {
+        Sphere, Prism, Object
+    }
+
     [Header("Identity")]
-    public string name;
-    public Mesh mesh;
-    public Texture3D texture;
+    [SerializeField] public string title;
+    [SerializeField] public string description;
+    [SerializeField] public BallType ballType;
+    [SerializeField] public GameObject prefab;
+    [SerializeField] public Mesh mesh;
+    [SerializeField] public Material material;
 
     [Header("Rebound")]
-    public float reboundAngles;
-    public int reboundCount;
-    public int reboundCounter;
-    public bool reboundInfinitely = false;
-    public bool stopsOnContact = false;
+    [SerializeField] public float reboundAngles;
+    [SerializeField] public int reboundCount;
+    [SerializeField] public int reboundLimit;
+    [SerializeField] public bool reboundInfinitely = false;
+
+    [Header("Auxiliar")]
+    [SerializeField] public bool sticky = false;
+    [SerializeField] public bool gyroscope = false;
+    [SerializeField] public bool persistent = false;
 
     [Header("Traslation")]
-    public bool translates = true;
-    public float linearSpeed;
-    public float linearFriction;
+    [SerializeField] public bool translates = true;
+    [SerializeField] public float linearSpeed;
+    [SerializeField] public float linearFriction;
 
     [Header("Curve")]
-    public bool curves = false;
-    public float angularSpeed;
-    public float angularFriction;
+    [SerializeField] public bool curves = false;
+    [SerializeField] public float angularSpeed;
+    [SerializeField] public float angularFriction;
+
+    [Header("Color")]
+    [SerializeField] public List<CustomColor> colors = new();
 
     public void Rebound()
     {
-        if (reboundCounter >= 0)
-        {
-            reboundCounter--;
-            reboundCount++;
-        }
+        if (reboundCount <= reboundLimit) reboundCount++;
     }
 
     public float TranslationSpeed()
     {
         if (translates)
         {
-            float value = linearSpeed + linearFriction * reboundCounter;
+            float value = linearSpeed + linearFriction * reboundLimit;
 
             if (value < 0) return 0;
 
@@ -51,7 +65,7 @@ public class Ball : ScriptableObject
     {
         if (curves)
         {
-            float value = angularSpeed + angularFriction * reboundCounter;
+            float value = angularSpeed + angularFriction * reboundLimit;
 
             if (value < 0) return 0;
 

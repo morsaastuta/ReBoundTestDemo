@@ -12,17 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bef0e3f852f1b241abded75040da0c0, type: 3}
   m_Name: Block
   m_EditorClassIdentifier: 
-  name: Block
-  mesh: {fileID: 0}
-  texture: {fileID: 0}
+  title: Block
+  description: Stops on contact, adopting a new rotation
+  ballType: 1
+  prefab: {fileID: 1837288042578470597, guid: 79da3688f88bf394cb97498df0d46ec9, type: 3}
+  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   reboundAngles: 0
   reboundCount: 0
-  reboundCounter: 0
+  reboundLimit: 0
   reboundInfinitely: 0
-  stopsOnContact: 1
-  translates: 0
-  linearSpeed: 2
+  sticky: 1
+  gyroscope: 1
+  persistent: 1
+  translates: 1
+  linearSpeed: 4
   linearFriction: 0
   curves: 0
-  angularSpeed: 0
+  angularSpeed: 2
   angularFriction: 0
