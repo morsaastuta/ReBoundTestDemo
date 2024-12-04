@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bef0e3f852f1b241abded75040da0c0, type: 3}
-  m_Name: Testball
+  m_Name: Acuteball
   m_EditorClassIdentifier: 
-  title: Test ball
-  description: "Rebounds with an amplitude of 45\xBA (at least right now)"
+  title: Acute ball
+  description: "Rebounds with an amplitude of 30\xBA"
   ballType: 0
   prefab: {fileID: 1837288042578470597, guid: 0db9c27a275d6d749819e4d81d55e1bf, type: 3}
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  reboundAngles: 45
+  reboundAngles: 30
   reboundCount: 0
-  reboundLimit: 0
-  reboundInfinitely: 1
+  reboundLimit: 4
+  reboundInfinitely: 0
   sticky: 0
   gyroscope: 0
   persistent: 0

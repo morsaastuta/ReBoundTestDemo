@@ -20,11 +20,7 @@ public class PalmRegionBehaviour : MonoBehaviour
         if (timer > 0)
         {
             timer--;
-            if (timer <= 0)
-            {
-                print("ended timer");
-                entered = false;
-            }
+            if (timer <= 0) entered = false;
         }
     }
 }

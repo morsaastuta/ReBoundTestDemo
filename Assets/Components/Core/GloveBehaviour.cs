@@ -6,6 +6,7 @@ public class GloveBehaviour : MonoBehaviour
 {
     [Header("Preview & calculations")]
     [SerializeField] GameObject projection;
+    [SerializeField] Transform eyes;
     [SerializeField] Transform wrist;
     [SerializeField] Transform palm;
     [SerializeField] PalmRegionBehaviour palmRegion;
@@ -35,7 +36,7 @@ public class GloveBehaviour : MonoBehaviour
     void Update()
     {
         // Update the aim beam rendering
-        if (aiming) aimBeam.Cast(balls[selectedBall]);
+        if (aiming && Vector3.Angle(eyes.forward, palm.forward) <= 90) aimBeam.Cast(balls[selectedBall]);
         else aimBeam.Clear();
     }
 
@@ -79,7 +80,6 @@ public class GloveBehaviour : MonoBehaviour
     {
         if (palmRegion.entered && projection.activeInHierarchy && projection.transform.position == palm.position)
         {
-            Debug.Log("switch");
             if (balls.Count > 0)
             {
                 if (right) selectedBall++;
@@ -101,17 +101,16 @@ public class GloveBehaviour : MonoBehaviour
 
     public void OpenPalm(bool on)
     {
+        aiming = on;
+
         if (on) Preview(true, true);
         else Preview(true, false);
     }
 
-    public void Aim(bool on)
+    public void Shoot(bool on)
     {
-        aiming = on;
-    }
+        aiming = !on;
 
-    public void Shoot()
-    {
         if (!shot)
         {
             shot = true;

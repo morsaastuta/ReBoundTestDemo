@@ -24,6 +24,9 @@ public class BallBehaviour : MonoBehaviour
 
         // Set last rebound position as initial position
         lastVertex = transform.position;
+
+        // Set greenToRed colors
+        if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = Glossary.GetColor(ball.colors[0]);
     }
 
     void FixedUpdate()
@@ -60,9 +63,11 @@ public class BallBehaviour : MonoBehaviour
 
             // Update ball's properties on rebound
             ball.Rebound();
+
+            // Set greenToRed colors
+            if (ball.reboundCount < ball.colors.Count) GetComponent<MeshRenderer>().material.color = Glossary.GetColor(ball.colors[ball.reboundCount]);
         }
         else if (!ball.persistent) Destroy(gameObject);
-
     }
 
     void ReboundSphere(Transform plane, ContactPoint contact)

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Baseball
   m_EditorClassIdentifier: 
   title: Base ball
-  description: "Rebounds with an amplitude of 30\xBA"
+  description: "Rebounds with an amplitude of 45\xBA (at least right now)"
   ballType: 0
   prefab: {fileID: 1837288042578470597, guid: 0db9c27a275d6d749819e4d81d55e1bf, type: 3}
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  reboundAngles: 30
+  reboundAngles: 45
   reboundCount: 0
-  reboundLimit: 8
+  reboundLimit: 3
   reboundInfinitely: 0
   sticky: 0
   gyroscope: 0
@@ -31,3 +31,4 @@ MonoBehaviour:
   curves: 0
   angularSpeed: 2
   angularFriction: 0
+  colors: 00000000010000000200000003000000

@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: a1fdb6f7-0476-40c1-a2c7-29e2877981d5
+  instanceId: 575e800d-8ad7-461b-b59c-9b2136e12082
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: ae7daa8a-4a09-425e-84d9-8fb7b222e0c0
+  instanceId: 942671e0-1a01-45d4-887b-52b048b095b2
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 416b5719-f2d1-479a-b6bf-c6cdeb0d2c6c
+  instanceId: 56904b34-a271-48bd-ab4c-0c4541c2c05c
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1802,6 +1802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RightHand
       objectReference: {fileID: 0}
+    - target: {fileID: 462313449092808761, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 5149082768656111309}
     - target: {fileID: 7654820630853628425, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -1,4 +1,7 @@
+using System.Collections.Generic;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
+using static Glossary;
 
 [CreateAssetMenu(fileName = "Ball", menuName = "Scriptable Objects/Ball")]
 public class Ball : ScriptableObject
@@ -36,6 +39,9 @@ public class Ball : ScriptableObject
     [SerializeField] public bool curves = false;
     [SerializeField] public float angularSpeed;
     [SerializeField] public float angularFriction;
+
+    [Header("Color")]
+    [SerializeField] public List<CustomColor> colors = new();
 
     public void Rebound()
     {
