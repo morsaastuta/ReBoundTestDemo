@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Glossary;
 
 public class PalmRegionBehaviour : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PalmRegionBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag(Glossary.GetTag(Glossary.Tag.LeftHand)))
+        if (collider.CompareTag(GetTag(Tag.LeftHand)))
         {
             entered = true;
             timer = timerMax;

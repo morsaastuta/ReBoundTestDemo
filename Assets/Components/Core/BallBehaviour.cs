@@ -1,6 +1,6 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using static Glossary;
 
 public class BallBehaviour : MonoBehaviour
 {
@@ -26,7 +26,7 @@ public class BallBehaviour : MonoBehaviour
         lastVertex = transform.position;
 
         // Set greenToRed colors
-        if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = Glossary.GetColor(ball.colors[0]);
+        if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[0]);
     }
 
     void FixedUpdate()
@@ -42,7 +42,7 @@ public class BallBehaviour : MonoBehaviour
         if (internalColliders.Contains(collision.collider)) return;
 
         // Is the collision reboundable?
-        if (collision.collider.CompareTag(Glossary.GetTag(Glossary.Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount <= ball.reboundLimit))
+        if (collision.collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount <= ball.reboundLimit))
         {
             // If the ball is not sticky
             if (!ball.sticky)
@@ -65,7 +65,7 @@ public class BallBehaviour : MonoBehaviour
             ball.Rebound();
 
             // Set greenToRed colors
-            if (ball.reboundCount < ball.colors.Count) GetComponent<MeshRenderer>().material.color = Glossary.GetColor(ball.colors[ball.reboundCount]);
+            if (ball.reboundCount < ball.colors.Count) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[ball.reboundCount]);
         }
         else if (!ball.persistent) Destroy(gameObject);
     }

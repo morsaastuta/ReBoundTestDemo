@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public static class Glossary
@@ -6,11 +5,6 @@ public static class Glossary
     public enum Tag
     {
         Reboundable, LeftHand
-    }
-
-    public enum CustomColor
-    {
-        Green, Yellow, Orange, Red
     }
 
     public static string GetTag(Tag tag)
@@ -21,6 +15,28 @@ public static class Glossary
             Tag.LeftHand => "LeftHand",
             _ => ""
         };
+    }
+
+    public enum Layer
+    {
+        Player, Ball, Scene, Interactable
+    }
+
+    public static string GetLayer(Layer layer)
+    {
+        return layer switch
+        {
+            Layer.Player => "Player",
+            Layer.Ball => "Ball",
+            Layer.Scene => "Scene",
+            Layer.Interactable => "Interactable",
+            _ => ""
+        };
+    }
+
+    public enum CustomColor
+    {
+        Green, Yellow, Orange, Red
     }
 
     public static Color GetColor(CustomColor color)
