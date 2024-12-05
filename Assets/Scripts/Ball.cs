@@ -25,6 +25,7 @@ public class Ball : ScriptableObject
     [SerializeField] public bool reboundInfinitely = false;
 
     [Header("Auxiliar")]
+    [SerializeField] public bool auxiliar = false;
     [SerializeField] public bool sticky = false;
     [SerializeField] public bool gyroscope = false;
     [SerializeField] public bool persistent = false;

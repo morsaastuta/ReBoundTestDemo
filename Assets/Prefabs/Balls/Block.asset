@@ -22,6 +22,7 @@ MonoBehaviour:
   reboundCount: 0
   reboundLimit: 0
   reboundInfinitely: 0
+  auxiliar: 1
   sticky: 1
   gyroscope: 1
   persistent: 1
@@ -31,3 +32,4 @@ MonoBehaviour:
   curves: 0
   angularSpeed: 2
   angularFriction: 0
+  colors: 

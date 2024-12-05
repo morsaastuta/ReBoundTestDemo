@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static Glossary;
 
@@ -38,11 +39,48 @@ public class BallBehaviour : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Prevent ball's internal collisions counting as rebounds
+        // Prevent ball's internal colliders from affecting
         if (internalColliders.Contains(collision.collider)) return;
 
-        // Is the collision reboundable?
-        if (collision.collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount <= ball.reboundLimit))
+        Rebound(collision.collider);
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        // Prevent ball's internal colliders from affecting
+        if (internalColliders.Contains(collider)) return;
+
+        // Inside BALL BEHAVIOUR, ON TRIGGER ENTER will only be used for conditional collisions (e.g. Colored Bounds)
+        if (collider.GetComponent<ConditionalReboundBehaviour>())
+        {
+            // Condition check (FALSE -> pass through // TRUE -> rebound)
+            ConditionalReboundBehaviour crb = collider.GetComponent<ConditionalReboundBehaviour>();
+            int checkQty = 0;
+            if (crb.colorCondition && GetColor(crb.color) == GetComponent<MeshRenderer>().material.color) checkQty++;
+            Debug.Log(GetColor(crb.color) == GetComponent<MeshRenderer>().material.color);
+            if (crb.countCondition && crb.count == ball.reboundCount) checkQty++;
+            Debug.Log(crb.conditionQty + "/" + checkQty);
+            if (checkQty >= crb.conditionQty) return;
+
+            Rebound(collider);
+        }
+    }
+
+    void Rebound(Collider collider)
+    {
+        // Is the ball auxiliar?
+        if (ball.auxiliar)
+        {
+            // Destroy auxiliar objects if they make contact with interactables
+            if (LayerMask.LayerToName(collider.gameObject.layer).Equals(GetLayer(Layer.Interactable)))
+            {
+                Destroy(gameObject);
+                return;
+            }
+        }
+
+        // Is the collider reboundable? Can the ball keep rebounding?
+        if (collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount <= ball.reboundLimit))
         {
             // If the ball is not sticky
             if (!ball.sticky)
@@ -50,16 +88,16 @@ public class BallBehaviour : MonoBehaviour
                 // Select rebound method according to the ball type
                 switch (ball.ballType)
                 {
-                    case Ball.BallType.Sphere: ReboundSphere(collision.collider.transform, collision.GetContact(0)); break;
-                    case Ball.BallType.Prism: ReboundPrism(collision.collider.transform, collision.GetContact(0)); break;
-                    case Ball.BallType.Object: ReboundObject(collision.collider.transform, collision.GetContact(0)); break;
+                    case Ball.BallType.Sphere: ReboundSphere(collider.transform); break;
+                    case Ball.BallType.Prism: ReboundPrism(collider.transform); break;
+                    case Ball.BallType.Object: ReboundObject(collider.transform); break;
                 }
 
                 // Update last rebound position
                 lastVertex = transform.position;
             }
             // If the ball is a gyroscope, adopt the first collider's rotation forever
-            else if (ball.gyroscope) transform.rotation = collision.collider.transform.rotation;
+            else if (ball.gyroscope) transform.rotation = collider.transform.rotation;
 
             // Update ball's properties on rebound
             ball.Rebound();
@@ -70,18 +108,13 @@ public class BallBehaviour : MonoBehaviour
         else if (!ball.persistent) Destroy(gameObject);
     }
 
-    void ReboundSphere(Transform plane, ContactPoint contact)
+    void ReboundSphere(Transform plane)
     {
         // TRANSFORM FORWARD (+Z) IS THE FORWARD DIRECTION OF THE BALL
         // TRANSFORM RIGHT (+X) IS AXIS X
         // TRANSFORM UP (+Y) IS AXIS Y
         // TRANSFORM ROT Y IS THE HORIZONTAL ROTATION OF THE BALL
         // TRANSFORM ROT X IS THE VERTICAL ROTATION OF THE BALL
-
-        // Debug of impact
-        Debug.DrawRay(contact.point, plane.up, Color.red, 99f);
-        Debug.DrawRay(contact.point, plane.right, Color.red, 99f);
-        Debug.DrawLine(transform.position, lastVertex, Color.green, 99f);
 
         // Calculation of horizontal and vertical amplitudes to decide if ball goes right/left or up/down
         float xAmplitude = Vector3.Angle((lastVertex - transform.position).normalized, plane.right.normalized);
@@ -110,11 +143,11 @@ public class BallBehaviour : MonoBehaviour
         }
     }
 
-    void ReboundPrism(Transform plane, ContactPoint contact)
+    void ReboundPrism(Transform plane)
     {
     }
 
-    void ReboundObject(Transform plane, ContactPoint contact)
+    void ReboundObject(Transform plane)
     {
     }
 }

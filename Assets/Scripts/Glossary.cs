@@ -19,7 +19,7 @@ public static class Glossary
 
     public enum Layer
     {
-        Player, Ball, Scene, Interactable
+        Player, Ball, Scene, Interactable, Auxiliar
     }
 
     public static string GetLayer(Layer layer)
@@ -30,6 +30,7 @@ public static class Glossary
             Layer.Ball => "Ball",
             Layer.Scene => "Scene",
             Layer.Interactable => "Interactable",
+            Layer.Auxiliar => "Auxiliar",
             _ => ""
         };
     }
@@ -43,10 +44,10 @@ public static class Glossary
     {
         return color switch
         {
-            CustomColor.Green => new Color(0, 1, 0),
-            CustomColor.Yellow => new Color(.75f, 1, 0),
-            CustomColor.Orange => new Color(1, .75f, 0),
-            CustomColor.Red => new Color(1, 0, 0),
+            CustomColor.Green => Color.green,
+            CustomColor.Yellow => Color.yellow,
+            CustomColor.Orange => new Color(1, .55f, .1f),
+            CustomColor.Red => Color.red,
             _ => new Color(0, 0, 0)
         };
     }

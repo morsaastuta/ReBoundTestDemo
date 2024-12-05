@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3317881648018934840}
   - component: {fileID: 1267687145562228484}
   m_Layer: 6
-  m_Name: Cube
+  m_Name: Reboundable cube
   m_TagString: Reboundable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

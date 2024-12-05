@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 78161aeb-de9c-4e3f-b995-990d4f7b77db
+  instanceId: 2cf59050-27d2-4156-8b11-4581e0446efd
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: 46ff8762-a9b9-4367-a6aa-b28cc78d594f
+  instanceId: 4bb7e8b7-67bd-4a6d-9fa7-0b359442af3a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 0e1f7359-9cb9-4d14-b0f1-79eb2a1ebc23
+  instanceId: 7c9fc502-b6d6-4e43-a614-b9ca88e662d0
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -2736,6 +2736,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1271626624787717758, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
       propertyPath: _trackingToWorldTransformer
+      value: 
+      objectReference: {fileID: 8806132525157309902}
+    - target: {fileID: 5077101802825026324, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+      propertyPath: _transformer
       value: 
       objectReference: {fileID: 8806132525157309902}
     - target: {fileID: 6475890793771002162, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
