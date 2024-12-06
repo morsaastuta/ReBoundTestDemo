@@ -4,7 +4,7 @@ public static class Glossary
 {
     public enum Tag
     {
-        Reboundable, LeftHand
+        Reboundable, LeftHand, Annulling
     }
 
     public static string GetTag(Tag tag)
@@ -13,6 +13,7 @@ public static class Glossary
         {
             Tag.Reboundable => "Reboundable",
             Tag.LeftHand => "LeftHand",
+            Tag.Annulling => "Annulling",
             _ => ""
         };
     }

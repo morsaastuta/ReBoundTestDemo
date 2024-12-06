@@ -59,8 +59,8 @@ MonoBehaviour:
   palm: {fileID: 5058614822708946560}
   palmRegion: {fileID: 6917576439689604522}
   demoBalls:
-  - {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
   - {fileID: 11400000, guid: 435c98758b54d774cbfcbd558324646e, type: 2}
+  - {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
 --- !u!114 &1373021981935721721
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static Glossary;
@@ -8,15 +9,15 @@ public class BallBehaviour : MonoBehaviour
     public Ball ball;
     Rigidbody body;
     Vector3 lastVertex = new();
-    List<Collider> internalColliders = new();
+    List<Collider> bypassedColliders = new();
 
     void Start()
     {
         // Set rigidbody
         body = GetComponent<Rigidbody>();
 
-        // Set internal colliders to prevent fake rebounds
-        internalColliders.AddRange(GetComponentsInChildren<Collider>());
+        // Bypass internal colliders to prevent fake rebounds
+        bypassedColliders.AddRange(GetComponentsInChildren<Collider>());
 
         // Set mesh & material
         GetComponent<MeshFilter>().sharedMesh = ball.mesh;
@@ -39,16 +40,14 @@ public class BallBehaviour : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Prevent ball's internal colliders from affecting
-        if (internalColliders.Contains(collision.collider)) return;
+        if (Prebound(collision.collider)) return;
 
         Rebound(collision.collider);
     }
 
     void OnTriggerEnter(Collider collider)
     {
-        // Prevent ball's internal colliders from affecting
-        if (internalColliders.Contains(collider)) return;
+        if (Prebound(collider)) return;
 
         // Inside BALL BEHAVIOUR, ON TRIGGER ENTER will only be used for conditional collisions (e.g. Colored Bounds)
         if (collider.GetComponent<ConditionalReboundBehaviour>())
@@ -57,13 +56,26 @@ public class BallBehaviour : MonoBehaviour
             ConditionalReboundBehaviour crb = collider.GetComponent<ConditionalReboundBehaviour>();
             int checkQty = 0;
             if (crb.colorCondition && GetColor(crb.color) == GetComponent<MeshRenderer>().material.color) checkQty++;
-            Debug.Log(GetColor(crb.color) == GetComponent<MeshRenderer>().material.color);
             if (crb.countCondition && crb.count == ball.reboundCount) checkQty++;
-            Debug.Log(crb.conditionQty + "/" + checkQty);
             if (checkQty >= crb.conditionQty) return;
 
             Rebound(collider);
         }
+    }
+
+    bool Prebound(Collider collider)
+    {
+        // Bypass certain colliders
+        if (bypassedColliders.Contains(collider)) return true;
+
+        // Annulling colliders destroy balls
+        if (collider.CompareTag(GetTag(Tag.Annulling)))
+        {
+            Destroy(gameObject);
+            return true;
+        }
+
+        return false;
     }
 
     void Rebound(Collider collider)

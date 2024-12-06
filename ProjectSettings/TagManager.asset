@@ -29,6 +29,7 @@ TagManager:
   - Building
   - Props
   - LeftHand
+  - Annulling
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,7 @@ TagManager:
   - Ball
   - Auxiliar
   - Interactable
-  - 
+  - Scene
   - 
   - 
   - 
