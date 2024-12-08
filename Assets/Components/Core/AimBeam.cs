@@ -9,7 +9,16 @@ public class AimBeam : MonoBehaviour
     void Start()
     {
         beam = GetComponent<LineRenderer>();
-        SetBeam(.02f, .02f, Color.yellow, Color.red);
+    }
+
+    void AnullingBeam()
+    {
+        SetBeam(.02f, .02f, Color.red, Color.red);
+    }
+
+    void ReboundBeam()
+    {
+        SetBeam(.02f, .02f, Color.green, Color.yellow);
     }
 
     public void SetBeam(float sw, float ew, Color sc, Color ec)
@@ -38,6 +47,7 @@ public class AimBeam : MonoBehaviour
 
             if (ball.reboundAngles != 0 && hit.collider.CompareTag(Glossary.GetTag(Glossary.Tag.Reboundable)))
             {
+                ReboundBeam();
                 // Copy of the code in BallBehaviour's SphereRebound()
 
                 float xAmplitude = Vector3.Angle((transform.position - hit.point).normalized, hit.transform.right.normalized);

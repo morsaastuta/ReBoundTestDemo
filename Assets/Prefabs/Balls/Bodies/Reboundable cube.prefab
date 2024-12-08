@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7810572949718980449}
   - component: {fileID: 625244885751677856}
-  - component: {fileID: 5123998563590954214}
   - component: {fileID: 1255015598427142218}
   - component: {fileID: 3317881648018934840}
   - component: {fileID: 1267687145562228484}
+  - component: {fileID: 6431436831502697601}
   m_Layer: 6
   m_Name: Reboundable cube
   m_TagString: Reboundable
@@ -55,27 +55,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
---- !u!65 &5123998563590954214
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837288042578470597}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1255015598427142218
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -156,6 +135,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!65 &6431436831502697601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837288042578470597}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1605577461093505688
 PrefabInstance:
   m_ObjectHideFlags: 0

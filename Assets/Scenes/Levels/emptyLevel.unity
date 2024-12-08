@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: assignedButton
       value: 
-      objectReference: {fileID: 1344020194}
+      objectReference: {fileID: 1585099821}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_Name
       value: Fence door
@@ -449,17 +449,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1344020194 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4087069852198257905, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
-  m_PrefabInstance: {fileID: 2530225732443694116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1388567444
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +693,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1585099821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 604073506167014580, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
+  m_PrefabInstance: {fileID: 2530225732443694116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1635370226 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 117545309745806756, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}

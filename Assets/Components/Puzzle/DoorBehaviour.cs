@@ -19,15 +19,15 @@ public class DoorBehaviour : MonoBehaviour
             {
                 active = true;
 
-                if (!clockwise) transform.DORotate((transform.rotation * new Quaternion(0, rotationAngles, 0, 0)).eulerAngles, duration);
-                else transform.DORotate((transform.rotation * new Quaternion(0, -rotationAngles, 0, 0)).eulerAngles, duration);
+                if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
+                else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
             }
             else if (!assignedButton.pressed && active)
             {
                 active = false;
 
-                if (!clockwise) transform.DORotate((transform.rotation * new Quaternion(0, -rotationAngles, 0, 0)).eulerAngles, duration);
-                else transform.DORotate((transform.rotation * new Quaternion(0, rotationAngles, 0, 0)).eulerAngles, duration);
+                if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
+                else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
             }
         }
     }

@@ -4,6 +4,7 @@ using static Glossary;
 
 public class BallBehaviour : MonoBehaviour
 {
+    [SerializeField] List<GameObject> expansion = new();
     public Ball ball;
     Rigidbody body;
     Vector3 lastVertex = new();
@@ -11,6 +12,9 @@ public class BallBehaviour : MonoBehaviour
 
     void Start()
     {
+        // Deactivate expansion modules
+        foreach (GameObject go in expansion) go.SetActive(false);
+
         // Set rigidbody
         body = GetComponent<Rigidbody>();
 
@@ -111,6 +115,9 @@ public class BallBehaviour : MonoBehaviour
 
             // Update ball's properties on rebound
             ball.Rebound();
+
+            // Expand
+            foreach (GameObject go in expansion) go.SetActive(true);
 
             // Set greenToRed colors
             if (ball.reboundCount < ball.colors.Count) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[ball.reboundCount]);
