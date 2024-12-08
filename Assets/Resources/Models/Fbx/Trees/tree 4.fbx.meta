@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Vegetation
     second: {fileID: 2100000, guid: 2e3fb47294cbd1548b416f6c39b7c2da, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Texture
+    second: {fileID: 2800000, guid: f086be26977057d4d8dccb768cc7a605, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

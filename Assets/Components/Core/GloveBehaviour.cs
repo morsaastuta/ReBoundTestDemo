@@ -78,6 +78,7 @@ public class GloveBehaviour : MonoBehaviour
 
     public void SwitchBall(bool right)
     {
+        print(palmRegion.entered);
         if (palmRegion.entered && projection.activeInHierarchy && projection.transform.position == palm.position)
         {
             if (balls.Count > 0)
