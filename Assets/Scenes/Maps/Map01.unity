@@ -10950,7 +10950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498886644144534189, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 0.265
       objectReference: {fileID: 0}
     - target: {fileID: 498886644144534189, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11153,6 +11153,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8980319946121038538, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
+      propertyPath: _trackingOriginType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980319946121038538, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
       propertyPath: _headPoseRelativeOffsetTranslation.y
       value: 0
       objectReference: {fileID: 0}
@@ -11162,7 +11166,7 @@ PrefabInstance:
       objectReference: {fileID: 1224820592}
     - target: {fileID: 9146451718798099082, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9146451718798099082, guid: 827f2bc2d6e35714a88e9b91f1130073, type: 3}
       propertyPath: HmdResetsY
