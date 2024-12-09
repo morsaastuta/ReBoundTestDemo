@@ -4848,7 +4848,7 @@ PrefabInstance:
       objectReference: {fileID: 8665607966855477046}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.size
@@ -4856,7 +4856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4868,7 +4868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwitchBall
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -4880,11 +4880,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GloveController, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4896,7 +4896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7501715691570866789, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
