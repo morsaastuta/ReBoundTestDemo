@@ -1,34 +1,27 @@
 using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorBehaviour : MonoBehaviour
+public class DoorBehaviour : ActivableBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour
 {
-    [Header("Customization")]
-    [SerializeField] ButtonBehaviour assignedButton;
+    [Header("Rotation customization")]
     [SerializeField] float rotationAngles = 90;
     [SerializeField] bool clockwise = true;
     [SerializeField] float duration = 1;
 
-    bool active = false;
-
-    void FixedUpdate()
+    override protected void Activate()
     {
-        if (assignedButton != null)
-        {
-            if (assignedButton.pressed && !active)
-            {
-                active = true;
+        base.Activate();
 
-                if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
-                else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
-            }
-            else if (!assignedButton.pressed && active)
-            {
-                active = false;
+        if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
+        else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
+    }
 
-                if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
-                else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
-            }
-        }
+    override protected void Deactivate()
+    {
+        base.Deactivate();
+
+        if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
+        else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
     }
 }

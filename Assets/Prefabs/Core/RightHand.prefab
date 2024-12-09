@@ -58,6 +58,7 @@ MonoBehaviour:
   wrist: {fileID: 5192838606684001902}
   palm: {fileID: 5058614822708946560}
   palmRegion: {fileID: 6917576439689604522}
+  hand: {fileID: 0}
   demoBalls:
   - {fileID: 11400000, guid: 435c98758b54d774cbfcbd558324646e, type: 2}
   - {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
@@ -115,112 +116,6 @@ MonoBehaviour:
   - Finger: 4
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
   _disableProactiveEvaluation: 0
---- !u!1 &139158169522807829
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1857452121315317770}
-  - component: {fileID: 5727440835932150834}
-  - component: {fileID: 3774977594848129805}
-  - component: {fileID: 8361146054248636458}
-  m_Layer: 3
-  m_Name: Shoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1857452121315317770
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139158169522807829}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7634254813875439428}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5727440835932150834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139158169522807829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f7cfb1f9629da4494ac0840f3a3cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hand: {fileID: 1373021981935721721}
-  _fingerFeatureStateProvider: {fileID: 5899223856362336605}
-  _shapes:
-  - {fileID: 11400000, guid: 04a849dcc244c8c46ad5420f4008285e, type: 2}
---- !u!114 &3774977594848129805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139158169522807829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd9780be7e512049b4d33d5c9d0ac92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 5727440835932150834}
---- !u!114 &8361146054248636458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139158169522807829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de76f7169412b8f4896235a1585d8939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _selector: {fileID: 3774977594848129805}
-  _whenSelected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 462313449092808761}
-        m_TargetAssemblyTypeName: GloveBehaviour, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _whenUnselected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 462313449092808761}
-        m_TargetAssemblyTypeName: GloveBehaviour, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &191786729629266115
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,8 +325,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5188143565400029269}
-  - {fileID: 5642576457726578026}
-  - {fileID: 1857452121315317770}
   m_Father: {fileID: 7654820630853628425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617453533398542386
@@ -1111,7 +1004,7 @@ GameObject:
   - component: {fileID: 8045531605519294131}
   - component: {fileID: 2015142934381434732}
   m_Layer: 3
-  m_Name: Preview
+  m_Name: Closed fist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,112 +1410,6 @@ Transform:
   - {fileID: 8911274007282266412}
   m_Father: {fileID: 5108463876186042147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7525627686528873253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5642576457726578026}
-  - component: {fileID: 2655291790262026985}
-  - component: {fileID: 7781362248934376168}
-  - component: {fileID: 5239524304583068465}
-  m_Layer: 3
-  m_Name: Aim
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5642576457726578026
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525627686528873253}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7634254813875439428}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2655291790262026985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525627686528873253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f7cfb1f9629da4494ac0840f3a3cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hand: {fileID: 1373021981935721721}
-  _fingerFeatureStateProvider: {fileID: 5899223856362336605}
-  _shapes:
-  - {fileID: 11400000, guid: c4cb9a38858b768478e1da4f970c7686, type: 2}
---- !u!114 &7781362248934376168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525627686528873253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd9780be7e512049b4d33d5c9d0ac92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _activeState: {fileID: 2655291790262026985}
---- !u!114 &5239524304583068465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7525627686528873253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de76f7169412b8f4896235a1585d8939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _selector: {fileID: 7781362248934376168}
-  _whenSelected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 462313449092808761}
-        m_TargetAssemblyTypeName: GloveBehaviour, Assembly-CSharp
-        m_MethodName: Aim
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _whenUnselected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 462313449092808761}
-        m_TargetAssemblyTypeName: GloveBehaviour, Assembly-CSharp
-        m_MethodName: Aim
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7626641002151567342
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,7 +6166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cffd5b8b02b1ea4aa83acc6505ff39e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entered: 0
+  glove: {fileID: 0}
 --- !u!4 &3092510924271536624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5529324834519431359, guid: 8f3bdafc0188b4544acd8c300ae2d1a4, type: 3}

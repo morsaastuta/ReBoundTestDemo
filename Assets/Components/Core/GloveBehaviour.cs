@@ -21,6 +21,7 @@ public class GloveBehaviour : MonoBehaviour
     bool aiming = false;
     bool shot = false;
     List<Ball> balls = new();
+    List<GameObject> auxiliarBalls = new();
 
     void Start()
     {
@@ -36,16 +37,37 @@ public class GloveBehaviour : MonoBehaviour
 
     void Update()
     {
-        // Update the aim beam rendering
-        if (aiming && Vector3.Angle(eyes.forward, palm.forward) <= 90) aimBeam.Cast(balls[selectedBall]);
-        else aimBeam.Clear();
-
-        // Can shoot when aiming, not recently shot, and pinching
-        if (aiming && !shot && hand.GetFingerIsPinching(OVRHand.HandFinger.Index))
+        // While aiming...
+        if (aiming)
         {
-            shot = true;
-            StartCoroutine(Shot());
+            // If no ball was recently shot...
+            if (!shot)
+            {
+                // Update the aim beam rendering
+                if (Vector3.Angle(eyes.forward, palm.forward) <= 90) aimBeam.Cast(balls[selectedBall]);
+                else aimBeam.Clear();
+
+                // Pinch index finger to shoot ball
+                if (hand.GetFingerIsPinching(OVRHand.HandFinger.Index)) Shoot();
+            }
+            else aimBeam.Clear();
+
+            // Pinch middle finger to delete all auxiliar balls
+            if (hand.GetFingerIsPinching(OVRHand.HandFinger.Middle)) ClearAuxiliars();
         }
+        else aimBeam.Clear();
+    }
+
+    void Shoot()
+    {
+        shot = true;
+        StartCoroutine(Shot());
+    }
+
+    void ClearAuxiliars()
+    {
+        foreach (GameObject ball in auxiliarBalls) Destroy(ball);
+        auxiliarBalls.Clear();
     }
 
     public void ObtainBall(Ball ball)
@@ -115,11 +137,6 @@ public class GloveBehaviour : MonoBehaviour
         else Preview(true, false);
     }
 
-    public void Shoot(bool on)
-    {
-        aiming = !on;
-    }
-
     IEnumerator Shot()
     {
         Preview(false, false);
@@ -128,6 +145,9 @@ public class GloveBehaviour : MonoBehaviour
 
         // Set ball
         ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
+
+        // If ball is auxiliar, track it
+        if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
 
         // Set position (Palm)
         ball.transform.position = palm.position;
