@@ -133,6 +133,10 @@ public class BallBehaviour : MonoBehaviour
         // TRANSFORM ROT Y IS THE HORIZONTAL ROTATION OF THE BALL
         // TRANSFORM ROT X IS THE VERTICAL ROTATION OF THE BALL
 
+        Debug.DrawLine(plane.position, plane.position + plane.right * 100, Color.red, 99);
+        Debug.DrawLine(plane.position, plane.position + plane.up * 100, Color.green, 99);
+        Debug.DrawLine(plane.position, plane.position + plane.forward * 100, Color.blue, 99);
+
         // Calculation of horizontal and vertical amplitudes to decide if ball goes right/left or up/down
         float xAmplitude = Vector3.Angle((lastVertex - transform.position).normalized, plane.right.normalized);
         float yAmplitude = Vector3.Angle((lastVertex - transform.position).normalized, plane.up.normalized);

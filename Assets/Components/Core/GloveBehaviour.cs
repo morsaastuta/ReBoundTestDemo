@@ -10,6 +10,7 @@ public class GloveBehaviour : MonoBehaviour
     [SerializeField] Transform wrist;
     [SerializeField] Transform palm;
     [SerializeField] PalmRegionBehaviour palmRegion;
+    [SerializeField] OVRHand hand;
 
     [Header("Debug")]
     [SerializeField] List<Ball> demoBalls = new();
@@ -38,6 +39,13 @@ public class GloveBehaviour : MonoBehaviour
         // Update the aim beam rendering
         if (aiming && Vector3.Angle(eyes.forward, palm.forward) <= 90) aimBeam.Cast(balls[selectedBall]);
         else aimBeam.Clear();
+
+        // Can shoot when aiming, not recently shot, and pinching
+        if (aiming && !shot && hand.GetFingerIsPinching(OVRHand.HandFinger.Index))
+        {
+            shot = true;
+            StartCoroutine(Shot());
+        }
     }
 
     public void ObtainBall(Ball ball)
@@ -78,8 +86,7 @@ public class GloveBehaviour : MonoBehaviour
 
     public void SwitchBall(bool right)
     {
-        print(palmRegion.entered);
-        if (palmRegion.entered && projection.activeInHierarchy && projection.transform.position == palm.position)
+        if (projection.activeInHierarchy && projection.transform.position == palm.position)
         {
             if (balls.Count > 0)
             {
@@ -111,12 +118,6 @@ public class GloveBehaviour : MonoBehaviour
     public void Shoot(bool on)
     {
         aiming = !on;
-
-        if (!shot)
-        {
-            shot = true;
-            StartCoroutine(Shot());
-        }
     }
 
     IEnumerator Shot()

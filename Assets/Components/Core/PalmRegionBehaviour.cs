@@ -3,25 +3,29 @@ using static Glossary;
 
 public class PalmRegionBehaviour : MonoBehaviour
 {
-    public bool entered = false;
-    int timerMax = 100;
-    int timer = 0;
+    [SerializeField] GloveBehaviour glove;
+    bool inside = false;
+    bool swiping = false;
 
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerStay(Collider collider)
     {
-        if (collider.CompareTag(GetTag(Tag.LeftHand)))
-        {
-            entered = true;
-            timer = timerMax;
-        }
+        if (collider.CompareTag(GetTag(Tag.LeftHand))) inside = true;
     }
 
-    void FixedUpdate()
+    void OnTriggerExit(Collider collider)
     {
-        if (timer > 0)
-        {
-            timer--;
-            if (timer <= 0) entered = false;
-        }
+        if (collider.CompareTag(GetTag(Tag.LeftHand))) inside = false;
+    }
+
+    public void SwipeInit()
+    {
+        swiping = true;
+    }
+
+    public void SwipeEnd()
+    {
+        if (swiping && inside) glove.SwitchBall(true);
+
+        swiping = false;
     }
 }
