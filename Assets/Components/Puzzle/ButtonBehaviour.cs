@@ -26,7 +26,7 @@ public class ButtonBehaviour : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (LayerMask.LayerToName(collision.collider.gameObject.layer).Equals(GetLayer(Layer.Ball))) Press(true);
+        if (!pressed && LayerMask.LayerToName(collision.collider.gameObject.layer).Equals(GetLayer(Layer.Ball))) Press(true);
     }
 
     void Press(bool on)
