@@ -14,7 +14,7 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     bool requirement = false;
     bool active = false;
 
-    void Start()
+    virtual protected void Start()
     {
         source = GetComponent<AudioSource>();
     }

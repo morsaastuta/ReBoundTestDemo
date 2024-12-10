@@ -21,7 +21,7 @@ MonoBehaviour:
   reboundAngles: 0
   reboundCount: 0
   reboundLimit: 0
-  reboundInfinitely: 0
+  reboundInfinitely: 1
   auxiliar: 1
   sticky: 1
   gyroscope: 1

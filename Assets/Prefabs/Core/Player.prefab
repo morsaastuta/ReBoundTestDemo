@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: edc56a3e-8da4-4c70-814b-6a024adcb74a
+  instanceId: 51441ee5-809c-4f6b-a204-0554c42aac0b
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: 4d4b71cb-7fd4-4dfb-8930-a17fb56186bd
+  instanceId: cca6e9d5-d01e-45c8-8103-44df0b28ce6b
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: ebb95f75-4289-4b69-af8c-ea153f8511ef
+  instanceId: aa32060b-c64e-4adb-9189-c2c9162a89f9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -3177,6 +3177,22 @@ PrefabInstance:
       propertyPath: hand
       value: 
       objectReference: {fileID: 3404573906160645595}
+    - target: {fileID: 462313449092808761, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
+      propertyPath: fistClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
+    - target: {fileID: 462313449092808761, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
+      propertyPath: palmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
+    - target: {fileID: 462313449092808761, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a4694658bf315ba40a2758e8b3fc8e61, type: 3}
+    - target: {fileID: 462313449092808761, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
+      propertyPath: swipeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
     - target: {fileID: 6917576439689604522, guid: e3f484ce907e3bd4591387b38c5e2953, type: 3}
       propertyPath: glove
       value: 

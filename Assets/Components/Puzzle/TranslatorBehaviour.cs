@@ -1,26 +1,26 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class MovableObjectBehaviour : ActivableBehaviour
+public class TranslatorBehaviour : ActivableBehaviour
 {    
     [Header("Customization")]
-    [SerializeField] Transform target;
-    [SerializeField] Vector3 newPos = Vector3.zero;
+    [SerializeField] Vector3 direction = new();
     [SerializeField] float duration = 1;
 
-    Vector3 ogPos = Vector3.zero;
+    Vector3 ogPos = new();
 
-    void Start()
+    override protected void Start()
     {
+        base.Start();
+
         ogPos = transform.position;
-        if (target != null) newPos = target.position;
     }
 
     override protected void Activate()
     {
         base.Activate();
 
-        transform.DOMove(newPos, duration);
+        transform.DOMove(ogPos + direction, duration);
     }
 
     override protected void Deactivate()

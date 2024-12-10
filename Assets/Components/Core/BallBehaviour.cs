@@ -5,9 +5,11 @@ using static Glossary;
 public class BallBehaviour : MonoBehaviour
 {
     [SerializeField] List<GameObject> expansion = new();
+
     [Header("Audio")]
     [SerializeField] AudioClip reboundClip;
     [SerializeField] AudioClip anullClip;
+
     public Ball ball;
     Rigidbody body;
     Vector3 lastVertex = new();
@@ -102,10 +104,12 @@ public class BallBehaviour : MonoBehaviour
             // Destroy auxiliar objects if they make contact with interactables
             if (LayerMask.LayerToName(collider.gameObject.layer).Equals(GetLayer(Layer.Interactable)))
             {
+                print("??");
                 Destroy(gameObject);
                 return;
             }
         }
+        print("am i here");
 
         // Is the collider reboundable? Can the ball keep rebounding?
         if (collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount < ball.reboundLimit))
@@ -113,6 +117,7 @@ public class BallBehaviour : MonoBehaviour
             // If the ball is not sticky
             if (!ball.sticky)
             {
+                if (ball.ballType == Ball.BallType.Prism) print("i am NOT STICKY (?????)");
                 // Select rebound method according to the ball type
                 switch (ball.ballType)
                 {
@@ -125,7 +130,15 @@ public class BallBehaviour : MonoBehaviour
                 lastVertex = transform.position;
             }
             // If the ball is a gyroscope, adopt the first collider's rotation forever
-            else if (ball.gyroscope) transform.rotation = collider.transform.rotation;
+            else
+            {
+                print("i am STICKY");
+                if (ball.gyroscope)
+                {
+                    print("should be right");
+                    transform.rotation = collider.transform.rotation;
+                }
+            }
 
             // Update ball's properties on rebound
             ball.Rebound();
