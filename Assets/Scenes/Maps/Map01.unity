@@ -17932,13 +17932,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863355168}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2038313627}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &863355170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18010,8 +18010,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.0020373, y: 10.234796, z: 0.1667739}
-  m_Center: {x: 1.4371878, y: 4.617398, z: 0}
+  m_Size: {x: 1.4999682, y: 10.234796, z: 0.1667739}
+  m_Center: {x: 0.6861532, y: 4.617398, z: 2.6453974e-15}
 --- !u!1 &864192163
 GameObject:
   m_ObjectHideFlags: 0
@@ -20997,7 +20997,7 @@ Transform:
   m_GameObject: {fileID: 999802669}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000006, y: 0.5, z: 0.5, w: 0.49999997}
-  m_LocalPosition: {x: 1.4379406, y: 5.8794, z: 0.8987}
+  m_LocalPosition: {x: 0, y: 1.252, z: 0.892}
   m_LocalScale: {x: -1.7898958, y: 1.7425001, z: 1.7816288}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21929,9 +21929,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48144b198e008aa41a407d9b44d549ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedButton: {fileID: 1151336913}
-  newTransform: {fileID: 0}
-  newPosition: {x: 21.589, y: -2.1859999, z: 1.939}
+  assignedButtons:
+  - {fileID: 1151336913}
+  activateClip: {fileID: 0}
+  deactivateClip: {fileID: 0}
+  target: {fileID: 0}
+  newPos: {x: 0, y: 0, z: 0}
   duration: 1
 --- !u!4 &1033110249
 Transform:
@@ -26106,7 +26109,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -43570,6 +43573,14 @@ PrefabInstance:
       propertyPath: rotationAngles
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: assignedButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1151336913}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_Name
       value: Church door (1)
@@ -43580,15 +43591,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977157947650382624, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.6775
+      value: 19.19
       objectReference: {fileID: 0}
     - target: {fileID: 8977157947650382624, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.5737
+      value: 0.059
       objectReference: {fileID: 0}
     - target: {fileID: 8977157947650382624, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.4688
+      value: -4.473
       objectReference: {fileID: 0}
     - target: {fileID: 8977157947650382624, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_LocalRotation.w
