@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorBehaviour : ActivableBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour

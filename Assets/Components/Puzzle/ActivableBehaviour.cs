@@ -6,8 +6,18 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
 {
     [SerializeField] protected List<ButtonBehaviour> assignedButtons;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip activateClip;
+    [SerializeField] AudioClip deactivateClip;
+    AudioSource source;
+
     bool requirement = false;
     bool active = false;
+
+    void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     virtual protected void FixedUpdate()
     {
@@ -32,10 +42,14 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     virtual protected void Activate()
     {
         active = true;
+        source.clip = activateClip;
+        source.Play();
     }
 
     virtual protected void Deactivate()
     {
         active = false;
+        source.clip = deactivateClip;
+        source.Play();
     }
 }

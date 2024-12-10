@@ -5,10 +5,14 @@ using static Glossary;
 public class BallBehaviour : MonoBehaviour
 {
     [SerializeField] List<GameObject> expansion = new();
+    [Header("Audio")]
+    [SerializeField] AudioClip reboundClip;
+    [SerializeField] AudioClip anullClip;
     public Ball ball;
     Rigidbody body;
     Vector3 lastVertex = new();
     List<Collider> bypassedColliders = new();
+    AudioSource source;
 
     void Start()
     {
@@ -31,6 +35,9 @@ public class BallBehaviour : MonoBehaviour
 
         // Set greenToRed colors
         if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[0]);
+
+        // Set audio source
+        source = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -42,8 +49,15 @@ public class BallBehaviour : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (Prebound(collision.collider)) return;
+        if (Prebound(collision.collider))
+        {
+            source.clip = anullClip;
+            source.Play();
+            return;
+        }
 
+        source.clip = reboundClip;
+        source.Play();
         Rebound(collision.collider);
     }
 
@@ -94,7 +108,7 @@ public class BallBehaviour : MonoBehaviour
         }
 
         // Is the collider reboundable? Can the ball keep rebounding?
-        if (collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount <= ball.reboundLimit))
+        if (collider.CompareTag(GetTag(Tag.Reboundable)) && (ball.reboundInfinitely || ball.reboundCount < ball.reboundLimit))
         {
             // If the ball is not sticky
             if (!ball.sticky)

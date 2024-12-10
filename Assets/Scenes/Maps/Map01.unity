@@ -6034,6 +6034,14 @@ PrefabInstance:
       propertyPath: rotationAngles
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: assignedButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1116140148}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_Name
       value: Fence door (1)
@@ -11201,6 +11209,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -286.406, z: 0}
+--- !u!114 &526417262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 604073506167014580, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
+  m_PrefabInstance: {fileID: 571983333}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &531856697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5750847599159935171, guid: 4941ec72053ef3440945e8874012768a, type: 3}
@@ -14350,6 +14369,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80eab6e2c9523184389353a985537a73, type: 3}
+--- !u!114 &690313700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 604073506167014580, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
+  m_PrefabInstance: {fileID: 1865300318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &692597582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19503,6 +19533,22 @@ PrefabInstance:
       propertyPath: rotationAngles
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: assignedButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 526417262}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 690313700}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1356555357}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_Name
       value: Church door
@@ -22517,6 +22563,22 @@ PrefabInstance:
       propertyPath: assignedButton
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: assignedButtons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 526417262}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 690313700}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1356555357}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: m_Name
       value: Church door1
@@ -29051,6 +29113,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 730a8bf7d6abfc443baf63d2074e8d70, type: 3}
+--- !u!114 &1356555357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 604073506167014580, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
+  m_PrefabInstance: {fileID: 105941916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357137397
 GameObject:
   m_ObjectHideFlags: 0
@@ -45932,6 +46005,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
       propertyPath: assignedButton
+      value: 
+      objectReference: {fileID: 1116140148}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: assignedButtons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}
+      propertyPath: 'assignedButtons.Array.data[0]'
       value: 
       objectReference: {fileID: 1116140148}
     - target: {fileID: 8541382947725734110, guid: 10d297d81360cf14d8c9a66e9f97c3b4, type: 3}

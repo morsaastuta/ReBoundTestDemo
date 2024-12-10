@@ -12,6 +12,13 @@ public class GloveBehaviour : MonoBehaviour
     [SerializeField] PalmRegionBehaviour palmRegion;
     [SerializeField] OVRHand hand;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip shootClip;
+    [SerializeField] AudioClip swipeClip;
+    [SerializeField] AudioClip palmClip;
+    [SerializeField] AudioClip fistClip;
+    AudioSource source;
+
     [Header("Debug")]
     [SerializeField] List<Ball> demoBalls = new();
 
@@ -33,6 +40,9 @@ public class GloveBehaviour : MonoBehaviour
 
         // Set default projection using first ball if it exists
         if (balls.Count < 0) projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+
+        // Set audio source
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -61,6 +71,8 @@ public class GloveBehaviour : MonoBehaviour
     void Shoot()
     {
         shot = true;
+        source.clip = shootClip;
+        source.Play();
         StartCoroutine(Shot());
     }
 
@@ -112,6 +124,9 @@ public class GloveBehaviour : MonoBehaviour
         {
             if (balls.Count > 0)
             {
+                source.clip = swipeClip;
+                source.Play();
+
                 if (right) selectedBall++;
                 else selectedBall--;
 
@@ -133,8 +148,17 @@ public class GloveBehaviour : MonoBehaviour
     {
         aiming = on;
 
-        if (on) Preview(true, true);
-        else Preview(true, false);
+        if (on)
+        {
+            source.clip = palmClip;
+            Preview(true, true);
+        }
+        else
+        {
+            source.clip = fistClip;
+            Preview(true, false);
+        }
+        source.Play();
     }
 
     IEnumerator Shot()

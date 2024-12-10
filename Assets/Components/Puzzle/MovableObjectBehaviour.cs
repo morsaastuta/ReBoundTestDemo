@@ -1,47 +1,32 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class MovableObjectBehaviour : MonoBehaviour
-{
+public class MovableObjectBehaviour : ActivableBehaviour
+{    
     [Header("Customization")]
-    [SerializeField] ButtonBehaviour assignedButton;
-    
-    [Header("Position")]
-    [SerializeField] Transform newTransform;
-    [SerializeField] Vector3 newPosition = Vector3.zero;
-
-    Transform firstTransform;
-
-
+    [SerializeField] Transform target;
+    [SerializeField] Vector3 newPos = Vector3.zero;
     [SerializeField] float duration = 1;
 
-    bool active = false;
+    Vector3 ogPos;
 
-    private void Awake()
+    void Start()
     {
-        firstTransform = this.transform;
+        ogPos = transform.position;
+        if (target != null) newPos = target.position;
     }
 
-    void FixedUpdate()
+    override protected void Activate()
     {
-        if (assignedButton != null)
-        {
-            if (assignedButton.pressed && !active)
-            {
-                active = true;
+        base.Activate();
 
-                if (newTransform != null)
-                    transform.DOMove(newTransform.position, duration);
-                else
-                    transform.DOMove(newPosition, duration);
-                
-            }
-            else if (!assignedButton.pressed && active)
-            {
-                active = false;
-                transform.DOMove(firstTransform.position, duration);
-            }
-        }
+        transform.DOMove(newPos, duration);
+    }
+
+    override protected void Deactivate()
+    {
+        base.Deactivate();
+
+        transform.DOMove(ogPos, duration);
     }
 }
