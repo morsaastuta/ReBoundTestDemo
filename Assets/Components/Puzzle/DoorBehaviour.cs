@@ -12,15 +12,15 @@ public class DoorBehaviour : ActivableBehaviour // TO-DO: Create class inheritan
     {
         base.Activate();
 
-        if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
-        else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
+        if (!clockwise) transform.DOLocalRotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
+        else transform.DOLocalRotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
     }
 
     override protected void Deactivate()
     {
         base.Deactivate();
 
-        if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
-        else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
+        if (!clockwise) transform.DOLocalRotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
+        else transform.DOLocalRotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
     }
 }

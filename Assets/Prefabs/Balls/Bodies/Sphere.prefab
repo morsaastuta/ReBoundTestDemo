@@ -50,6 +50,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expansion: []
+  reboundClip: {fileID: 8300000, guid: 755fa39788adeb845a79120ad01d58a9, type: 3}
+  anullClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
   ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
 --- !u!135 &2946510528678901373
 SphereCollider:

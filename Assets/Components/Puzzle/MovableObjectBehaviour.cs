@@ -8,7 +8,7 @@ public class MovableObjectBehaviour : ActivableBehaviour
     [SerializeField] Vector3 newPos = Vector3.zero;
     [SerializeField] float duration = 1;
 
-    Vector3 ogPos;
+    Vector3 ogPos = Vector3.zero;
 
     void Start()
     {
