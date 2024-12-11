@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour
 {
     [SerializeField] protected List<ButtonBehaviour> assignedButtons;
+    [SerializeField] protected bool permanent = false;
 
     [Header("Audio")]
     [SerializeField] AudioClip activateClip;
@@ -36,7 +37,7 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
 
         // Activation / Deactivation
         if (requirement && !active) Activate();
-        else if (!requirement && active) Deactivate();
+        else if (!permanent && !requirement && active) Deactivate();
     }
 
     virtual protected void Activate()

@@ -120,13 +120,10 @@ public class GloveBehaviour : MonoBehaviour
 
     public void SwitchBall(bool right)
     {
-        if (projection.activeInHierarchy && projection.transform.position == palm.position)
-        {
+        //if (projection.activeInHierarchy && projection.transform.position == palm.position)
+        //{
             if (balls.Count > 0)
             {
-                source.clip = swipeClip;
-                source.Play();
-
                 if (right) selectedBall++;
                 else selectedBall--;
 
@@ -135,7 +132,7 @@ public class GloveBehaviour : MonoBehaviour
 
                 projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
             }
-        }
+        //}
     }
 
     public void SelectBall(int idx)
@@ -150,12 +147,13 @@ public class GloveBehaviour : MonoBehaviour
 
         if (on)
         {
-            source.clip = palmClip;
+            source.clip = swipeClip;
             Preview(true, true);
         }
         else
         {
-            source.clip = fistClip;
+            source.clip = palmClip;
+            SwitchBall(true);
             Preview(true, false);
         }
         source.Play();
