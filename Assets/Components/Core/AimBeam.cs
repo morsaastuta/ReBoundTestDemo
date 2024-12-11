@@ -46,7 +46,7 @@ public class AimBeam : MonoBehaviour
         beamIndices.Add(transform.position);
         Ray ray = new(transform.position, transform.forward);
 
-        if (Physics.Raycast(ray, out RaycastHit hit, ball.linearSpeed))
+        if (Physics.Raycast(ray, out RaycastHit hit, ball.linearSpeed * 3))
         {
             beamIndices.Add(hit.point);
 
