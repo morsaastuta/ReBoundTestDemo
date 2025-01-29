@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Merge : MonoBehaviour
+public abstract class Merge : MonoBehaviour
 {
     [SerializeField] bool jiji;
     [SerializeField] bool jaja;
@@ -25,4 +25,10 @@ public class Merge : MonoBehaviour
         else if (!jiji && !jaja) return true;
         return false;
     }
+    protected virtual void MergeTest()
+    {
+        print("estoy sufriendo de ver el c�digo de Ode");
+    }
+
+    // to-do: mergear
 }
