@@ -15,20 +15,22 @@ public abstract class Merge : MonoBehaviour
     void Update()
     {
         print("ESto es una prueba muy segura");
+        print("si");
     }
 
     private bool JijiJAJA()
     {
-        if (jiji && jaja) return true;
-        else if (!jiji && jaja) return false;
-        else if (jiji && !jaja) return false;
-        else if (!jiji && !jaja) return true;
-        return false;
+        return (jiji && jaja) || (!jiji && !jaja);
     }
     protected virtual void MergeTest()
     {
-        print("estoy sufriendo de ver el c�digo de Ode");
+        print("arreglao");
     }
 
     // to-do: mergear
+
+    public bool Mergeado()
+    {
+        return true;
+    }
 }
