@@ -29,17 +29,17 @@ public abstract class Merge : MonoBehaviour
 
     public void Skibidi(){
         if (jiji){
-            print("skibidi")
+            print("skibidi");
         }
         else{
-            print("noSkibidi")
+            print("noSkibidi");
         }
         
         if (jaja){
-            print("toilet")
+            print("toilet");
         }
         else{
-            print("noToilet")
+            print("noToilet");
         }
     }
     // to-do: mergear
@@ -48,4 +48,6 @@ public abstract class Merge : MonoBehaviour
     {
         return true;
     }
+
+    // last merge was shit
 }
