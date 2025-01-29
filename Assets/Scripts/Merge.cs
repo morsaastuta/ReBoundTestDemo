@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public abstract class Merge : MonoBehaviour
+public abstract class Merge
 {
     [SerializeField] bool jiji;
     [SerializeField] bool jaja;
