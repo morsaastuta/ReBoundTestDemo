@@ -1,16 +1,11 @@
 using UnityEngine;
 
-public class Merge : MonoBehaviour
+public abstract class Merge : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void MergeTest()
     {
-        
+        print("estoy sufriendo de ver el código de Ode");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // to-do: mergear
 }
