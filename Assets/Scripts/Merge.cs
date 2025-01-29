@@ -27,6 +27,21 @@ public abstract class Merge : MonoBehaviour
         print("arreglao");
     }
 
+    public void Skibidi(){
+        if (jiji){
+            print("skibidi")
+        }
+        else{
+            print("noSkibidi")
+        }
+        
+        if (jaja){
+            print("toilet")
+        }
+        else{
+            print("noToilet")
+        }
+    }
     // to-do: mergear
 
     public bool Mergeado()
