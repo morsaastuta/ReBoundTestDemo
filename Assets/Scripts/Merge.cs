@@ -30,5 +30,20 @@ public abstract class Merge : MonoBehaviour
         print("estoy sufriendo de ver el c�digo de Ode");
     }
 
+    public void Skibidi(){
+        if (jiji){
+            print("skibidi")
+        }
+        else{
+            print("noSkibidi")
+        }
+        
+        if (jaja){
+            print("toilet")
+        }
+        else{
+            print("noToilet")
+        }
+    }
     // to-do: mergear
 }
