@@ -12,8 +12,9 @@ public class InputManager : MonoBehaviour
 
     [SerializeField] public InputActionReference shoot;
     [SerializeField] public InputActionReference aim;
-    [SerializeField] public InputActionReference swap;
     [SerializeField] public InputActionReference pause;
+    [SerializeField] public InputActionReference swap;
+    [SerializeField] public InputActionReference clear;
 
     [SerializeField] public InputActionReference grabR;
     [SerializeField] public InputActionReference grabL;

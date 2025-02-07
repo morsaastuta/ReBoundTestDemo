@@ -96,7 +96,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (InputManager.instance.Pressed(InputManager.instance.swap)) SwitchBall(true);
 
-        //if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
+        if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
     }
 
     public void SwitchBall(bool right)

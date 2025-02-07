@@ -120,7 +120,7 @@
                 {
                     "name": "",
                     "id": "fd33f7ac-bebb-41fc-a69a-1c0affe7514e",
-                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
@@ -153,7 +153,7 @@
                 {
                     "name": "",
                     "id": "6a1d9430-5030-4e05-a22c-7f90d77b8ff3",
-                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "path": "<OculusTouchController>{LeftHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
@@ -164,7 +164,7 @@
                 {
                     "name": "",
                     "id": "09f2a335-6c54-4a83-8a34-4f0511b69830",
-                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
@@ -175,7 +175,7 @@
                 {
                     "name": "",
                     "id": "bf1491ed-21f9-4075-963e-c5c008d27dc6",
-                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
@@ -186,7 +186,7 @@
                 {
                     "name": "",
                     "id": "40229d41-53df-4c49-b4ca-975d66075ab4",
-                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
