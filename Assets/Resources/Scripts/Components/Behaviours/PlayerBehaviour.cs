@@ -14,6 +14,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Controllers references")]
     [SerializeField] List<GameObject> controllersExclusive = new();
+    [SerializeField] GameObject grabInteractorL;
+    [SerializeField] GameObject distanceGrabInteractorL;
+    [SerializeField] GameObject grabInteractorR;
+    [SerializeField] GameObject distanceGrabInteractorR;
     [SerializeField] Transform eyes;
     [SerializeField] Transform palm;
     [SerializeField] AimBeam aimBeam;
@@ -69,7 +73,27 @@ public class PlayerBehaviour : MonoBehaviour
         // Controllers exclusive
         if (gameMode == GameMode.Controllers)
         {
+            if (InputManager.instance.Holding(InputManager.instance.distanceGrabL))
+            {
+                distanceGrabInteractorL.SetActive(true);
+                grabInteractorL.SetActive(false);
+            }
+            else
+            {
+                distanceGrabInteractorL.SetActive(false);
+                grabInteractorL.SetActive(true);
+            }
 
+            if (InputManager.instance.Holding(InputManager.instance.distanceGrabR))
+            {
+                distanceGrabInteractorR.SetActive(true);
+                grabInteractorR.SetActive(false);
+            }
+            else
+            {
+                distanceGrabInteractorR.SetActive(false);
+                grabInteractorR.SetActive(true);
+            }
         }
         // Desktop exclusive
         else if (gameMode == GameMode.Desktop)
@@ -124,7 +148,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        body.linearVelocity = new Vector3(speed * velSide, body.linearVelocity.y, speed * velForward);
+        if (gameMode == GameMode.Desktop)
+        {
+            body.linearVelocity = new Vector3(speed * velSide, body.linearVelocity.y, speed * velForward);
+        }
     }
 
     void Shoot()
