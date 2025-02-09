@@ -2686,7 +2686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 69d7b115-5828-4550-a46c-d45e097c95c6
+  instanceId: 80d414c2-5f84-4868-870b-ae413e6786fc
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -5596,7 +5596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 4096bf51-95f1-4d6b-a120-73ca66b4097e
+  instanceId: c000d3f9-87c8-4945-bb63-0ded361d7f94
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6623,7 +6623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: 9afd94c7-1417-4275-ae6b-e2bfbc9654e6
+  instanceId: f8ee20e7-d4eb-4fc1-9ab4-12f64c91280e
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6951,7 +6951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 32d6c000-ddc2-4652-9a4e-726b7728136b
+  instanceId: 395b3293-544a-4944-99a8-0f99ccd67ab0
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7633,7 +7633,7 @@ CharacterController:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 511
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
@@ -9461,7 +9461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 6a57bf28-be80-47c5-9e24-d887e768efe9
+  instanceId: 6b2f163b-9c35-413f-a38b-b19d7bc786e1
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
