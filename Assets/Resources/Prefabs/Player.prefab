@@ -2686,7 +2686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 80d414c2-5f84-4868-870b-ae413e6786fc
+  instanceId: a0acbcaa-648f-4fab-89ab-71e3a9d2c5d1
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -5596,7 +5596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: c000d3f9-87c8-4945-bb63-0ded361d7f94
+  instanceId: 3faa9e42-df41-4841-bd99-25e2dfd98259
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6623,7 +6623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: f8ee20e7-d4eb-4fc1-9ab4-12f64c91280e
+  instanceId: d91cf7a1-4e64-4151-8b25-01bc5235570d
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -6951,7 +6951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 395b3293-544a-4944-99a8-0f99ccd67ab0
+  instanceId: 0d853746-a504-415f-9650-7bebdcd91493
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7471,7 +7471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951435138ed960147a9c9e7d5b643cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameMode: 1
+  gameMode: 0
   demoBalls:
   - {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
   - {fileID: 11400000, guid: 435c98758b54d774cbfcbd558324646e, type: 2}
@@ -7481,6 +7481,7 @@ MonoBehaviour:
   - {fileID: 1993821160840819050}
   controllersExclusive:
   - {fileID: 3640296027264088681}
+  - {fileID: 6321762411183652124}
   - {fileID: 6420179903179108722}
   - {fileID: 4452352197104070913}
   grabInteractorL: {fileID: 3835448256712811959}
@@ -9461,7 +9462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 6b2f163b-9c35-413f-a38b-b19d7bc786e1
+  instanceId: 7ccf7451-1684-465b-af21-aaeb8c1571af
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -13206,6 +13207,18 @@ PrefabInstance:
       propertyPath: _trackingToWorldTransformer
       value: 
       objectReference: {fileID: 8806132525157309902}
+    - target: {fileID: 4643803449242111397, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+      propertyPath: '_interactors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643803449242111397, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+      propertyPath: '_interactors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643803449242111397, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+      propertyPath: '_interactors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5077101802825026324, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
       propertyPath: _transformer
       value: 
@@ -13295,7 +13308,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8092521055023369313, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+    - {fileID: 2662138195782752344, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
+    - {fileID: 5077101803974593111, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4745a19b9024ccb46af80b4a91b1d1da, type: 3}
@@ -18394,6 +18410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae60cfa43388e449a7518f36418f81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6321762411183652124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2698047492333244337, guid: fbfc588a949bb1a42b20e5bddc4cf8cf, type: 3}
+  m_PrefabInstance: {fileID: 8271435266437984941}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8350594963714503825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 83685398960850492, guid: fbfc588a949bb1a42b20e5bddc4cf8cf, type: 3}

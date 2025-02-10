@@ -18,7 +18,7 @@ public class GloveBehaviour : MonoBehaviour
     [Header("Debug")]
     [SerializeField] List<Ball> demoBalls = new();
 
-    AimBeam aimBeam;
+    public AimBeam aimBeam;
     BallSelectorController ballSelector;
     int selectedBall = 0;
     bool aiming = false;
@@ -61,13 +61,13 @@ public class GloveBehaviour : MonoBehaviour
         else aimBeam.Clear();
     }
 
-    void Shoot()
+    public void Shoot()
     {
         shot = true;
         StartCoroutine(Shot());
     }
 
-    void ClearAuxiliars()
+    public void ClearAuxiliars()
     {
         foreach (GameObject ball in auxiliarBalls) Destroy(ball);
         auxiliarBalls.Clear();
@@ -104,7 +104,7 @@ public class GloveBehaviour : MonoBehaviour
         }
     }
 
-    void ShowProjection(bool on)
+    public void ShowProjection(bool on)
     {
         projection.SetActive(on);
     }
@@ -147,7 +147,7 @@ public class GloveBehaviour : MonoBehaviour
         }
     }
 
-    IEnumerator Shot()
+    public IEnumerator Shot()
     {
         Preview(false, false);
 
