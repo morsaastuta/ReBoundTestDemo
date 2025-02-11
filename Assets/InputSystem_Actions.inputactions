@@ -2,27 +2,9 @@
     "name": "InputSystem_Actions",
     "maps": [
         {
-            "name": "RH",
+            "name": "Right-handed",
             "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
             "actions": [
-                {
-                    "name": "Move",
-                    "type": "PassThrough",
-                    "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Look",
-                    "type": "PassThrough",
-                    "id": "6b444451-8a00-4d00-a97e-f47457f736a8",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
                 {
                     "name": "Shoot",
                     "type": "Button",
@@ -63,42 +45,6 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "2776c80d-3c14-4091-8c56-d04ced07a2b0",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "GrabR",
-                    "type": "Button",
-                    "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "GrabL",
-                    "type": "Button",
-                    "id": "318ba6ac-9738-45ab-9a8b-9010e63f3d56",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "DistanceGrabR",
-                    "type": "Button",
-                    "id": "27c5f898-bc57-4ee1-8800-db469aca5fe3",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "DistanceGrabL",
-                    "type": "Button",
-                    "id": "45d4e09d-2d77-4089-a60f-947719da50cd",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -185,28 +131,6 @@
                 },
                 {
                     "name": "",
-                    "id": "09f2a335-6c54-4a83-8a34-4f0511b69830",
-                    "path": "<OculusTouchController>{RightHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";XR",
-                    "action": "DistanceGrabR",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bf1491ed-21f9-4075-963e-c5c008d27dc6",
-                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";XR",
-                    "action": "DistanceGrabL",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "40229d41-53df-4c49-b4ca-975d66075ab4",
                     "path": "<OculusTouchController>{LeftHand}/secondaryButton",
                     "interactions": "",
@@ -237,10 +161,94 @@
                     "action": "Clear",
                     "isComposite": false,
                     "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Common",
+            "id": "8e88f51b-3ff9-48c7-9580-1f74ffea8269",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "c8da5bb1-88fb-4e00-9c33-b48f181bc0e0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Look",
+                    "type": "PassThrough",
+                    "id": "b170da45-02c8-4278-bc43-806abbc713cf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "GrabR",
+                    "type": "Button",
+                    "id": "5471de2d-df96-4e69-bc68-603543e89de4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GrabL",
+                    "type": "Button",
+                    "id": "1ec1bc96-c0c0-4e64-bc09-77916f46bc87",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DistanceGrabR",
+                    "type": "Button",
+                    "id": "a7909995-8a48-4ffa-b2f7-e0c1eadeff7b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DistanceGrabL",
+                    "type": "Button",
+                    "id": "3a2b78e1-1c3b-4208-af2f-070da6d4d2de",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "983d391c-0649-4a54-8191-f7912068fd5a",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "DistanceGrabR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d91a3192-766b-487a-abf7-1d45f281f509",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "DistanceGrabL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "2D Vector",
-                    "id": "c5f23f1f-227d-4a72-b852-fdb911159e23",
+                    "id": "dd57dab3-cd4d-4aa6-9433-5b8b6469f10e",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -251,7 +259,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "87fcd0e2-3089-4cc7-b9a2-9e8190d7094a",
+                    "id": "d22cb2f2-048a-4577-a1a5-a389eddb30eb",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -262,7 +270,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "60b27aed-cf80-4b61-8e0b-c2a7d9c03af6",
+                    "id": "b50c17b8-7a54-4649-b951-489342c5d8b1",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -273,7 +281,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "c5827158-f94b-43f7-8079-38aa9ce72bc0",
+                    "id": "28324660-d3dd-4c94-8836-dfffaa64a570",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -284,7 +292,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "f68119e4-b694-44c2-98b6-5a56a4ff16b3",
+                    "id": "c4e7bf48-954c-48e0-8f23-511a52554e4e",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -295,12 +303,175 @@
                 },
                 {
                     "name": "",
-                    "id": "6433a4ed-f125-4840-88fe-16785bb7ebe1",
+                    "id": "b7873f63-69fa-4882-8e61-ff487c618116",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Left-handed",
+            "id": "120973de-ddf1-465f-a941-c50932de2d56",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "9a21506c-15e5-4af0-a848-4abb7e253bfd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Aim",
+                    "type": "Button",
+                    "id": "0c952a8c-b276-4f80-803b-e36df9061eca",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Swap",
+                    "type": "Button",
+                    "id": "e9d29936-c245-4122-9176-c16d8b52ae16",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Clear",
+                    "type": "Button",
+                    "id": "d7d05fab-3905-4b5e-8317-084e2211a12e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "8458b9d5-e250-483d-98d2-cd0e66ae8942",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "61793711-c1b9-44dd-aa79-b02f01ee1e52",
+                    "path": "<OculusTouchController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b43df67-b919-4c70-8c79-7fd23c898d0a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7f4ee3d-684f-4771-8981-f29bd5d52564",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e9996af1-01ad-4d64-8f9b-05f034f5d698",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9389611-0d97-46e7-bb0e-853f06da37d5",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6ab3082-b6cf-47e1-a2ec-f0c7effa63ab",
+                    "path": "<Mouse>/forwardButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a26e11f-1b6e-48d2-9e3f-8c5a8e5069be",
+                    "path": "<Mouse>/backButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "206b2f47-eb6e-4698-92e9-57e1d3b8be9e",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4cb8a67-0cec-4af9-ad63-70bb50c16c7c",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "Clear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "20d458a6-c31b-48d8-b98c-8c49f40c3c7a",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Clear",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

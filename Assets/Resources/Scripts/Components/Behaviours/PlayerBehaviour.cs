@@ -6,8 +6,9 @@ using static Glossary;
 public class PlayerBehaviour : MonoBehaviour
 {
     [Header("Common references")]
+    [SerializeField] GameMode gameMode;
+    [SerializeField] bool leftMode;
     [SerializeField] Transform eyes;
-    [SerializeField] public GameMode gameMode;
     [SerializeField] List<Ball> demoBalls = new();
 
     // Commons
@@ -15,33 +16,29 @@ public class PlayerBehaviour : MonoBehaviour
     List<Ball> balls = new();
     int selectedBall = 0;
     List<GameObject> auxiliarBalls = new();
-    AudioSource audioSource;
+    Glove glove;
 
     // VR commons
-    GameObject projection;
-    Transform wrist;
-    Transform palm;
     bool aiming = false;
 
-    // Desktop exclusive
+    // Desktop exclusives
     float speed = 2;
     float velForward;
     float velSide;
 
+    [Header("Handedness references")]
+    [SerializeField] List<GameObject> rightExclusive = new();
+    [SerializeField] List<GameObject> leftExclusive = new();
+
     [Header("Hands references")]
     [SerializeField] List<GameObject> handsExclusives = new();
-    [SerializeField] GameObject H_projection;
-    [SerializeField] Transform H_wrist;
-    [SerializeField] Transform H_palm;
-    [SerializeField] OVRHand H_hand;
-    [SerializeField] AudioSource H_audioSource;
+    [SerializeField] Glove HR_glove;
+    [SerializeField] Glove HL_glove;
 
     [Header("Controllers references")]
     [SerializeField] List<GameObject> controllersExclusives = new();
-    [SerializeField] GameObject C_projection;
-    [SerializeField] Transform C_wrist;
-    [SerializeField] Transform C_palm;
-    [SerializeField] AudioSource C_audioSource;
+    [SerializeField] Glove CR_glove;
+    [SerializeField] Glove CL_glove;
     [SerializeField] GameObject C_grabInteractorL;
     [SerializeField] GameObject C_distanceGrabInteractorL;
     [SerializeField] GameObject C_grabInteractorR;
@@ -49,128 +46,144 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Desktop references")]
     [SerializeField] List<GameObject> desktopExclusives = new();
-    [SerializeField] GameObject D_projection;
-    [SerializeField] Transform D_wrist;
-    [SerializeField] Transform D_palm;
-    [SerializeField] AudioSource D_audioSource;
+    [SerializeField] Glove DR_glove;
+    [SerializeField] Glove DL_glove;
     [SerializeField] Rigidbody D_body;
 
     void Start()
     {
         SetGameMode(gameMode);
+        SetHandedness(leftMode);
+        UpdateComponents();
 
         // Add demo balls
         foreach (Ball ball in demoBalls) ObtainBall(ball);
 
         // Set default projection using first ball if it exists
-        if (balls.Count < 0) projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        if (balls.Count < 0) glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
     }
 
-    void SetGameMode(GameMode gm)
+    public void SetGameMode(GameMode gm)
     {
         gameMode = gm;
+    }
 
+    public void SetHandedness(bool left)
+    {
+        leftMode = left;
+        InputManager.instance.SetHandedness(leftMode);
+    }
+
+    void UpdateComponents()
+    {
+        // GAME MODE
         foreach (GameObject go in handsExclusives) go.SetActive(false);
         foreach (GameObject go in controllersExclusives) go.SetActive(false);
         foreach (GameObject go in desktopExclusives) go.SetActive(false);
 
-        switch (gm)
+        switch (gameMode)
         {
-            case GameMode.Controllers:
-                foreach (GameObject go in controllersExclusives) go.SetActive(true);
-                projection = C_projection;
-                wrist = C_wrist;
-                palm = C_palm;
-                audioSource = C_audioSource;
-                break;
-
             case GameMode.Hands:
                 foreach (GameObject go in handsExclusives) go.SetActive(true);
-                projection = H_projection;
-                wrist = H_wrist;
-                palm = H_palm;
-                audioSource = H_audioSource;
+                if (!leftMode) glove = HR_glove;
+                else glove = HL_glove;
+                break;
+
+            case GameMode.Controllers:
+                foreach (GameObject go in controllersExclusives) go.SetActive(true);
+                if (!leftMode) glove = CR_glove;
+                else glove = CL_glove;
                 break;
 
             case GameMode.Desktop:
                 foreach (GameObject go in desktopExclusives) go.SetActive(true);
-                projection = D_projection;
-                wrist = D_wrist;
-                palm = D_palm;
-                audioSource = D_audioSource;
+                if (!leftMode) glove = DR_glove;
+                else glove = DL_glove;
                 break;
         }
+
+        // HANDEDNESS
+        foreach (GameObject go in leftExclusive) go.SetActive(leftMode);
+        foreach (GameObject go in rightExclusive) go.SetActive(!leftMode);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Controllers exclusive
-        if (gameMode == GameMode.Controllers)
+        switch (gameMode)
         {
-            if (InputManager.instance.Holding(InputManager.instance.distanceGrabL))
-            {
-                C_distanceGrabInteractorL.SetActive(true);
-                C_grabInteractorL.SetActive(false);
-            }
-            else
-            {
-                C_distanceGrabInteractorL.SetActive(false);
-                C_grabInteractorL.SetActive(true);
-            }
+            // Controllers exclusive
+            case GameMode.Controllers:
 
-            if (InputManager.instance.Holding(InputManager.instance.distanceGrabR))
-            {
-                C_distanceGrabInteractorR.SetActive(true);
-                C_grabInteractorR.SetActive(false);
-            }
-            else
-            {
-                C_distanceGrabInteractorR.SetActive(false);
-                C_grabInteractorR.SetActive(true);
-            }
-
-            if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
-
-            if (InputManager.instance.Holding(InputManager.instance.aim)) palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
-            else palm.GetComponent<AimBeam>().Clear();
-
-            if (InputManager.instance.Pressed(InputManager.instance.swap)) SwitchBall(true);
-
-            if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
-        }
-        // Hands exclusive
-        else if (gameMode == GameMode.Hands)
-        {
-            // While aiming...
-            if (aiming)
-            {
-                // If no ball was recently shot...
-                if (!shot)
+                if (InputManager.instance.Holding(InputManager.instance.distanceGrabL))
                 {
-                    // Update the aim beam rendering
-                    if (Vector3.Angle(eyes.forward, palm.forward) <= 90) palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
-                    else palm.GetComponent<AimBeam>().Clear();
-
-                    // Pinch index finger to shoot ball
-                    if (H_hand.GetFingerIsPinching(OVRHand.HandFinger.Index)) Shoot();
+                    C_distanceGrabInteractorL.SetActive(true);
+                    C_grabInteractorL.SetActive(false);
                 }
-                else palm.GetComponent<AimBeam>().Clear();
+                else
+                {
+                    C_distanceGrabInteractorL.SetActive(false);
+                    C_grabInteractorL.SetActive(true);
+                }
 
-                // Pinch middle finger to delete all auxiliar balls
-                if (H_hand.GetFingerIsPinching(OVRHand.HandFinger.Middle)) ClearAuxiliars();
-            }
-            else palm.GetComponent<AimBeam>().Clear();
-        }
-        // Desktop exclusive
-        else if (gameMode == GameMode.Desktop)
-        {
-            Vector2 vMove = InputManager.instance.Inclination(InputManager.instance.move);
-            velSide = vMove.x;
-            velForward = vMove.y;
+                if (InputManager.instance.Holding(InputManager.instance.distanceGrabR))
+                {
+                    C_distanceGrabInteractorR.SetActive(true);
+                    C_grabInteractorR.SetActive(false);
+                }
+                else
+                {
+                    C_distanceGrabInteractorR.SetActive(false);
+                    C_grabInteractorR.SetActive(true);
+                }
 
-            Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look);
-            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + vLook.x, transform.rotation.eulerAngles.z);
+                if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
+
+                if (InputManager.instance.Holding(InputManager.instance.aim)) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+                else glove.palm.GetComponent<AimBeam>().Clear();
+
+                if (InputManager.instance.Pressed(InputManager.instance.swap)) SwitchBall(true);
+
+                if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
+
+                break;
+
+            // Hands exclusive
+            case GameMode.Hands:
+
+                // While aiming...
+                if (aiming)
+                {
+                    // If no ball was recently shot...
+                    if (!shot)
+                    {
+                        // Update the aim beam rendering
+                        if (Vector3.Angle(eyes.forward, glove.palm.forward) <= 90) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+                        else glove.palm.GetComponent<AimBeam>().Clear();
+
+                        // Pinch index finger to shoot ball
+                        if (glove.hand.GetFingerIsPinching(OVRHand.HandFinger.Index)) Shoot();
+                    }
+                    else glove.palm.GetComponent<AimBeam>().Clear();
+
+                    // Pinch middle finger to delete all auxiliar balls
+                    if (glove.hand.GetFingerIsPinching(OVRHand.HandFinger.Middle)) ClearAuxiliars();
+                }
+                else glove.palm.GetComponent<AimBeam>().Clear();
+
+                break;
+
+            // Desktop exclusive
+            case GameMode.Desktop:
+
+                Vector2 vMove = InputManager.instance.Inclination(InputManager.instance.move);
+                velSide = vMove.x;
+                velForward = vMove.y;
+
+                Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look);
+                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + vLook.x, transform.rotation.eulerAngles.z);
+                
+                break;
         }
     }
 
@@ -193,10 +206,10 @@ public class PlayerBehaviour : MonoBehaviour
         if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
 
         // Set position (Palm)
-        ball.transform.position = palm.position;
+        ball.transform.position = glove.palm.position;
 
         // Set rotation (Palm or Gyroscope)
-        ball.transform.rotation = palm.rotation;
+        ball.transform.rotation = glove.palm.rotation;
 
         yield return new WaitForSeconds(1f);
 
@@ -206,8 +219,6 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void SwitchBall(bool right)
     {
-        //if (projection.activeInHierarchy && projection.transform.position == palm.position)
-        //{
         if (balls.Count > 0)
         {
             if (right) selectedBall++;
@@ -216,9 +227,8 @@ public class PlayerBehaviour : MonoBehaviour
             if (selectedBall < 0) selectedBall = balls.Count - 1;
             else if (selectedBall >= balls.Count) selectedBall = 0;
 
-            projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+            glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
         }
-        //}
     }
 
     public void ClearAuxiliars()
@@ -231,7 +241,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         balls.Add(ball);
         selectedBall = balls.Count - 1;
-        projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
     }
 
     public void Preview(bool on, bool isPalm)
@@ -242,15 +252,15 @@ public class PlayerBehaviour : MonoBehaviour
             {
                 if (isPalm)
                 {
-                    projection.transform.position = palm.position;
-                    projection.transform.rotation = palm.rotation;
-                    projection.transform.localScale = palm.localScale;
+                    glove.projection.transform.position = glove.palm.position;
+                    glove.projection.transform.rotation = glove.palm.rotation;
+                    glove.projection.transform.localScale = glove.palm.localScale;
                 }
                 else
                 {
-                    projection.transform.position = wrist.position;
-                    projection.transform.rotation = wrist.rotation;
-                    projection.transform.localScale = wrist.localScale;
+                    glove.projection.transform.position = glove.wrist.position;
+                    glove.projection.transform.rotation = glove.wrist.rotation;
+                    glove.projection.transform.localScale = glove.wrist.localScale;
                 }
                 ShowProjection(true);
             }
@@ -261,14 +271,14 @@ public class PlayerBehaviour : MonoBehaviour
     public void SelectBall(int idx)
     {
         selectedBall = idx;
-        projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
     }
 
     #region Hands exclusive methods
 
     public void ShowProjection(bool on)
     {
-        projection.SetActive(on);
+        glove.projection.SetActive(on);
     }
 
     public void OpenPalm(bool on)

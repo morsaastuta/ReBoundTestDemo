@@ -158,6 +158,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7070027725879116120}
   - {fileID: 2879529760969333176}
   - {fileID: 4990775818867180279}
   m_Father: {fileID: 0}
@@ -473,6 +474,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &7409848336262359168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7070027725879116120}
+  - component: {fileID: 5934483028010636952}
+  m_Layer: 0
+  m_Name: Game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7070027725879116120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409848336262359168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 760219089989747444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5934483028010636952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7409848336262359168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb101858ee783a74c9a0f346638df13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8356104299144670705
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,14 +562,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54fa038bad40fc49a425ebd6da37f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  look: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  shoot: {fileID: 1120369429361536294, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  aim: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  pause: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  swap: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  clear: {fileID: 1294042657226286830, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  grabR: {fileID: 1781555164194001046, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  grabL: {fileID: -96963153747668423, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  distanceGrabR: {fileID: 7040659881675835329, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  distanceGrabL: {fileID: -3556000018059228089, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  move: {fileID: 5778889022273913175, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  look: {fileID: -397510619521160715, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  grabR: {fileID: -5172433900982444648, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  grabL: {fileID: 3281880327891060986, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  distanceGrabR: {fileID: -7954707466650192719, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  distanceGrabL: {fileID: 3955769607612431716, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  R_shoot: {fileID: 1120369429361536294, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  R_aim: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  R_pause: {fileID: 2411907206095950430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  R_swap: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  R_clear: {fileID: 1294042657226286830, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  L_shoot: {fileID: 5987320709734716916, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  L_aim: {fileID: -2501781034138622727, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  L_pause: {fileID: -6786522191097593378, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  L_swap: {fileID: -5030990526602794857, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  L_clear: {fileID: -7147865709725735016, guid: 052faaac586de48259a63d0c4782560b, type: 3}
