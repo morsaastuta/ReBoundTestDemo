@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 657681716861140646}
   - component: {fileID: 7256427479517848168}
   - component: {fileID: 6059248829330608296}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 5118078722302075982}
   - component: {fileID: 852570650494274185}
   - component: {fileID: 4846952533395934921}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ISDK_DistanceHandGrabInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 1755934653197192691}
   - component: {fileID: 3950564991658081067}
   - component: {fileID: 6739683888513764361}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
