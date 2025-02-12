@@ -49,6 +49,26 @@ public class AudioManager : MonoBehaviour
         else source.Stop();
     }
 
+    public void PlayMusic(bool on, AudioClip clip)
+    {
+        if (on)
+        {
+            musicSource.clip = clip;
+            musicSource.Play();
+        }
+        else musicSource.Stop();
+    }
+
+    public void PlayMusic(bool on, AudioClip clip, AudioSource source)
+    {
+        if (on)
+        {
+            source.clip = clip;
+            source.Play();
+        }
+        else source.Stop();
+    }
+
     public void PlaySound(int index)
     {
         soundSource.clip = soundClips[index];
@@ -59,6 +79,18 @@ public class AudioManager : MonoBehaviour
     {
         source.clip = soundClips[index];
         source.Play();
+    }
+
+    public void PlaySound(AudioClip clip, AudioSource source)
+    {
+        source.clip = clip;
+        source.Play();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        soundSource.clip = clip;
+        soundSource.Play();
     }
 
     public void PlayVoice(bool on, int index)
@@ -76,6 +108,26 @@ public class AudioManager : MonoBehaviour
         if (on)
         {
             source.clip = voiceClips[index];
+            source.Play();
+        }
+        else source.Stop();
+    }
+
+    public void PlayVoice(bool on, AudioClip clip)
+    {
+        if (on)
+        {
+            voiceSource.clip = clip;
+            voiceSource.Play();
+        }
+        else voiceSource.Stop();
+    }
+
+    public void PlayVoice(bool on, AudioClip clip, AudioSource source)
+    {
+        if (on)
+        {
+            source.clip = clip;
             source.Play();
         }
         else source.Stop();
