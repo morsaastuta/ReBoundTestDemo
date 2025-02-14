@@ -26,6 +26,11 @@ public class PlayerBehaviour : MonoBehaviour
     float velForward;
     float velSide;
 
+    [Header("SFX")]
+    [SerializeField] AudioClip shootClip;
+    [SerializeField] AudioClip swapClip;
+    [SerializeField] AudioClip clearClip;
+
     [Header("Handedness references")]
     [SerializeField] List<GameObject> rightExclusive = new();
     [SerializeField] List<GameObject> leftExclusive = new();
@@ -142,7 +147,7 @@ public class PlayerBehaviour : MonoBehaviour
                 if (InputManager.instance.Holding(InputManager.instance.aim)) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
                 else glove.palm.GetComponent<AimBeam>().Clear();
 
-                if (InputManager.instance.Pressed(InputManager.instance.swap)) SwitchBall(true);
+                if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
 
                 if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
 
@@ -189,7 +194,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        if (!shot) StartCoroutine(Shot());
+        if (!shot)
+        {
+            AudioManager.instance.PlaySound(shootClip, glove.audioSource);
+            StartCoroutine(Shot());
+        }
     }
 
     public IEnumerator Shot()
@@ -217,10 +226,12 @@ public class PlayerBehaviour : MonoBehaviour
         Preview(true, true);
     }
 
-    public void SwitchBall(bool right)
+    public void SwapBall(bool right)
     {
         if (balls.Count > 0)
         {
+            AudioManager.instance.PlaySound(swapClip, glove.audioSource);
+
             if (right) selectedBall++;
             else selectedBall--;
 
@@ -233,6 +244,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void ClearAuxiliars()
     {
+        AudioManager.instance.PlaySound(clearClip, glove.audioSource);
+
         foreach (GameObject ball in auxiliarBalls) Destroy(ball);
         auxiliarBalls.Clear();
     }
@@ -291,7 +304,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
         else
         {
-            SwitchBall(true);
+            SwapBall(true);
             Preview(true, false);
         }
     }

@@ -2,10 +2,16 @@ using UnityEngine;
 
 public static class Glossary
 {
+    #region GAME MODES
+
     public enum GameMode
     {
         Hands, Controllers, Desktop
     }
+
+    #endregion
+
+    #region TAGS
 
     public enum Tag
     {
@@ -22,6 +28,15 @@ public static class Glossary
             _ => ""
         };
     }
+    public static bool CompareTag(Collider collider, Tag tag)
+    {
+        if (collider.CompareTag(GetTag(tag))) return true;
+        else return false;
+    }
+
+    #endregion
+
+    #region LAYERS
 
     public enum Layer
     {
@@ -40,6 +55,15 @@ public static class Glossary
             _ => ""
         };
     }
+    public static bool CompareLayer(Collider collider, Layer layer)
+    {
+        if (LayerMask.LayerToName(collider.gameObject.layer).Equals(GetLayer(layer))) return true;
+        else return false;
+    }
+
+    #endregion
+
+    #region COLORS
 
     public enum CustomColor
     {
@@ -57,4 +81,6 @@ public static class Glossary
             _ => new Color(0, 0, 0)
         };
     }
+
+    #endregion
 }

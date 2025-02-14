@@ -6491,7 +6491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: bc2693cb-0683-4671-9627-9a265fd6ff5f
+  instanceId: 7598cdf5-6828-4675-b218-7485921d93d9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7529,7 +7529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 53e261f6-47b2-4cdb-8d7e-94d229b4bc37
+  instanceId: 64011214-9c87-48b4-8b5f-cda052f86a9a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7918,7 +7918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 920b8b67-9a3e-492d-b3bc-8aadf774c899
+  instanceId: c2800839-7988-42f5-ae82-b551c9f4958a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9498,7 +9498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: bfebd423-f6e2-48e3-a552-4dfdcf024e69
+  instanceId: c4884764-f28a-4911-8422-4ae45c467a15
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -11413,6 +11413,9 @@ MonoBehaviour:
   leftMode: 0
   eyes: {fileID: 1493863497724585436}
   demoBalls: []
+  shootClip: {fileID: 8300000, guid: a4694658bf315ba40a2758e8b3fc8e61, type: 3}
+  swapClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
+  clearClip: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
   rightExclusive:
   - {fileID: 4060170009179461709}
   - {fileID: 6330230865927786467}
