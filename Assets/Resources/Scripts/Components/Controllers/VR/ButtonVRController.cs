@@ -1,19 +1,20 @@
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
+using static Glossary;
 
 public class ButtonVRController : MonoBehaviour
 {
+    [Header("Customization")]
+    [SerializeField] Material material;
+    [SerializeField] AudioClip pressClip;
+    [SerializeField] AudioClip triggerClip;
+
     [Header("References")]
     [SerializeField] Transform root;
     [SerializeField] Transform endpoint;
     [SerializeField] MeshRenderer renderer;
     [SerializeField] AudioSource audioSource;
-
-    [Header("Customization")]
-    [SerializeField] Material material;
-    [SerializeField] AudioClip pressClip;
-    [SerializeField] AudioClip triggerClip;
 
     void OnEnable()
     {
@@ -44,5 +45,14 @@ public class ButtonVRController : MonoBehaviour
         yield return new WaitForSeconds(s);
 
         ButtonTrigger();
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (CompareLayer(collider, Layer.Ball))
+        {
+            StartCoroutine(AutoButton(0.5f));
+            Destroy(collider.gameObject);
+        }
     }
 }

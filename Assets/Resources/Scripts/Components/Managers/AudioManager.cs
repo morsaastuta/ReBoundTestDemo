@@ -18,6 +18,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource voiceSource;
     [SerializeField] List<AudioClip> voiceClips = new();
 
+    // Memory
+    float globalVolume = 1f;
+    float musicVolume = 0.5f;
+    float soundVolume = 0.5f;
+    float voiceVolume = 0.5f;
+    List<AudioSource> musicSources = new();
+    List<AudioSource> voiceSources = new();
+
     void Awake()
     {
         if (instance != null && instance != this)
@@ -29,107 +37,76 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayMusic(bool on, int index)
+    void Play(AudioClip clip, float volume, AudioSource source)
     {
-        if (on)
-        {
-            musicSource.clip = musicClips[index];
-            musicSource.Play();
-        }
-        else musicSource.Stop();
+        source.clip = clip;
+        source.volume = volume * globalVolume;
+        source.Play();
     }
 
-    public void PlayMusic(bool on, int index, AudioSource source)
+    void Stop(AudioSource source)
     {
-        if (on)
-        {
-            source.clip = musicClips[index];
-            source.Play();
-        }
-        else source.Stop();
+        source.Stop();
     }
+
+    public void SetVolume(float g, float m, float s, float v)
+    {
+        globalVolume = g;
+        musicVolume = m;
+        soundVolume = s;
+        voiceVolume = v;
+
+        UpdateSources();
+    }
+
+    void UpdateSources()
+    {
+        musicSource.volume = musicVolume;
+        soundSource.volume = soundVolume;
+        voiceSource.volume = voiceVolume;
+        foreach (AudioSource source in musicSources) if (source != null) source.volume = musicVolume;
+        foreach (AudioSource source in voiceSources) if (source != null) source.volume = voiceVolume;
+    }
+
+    #region Play & Stop sub-methods
 
     public void PlayMusic(bool on, AudioClip clip)
     {
-        if (on)
-        {
-            musicSource.clip = clip;
-            musicSource.Play();
-        }
-        else musicSource.Stop();
+        if (on) Play(clip, musicVolume, musicSource);
+        else Stop(musicSource);
     }
 
     public void PlayMusic(bool on, AudioClip clip, AudioSource source)
     {
-        if (on)
-        {
-            source.clip = clip;
-            source.Play();
-        }
-        else source.Stop();
-    }
+        if (!musicSources.Contains(source)) musicSources.Add(source);
 
-    public void PlaySound(int index)
-    {
-        soundSource.clip = soundClips[index];
-        soundSource.Play();
-    }
-
-    public void PlaySound(int index, AudioSource source)
-    {
-        source.clip = soundClips[index];
-        source.Play();
+        if (on) Play(clip, musicVolume, source);
+        else Stop(source);
     }
 
     public void PlaySound(AudioClip clip, AudioSource source)
     {
-        source.clip = clip;
-        source.Play();
+        Play(clip, soundVolume, source);
     }
 
     public void PlaySound(AudioClip clip)
     {
-        soundSource.clip = clip;
-        soundSource.Play();
-    }
-
-    public void PlayVoice(bool on, int index)
-    {
-        if (on)
-        {
-            voiceSource.clip = voiceClips[index];
-            voiceSource.Play();
-        }
-        else voiceSource.Stop();
-    }
-
-    public void PlayVoice(bool on, int index, AudioSource source)
-    {
-        if (on)
-        {
-            source.clip = voiceClips[index];
-            source.Play();
-        }
-        else source.Stop();
+        Play(clip, soundVolume, soundSource);
     }
 
     public void PlayVoice(bool on, AudioClip clip)
     {
-        if (on)
-        {
-            voiceSource.clip = clip;
-            voiceSource.Play();
-        }
-        else voiceSource.Stop();
+        if (on) Play(clip, voiceVolume, voiceSource);
+        else Stop(voiceSource);
     }
 
     public void PlayVoice(bool on, AudioClip clip, AudioSource source)
     {
-        if (on)
-        {
-            source.clip = clip;
-            source.Play();
-        }
-        else source.Stop();
+        if (!voiceSources.Contains(source)) voiceSources.Add(source);
+
+        if (on) Play(clip, voiceVolume, source);
+        else Stop(source);
     }
+
+    #endregion
 }

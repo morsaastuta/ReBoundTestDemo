@@ -6,8 +6,8 @@ using static Glossary;
 public class PlayerBehaviour : MonoBehaviour
 {
     [Header("Common references")]
-    [SerializeField] GameMode gameMode;
-    [SerializeField] bool leftMode;
+    [SerializeField] public GameMode gameMode;
+    [SerializeField] public bool leftMode;
     [SerializeField] Transform eyes;
     [SerializeField] List<Ball> demoBalls = new();
 
