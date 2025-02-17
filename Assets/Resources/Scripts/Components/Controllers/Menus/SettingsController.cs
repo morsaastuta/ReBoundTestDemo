@@ -18,17 +18,20 @@ public class SettingsController : MonoBehaviour
     {
         ResetAll();
         paneControls.SetActive(true);
+        Debug.Log("happening");
     }
 
     public void PaneAudio()
     {
         ResetAll();
         paneAudio.SetActive(true);
+        Debug.Log("happening");
     }
 
     public void PaneExit()
     {
         ResetAll();
         paneExit.SetActive(true);
+        Debug.Log("happening");
     }
 }

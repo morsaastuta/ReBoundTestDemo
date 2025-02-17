@@ -6,13 +6,16 @@ public class ButtonController : MonoBehaviour
 {
     [Header("Customization")]
     [SerializeField] string title;
+    [SerializeField] Sprite icon;
 
     [Header("References")]
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] Image image;
 
     private void Start()
     {
         text.SetText(title);
+        image.sprite = icon;
     }
 
     public void Press()

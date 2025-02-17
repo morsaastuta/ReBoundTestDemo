@@ -1,4 +1,4 @@
-using TMPro;
+using Oculus.Interaction.Samples;
 using UnityEngine;
 using UnityEngine.UI;
 using static Glossary;
@@ -7,20 +7,13 @@ public class SettingsControlsController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] Toggle leftToggle;
-    [SerializeField] TMP_Dropdown controlScheme;
+    [SerializeField] DropDownGroup controlScheme;
 
     private void OnEnable()
     {
         PlayerBehaviour player = GameObject.Find("Player").GetComponent<PlayerBehaviour>();
 
         leftToggle.enabled = player.leftMode;
-
-        switch (player.gameMode)
-        {
-            case GameMode.Hands: controlScheme.value = 0; break;
-            case GameMode.Controllers: controlScheme.value = 1; break;
-            case GameMode.Desktop: controlScheme.value = 2; break;
-        }
     }
 
     public void SaveSettings()
@@ -30,7 +23,7 @@ public class SettingsControlsController : MonoBehaviour
         if (!leftToggle.isOn) player.SetHandedness(false);
         else player.SetHandedness(true);
 
-        switch (controlScheme.value)
+        switch (controlScheme.SelectedIndex)
         {
             case 0: player.SetGameMode(GameMode.Hands); break;
             case 1: player.SetGameMode(GameMode.Controllers); break;
