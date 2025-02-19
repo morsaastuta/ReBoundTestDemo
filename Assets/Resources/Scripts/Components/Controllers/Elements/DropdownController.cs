@@ -3,10 +3,21 @@ using UnityEngine;
 
 public class DropdownController : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI title;
+    [Header("References")]
+    [SerializeField] TMP_Dropdown dropdown;
 
-    public void SetTitle(string t)
+    void FixedUpdate()
     {
-        title.text = t;
+        if (GameObject.Find("Blocker") != null) Destroy(GameObject.Find("Blocker"));
+    }
+
+    public int GetIndex()
+    {
+        return dropdown.value;
+    }
+
+    public void SetIndex(int idx)
+    {
+        dropdown.value = idx;
     }
 }

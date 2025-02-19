@@ -7,23 +7,29 @@ public class SettingsControlsController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] Toggle leftToggle;
-    [SerializeField] DropDownGroup controlScheme;
+    [SerializeField] DropdownController controlScheme;
 
     private void OnEnable()
     {
         PlayerBehaviour player = GameObject.Find("Player").GetComponent<PlayerBehaviour>();
 
-        leftToggle.enabled = player.leftMode;
+        leftToggle.isOn = player.leftMode;
+
+        switch (player.gameMode)
+        {
+            case GameMode.Hands: controlScheme.SetIndex(0); break;
+            case GameMode.Controllers: controlScheme.SetIndex(1); break;
+            case GameMode.Desktop: controlScheme.SetIndex(2); break;
+        }
     }
 
     public void SaveSettings()
     {
         PlayerBehaviour player = GameObject.Find("Player").GetComponent<PlayerBehaviour>();
 
-        if (!leftToggle.isOn) player.SetHandedness(false);
-        else player.SetHandedness(true);
+        player.SetHandedness(leftToggle.isOn);
 
-        switch (controlScheme.SelectedIndex)
+        switch (controlScheme.GetIndex())
         {
             case 0: player.SetGameMode(GameMode.Hands); break;
             case 1: player.SetGameMode(GameMode.Controllers); break;

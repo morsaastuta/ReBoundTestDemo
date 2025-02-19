@@ -1,6 +1,6 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,6 +17,10 @@ public class AudioManager : MonoBehaviour
     [Header("Voice lines")]
     [SerializeField] AudioSource voiceSource;
     [SerializeField] List<AudioClip> voiceClips = new();
+
+    [Header("Subtitles")]
+    [SerializeField] TextMeshProUGUI subtitles;
+    bool subtitled = true;
 
     // Memory
     float globalVolume = 1f;

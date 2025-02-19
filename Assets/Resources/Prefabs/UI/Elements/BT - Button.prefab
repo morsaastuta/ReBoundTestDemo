@@ -100,13 +100,13 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 777758743047334425}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 726642087109497853}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -190,7 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: 
+  icon: {fileID: 0}
   text: {fileID: 6257756926495919198}
+  image: {fileID: 0}
 --- !u!114 &726642087109497853
 MonoBehaviour:
   m_ObjectHideFlags: 0

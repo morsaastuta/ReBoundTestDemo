@@ -71,12 +71,14 @@ public class PlayerBehaviour : MonoBehaviour
     public void SetGameMode(GameMode gm)
     {
         gameMode = gm;
+        UpdateComponents();
     }
 
     public void SetHandedness(bool left)
     {
         leftMode = left;
         InputManager.instance.SetHandedness(leftMode);
+        UpdateComponents();
     }
 
     void UpdateComponents()

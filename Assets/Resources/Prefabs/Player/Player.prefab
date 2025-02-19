@@ -6491,7 +6491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 7598cdf5-6828-4675-b218-7485921d93d9
+  instanceId: 18665c77-5c9f-492f-8014-393061c0c585
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7482,7 +7482,6 @@ GameObject:
   - component: {fileID: 4128004210437579252}
   - component: {fileID: 3560371900992615000}
   - component: {fileID: 3396253734074438551}
-  - component: {fileID: 2766407222885448998}
   m_Layer: 0
   m_Name: '[BuildingBlock] Controller Tracking Left'
   m_TagString: Untagged
@@ -7529,7 +7528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 64011214-9c87-48b4-8b5f-cda052f86a9a
+  instanceId: 3ca8a1f6-6844-4b18-a410-a545c9874eac
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7557,33 +7556,9 @@ MonoBehaviour:
   m_modelMetaTouchPlusLeftController: {fileID: 5089416777099465716}
   m_modelMetaTouchPlusRightController: {fileID: 8404825000855356289}
   m_controller: 1
-  m_showState: 1
+  m_showState: 4
   showWhenHandsArePoweredByNaturalControllerPoses: 0
   RayHelper: {fileID: 0}
---- !u!114 &2766407222885448998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6931173085844750074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd358acbe90f034092063b083b336ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  suppressedComponents: []
-  suppressedObjects:
-  - {fileID: 2079693631537897255}
-  - {fileID: 6442012130797094835}
-  - {fileID: 8660225853361557153}
-  - {fileID: 7457701721755539712}
-  - {fileID: 8413799262960299010}
-  - {fileID: 3321093599331007810}
-  - {fileID: 4788986699654082500}
-  - {fileID: 3211262864128304350}
-  - {fileID: 5089416777099465716}
-  - {fileID: 8404825000855356289}
 --- !u!1 &6966956358062751950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7871,7 +7846,6 @@ GameObject:
   - component: {fileID: 9010117556195170521}
   - component: {fileID: 5311851065405427624}
   - component: {fileID: 2454896104334958411}
-  - component: {fileID: 8786905558454513559}
   m_Layer: 0
   m_Name: '[BuildingBlock] Controller Tracking Right'
   m_TagString: Untagged
@@ -7918,7 +7892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: c2800839-7988-42f5-ae82-b551c9f4958a
+  instanceId: 9df7de7c-6fe7-45d1-acb5-1ccbe672ee19
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7945,34 +7919,10 @@ MonoBehaviour:
   m_modelMetaTouchProRightController: {fileID: 7044482344918973422}
   m_modelMetaTouchPlusLeftController: {fileID: 2626150148337248912}
   m_modelMetaTouchPlusRightController: {fileID: 8434712281695968398}
-  m_controller: 2
-  m_showState: 1
+  m_controller: 96
+  m_showState: 4
   showWhenHandsArePoweredByNaturalControllerPoses: 0
   RayHelper: {fileID: 0}
---- !u!114 &8786905558454513559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7211826037738548468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd358acbe90f034092063b083b336ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  suppressedComponents: []
-  suppressedObjects:
-  - {fileID: 7045324221640683154}
-  - {fileID: 6845392258911577875}
-  - {fileID: 3761414494834627580}
-  - {fileID: 1278223308644654771}
-  - {fileID: 7436170611584052356}
-  - {fileID: 4825835078435223053}
-  - {fileID: 2200706920524780854}
-  - {fileID: 7044482344918973422}
-  - {fileID: 2626150148337248912}
-  - {fileID: 8434712281695968398}
 --- !u!1 &7318335991972409289
 GameObject:
   m_ObjectHideFlags: 0
@@ -9498,7 +9448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: c4884764-f28a-4911-8422-4ae45c467a15
+  instanceId: aacd9998-60ae-42b7-9a2c-905b5f80fc31
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
