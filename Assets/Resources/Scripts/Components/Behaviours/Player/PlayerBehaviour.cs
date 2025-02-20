@@ -6,20 +6,25 @@ using static Glossary;
 public class PlayerBehaviour : MonoBehaviour
 {
     [Header("Common references")]
-    [SerializeField] public GameMode gameMode;
-    [SerializeField] public bool leftMode;
     [SerializeField] Transform eyes;
     [SerializeField] List<Ball> demoBalls = new();
 
     // Commons
+    public GameMode gameMode;
+    public bool leftMode;
     bool shot = false;
     List<Ball> balls = new();
     int selectedBall = 0;
     List<GameObject> auxiliarBalls = new();
     Glove glove;
 
+    [Header("VR references")]
+    [SerializeField] GameObject canvasVR;
+    [SerializeField] Transform canvasVRPos;
+
     // VR commons
     bool aiming = false;
+    GameObject canvasVRInstance;
 
     // Desktop exclusives
     float speed = 2;
@@ -54,6 +59,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] Glove DR_glove;
     [SerializeField] Glove DL_glove;
     [SerializeField] Rigidbody D_body;
+    [SerializeField] GameObject D_canvas;
 
     void Start()
     {
@@ -144,15 +150,6 @@ public class PlayerBehaviour : MonoBehaviour
                     C_grabInteractorR.SetActive(true);
                 }
 
-                if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
-
-                if (InputManager.instance.Holding(InputManager.instance.aim)) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
-                else glove.palm.GetComponent<AimBeam>().Clear();
-
-                if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
-
-                if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
-
                 break;
 
             // Hands exclusive
@@ -192,6 +189,17 @@ public class PlayerBehaviour : MonoBehaviour
                 
                 break;
         }
+
+        if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
+
+        if (InputManager.instance.Holding(InputManager.instance.aim)) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+        else glove.palm.GetComponent<AimBeam>().Clear();
+
+        if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
+
+        if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
+
+        if (InputManager.instance.Pressed(InputManager.instance.pause)) StartCoroutine(CallPause());
     }
 
     public void Shoot()
@@ -287,6 +295,37 @@ public class PlayerBehaviour : MonoBehaviour
     {
         selectedBall = idx;
         glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+    }
+
+    public IEnumerator CallPause()
+    {
+        if (!GameManager.instance.paused)
+        {
+            yield return new WaitForSeconds(0.5f);
+
+            if (InputManager.instance.Holding(InputManager.instance.pause))
+            {
+                GameManager.instance.Pause(true);
+                switch (gameMode)
+                {
+                    case GameMode.Hands:
+                    case GameMode.Controllers:
+                        canvasVRInstance = Instantiate(canvasVR);
+                        canvasVRInstance.transform.position = canvasVRPos.position;
+                        canvasVRInstance.transform.rotation = Quaternion.Euler(canvasVRPos.rotation.eulerAngles.x, canvasVRPos.rotation.eulerAngles.y, 0);
+                        break;
+                    case GameMode.Desktop:
+                        D_canvas.SetActive(true);
+                        break;
+                }
+            }
+        }
+        else
+        {
+            GameManager.instance.Pause(false);
+            Destroy(canvasVRInstance);
+            D_canvas.SetActive(false);
+        }
     }
 
     #region Hands exclusive methods

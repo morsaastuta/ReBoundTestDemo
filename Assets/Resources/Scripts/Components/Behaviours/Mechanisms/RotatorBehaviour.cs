@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class RotatorBehaviour : ActivableBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour
+public class RotatorBehaviour : ActivableBehaviour
 {
     [Header("Customization")]
     [SerializeField] bool bridge = false;
@@ -9,7 +9,7 @@ public class RotatorBehaviour : ActivableBehaviour // TO-DO: Create class inheri
     [SerializeField] bool clockwise = true;
     [SerializeField] float duration = 1;
 
-    override protected void Activate()
+    override public void Activate()
     {
         base.Activate();
 
@@ -25,7 +25,7 @@ public class RotatorBehaviour : ActivableBehaviour // TO-DO: Create class inheri
         }
     }
 
-    override protected void Deactivate()
+    override public void Deactivate()
     {
         base.Deactivate();
 

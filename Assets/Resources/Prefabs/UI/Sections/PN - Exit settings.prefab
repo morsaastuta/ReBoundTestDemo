@@ -1253,7 +1253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4052481071633498189}
   - component: {fileID: 7042581528625061489}
-  - component: {fileID: 8711954411671179998}
   m_Layer: 5
   m_Name: PN - Exit settings
   m_TagString: Untagged
@@ -1308,20 +1307,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &8711954411671179998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6785167967675845175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbadcdc88f926ba4c951fc3ea763636c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftToggle: {fileID: 5095108105428640931}
-  controlScheme: {fileID: 533052384106241689}
 --- !u!1 &6834094075462506620
 GameObject:
   m_ObjectHideFlags: 0

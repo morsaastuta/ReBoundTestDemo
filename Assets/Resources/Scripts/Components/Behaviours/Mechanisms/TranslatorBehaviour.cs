@@ -9,21 +9,19 @@ public class TranslatorBehaviour : ActivableBehaviour
 
     Vector3 ogPos = new();
 
-    override protected void Start()
+    protected void Start()
     {
-        base.Start();
-
         ogPos = transform.position;
     }
 
-    override protected void Activate()
+    override public void Activate()
     {
         base.Activate();
 
         transform.DOMove(ogPos + direction, duration);
     }
 
-    override protected void Deactivate()
+    override public void Deactivate()
     {
         base.Deactivate();
 

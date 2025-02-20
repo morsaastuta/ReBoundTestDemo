@@ -10,15 +10,13 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     [Header("Audio")]
     [SerializeField] AudioClip activateClip;
     [SerializeField] AudioClip deactivateClip;
-    AudioSource source;
+    [SerializeField] AudioSource source;
+
+    [Header("Sequence")]
+    [SerializeField] SequenceBehaviour sequence;
 
     bool requirement = false;
     bool active = false;
-
-    virtual protected void Start()
-    {
-        source = GetComponent<AudioSource>();
-    }
 
     virtual protected void FixedUpdate()
     {
@@ -40,14 +38,15 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
         else if (!permanent && !requirement && active) Deactivate();
     }
 
-    virtual protected void Activate()
+    virtual public void Activate()
     {
         active = true;
         source.clip = activateClip;
         source.Play();
+        if (sequence != null) sequence.Play();
     }
 
-    virtual protected void Deactivate()
+    virtual public void Deactivate()
     {
         active = false;
         source.clip = deactivateClip;

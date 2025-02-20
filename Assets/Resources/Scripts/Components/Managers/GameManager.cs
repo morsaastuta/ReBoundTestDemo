@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using static Glossary;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public bool paused = false;
 
     void Awake()
     {
@@ -15,5 +15,24 @@ public class GameManager : MonoBehaviour
         }
         else instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Start()
+    {
+        
+    }
+
+    public void Pause(bool on)
+    {
+        if (on && !paused)
+        {
+            paused = true;
+            Time.timeScale = 0;
+        }
+        else if (!on && paused)
+        {
+            paused = false;
+            Time.timeScale = 1.0f;
+        }
     }
 }
