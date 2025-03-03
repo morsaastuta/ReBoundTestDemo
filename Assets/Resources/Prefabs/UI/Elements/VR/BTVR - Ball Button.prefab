@@ -143,8 +143,8 @@ GameObject:
   - component: {fileID: 5134293531795133556}
   - component: {fileID: 5134293531795133557}
   - component: {fileID: 5134293531795133554}
-  - component: {fileID: 6873762868608367447}
   - component: {fileID: 4929937000907091449}
+  - component: {fileID: 7717425533127886417}
   m_Layer: 0
   m_Name: ButtonPanel
   m_TagString: Untagged
@@ -383,19 +383,6 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     ColorTime: 0.1
---- !u!114 &6873762868608367447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5134293531795133552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d546f8cfde177ba4b859363d5a6b8854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 4694082529860809149}
 --- !u!65 &4929937000907091449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -417,6 +404,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 6.1232336e-17}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7717425533127886417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134293531795133552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b86c657b1bebe4e831f315dc2a40a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 4694082529860809149}
 --- !u!1 &5134293532513005699
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
       propertyPath: m_Name
-      value: ButtonVR
+      value: BTVR - Ball Button
       objectReference: {fileID: 0}
     - target: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17, type: 3}
       propertyPath: m_IsActive
@@ -770,13 +770,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307c446abb84d2c4ab29c44d1b0ac3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  material: {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  pressClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
+  triggerClip: {fileID: 8300000, guid: a4694658bf315ba40a2758e8b3fc8e61, type: 3}
   root: {fileID: 3916436532333682760}
   endpoint: {fileID: 9043515557740157284}
   renderer: {fileID: 5134293531795133559}
   audioSource: {fileID: 6956653523326361187}
-  material: {fileID: 0}
-  pressClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
-  triggerClip: {fileID: 8300000, guid: a4694658bf315ba40a2758e8b3fc8e61, type: 3}
 --- !u!114 &5134293532235570120
 MonoBehaviour:
   m_ObjectHideFlags: 0

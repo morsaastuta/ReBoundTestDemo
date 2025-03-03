@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TranslatorBehaviour : ActivableBehaviour
 {    
-    [Header("Customization")]
+    [Header("Customization (Translator)")]
     [SerializeField] Vector3 direction = new();
     [SerializeField] float duration = 1;
 

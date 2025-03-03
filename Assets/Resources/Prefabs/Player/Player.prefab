@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 79f7e653-0220-45ed-90a4-eaa9c36f99fa
+  instanceId: 89705f89-f753-4ea7-9141-f1f9ca140e21
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 08f114ed-4d28-4f94-b718-fc67f1b6e685
+  instanceId: 4223b258-bf32-4b3b-9cff-7555edc33149
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 0f5f9f00-f18d-422e-ab9d-6265e70e89a3
+  instanceId: ebfc6ab6-9c57-4c91-8d70-af487e4879b8
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: c380edd5-15d1-458c-9992-f2ac60973ba5
+  instanceId: 8d070c0a-fef9-4cb9-88bb-fb7e00a12563
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -11217,6 +11217,26 @@ PrefabInstance:
       propertyPath: _handMaterialPropertyBlockEditor
       value: 
       objectReference: {fileID: 8116777449401630261}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483171112400622654, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2483171112401766338, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: m_Name
       value: VR Module

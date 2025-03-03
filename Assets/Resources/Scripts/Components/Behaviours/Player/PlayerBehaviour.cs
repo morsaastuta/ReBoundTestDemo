@@ -199,7 +199,8 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
 
-        if (InputManager.instance.Pressed(InputManager.instance.pause)) StartCoroutine(CallPause());
+        // Can't pause on MainMenu (ID 0)
+        if (GameManager.instance.sceneID != 0 && InputManager.instance.Pressed(InputManager.instance.pause)) StartCoroutine(CallPause());
     }
 
     public void Shoot()

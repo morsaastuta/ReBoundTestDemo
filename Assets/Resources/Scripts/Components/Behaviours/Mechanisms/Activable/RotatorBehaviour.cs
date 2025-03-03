@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class RotatorBehaviour : ActivableBehaviour
 {
-    [Header("Customization")]
+    [Header("Customization (Rotator)")]
     [SerializeField] bool bridge = false;
     [SerializeField] float rotationAngles = 90;
     [SerializeField] bool clockwise = true;

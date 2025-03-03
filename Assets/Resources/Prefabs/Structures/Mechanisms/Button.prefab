@@ -138,13 +138,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734a5c100cb6c154a903dc642bad2a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: 0
   timerMax: 0
+  pressClip: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
+  unpressClip: {fileID: 8300000, guid: 3099d9ea91cadd7469dcceffb0065133, type: 3}
   button: {fileID: 3874502660480511138}
   onPos: {fileID: 7118903695055658349}
   offPos: {fileID: 8378557620646878617}
-  pressClip: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
-  unpressClip: {fileID: 8300000, guid: 3099d9ea91cadd7469dcceffb0065133, type: 3}
-  pressed: 0
+  source: {fileID: 5954829085062027681}
 --- !u!54 &4930424900166052436
 Rigidbody:
   m_ObjectHideFlags: 0

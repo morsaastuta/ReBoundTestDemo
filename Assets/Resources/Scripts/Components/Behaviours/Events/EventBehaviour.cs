@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EventBehaviour : MonoBehaviour
 {
+    [SerializeField] float fixedLength;
+
     [Header("Audio")]
     [SerializeField] AudioClip monologue;
     [SerializeField] AudioClip musicClip;
@@ -23,11 +25,11 @@ public class EventBehaviour : MonoBehaviour
     public void Play()
     {
         // Audio
-        if (monologue != null) AudioManager.instance.PlayVoice(true, monologue);
+        if (monologue != null) AudioManager.instance.PlayVoice(monologue);
         if (musicClip != null)
         {
-            if (musicSource != null) AudioManager.instance.PlayMusic(true, musicClip, musicSource);
-            else AudioManager.instance.PlayMusic(true, musicClip);
+            if (musicSource != null) AudioManager.instance.PlayMusic(musicClip, musicSource);
+            else AudioManager.instance.PlayMusic(musicClip);
         }
         foreach (AudioClip clip in soundClips)
         {
@@ -38,8 +40,8 @@ public class EventBehaviour : MonoBehaviour
         foreach (AudioClip clip in voiceClips)
         {
             AudioSource source = voiceSources[voiceClips.IndexOf(clip)];
-            if (source != null) AudioManager.instance.PlayVoice(true, clip, source);
-            else AudioManager.instance.PlayVoice(true, clip);
+            if (source != null) AudioManager.instance.PlayVoice(clip, source);
+            else AudioManager.instance.PlayVoice(clip);
         }
 
         // Subtitles
@@ -52,5 +54,15 @@ public class EventBehaviour : MonoBehaviour
             if (reversed[activableObjects.IndexOf(activableObject)]) activableObject.Deactivate();
             else activableObject.Activate();
         }
+    }
+
+    public float GetLength()
+    {
+        float maxLength = fixedLength;
+
+        if (monologue != null && monologue.length > maxLength) maxLength = monologue.length;
+        foreach(AudioClip voiceClip in voiceClips) if (voiceClip != null && voiceClip.length > maxLength) maxLength = voiceClip.length;
+
+        return maxLength + 0.5f;
     }
 }

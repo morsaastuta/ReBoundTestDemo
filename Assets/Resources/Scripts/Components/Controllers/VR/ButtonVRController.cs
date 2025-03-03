@@ -1,11 +1,12 @@
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
-using static Glossary;
+using UnityEngine.Events;
 
 public class ButtonVRController : MonoBehaviour
 {
     [Header("Customization")]
+    [SerializeField] UnityEvent function;
     [SerializeField] Material material;
     [SerializeField] AudioClip pressClip;
     [SerializeField] AudioClip triggerClip;
@@ -34,25 +35,22 @@ public class ButtonVRController : MonoBehaviour
     public void ButtonTrigger()
     {
         AudioManager.instance.PlaySound(triggerClip, audioSource);
+        function.Invoke();
     }
 
-    public IEnumerator AutoButton(float s)
+    public void ButtonUnpress()
+    {
+        root.DOMove(endpoint.position, 0.5f);
+    }
+
+    public IEnumerator AutoButton()
     {
         ButtonPress();
 
-        root.DOMove(endpoint.position, s);
+        root.DOMove(endpoint.position, 0.25f);
         
-        yield return new WaitForSeconds(s);
+        yield return new WaitForSeconds(0.25f);
 
         ButtonTrigger();
-    }
-
-    void OnTriggerEnter(Collider collider)
-    {
-        if (CompareLayer(collider, Layer.Ball))
-        {
-            StartCoroutine(AutoButton(0.5f));
-            Destroy(collider.gameObject);
-        }
     }
 }

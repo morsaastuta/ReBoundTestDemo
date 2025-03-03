@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,32 +8,39 @@ public class SequenceBehaviour : MonoBehaviour
     [SerializeField] List<EventBehaviour> events = new();
     [SerializeField] List<float> intervals = new();
     int index = 0;
-    bool on = false;
+    bool inProgress = false;
+    EventBehaviour currentEvent;
 
-    public void Restart()
+    public void Begin()
     {
         index = 0;
-        on = true;
-        Play();
+        inProgress = true;
     }
 
-    public void Play()
+    public void Continue()
     {
-        if (on) events[index].Play();
-    }
+        // Clear and ready
+        AudioManager.instance.StopVoice(true);
+        EventManager.instance.ClearSubtitles();
 
-    public void Next()
-    {
+        // Get event and play it
+        currentEvent = events[index];
+        currentEvent.Play();
+
+        // Prepare next event
         index++;
-        if (on)
-        {
-            on = true;
-            Play();
-        }
+        if (index >= events.Count) End();
+        else StartCoroutine(AutoWait(index));
     }
 
-    public void Stop()
+    public void End()
     {
-        if (on) events[index].Play();
+        inProgress = false;
+    }
+
+    IEnumerator AutoWait(int sessionIdx)
+    {
+        yield return new WaitForSeconds(currentEvent.GetLength());
+        if (inProgress && index == sessionIdx) Continue();
     }
 }

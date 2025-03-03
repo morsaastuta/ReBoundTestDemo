@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5887bf577869c0243a96b583c8f9b8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paneGeneral: {fileID: 0}
   paneControls: {fileID: 8831659021039508899}
   paneAudio: {fileID: 5723993936488948636}
   paneExit: {fileID: 648457785692226417}

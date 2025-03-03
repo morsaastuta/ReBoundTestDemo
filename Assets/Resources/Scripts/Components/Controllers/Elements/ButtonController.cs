@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] Image image;
 
-    private void Start()
+    void Start()
     {
         text.SetText(title);
         image.sprite = icon;

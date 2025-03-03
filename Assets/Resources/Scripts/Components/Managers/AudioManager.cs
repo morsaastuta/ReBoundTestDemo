@@ -1,24 +1,28 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    [Header("Music tracks")]
+    [Header("Customization")]
+    [SerializeField] public AudioClip defaultBGM;
+
+    [Header("Music references")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] List<AudioClip> musicClips = new();
 
-    [Header("Sound clips")]
+    [Header("Sound references")]
     [SerializeField] AudioSource soundSource;
     [SerializeField] List<AudioClip> soundClips = new();
 
-    [Header("Voice lines")]
+    [Header("Voice references")]
     [SerializeField] AudioSource voiceSource;
     [SerializeField] List<AudioClip> voiceClips = new();
 
-    [Header("Subtitles")]
+    [Header("Subtitle references")]
     [SerializeField] TextMeshProUGUI subtitles;
     bool subtitled = true;
 
@@ -34,11 +38,18 @@ public class AudioManager : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
+            instance.defaultBGM = defaultBGM;
             Destroy(gameObject);
             return;
         }
         else instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Start()
+    {
+        if (defaultBGM != null) PlayMusic(defaultBGM);
+        else StopMusic();
     }
 
     void Play(AudioClip clip, float volume, AudioSource source)
@@ -74,23 +85,16 @@ public class AudioManager : MonoBehaviour
 
     #region Play & Stop sub-methods
 
-    public void PlayMusic(bool on, AudioClip clip)
+    public void PlayMusic(AudioClip clip)
     {
-        if (on) Play(clip, musicVolume, musicSource);
-        else Stop(musicSource);
+        Play(clip, musicVolume, musicSource);
     }
 
-    public void PlayMusic(bool on, AudioClip clip, AudioSource source)
+    public void PlayMusic(AudioClip clip, AudioSource source)
     {
         if (!musicSources.Contains(source)) musicSources.Add(source);
 
-        if (on) Play(clip, musicVolume, source);
-        else Stop(source);
-    }
-
-    public void PlaySound(AudioClip clip, AudioSource source)
-    {
-        Play(clip, soundVolume, source);
+        Play(clip, musicVolume, source);
     }
 
     public void PlaySound(AudioClip clip)
@@ -98,18 +102,43 @@ public class AudioManager : MonoBehaviour
         Play(clip, soundVolume, soundSource);
     }
 
-    public void PlayVoice(bool on, AudioClip clip)
+    public void PlaySound(AudioClip clip, AudioSource source)
     {
-        if (on) Play(clip, voiceVolume, voiceSource);
-        else Stop(voiceSource);
+        Play(clip, soundVolume, source);
     }
 
-    public void PlayVoice(bool on, AudioClip clip, AudioSource source)
+    public void PlayVoice(AudioClip clip)
+    {
+        StopVoice(true);
+        Play(clip, voiceVolume, voiceSource);
+    }
+
+    public void PlayVoice(AudioClip clip, AudioSource source)
     {
         if (!voiceSources.Contains(source)) voiceSources.Add(source);
 
-        if (on) Play(clip, voiceVolume, source);
-        else Stop(source);
+        StopVoice(true);
+        Play(clip, voiceVolume, source);
+    }
+
+    public void StopMusic()
+    {
+        Stop(musicSource);
+    }
+
+    public void StopVoice(bool all)
+    {
+        if (!all) Stop(voiceSource);
+        else
+        {
+            Stop(voiceSource);
+            foreach (AudioSource source in voiceSources) if (source != null) Stop(source);
+        }
+    }
+
+    public void StopSource(AudioSource source)
+    {
+        Stop(source);
     }
 
     #endregion

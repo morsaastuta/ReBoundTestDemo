@@ -1,32 +1,32 @@
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour
 {
-    [SerializeField] protected List<ButtonBehaviour> assignedButtons;
+    [Header("Customization (Activable)")]
+    [SerializeField] protected List<ActivatorBehaviour> activators;
     [SerializeField] protected bool permanent = false;
-
-    [Header("Audio")]
     [SerializeField] AudioClip activateClip;
     [SerializeField] AudioClip deactivateClip;
+    [SerializeField] SequenceBehaviour sequenceToTrigger;
+
+    [Header("References (Activable)")]
     [SerializeField] AudioSource source;
 
-    [Header("Sequence")]
-    [SerializeField] SequenceBehaviour sequence;
-
     bool requirement = false;
-    bool active = false;
+    public bool active = false;
 
-    virtual protected void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // Requirement is true by default
         requirement = true;
 
         // Set requirement to false if any button is not pressed
-        foreach(ButtonBehaviour button in assignedButtons)
+        foreach (ActivatorBehaviour activator in activators)
         {
-            if (!button.pressed)
+            if (!activator.active)
             {
                 requirement = false;
                 break;
@@ -38,18 +38,27 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
         else if (!permanent && !requirement && active) Deactivate();
     }
 
-    virtual public void Activate()
+    public virtual void Activate()
     {
         active = true;
-        source.clip = activateClip;
-        source.Play();
-        if (sequence != null) sequence.Play();
+
+        if (activateClip != null)
+        {
+            source.clip = activateClip;
+            source.Play();
+        }
+
+        if (sequenceToTrigger != null) sequenceToTrigger.Begin();
     }
 
-    virtual public void Deactivate()
+    public virtual void Deactivate()
     {
         active = false;
-        source.clip = deactivateClip;
-        source.Play();
+
+        if (deactivateClip != null)
+        {
+            source.clip = deactivateClip;
+            source.Play();
+        }
     }
 }

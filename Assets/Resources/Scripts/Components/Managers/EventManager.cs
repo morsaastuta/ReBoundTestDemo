@@ -26,11 +26,6 @@ public class EventManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    void Update()
-    {
-        SetSubtitles("aaaaaaaaaaaaa");
-    }
-
     public void SetSubtitles(string content)
     {
         canvas.worldCamera = Camera.main;
