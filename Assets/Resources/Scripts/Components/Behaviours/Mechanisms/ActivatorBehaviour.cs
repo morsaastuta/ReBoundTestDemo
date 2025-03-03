@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using static Glossary;
 using static Unity.VisualScripting.Member;
 
@@ -8,6 +9,7 @@ public abstract class ActivatorBehaviour : MonoBehaviour
     [Header("Customization (Activator)")]
     [SerializeField] public bool active = false;
     [SerializeField] protected float timerMax;
+    [SerializeField] protected UnityEvent call;
 
     protected float timer = 0;
 
@@ -26,6 +28,7 @@ public abstract class ActivatorBehaviour : MonoBehaviour
 
         if (on)
         {
+            if (call != null) call.Invoke();
             if (timerMax > 0) timer = timerMax;
         }
         else

@@ -40,7 +40,7 @@ public class ButtonVRController : MonoBehaviour
 
     public void ButtonUnpress()
     {
-        root.DOMove(endpoint.position, 0.5f);
+        root.DOMove(root.position, 0.5f);
     }
 
     public IEnumerator AutoButton()
