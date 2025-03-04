@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 91171664787660685}
   - component: {fileID: 91171664787660683}
   m_Layer: 0
-  m_Name: LabelVR
+  m_Name: LBVR - Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
