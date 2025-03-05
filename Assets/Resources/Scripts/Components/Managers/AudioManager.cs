@@ -27,10 +27,10 @@ public class AudioManager : MonoBehaviour
     bool subtitled = true;
 
     // Memory
-    float globalVolume = 1f;
-    float musicVolume = 0.5f;
-    float soundVolume = 0.5f;
-    float voiceVolume = 0.5f;
+    public float globalVolume = 1f;
+    public float musicVolume = 0.5f;
+    public float soundVolume = 0.5f;
+    public float voiceVolume = 0.5f;
     List<AudioSource> musicSources = new();
     List<AudioSource> voiceSources = new();
 

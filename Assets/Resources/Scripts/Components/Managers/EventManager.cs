@@ -12,7 +12,7 @@ public class EventManager : MonoBehaviour
 
     // Settings
     public bool subtitled = true;
-    public float subtitleDistance = 0.9f;
+    public float subtitleDepth = 0.9f;
     public float subtitleHeight = 64f;
 
     void Awake()
@@ -29,7 +29,7 @@ public class EventManager : MonoBehaviour
     public void SetSubtitles(string content)
     {
         canvas.worldCamera = Camera.main;
-        canvas.planeDistance = subtitleDistance;
+        canvas.planeDistance = subtitleDepth;
         subtitleMesh.rectTransform.anchoredPosition = new Vector2(0, subtitleHeight);
 
         subtitleMesh.text = content;

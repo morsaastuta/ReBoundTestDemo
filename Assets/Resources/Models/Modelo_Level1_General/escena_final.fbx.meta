@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 2a3068c1345902045a8de599b5981a7a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Base_color_Spoon
+    second: {fileID: 2800000, guid: a60813cbeb8453149b91cf1acc64ec0b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_colo_cebolla
+    second: {fileID: 2800000, guid: c756730100eb1d24db681d1a5af5abfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_colo_pan
+    second: {fileID: 2800000, guid: 757dca48857755245be935af5c9f690e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color
+    second: {fileID: 2800000, guid: 09bdde74ff7c87d43b42dc9dda9c367c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_Cuchillo
+    second: {fileID: 2800000, guid: 2f9818db4c097804292e951fabe1816d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_bordeMetal
+    second: {fileID: 2800000, guid: 3c009c7b9445181429e1ed618cc918f0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_extractor
+    second: {fileID: 2800000, guid: c1ffae655fdaaf44ea964d516d24c6dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_holla
+    second: {fileID: 2800000, guid: 15d03d478bf15da42a1469adb61ac764, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_mesaCajonFogon
+    second: {fileID: 2800000, guid: bb4da1f0d6e358f4098df721c7ea8fe5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_mesaCajonFregadero
+    second: {fileID: 2800000, guid: 79472e6c46a40c645b61a636fb30d827, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_mesaCajonFreidora
+    second: {fileID: 2800000, guid: 5d373bdb12f251748b45289c1ab29e86, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_mesaCajonHorno
+    second: {fileID: 2800000, guid: 9c1211cabbfac54449223f3945f0a9c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_mesaSinCajon
+    second: {fileID: 2800000, guid: fe47943e62c60b544a597c67c98902c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_midExtractor
+    second: {fileID: 2800000, guid: c0291ec551a04804594676cd3f09342f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_pimiento
+    second: {fileID: 2800000, guid: fdf2cd65a4952b84cb0bf2e0c2999dc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_platoHondo
+    second: {fileID: 2800000, guid: 95fb50eab66cd0e499ce9d5b852c3e30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_platoLlano
+    second: {fileID: 2800000, guid: 6961d54fb38736246a8f1081088e5382, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_sacoCosas
+    second: {fileID: 2800000, guid: c38f3ff4cdf6e12438c0bbf1b415d874, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_tablaCortar
+    second: {fileID: 2800000, guid: c713290435a53064aab028b5583e1dab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Base_color_tomate
+    second: {fileID: 2800000, guid: 732884ece96610a48a14562020767701, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic
+    second: {fileID: 2800000, guid: 5a82692f78400b841bf61a542c466ec0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic_Cuchillo
+    second: {fileID: 2800000, guid: 9a8bb39a4aabd0449bfb360bda44e0e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic_holla
+    second: {fileID: 2800000, guid: 2f41f143094b4b64ebe9795648a67e6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic_mesaCajonFreidora
+    second: {fileID: 2800000, guid: b5189907beb3f204d9a0a086a72c1ffc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic_mesaCajonHorno
+    second: {fileID: 2800000, guid: e898cef01bca9334bae62862f2d3dc6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness
+    second: {fileID: 2800000, guid: ebb363c44f8540e48b79c5bb61c97dbc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_Cuchillo
+    second: {fileID: 2800000, guid: b952785324af3364491aa0e313d3fa96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_mesaCajonFreidora
+    second: {fileID: 2800000, guid: 843fa08217691df429ef4c9e898822ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_mesaCajonHorno
+    second: {fileID: 2800000, guid: c177a918ebc16124bb0fee2198283451, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_platoHondo
+    second: {fileID: 2800000, guid: 9cca7a0d275ec3140abe84ff2129b397, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_platoLlano
+    second: {fileID: 2800000, guid: 9aa009e3ab952914f908e51f69ce4da9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness_tablaCortar
+    second: {fileID: 2800000, guid: 75d551e95bbc1944aa65706bc9d30d6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World
+    second: {fileID: 2800000, guid: 51fcbc151e8c9fd4695b3a026b9ecb16, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_Cuchillo
+    second: {fileID: 2800000, guid: ebd8acee40e9e83429d399a86c01feff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_bordeMetal
+    second: {fileID: 2800000, guid: 4dc7d9030ede93849bd2a87da2a047dd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_extractor
+    second: {fileID: 2800000, guid: 616886ba6222eb6418a0f1d842e6653e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_holla
+    second: {fileID: 2800000, guid: 792a315df8cae464c9661d74c299393c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_mesaCajonFogon
+    second: {fileID: 2800000, guid: dcf5d4fc6a0f0ce48ad143dff17050e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_mesaCajonFregadero
+    second: {fileID: 2800000, guid: ed5d586a183878a4d906b14a932a694d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_mesaCajonFreidora
+    second: {fileID: 2800000, guid: 0914ff020b745f54ebe92a1c0f0d83ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_mesaCajonHorno
+    second: {fileID: 2800000, guid: f459d3d15cb35d7438f45e314f810b61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_mesaSinCajon
+    second: {fileID: 2800000, guid: 7394b167a6109f14daa7578b84509f2b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_midExtractor
+    second: {fileID: 2800000, guid: 3601ff9b0ec6da24796bbcc01a9a03b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_platoHondo
+    second: {fileID: 2800000, guid: 1d07bcd16640e2142af0febf88ae8c7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_platoLlano
+    second: {fileID: 2800000, guid: 28d8f8d9af2b7a543849ead9bf98f7d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_sacoCosas
+    second: {fileID: 2800000, guid: 7e56a79573d4a724ca6854570190afed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_World_tablaCortar
+    second: {fileID: 2800000, guid: 0cef2b7e0146d5441a71e0aa67f65b85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_wrold
+    second: {fileID: 2800000, guid: a12f1768b42bab143b8601c76a75a941, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.001_Base_color
+    second: {fileID: 2800000, guid: 4b203ef38c0b6bb478586faec986c7b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.001_world
+    second: {fileID: 2800000, guid: 1c309dcf81d6b9f4d840c854cae07328, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_Base_color
+    second: {fileID: 2800000, guid: 51339290c637c6c42996da2f4fe13b32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.004_world
+    second: {fileID: 2800000, guid: f0d299dfa13c3bb44a4758aca9e90739, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.005_Base_color
+    second: {fileID: 2800000, guid: 91e92725a0c409d4ab1fa5bacda8f794, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material.005_world
+    second: {fileID: 2800000, guid: 4340e64035e4cbf4db27c37aa4969eb3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material_Base_color_tenedor
+    second: {fileID: 2800000, guid: dd7bc3b6824ee1b4f94d4452f16697b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Material_World_tenedor
+    second: {fileID: 2800000, guid: 89c80d3c11e1d6c4c82c21776060b68c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: World_Spoon
+    second: {fileID: 2800000, guid: 00ddcd0684ea7564990981d90b0d48d8, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
