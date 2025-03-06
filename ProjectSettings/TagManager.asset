@@ -30,6 +30,8 @@ TagManager:
   - Props
   - LeftHand
   - Annulling
+  - Trash
+  - Food
   layers:
   - Default
   - TransparentFX

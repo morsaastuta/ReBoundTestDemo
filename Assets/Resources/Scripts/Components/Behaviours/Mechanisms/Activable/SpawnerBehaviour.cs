@@ -2,18 +2,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnerBehaviour : ActivableBehaviour
-{    
+{
     [Header("Customization (Spawner)")]
+
+    [SerializeField] bool spawnOnDestroy;
+
     [SerializeField] GameObject spawnPrefab;
     [SerializeField] int interval = 0;
-    int counter = 0;
+    int timer = 0;
     [SerializeField] float trackDistance = 1000;
 
     List<GameObject> trackedSpawns = new();
 
+
+    GameObject newSpawn;
+
     protected void Start()
     {
-        counter = 0;
+        timer = 0;
     }
 
     protected override void FixedUpdate()
@@ -21,24 +27,34 @@ public class SpawnerBehaviour : ActivableBehaviour
         base.FixedUpdate();
 
         CheckSpawnProximity();
-
-        if (active)
+        
+        if (spawnOnDestroy)
         {
-            counter++;
-            if (counter >= interval)
+            if (newSpawn == null)
             {
                 Spawn();
-                counter = 0;
             }
         }
-        else counter = 0;
+        else
+        {
+
+            if (active)
+            {
+                timer++;
+                if (timer >= interval)
+                {
+                    Spawn();
+                    timer = 0;
+                }
+            }
+            else timer = 0;
+        }
     }
 
     void Spawn()
     {
-        Debug.Log("SPAWNED");
 
-        GameObject newSpawn = Instantiate(spawnPrefab);
+        newSpawn = Instantiate(spawnPrefab);
         newSpawn.transform.position = transform.position;
         newSpawn.transform.rotation = transform.rotation;
         trackedSpawns.Add(newSpawn);
