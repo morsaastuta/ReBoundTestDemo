@@ -16,8 +16,8 @@ public class DestroyerBehaviour : CheckerBehaviour
             Destroy(other.gameObject, timeToDestroy);
     }
 
-    public override int CheckInt()
+    public override bool Check(int rule)
     {
-        return 0;
+        return quantityDestroyed >= rule;
     }
 }

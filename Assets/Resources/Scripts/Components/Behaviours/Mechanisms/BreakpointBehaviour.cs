@@ -12,20 +12,11 @@ public class BreakpointBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool willBreak = false;
-
-        if (breakpointRules[0].isInt)
-        {
-            if (breakpointRules[0].CheckInt() >= rules[0]) willBreak = true;
-        }
-        else
-        {
-            if (Convert.ToInt32(breakpointRules[0].CheckBool()) == rules[0]) willBreak = true;
-        }
-
-        if (willBreak)
+        if ((breakpointRules[0].isInt && breakpointRules[0].Check(rules[0])) ||
+            (!breakpointRules[0].isInt && breakpointRules[0].Check()))
         {
             breakpoints[0].breakpoint = false;
+
         }
     }
 }
