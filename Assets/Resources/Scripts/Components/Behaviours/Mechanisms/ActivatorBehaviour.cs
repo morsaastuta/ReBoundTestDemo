@@ -1,8 +1,5 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
-using static Glossary;
-using static Unity.VisualScripting.Member;
 
 public abstract class ActivatorBehaviour : MonoBehaviour
 {

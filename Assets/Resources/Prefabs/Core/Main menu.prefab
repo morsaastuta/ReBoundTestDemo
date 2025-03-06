@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 493270134907097473}
   - component: {fileID: 7580918884198860483}
   - component: {fileID: 1058602981758160835}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Reboundable
   m_Icon: {fileID: 0}
@@ -1432,15 +1432,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2648413638953584608, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: instanceId
-      value: 811a6705-a052-46b7-a342-478cbbd3452d
+      value: b9c3f251-31e0-4e42-b8f7-ab3ff8d2a7bb
       objectReference: {fileID: 0}
     - target: {fileID: 3560371900992615000, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: instanceId
-      value: d9d21e0f-bac2-4404-bcb7-a339dc7c9bba
+      value: c61cb2d5-5c39-412e-b63d-16f8d0a89b90
       objectReference: {fileID: 0}
     - target: {fileID: 5311851065405427624, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: instanceId
-      value: e470f7f4-9dd5-4682-b0f5-838e5f460fe1
+      value: 5a434b7a-b7e4-4430-8a70-5e0d3c55390d
       objectReference: {fileID: 0}
     - target: {fileID: 5626807281146849413, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1464,7 +1464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100937603637495197, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: instanceId
-      value: 6e5e78ef-bf9f-4c64-9df1-0e0f7f6fdfae
+      value: 3706ff50-d512-48a9-bc57-83506f3a4a3d
       objectReference: {fileID: 0}
     - target: {fileID: 7377199167693899782, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: gameMode
@@ -1587,7 +1587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: e47682b9-c270-40b1-b16d-90b627a5ce1b
-  instanceId: 17d5ae4f-1db1-4be2-ba96-1e63a191ec68
+  instanceId: 38cd41cb-af67-4e03-8089-1accc5ece587
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f10154e0-16b2-492f-97d0-6639f69e7df6
-  instanceId: 9aace973-85e4-453b-9fa1-f45519ce52df
+  instanceId: 35a10b7b-4342-4cc2-879b-9b6e367c44e4
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 0393ca30-f2a9-4865-a40f-f9a68d01c3a9
-  instanceId: 37d6e49d-194d-401e-9279-f5d1cfe3f721
+  instanceId: 4c858bc0-80e7-4d15-9eb4-ab45e6a1593d
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 6b67162c-2460-4766-a931-980388647573
-  instanceId: ea261844-3f9a-4c79-9e4e-6aa41328c695
+  instanceId: f522144c-348a-4967-8335-9efcb5dc3bcf
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 6b67162c-2460-4766-a931-980388647573
-  instanceId: 1b1645cf-88cf-48c5-ac51-b8114f23b70a
+  instanceId: 855732fe-ae9b-432a-b58d-5ac305bce964
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 81f55626-5fad-45e9-a1df-184f330da7ba
-  instanceId: 9bea3114-759b-49ff-bd49-4cf7133b9b2b
+  instanceId: 85b7b84c-72f0-41da-b979-6792489c58c3
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -2216,6 +2216,10 @@ PrefabInstance:
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_Name
       value: Teleport interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4037183518712888970, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: _collider
