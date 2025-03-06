@@ -13,7 +13,7 @@ public class BreakpointBehaviour : MonoBehaviour
     void FixedUpdate()
     {
         if ((breakpointRules[0].isInt && breakpointRules[0].Check(rules[0])) ||
-            (!breakpointRules[0].isInt && breakpointRules[0].Check()))
+            (!breakpointRules[0].isInt && Convert.ToInt32(breakpointRules[0].Check()) == rules[0]))
         {
             breakpoints[0].breakpoint = false;
 
