@@ -36,4 +36,9 @@ public class ButtonBehaviour : ActivatorBehaviour
             button.transform.DOMove(offPos.transform.position, .5f);
         }
     }
+
+    public override bool Check()
+    {
+        return active;
+    }
 }

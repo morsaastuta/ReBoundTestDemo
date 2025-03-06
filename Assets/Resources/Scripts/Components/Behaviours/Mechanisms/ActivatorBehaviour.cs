@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class ActivatorBehaviour : MonoBehaviour
+public abstract class ActivatorBehaviour : CheckerBehaviour
 {
     [Header("Customization (Activator)")]
     [SerializeField] public bool active = false;
