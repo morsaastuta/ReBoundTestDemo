@@ -7,7 +7,7 @@ public class Ball : ScriptableObject
 {
     public enum BallType
     {
-        Sphere, Prism, Object
+        Sphere, Prism, Object, ItemSpawn
     }
 
     [Header("Identity")]

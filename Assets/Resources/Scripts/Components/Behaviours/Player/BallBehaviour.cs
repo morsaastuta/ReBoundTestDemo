@@ -18,66 +18,78 @@ public class BallBehaviour : MonoBehaviour
 
     void Start()
     {
-        // Deactivate expansion modules
-        foreach (GameObject go in expansion) go.SetActive(false);
+        if (ball.ballType != Ball.BallType.ItemSpawn)
+        {
+            // Deactivate expansion modules
+            foreach (GameObject go in expansion) go.SetActive(false);
 
-        // Set rigidbody
-        body = GetComponent<Rigidbody>();
+            // Set rigidbody
+            body = GetComponent<Rigidbody>();
 
-        // Bypass internal colliders to prevent fake rebounds
-        bypassedColliders.AddRange(GetComponentsInChildren<Collider>());
+            // Bypass internal colliders to prevent fake rebounds
+            bypassedColliders.AddRange(GetComponentsInChildren<Collider>());
 
-        // Set mesh & material
-        GetComponent<MeshFilter>().sharedMesh = ball.mesh;
-        GetComponent<MeshRenderer>().material = ball.material;
-        if (ball.ballType.Equals(Ball.BallType.Object)) GetComponent<MeshCollider>().sharedMesh = ball.mesh;
+            // Set mesh & material
+            GetComponent<MeshFilter>().sharedMesh = ball.mesh;
+            GetComponent<MeshRenderer>().material = ball.material;
+            if (ball.ballType.Equals(Ball.BallType.Object)) GetComponent<MeshCollider>().sharedMesh = ball.mesh;
 
-        // Set last rebound position as initial position
-        lastVertex = transform.position;
+            // Set last rebound position as initial position
+            lastVertex = transform.position;
 
-        // Set greenToRed colors
-        if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[0]);
+            // Set greenToRed colors
+            if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[0]);
 
-        // Set audio source
-        source = GetComponent<AudioSource>();
+            // Set audio source
+            source = GetComponent<AudioSource>();
+        }
     }
 
     void FixedUpdate()
     {
-        // Keep moving ball while it is NOT sticky or while it IS sticky but it has NOT collided still
-        if (!ball.sticky || (ball.sticky && ball.reboundCount == 0)) body.linearVelocity = transform.forward * ball.TranslationSpeed();
-        else body.linearVelocity = new Vector3(0, 0, 0);
+        if (ball.ballType != Ball.BallType.ItemSpawn)
+        {
+            // Keep moving ball while it is NOT sticky or while it IS sticky but it has NOT collided still
+            if (!ball.sticky || (ball.sticky && ball.reboundCount == 0)) body.linearVelocity = transform.forward * ball.TranslationSpeed();
+            else body.linearVelocity = new Vector3(0, 0, 0);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (Prebound(collision.collider))
+        if (ball.ballType != Ball.BallType.ItemSpawn)
         {
-            source.clip = anullClip;
-            source.Play();
-            return;
-        }
+            if (Prebound(collision.collider))
+            {
+                source.clip = anullClip;
+                source.Play();
+                return;
+            }
 
-        source.clip = reboundClip;
-        source.Play();
-        Rebound(collision.collider);
+            source.clip = reboundClip;
+            source.Play();
+            Rebound(collision.collider);
+        }
     }
 
     void OnTriggerEnter(Collider collider)
     {
-        if (Prebound(collider)) return;
-
-        // Inside BALL BEHAVIOUR, ON TRIGGER ENTER will only be used for conditional collisions (e.g. Colored Bounds)
-        if (collider.GetComponent<ConditionalReboundBehaviour>())
+        if (ball.ballType != Ball.BallType.ItemSpawn)
         {
-            // Condition check (FALSE -> pass through // TRUE -> rebound)
-            ConditionalReboundBehaviour crb = collider.GetComponent<ConditionalReboundBehaviour>();
-            int checkQty = 0;
-            if (crb.colorCondition && GetColor(crb.color) == GetComponent<MeshRenderer>().material.color) checkQty++;
-            if (crb.countCondition && crb.count == ball.reboundCount) checkQty++;
-            if (checkQty >= crb.conditionQty) return;
+            if (Prebound(collider)) return;
 
-            Rebound(collider);
+            // Inside BALL BEHAVIOUR, ON TRIGGER ENTER will only be used for conditional collisions (e.g. Colored Bounds)
+            if (collider.GetComponent<ConditionalReboundBehaviour>())
+            {
+                // Condition check (FALSE -> pass through // TRUE -> rebound)
+                ConditionalReboundBehaviour crb = collider.GetComponent<ConditionalReboundBehaviour>();
+                int checkQty = 0;
+                if (crb.colorCondition && GetColor(crb.color) == GetComponent<MeshRenderer>().material.color) checkQty++;
+                if (crb.countCondition && crb.count == ball.reboundCount) checkQty++;
+                if (checkQty >= crb.conditionQty) return;
+
+                Rebound(collider);
+            }
         }
     }
 

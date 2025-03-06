@@ -140,6 +140,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   timerMax: 0
+  call:
+    m_PersistentCalls:
+      m_Calls: []
   pressClip: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
   unpressClip: {fileID: 8300000, guid: 3099d9ea91cadd7469dcceffb0065133, type: 3}
   button: {fileID: 3874502660480511138}
@@ -182,7 +185,7 @@ AudioSource:
   m_GameObject: {fileID: 2242351444277725937}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c3554ffd360640b47a049aaaf151af1b, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1

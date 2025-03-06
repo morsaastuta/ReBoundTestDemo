@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Glossary;
 
@@ -220,8 +221,8 @@ public class PlayerBehaviour : MonoBehaviour
         GameObject ball = Instantiate(balls[selectedBall].prefab);
 
         // Set ball
-        ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
-
+        if (ball.GetComponent<BallBehaviour>()) ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
+        
         // If ball is auxiliar, track it
         if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
 
