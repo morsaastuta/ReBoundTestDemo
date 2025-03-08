@@ -14,7 +14,7 @@ public class EventBehaviour : MonoBehaviour
     [SerializeField] AudioClip monologue;
     [SerializeField] List<AudioClip> voiceClips = new();
     [SerializeField] List<AudioSource> voiceSources = new();
-    [TextArea][SerializeField] string content;
+    [TextArea][SerializeField] string subtitles;
 
     [Header("BGM/SFX")]
     [SerializeField] AudioClip musicClip;
@@ -57,7 +57,7 @@ public class EventBehaviour : MonoBehaviour
         }
 
         // Subtitles
-        if (EventManager.instance.subtitled) EventManager.instance.SetSubtitles(content);
+        if (EventManager.instance.subtitled) EventManager.instance.SetSubtitles(subtitles);
         else EventManager.instance.ClearSubtitles();
 
         // Mechanisms

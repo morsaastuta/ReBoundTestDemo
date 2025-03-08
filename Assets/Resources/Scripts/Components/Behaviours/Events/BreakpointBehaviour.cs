@@ -15,8 +15,16 @@ public class BreakpointBehaviour : MonoBehaviour
         if ((breakpointRules[0].isInt && breakpointRules[0].Check(rules[0])) ||
             (!breakpointRules[0].isInt && Convert.ToInt32(breakpointRules[0].Check()) == rules[0]))
         {
-            breakpoints[0].breakpoint = false;
-
+            Break();
         }
+    }
+
+    void Break()
+    {
+        breakpoints[0].breakpoint = false;
+
+        breakpoints.RemoveAt(0);
+        breakpointRules.RemoveAt(0);
+        rules.RemoveAt(0);
     }
 }

@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -525,6 +525,10 @@ MonoBehaviour:
   voiceSource: {fileID: 8449912371956194429}
   voiceClips: []
   subtitles: {fileID: 0}
+  globalVolume: 1
+  musicVolume: 0.5
+  soundVolume: 0.5
+  voiceVolume: 0.5
 --- !u!1 &5035027892454465766
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +577,7 @@ MonoBehaviour:
   canvas: {fileID: 6432910283037542132}
   subtitleMesh: {fileID: 6884267848208811451}
   subtitled: 1
-  subtitleDistance: 0.9
+  subtitleDepth: 0.9
   subtitleHeight: 128
 --- !u!1 &5232182991639182649
 GameObject:

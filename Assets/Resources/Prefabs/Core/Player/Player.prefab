@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 89705f89-f753-4ea7-9141-f1f9ca140e21
+  instanceId: e228d725-155b-44b4-97e0-f133136e1a37
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 4223b258-bf32-4b3b-9cff-7555edc33149
+  instanceId: eb623d56-9bad-4a1d-a5b0-fd3797759424
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: ebfc6ab6-9c57-4c91-8d70-af487e4879b8
+  instanceId: 08e3178a-7e8e-45a9-8c87-d6ed3c0d68db
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 8d070c0a-fef9-4cb9-88bb-fb7e00a12563
+  instanceId: ec24a581-fda2-4b6d-a97a-5960c55e9276
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -11783,10 +11783,10 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1535
+    m_Bits: 9727
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
