@@ -13,5 +13,4 @@ public abstract class CheckerBehaviour : MonoBehaviour
     {
         return 0 >= rule;
     }
-
 }

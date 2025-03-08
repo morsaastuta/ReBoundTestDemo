@@ -15,6 +15,8 @@ public class Ball : ScriptableObject
     [SerializeField] public string description;
     [SerializeField] public BallType ballType;
     [SerializeField] public GameObject prefab;
+
+    [Header("Projection")]
     [SerializeField] public Mesh mesh;
     [SerializeField] public Material material;
 

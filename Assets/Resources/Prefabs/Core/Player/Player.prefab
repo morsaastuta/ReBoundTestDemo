@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: e228d725-155b-44b4-97e0-f133136e1a37
+  instanceId: 9fcf7432-c81a-4a31-8fbd-bd8f4d84195a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: eb623d56-9bad-4a1d-a5b0-fd3797759424
+  instanceId: ca363c02-08ef-4e0a-9adf-0010e9cd152c
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 08e3178a-7e8e-45a9-8c87-d6ed3c0d68db
+  instanceId: 09464f2c-804a-411a-bafe-a2b9907ef3fe
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: ec24a581-fda2-4b6d-a97a-5960c55e9276
+  instanceId: 9f04ec31-4825-430e-8d59-6a44a149cc14
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -11560,9 +11560,10 @@ MonoBehaviour:
   leftMode: 0
   canvasVR: {fileID: 6705178659893479539, guid: 6fa873087b8a7a2488fdd9661ad6fbbf, type: 3}
   canvasVRPos: {fileID: 815882670445779981}
-  shootClip: {fileID: 8300000, guid: a4694658bf315ba40a2758e8b3fc8e61, type: 3}
-  swapClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
-  clearClip: {fileID: 8300000, guid: c5eba9a037d1cf64fa2daaa91228551e, type: 3}
+  teleportInteractors: []
+  shootClip: {fileID: 8300000, guid: 8f55442d3af984a4fb16e67e114f8f6f, type: 3}
+  swapClip: {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  clearClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
   rightExclusive:
   - {fileID: 4060170009179461709}
   - {fileID: 6330230865927786467}

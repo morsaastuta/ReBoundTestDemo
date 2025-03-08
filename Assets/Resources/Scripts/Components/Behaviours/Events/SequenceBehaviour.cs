@@ -5,7 +5,6 @@ using UnityEngine;
 public class SequenceBehaviour : MonoBehaviour
 {
     [SerializeField] List<EventBehaviour> events = new();
-    [SerializeField] List<float> intervals = new();
     bool breakpoint;
     int index = 0;
     bool inProgress = false;

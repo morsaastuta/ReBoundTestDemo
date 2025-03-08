@@ -119,131 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &35211491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 35211492}
-  - component: {fileID: 35211493}
-  m_Layer: 0
-  m_Name: A25.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &35211492
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35211491}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &35211493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35211491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"They are passed in many ways - raquets, throwing, bats..."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &47659202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 47659203}
-  - component: {fileID: 47659204}
-  m_Layer: 0
-  m_Name: A24.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &47659203
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47659202}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &47659204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47659202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Balls can help developing and showcasing balance and accuracy, so
-    they are very helpful in all kinds of sports."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &51008362
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,106 +293,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &70376275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 70376277}
-  - component: {fileID: 70376276}
-  - component: {fileID: 70376278}
-  m_Layer: 0
-  m_Name: 'Sequence 1: Restaurant'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &70376276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70376275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a10f53062ba6cd46befb9d3553e5b99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  events:
-  - {fileID: 2123045224}
-  - {fileID: 849660670}
-  - {fileID: 1705406353}
-  - {fileID: 1467781581}
-  - {fileID: 1800730362}
-  - {fileID: 1450194093}
-  - {fileID: 1531786409}
-  - {fileID: 849462953}
-  - {fileID: 546550094}
-  - {fileID: 1533725536}
-  - {fileID: 726157751}
-  - {fileID: 2126353340}
-  - {fileID: 731517710}
-  - {fileID: 322731465}
-  - {fileID: 969772479}
-  - {fileID: 718268340}
-  - {fileID: 1485570656}
-  - {fileID: 1752716401}
-  - {fileID: 853814970}
-  - {fileID: 281825188}
-  - {fileID: 1551730483}
-  - {fileID: 1742184995}
-  - {fileID: 792832380}
-  - {fileID: 151563940}
-  - {fileID: 47659204}
-  - {fileID: 35211493}
-  - {fileID: 422050050}
-  - {fileID: 323158778}
-  - {fileID: 1110990558}
-  - {fileID: 1134233538}
-  - {fileID: 999702297}
-  - {fileID: 425969186}
-  - {fileID: 1478620943}
-  - {fileID: 186858691}
-  - {fileID: 944716177}
-  - {fileID: 1622296427}
---- !u!4 &70376277
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70376275}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1089948417}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &70376278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70376275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d7eaad9fe9b3e4aa93d18a97d76060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakpoints:
-  - {fileID: 944716177}
-  keys:
-  - {fileID: 0}
-  rules: 01000000
 --- !u!1 &95751340
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +536,7 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &151563938
+--- !u!1 &140941916
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -769,61 +544,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 151563939}
-  - component: {fileID: 151563940}
+  - component: {fileID: 140941917}
   m_Layer: 0
-  m_Name: A23. MC
+  m_Name: B. Segunda parte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &151563939
+--- !u!4 &140941917
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151563938}
+  m_GameObject: {fileID: 140941916}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
+  m_Children:
+  - {fileID: 188410397}
+  m_Father: {fileID: 1934824758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &151563940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151563938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"That too, but there is a great variety of ball games out there. Even
-    some athletics and gymnastics practices use balls."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &178374574
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +689,7 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &186858689
+--- !u!1 &188410395
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,37 +697,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 186858690}
-  - component: {fileID: 186858691}
+  - component: {fileID: 188410397}
+  - component: {fileID: 188410396}
   m_Layer: 0
-  m_Name: A33
+  m_Name: Ultimoevento2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &186858690
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186858689}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &186858691
+--- !u!114 &188410396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186858689}
+  m_GameObject: {fileID: 188410395}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
@@ -991,12 +720,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedLength: 0
   delay: 0.5
-  breakpoint: 0
+  breakpoint: 1
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
-  subtitles: (Should I force it?)
+  subtitles: 
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
   stopMusic: 0
@@ -1007,6 +736,21 @@ MonoBehaviour:
   functions:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &188410397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188410395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 140941917}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188572061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,68 +1116,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &281825186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 281825187}
-  - component: {fileID: 281825188}
-  m_Layer: 0
-  m_Name: A19. MC mentions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &281825187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281825186}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281825188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281825186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Ah... Well, I like sports."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &322055433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,7 +1182,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5852536571015395861, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
   m_PrefabInstance: {fileID: 322055433}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &322731463
+--- !u!1 &323486515
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1508,123 +1190,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 322731464}
-  - component: {fileID: 322731465}
+  - component: {fileID: 323486516}
   m_Layer: 0
-  m_Name: A13. MC responds
+  m_Name: A. Primera parte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &322731464
+--- !u!4 &323486516
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322731463}
+  m_GameObject: {fileID: 323486515}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
+  m_Children:
+  - {fileID: 1688229285}
+  m_Father: {fileID: 1934824758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &322731465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322731463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Pays the bills. And it''s not like I could do anything else."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &323158776
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 323158777}
-  - component: {fileID: 323158778}
-  m_Layer: 0
-  m_Name: A27.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &323158777
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323158776}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &323158778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323158776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Ball games are so interesing, having to take into account strength,
-    trajectory, rebound angles..."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &340291337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,132 +1578,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &422050048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 422050049}
-  - component: {fileID: 422050050}
-  m_Layer: 0
-  m_Name: A26.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &422050049
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422050048}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &422050050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422050048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"And they don''t always have to be used in team sports! Many ball games
-    can be played solo, like golf or bowling. There is no passing to other people,
-    just you and the ball."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &425969184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 425969185}
-  - component: {fileID: 425969186}
-  m_Layer: 0
-  m_Name: A31
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &425969185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425969184}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &425969186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425969184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (I remember not having to ask about her interests because a glass broke.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &461788465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,68 +1822,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &546550092
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 546550093}
-  - component: {fileID: 546550094}
-  m_Layer: 0
-  m_Name: A8. MC reasures
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &546550093
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546550092}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &546550094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546550092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Don''t worry, I just finished my shift."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &590282591
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,193 +2550,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &718268338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718268339}
-  - component: {fileID: 718268340}
-  m_Layer: 0
-  m_Name: A15. Girl
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &718268339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718268338}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &718268340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718268338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Surely you have some skills or ambitions! When I worked as a barista
-    at my town I couldn''t wait to finish my studies and begin working as a teacher."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &726157749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 726157750}
-  - component: {fileID: 726157751}
-  m_Layer: 0
-  m_Name: A10. Girl responds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &726157750
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726157749}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &726157751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726157749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Ah, good to know... I didn''t want to cause a bad impression."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &731517708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 731517709}
-  - component: {fileID: 731517710}
-  m_Layer: 0
-  m_Name: A12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &731517709
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731517708}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &731517710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731517708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Paid the bills.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &766869786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,68 +2915,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &792832378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 792832379}
-  - component: {fileID: 792832380}
-  m_Layer: 0
-  m_Name: A22. Girl inquires
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &792832379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792832378}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &792832380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792832378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"So, like... soccer and basketball?"'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &832743721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,192 +3036,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &849462951
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 849462952}
-  - component: {fileID: 849462953}
-  m_Layer: 0
-  m_Name: A7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &849462952
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849462951}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &849462953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849462951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (I still don't know what is it that she saw in me.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &849660668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 849660669}
-  - component: {fileID: 849660670}
-  m_Layer: 0
-  m_Name: A1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &849660669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849660668}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &849660670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849660668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (This is...)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &853814968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 853814969}
-  - component: {fileID: 853814970}
-  m_Layer: 0
-  m_Name: A18
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &853814969
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853814968}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &853814970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853814968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (The girl really knew how to carry a conversation. Me however...)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &878335344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4248,142 +3214,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &944716176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 944716178}
-  - component: {fileID: 944716177}
-  m_Layer: 0
-  m_Name: 'A34: Break a glass'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &944716177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944716176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 1
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: 
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1902373443}
-        m_TargetAssemblyTypeName: PlayerBehaviour, Assembly-CSharp
-        m_MethodName: GloveOn
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &944716178
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944716176}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &969772477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 969772478}
-  - component: {fileID: 969772479}
-  m_Layer: 0
-  m_Name: A14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &969772478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969772477}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &969772479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 969772477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Still can't.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &992516704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,260 +3336,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &999702295
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 999702296}
-  - component: {fileID: 999702297}
-  m_Layer: 0
-  m_Name: A30. Girl interest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &999702296
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999702295}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &999702297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999702295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Hahaha! Don''t worry, I get you. I go crazy too when I talk with someone
-    about films."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1089948416
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1089948417}
-  m_Layer: 0
-  m_Name: A. Intro and Glass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1089948417
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089948416}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2123045223}
-  - {fileID: 849660669}
-  - {fileID: 1705406352}
-  - {fileID: 1467781580}
-  - {fileID: 1800730361}
-  - {fileID: 1450194092}
-  - {fileID: 1531786408}
-  - {fileID: 849462952}
-  - {fileID: 546550093}
-  - {fileID: 1533725535}
-  - {fileID: 726157750}
-  - {fileID: 2126353339}
-  - {fileID: 731517709}
-  - {fileID: 322731464}
-  - {fileID: 969772478}
-  - {fileID: 718268339}
-  - {fileID: 1485570655}
-  - {fileID: 1752716400}
-  - {fileID: 853814969}
-  - {fileID: 281825187}
-  - {fileID: 1551730482}
-  - {fileID: 1742184994}
-  - {fileID: 792832379}
-  - {fileID: 151563939}
-  - {fileID: 47659203}
-  - {fileID: 35211492}
-  - {fileID: 422050049}
-  - {fileID: 323158777}
-  - {fileID: 1110990557}
-  - {fileID: 1134233537}
-  - {fileID: 999702296}
-  - {fileID: 425969185}
-  - {fileID: 1478620942}
-  - {fileID: 186858690}
-  - {fileID: 944716178}
-  - {fileID: 1622296426}
-  m_Father: {fileID: 70376277}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1110990556
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110990557}
-  - component: {fileID: 1110990558}
-  m_Layer: 0
-  m_Name: A28
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1110990557
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110990556}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1110990558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110990556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Ah.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1134233536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1134233537}
-  - component: {fileID: 1134233538}
-  m_Layer: 0
-  m_Name: A29. MC stops
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1134233537
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134233536}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1134233538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134233536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Ah... Sorry. I just went on a rant."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1143924117
 GameObject:
   m_ObjectHideFlags: 0
@@ -5598,68 +4174,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1450194091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1450194092}
-  - component: {fileID: 1450194093}
-  m_Layer: 0
-  m_Name: A5. Girl salutes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1450194092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450194091}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1450194093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450194091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Hey! Sorry I''m a bit late, hope you didn''t have to wait too much!"'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1459198792
 GameObject:
   m_ObjectHideFlags: 0
@@ -5903,193 +4417,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1467781579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1467781580}
-  - component: {fileID: 1467781581}
-  m_Layer: 0
-  m_Name: A3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1467781580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467781579}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1467781581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467781579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Why am I here?)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1478620941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1478620942}
-  - component: {fileID: 1478620943}
-  m_Layer: 0
-  m_Name: A32
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1478620942
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478620941}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1478620943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1478620941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (But that's not happening right now...)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1485570654
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1485570655}
-  - component: {fileID: 1485570656}
-  m_Layer: 0
-  m_Name: A16.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1485570655
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485570654}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1485570656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485570654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"And the effort paid out! Now I have enough quality of life to enjoy
-    my hobbies without worrying about the bills."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1523529828
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,193 +4538,17 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1531786407
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1531786408}
-  - component: {fileID: 1531786409}
-  m_Layer: 0
-  m_Name: A6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1531786408
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531786407}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1531786409
+--- !u!114 &1564519613 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5136725684379176254, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+  m_PrefabInstance: {fileID: 2782034709684655659}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531786407}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 380426e559d57db49a60aed3327fc6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Ah, I remember when I accepted a date from that girl.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1533725534
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1533725535}
-  - component: {fileID: 1533725536}
-  m_Layer: 0
-  m_Name: A9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1533725535
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533725534}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1533725536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533725534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Literally. Not uncommon to have my shift end later than expected, even
-    as of today.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1551730481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1551730482}
-  - component: {fileID: 1551730483}
-  m_Layer: 0
-  m_Name: A20. Girl adds
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1551730482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1551730481}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1551730483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1551730481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"No way! What kind? I love athletics and gymnastics."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1611426340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,7 +4671,7 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1622296425
+--- !u!1 &1688229283
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6528,37 +4679,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1622296426}
-  - component: {fileID: 1622296427}
+  - component: {fileID: 1688229285}
+  - component: {fileID: 1688229284}
   m_Layer: 0
-  m_Name: A35
+  m_Name: Ultimoevento1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1622296426
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622296425}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1622296427
+--- !u!114 &1688229284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622296425}
+  m_GameObject: {fileID: 1688229283}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
@@ -6566,12 +4702,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedLength: 0
   delay: 0.5
-  breakpoint: 0
+  breakpoint: 1
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
-  subtitles: (Should I force it?)
+  subtitles: 
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
   stopMusic: 0
@@ -6582,68 +4718,21 @@ MonoBehaviour:
   functions:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1705406351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1705406352}
-  - component: {fileID: 1705406353}
-  m_Layer: 0
-  m_Name: A2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1705406352
+--- !u!4 &1688229285
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705406351}
+  m_GameObject: {fileID: 1688229283}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1089948417}
+  m_Father: {fileID: 323486516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1705406353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1705406351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (...that restaurant.)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1705764189
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,130 +4975,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1742184993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1742184994}
-  - component: {fileID: 1742184995}
-  m_Layer: 0
-  m_Name: A21. MC interest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1742184994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742184993}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1742184995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742184993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"I''m more interested in ball games."'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!1 &1752716399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1752716400}
-  - component: {fileID: 1752716401}
-  m_Layer: 0
-  m_Name: A17.
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1752716400
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752716399}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1752716401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752716399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"Speaking of which, what do you do in your free time?"'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1791165131
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,70 +5097,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1800730360
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1800730361}
-  - component: {fileID: 1800730362}
-  m_Layer: 0
-  m_Name: A4. Girl enters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1800730361
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800730360}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1800730362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800730360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: 
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips:
-  - {fileID: 8300000, guid: 6914b1f1c1c214c40a382bb2d8dd5559, type: 3}
-  soundSources:
-  - {fileID: 0}
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1817156139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7331,7 +5232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1453345344826311889, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.819
+      value: -3.98
       objectReference: {fileID: 0}
     - target: {fileID: 1453345344826311889, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7339,7 +5240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1453345344826311889, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.825
+      value: 4.74
       objectReference: {fileID: 0}
     - target: {fileID: 1453345344826311889, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7374,17 +5275,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
---- !u!114 &1902373443 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1615136151010715426, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
-  m_PrefabInstance: {fileID: 1902373442}
+--- !u!1 &1934824755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934824758}
+  - component: {fileID: 1934824757}
+  - component: {fileID: 1934824756}
+  m_Layer: 0
+  m_Name: 'Sequence 3: Street'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1934824756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934824755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 951435138ed960147a9c9e7d5b643cbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 41d7eaad9fe9b3e4aa93d18a97d76060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakpoints:
+  - {fileID: 1688229284}
+  - {fileID: 188410396}
+  - {fileID: 188410396}
+  keys:
+  - {fileID: 1564519613}
+  - {fileID: 1564519613}
+  - {fileID: 1564519613}
+  rules: 0a000000140000001e000000
+--- !u!114 &1934824757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934824755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a10f53062ba6cd46befb9d3553e5b99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: []
+--- !u!4 &1934824758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934824755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 323486516}
+  - {fileID: 140941917}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973790464
 GameObject:
   m_ObjectHideFlags: 0
@@ -7873,154 +5832,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &2123045222
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2123045223}
-  - component: {fileID: 2123045224}
-  m_Layer: 0
-  m_Name: A0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2123045223
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123045222}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2123045224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123045222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (...Huh?)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1902373443}
-        m_TargetAssemblyTypeName: PlayerBehaviour, Assembly-CSharp
-        m_MethodName: GloveOn
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1902373443}
-        m_TargetAssemblyTypeName: PlayerBehaviour, Assembly-CSharp
-        m_MethodName: TeleportOn
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!1 &2126353338
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2126353339}
-  - component: {fileID: 2126353340}
-  m_Layer: 0
-  m_Name: A11. Girl inquires
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2126353339
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126353338}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2126353340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126353338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: '"So... How is working as a cook here?"'
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2135413692
 GameObject:
   m_ObjectHideFlags: 0
@@ -8142,6 +5953,63 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &2782034709684655659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1208081343643733570, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_Name
+      value: Destroyer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.888
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.823
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
 --- !u!1001 &2832969703208964613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9376,13 +7244,76 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 4654828387962052312, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
   m_PrefabInstance: {fileID: 2832969703208964613}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5892030809576439907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130013793932239587, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860352148263569675, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: m_Name
+      value: Sensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8087429622485894906, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
+      propertyPath: call.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1934824757}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff69e2706af5aea4ab8cc5747accdf6f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 878335344}
   - {fileID: 1902373442}
-  - {fileID: 70376277}
+  - {fileID: 1934824758}
   - {fileID: 2832969703208964613}
   - {fileID: 1345912550}
   - {fileID: 51008363}
+  - {fileID: 5892030809576439907}
+  - {fileID: 2782034709684655659}

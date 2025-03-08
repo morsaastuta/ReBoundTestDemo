@@ -23,6 +23,10 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] GameObject canvasVR;
     [SerializeField] Transform canvasVRPos;
 
+    [Header("Constrictions")]
+    bool gloveOn = true;
+    [SerializeField] List<GameObject> teleportInteractors = new();
+
     // VR commons
     bool aiming = false;
     GameObject canvasVRInstance;
@@ -86,6 +90,19 @@ public class PlayerBehaviour : MonoBehaviour
         leftMode = left;
         InputManager.instance.SetHandedness(leftMode);
         UpdateComponents();
+    }
+
+    public void GloveOn(bool on)
+    {
+        gloveOn = on;
+    }
+
+    public void TeleportOn(bool on)
+    {
+        foreach (GameObject teleportInteractor in teleportInteractors)
+        {
+            teleportInteractor.SetActive(on);
+        }
     }
 
     void UpdateComponents()
@@ -206,41 +223,16 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        if (!shot)
+        if (gloveOn && !shot)
         {
             AudioManager.instance.PlaySound(shootClip, glove.audioSource);
             StartCoroutine(Shot());
         }
     }
 
-    public IEnumerator Shot()
-    {
-        Preview(false, false);
-        shot = true;
-
-        GameObject ball = Instantiate(balls[selectedBall].prefab);
-
-        // Set ball
-        if (ball.GetComponent<BallBehaviour>()) ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
-        
-        // If ball is auxiliar, track it
-        if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
-
-        // Set position (Palm)
-        ball.transform.position = glove.palm.position;
-
-        // Set rotation (Palm or Gyroscope)
-        ball.transform.rotation = glove.palm.rotation;
-
-        yield return new WaitForSeconds(1f);
-
-        shot = false;
-        Preview(true, true);
-    }
-
     public void SwapBall(bool right)
     {
-        if (balls.Count > 0)
+        if (gloveOn && balls.Count > 0)
         {
             AudioManager.instance.PlaySound(swapClip, glove.audioSource);
 
@@ -256,22 +248,28 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void ClearAuxiliars()
     {
-        AudioManager.instance.PlaySound(clearClip, glove.audioSource);
+        if (gloveOn)
+        {
+            AudioManager.instance.PlaySound(clearClip, glove.audioSource);
 
-        foreach (GameObject ball in auxiliarBalls) Destroy(ball);
-        auxiliarBalls.Clear();
+            foreach (GameObject ball in auxiliarBalls) Destroy(ball);
+            auxiliarBalls.Clear();
+        }
     }
 
     public void ObtainBall(Ball ball)
     {
-        balls.Add(ball);
-        selectedBall = balls.Count - 1;
-        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        if (gloveOn)
+        {
+            balls.Add(ball);
+            selectedBall = balls.Count - 1;
+            glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        }
     }
 
     public void Preview(bool on, bool isPalm)
     {
-        if (balls.Count > 0)
+        if (gloveOn &&balls.Count > 0)
         {
             if (on)
             {
@@ -293,13 +291,38 @@ public class PlayerBehaviour : MonoBehaviour
         }
     }
 
-    public void SelectBall(int idx)
+    void SelectBall(int idx)
     {
         selectedBall = idx;
         glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
     }
 
-    public IEnumerator CallPause()
+    IEnumerator Shot()
+    {
+        Preview(false, false);
+        shot = true;
+
+        GameObject ball = Instantiate(balls[selectedBall].prefab);
+
+        // Set ball
+        if (ball.GetComponent<BallBehaviour>()) ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
+
+        // If ball is auxiliar, track it
+        if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
+
+        // Set position (Palm)
+        ball.transform.position = glove.palm.position;
+
+        // Set rotation (Palm or Gyroscope)
+        ball.transform.rotation = glove.palm.rotation;
+
+        yield return new WaitForSeconds(1f);
+
+        shot = false;
+        Preview(true, true);
+    }
+
+    IEnumerator CallPause()
     {
         if (!GameManager.instance.paused)
         {

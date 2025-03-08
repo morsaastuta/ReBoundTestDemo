@@ -27,8 +27,8 @@ public class EventBehaviour : MonoBehaviour
     [SerializeField] List<ActivableBehaviour> activableObjects = new();
     [SerializeField] List<bool> reversed = new();
 
-    [Header("Events")]
-    [SerializeField] List<UnityEvent> events = new();
+    [Header("Functions")]
+    [SerializeField] UnityEvent functions = new();
 
     public void Play()
     {
@@ -67,17 +67,20 @@ public class EventBehaviour : MonoBehaviour
             else activableObject.Activate();
         }
 
-        // Events
-        foreach (UnityEvent function in events) function.Invoke();
+        // Functions
+        functions.Invoke();
     }
 
     public float GetLength()
     {
-        float maxLength = fixedLength;
+        float length = 0;
 
-        if (monologue != null && monologue.length > maxLength) maxLength = monologue.length;
-        foreach(AudioClip voiceClip in voiceClips) if (voiceClip != null && voiceClip.length > maxLength) maxLength = voiceClip.length;
+        if (fixedLength <= 0)
+        {
+            if (monologue != null && monologue.length > length) length = monologue.length;
+            foreach (AudioClip voiceClip in voiceClips) if (voiceClip != null && voiceClip.length > length) length = voiceClip.length;
+        }
 
-        return maxLength + delay;
+        return length + delay;
     }
 }

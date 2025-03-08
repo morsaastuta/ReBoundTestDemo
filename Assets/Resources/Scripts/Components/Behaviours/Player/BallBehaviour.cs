@@ -4,17 +4,18 @@ using static Glossary;
 
 public class BallBehaviour : MonoBehaviour
 {
+    [Header("Customization")]
     [SerializeField] List<GameObject> expansion = new();
-
-    [Header("Audio")]
     [SerializeField] AudioClip reboundClip;
     [SerializeField] AudioClip anullClip;
 
-    public Ball ball;
-    Rigidbody body;
+    [Header("References")]
+    [SerializeField] Rigidbody body;
+    [SerializeField] AudioSource audioSource;
+
+    [HideInInspector] public Ball ball;
     Vector3 lastVertex = new();
     List<Collider> bypassedColliders = new();
-    AudioSource source;
 
     void Start()
     {
@@ -23,25 +24,14 @@ public class BallBehaviour : MonoBehaviour
             // Deactivate expansion modules
             foreach (GameObject go in expansion) go.SetActive(false);
 
-            // Set rigidbody
-            body = GetComponent<Rigidbody>();
-
             // Bypass internal colliders to prevent fake rebounds
             bypassedColliders.AddRange(GetComponentsInChildren<Collider>());
-
-            // Set mesh & material
-            GetComponent<MeshFilter>().sharedMesh = ball.mesh;
-            GetComponent<MeshRenderer>().material = ball.material;
-            if (ball.ballType.Equals(Ball.BallType.Object)) GetComponent<MeshCollider>().sharedMesh = ball.mesh;
 
             // Set last rebound position as initial position
             lastVertex = transform.position;
 
             // Set greenToRed colors
             if (ball.colors.Count > 0) GetComponent<MeshRenderer>().material.color = GetColor(ball.colors[0]);
-
-            // Set audio source
-            source = GetComponent<AudioSource>();
         }
     }
 
@@ -61,13 +51,13 @@ public class BallBehaviour : MonoBehaviour
         {
             if (Prebound(collision.collider))
             {
-                source.clip = anullClip;
-                source.Play();
+                audioSource.clip = anullClip;
+                audioSource.Play();
                 return;
             }
 
-            source.clip = reboundClip;
-            source.Play();
+            audioSource.clip = reboundClip;
+            audioSource.Play();
             Rebound(collision.collider);
         }
     }
