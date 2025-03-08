@@ -484,7 +484,7 @@ MonoBehaviour:
   - {fileID: 1478620943}
   - {fileID: 186858691}
   - {fileID: 944716177}
-  - {fileID: 1622296427}
+  - {fileID: 0}
 --- !u!4 &70376277
 Transform:
   m_ObjectHideFlags: 0
@@ -499,6 +499,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1089948417}
+  - {fileID: 1009245072}
+  - {fileID: 1464349552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &70376278
@@ -996,7 +998,7 @@ MonoBehaviour:
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
-  subtitles: (Should I force it?)
+  subtitles: (Should I throw something at it?)
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
   stopMusic: 0
@@ -2173,7 +2175,8 @@ MonoBehaviour:
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
-  subtitles: (I remember not having to ask about her interests because a glass broke.)
+  subtitles: (I remember not having to ask about her interests because a glass from
+    the bar broke.)
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
   stopMusic: 0
@@ -2439,7 +2442,7 @@ GameObject:
   - component: {fileID: 546550093}
   - component: {fileID: 546550094}
   m_Layer: 0
-  m_Name: A8. MC reasures
+  m_Name: A08. MC reasures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4070,7 +4073,7 @@ GameObject:
   - component: {fileID: 849462952}
   - component: {fileID: 849462953}
   m_Layer: 0
-  m_Name: A7
+  m_Name: A07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4132,7 +4135,7 @@ GameObject:
   - component: {fileID: 849660669}
   - component: {fileID: 849660670}
   m_Layer: 0
-  m_Name: A1
+  m_Name: A01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4744,6 +4747,38 @@ MonoBehaviour:
   functions:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1009245071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009245072}
+  m_Layer: 0
+  m_Name: B. Pajaros
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1009245072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009245071}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2050938580}
+  m_Father: {fileID: 70376277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089948416
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1089948417}
   m_Layer: 0
-  m_Name: A. Intro and Glass
+  m_Name: A. Vaso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4808,7 +4843,6 @@ Transform:
   - {fileID: 1478620942}
   - {fileID: 186858690}
   - {fileID: 944716178}
-  - {fileID: 1622296426}
   m_Father: {fileID: 70376277}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1110990556
@@ -4862,7 +4896,7 @@ MonoBehaviour:
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
-  subtitles: (Ah.)
+  subtitles: (Ah...)
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
   stopMusic: 0
@@ -5837,7 +5871,7 @@ GameObject:
   - component: {fileID: 1450194092}
   - component: {fileID: 1450194093}
   m_Layer: 0
-  m_Name: A5. Girl salutes
+  m_Name: A05. Girl salutes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6131,6 +6165,37 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1464349551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464349552}
+  m_Layer: 0
+  m_Name: C. Alarma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464349552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464349551}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 70376277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467781579
 GameObject:
   m_ObjectHideFlags: 0
@@ -6142,7 +6207,7 @@ GameObject:
   - component: {fileID: 1467781580}
   - component: {fileID: 1467781581}
   m_Layer: 0
-  m_Name: A3
+  m_Name: A03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6450,7 +6515,7 @@ GameObject:
   - component: {fileID: 1531786408}
   - component: {fileID: 1531786409}
   m_Layer: 0
-  m_Name: A6
+  m_Name: A06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6512,7 +6577,7 @@ GameObject:
   - component: {fileID: 1533725535}
   - component: {fileID: 1533725536}
   m_Layer: 0
-  m_Name: A9
+  m_Name: A09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6748,68 +6813,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1 &1622296425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1622296426}
-  - component: {fileID: 1622296427}
-  m_Layer: 0
-  m_Name: A35
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1622296426
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622296425}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1089948417}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1622296427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1622296425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
-  breakpoint: 0
-  keepVoice: 0
-  monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
-  subtitles: (Should I force it?)
-  musicClip: {fileID: 0}
-  musicSource: {fileID: 0}
-  stopMusic: 0
-  soundClips: []
-  soundSources: []
-  activableObjects: []
-  reversed: 
-  functions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1705406351
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,7 +6824,7 @@ GameObject:
   - component: {fileID: 1705406352}
   - component: {fileID: 1705406353}
   m_Layer: 0
-  m_Name: A2
+  m_Name: A02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7371,7 +7374,7 @@ GameObject:
   - component: {fileID: 1800730361}
   - component: {fileID: 1800730362}
   m_Layer: 0
-  m_Name: A4. Girl enters
+  m_Name: A04. Girl enters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7857,6 +7860,68 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &2050938579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050938580}
+  - component: {fileID: 2050938581}
+  m_Layer: 0
+  m_Name: B01. Girl is surprised
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2050938580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050938579}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1009245072}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050938581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050938579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedLength: 0
+  delay: 0.5
+  breakpoint: 0
+  keepVoice: 0
+  monologue: {fileID: 0}
+  voiceClips: []
+  voiceSources: []
+  subtitles: 
+  musicClip: {fileID: 0}
+  musicSource: {fileID: 0}
+  stopMusic: 0
+  soundClips: []
+  soundSources: []
+  activableObjects: []
+  reversed: 
+  functions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2092728323
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,7 +8177,7 @@ GameObject:
   - component: {fileID: 2123045223}
   - component: {fileID: 2123045224}
   m_Layer: 0
-  m_Name: A0
+  m_Name: A00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9176,7 +9241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6057009817474394354, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057009817474394354, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 6057009817474394354, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9192,7 +9261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6176246574262771684, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176246574262771684, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 6176246574262771684, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9248,7 +9321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6681235143825741779, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6681235143825741779, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 6681235143825741779, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9312,7 +9389,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7113751173778339428, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113751173778339428, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 7113751173778339428, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9432,7 +9513,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8051198222831565580, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051198222831565580, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 8051198222831565580, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9496,7 +9581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8358157552067697636, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358157552067697636, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
+      propertyPath: m_TagString
+      value: Reboundable
       objectReference: {fileID: 0}
     - target: {fileID: 8358157552067697636, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
