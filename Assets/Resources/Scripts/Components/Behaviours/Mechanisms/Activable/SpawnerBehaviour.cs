@@ -26,31 +26,33 @@ public class SpawnerBehaviour : ActivableBehaviour
     {
         base.FixedUpdate();
 
-        
-        if (spawnOnDestroy)
-        {
-            if (newSpawn == null)
+        CheckSpawnProximity();
+        Debug.Log(active);
+        if (active) 
+        { 
+            if (spawnOnDestroy)
             {
-                Spawn();
-            }
-        }
-        else
-        {
-
-            CheckSpawnProximity();
-            if (active)
-            {
-                timer++;
-                if (timer >= interval)
+                if (newSpawn == null)
                 {
                     Spawn();
-                    timer = 0;
                 }
             }
-            else timer = 0;
-        }
-    }
+            else
+            {
 
+                {
+                    timer++;
+                    if (timer >= interval)
+                    {
+                        Spawn();
+                        timer = 0;
+                    }
+                }
+            }
+        }
+        else timer = 0;
+    }
+    
     void Spawn()
     {
 

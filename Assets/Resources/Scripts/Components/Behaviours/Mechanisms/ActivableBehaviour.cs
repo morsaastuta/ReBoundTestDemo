@@ -20,22 +20,29 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
 
     protected virtual void FixedUpdate()
     {
-        // Requirement is true by default
-        requirement = true;
 
-        // Set requirement to false if any button is not pressed
-        foreach (ActivatorBehaviour activator in activators)
+        if (activators.Count > 0)
         {
-            if (!activator.active)
+            // Requirement is true by default
+            requirement = true;
+       
+            // Set requirement to false if any button is not pressed
+            foreach (ActivatorBehaviour activator in activators)
             {
-                requirement = false;
-                break;
+                if (!activator.active)
+                {
+                    requirement = false;
+                    break;
+                }
             }
+
+            // Activation / Deactivation
+            if (requirement && !active) Activate();
+            else if (!permanent && !requirement && active) Deactivate();
         }
 
-        // Activation / Deactivation
-        if (requirement && !active) Activate();
-        else if (!permanent && !requirement && active) Deactivate();
+        
+
     }
 
     public virtual void Activate()

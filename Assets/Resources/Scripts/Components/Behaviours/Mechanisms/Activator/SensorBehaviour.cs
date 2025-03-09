@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class SensorBehaviour : ActivatorBehaviour
 {
+    [TagSelector][SerializeField] string tagName;
     void OnTriggerEnter(Collider collider)
     {
-        base.Activate(true);
+        if (collider.CompareTag(tagName))
+            base.Activate(true);
     }
 }

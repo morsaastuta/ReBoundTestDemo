@@ -10,6 +10,11 @@ public abstract class ActivatorBehaviour : CheckerBehaviour
 
     protected float timer = 0;
 
+    protected void Start()
+    {
+        Activate(active);
+    }
+
     protected void FixedUpdate()
     {
         if (timer > 0)
