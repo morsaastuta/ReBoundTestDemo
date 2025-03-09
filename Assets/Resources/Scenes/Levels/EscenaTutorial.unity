@@ -246,27 +246,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.837
+      value: 4.793
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.265
+      value: 1.355
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.162
+      value: -4.161
       objectReference: {fileID: 0}
     - target: {fileID: 1757958078497062755, guid: 4641b89fde5dfb940877043856e1fd08, type: 3}
       propertyPath: m_LocalRotation.w
@@ -638,7 +638,19 @@ MonoBehaviour:
   reversed: 01
   functions:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 185785199}
+        m_TargetAssemblyTypeName: ActivableBehaviour, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1175042185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,11 +1269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.049
+      value: 4.953
       objectReference: {fileID: 0}
     - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.577
+      value: 1.262
       objectReference: {fileID: 0}
     - target: {fileID: 3162798550601527583, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1305,27 +1317,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Size.x
-      value: 0.64118725
+      value: 0.68350124
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Size.y
-      value: 0.60736
+      value: 0.6461309
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Size.z
-      value: 0.45349842
+      value: 0.46996123
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Center.x
-      value: 0
+      value: 0.06351662
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Center.y
-      value: -0.19632
+      value: 0.07915014
       objectReference: {fileID: 0}
     - target: {fileID: 6818928847738957370, guid: 62bc460c959c4b844ba4a8b163f24f47, type: 3}
       propertyPath: m_Center.z
-      value: -0.0014598668
+      value: 0.0067715347
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1538,7 +1550,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 83361157035936229, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}

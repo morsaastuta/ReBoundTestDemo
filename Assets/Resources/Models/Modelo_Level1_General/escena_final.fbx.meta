@@ -5,6 +5,266 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Borde
+    second: {fileID: 2100000, guid: 35135b577f063974ea832f67752cb56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Cuchara
+    second: {fileID: 2100000, guid: dda76affa494e1b4da8188248cc20514, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Cuchillo
+    second: {fileID: 2100000, guid: b9930016ae724b444a3c653c68b07385, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Extractor
+    second: {fileID: 2100000, guid: da7284cc5a882284090da38321deac90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_ExtractorGr
+    second: {fileID: 2100000, guid: 400c0419a0406c84d82ed4ab5da4839e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Fregadero
+    second: {fileID: 2100000, guid: f80cfc8d577cfc4468caffac26fbf97c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Freidora
+    second: {fileID: 2100000, guid: b6b1ad7af8e092b4b9ce9b6f27b51477, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Holla
+    second: {fileID: 2100000, guid: 4b348ce53030a9a48a6c176df34bc28f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Mesa
+    second: {fileID: 2100000, guid: d1f4409a615594a449412de512f93db4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_MesaCajon
+    second: {fileID: 2100000, guid: 5eee33807ac90624baf38676f9b7faea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_MesaCajonFogon
+    second: {fileID: 2100000, guid: d76d7980b89b9e549910d30a88c62490, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_MesaHorno
+    second: {fileID: 2100000, guid: 078ac09d2d75eda479d1e897b8fd53ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Pared
+    second: {fileID: 2100000, guid: 4e62be4e1675c9541855264b2caf3ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Paredes
+    second: {fileID: 2100000, guid: cdef6382fee7b4348b70172a6735fc77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_PlatoHondo
+    second: {fileID: 2100000, guid: 5c4faa9e40c5e464baeda67cf85fce9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_PlatoLlano
+    second: {fileID: 2100000, guid: 02e612d489cf60c4a9b6e074c7f59249, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_SacoCebolla
+    second: {fileID: 2100000, guid: 2ad618fca1a56154088e4290965053f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_SacoPan
+    second: {fileID: 2100000, guid: 227fdac1dfd0f9e42828320d954a1b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_SacoPimiento
+    second: {fileID: 2100000, guid: 90d7e733053867b488ab3690bb69e353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_SacoTomate
+    second: {fileID: 2100000, guid: fa2816e1646aa6440b5e67e383d8d3c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Tabla
+    second: {fileID: 2100000, guid: 79ba99a0ba7a9be4e972b8e208b3cb02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Tenedor
+    second: {fileID: 2100000, guid: 1e9b8f819c6528249a3129517cc8c79f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Bricks
+    second: {fileID: 2100000, guid: 633c1495bc482e149a9347159eb46b62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_CajaElectrica
+    second: {fileID: 2100000, guid: 3bd3512d04ad74b43b521120f52c014d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Contenedor
+    second: {fileID: 2100000, guid: 5d9974d7c5fb4e94cb96c03c83287313, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Edificio1
+    second: {fileID: 2100000, guid: 714f9e0c2ee715241aa12db91f1deaef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Edificio2
+    second: {fileID: 2100000, guid: 96daefc0280081845ac886af1db9c36f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Escaleras
+    second: {fileID: 2100000, guid: 6d929e247392d8b4594d99795aeb52f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Luz1
+    second: {fileID: 2100000, guid: cb628da359d8e6e48a5bd639797ad2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Luz2
+    second: {fileID: 2100000, guid: 10e1b0858d74c6f4ebe3318eb03ebd69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_PuertaBUENA
+    second: {fileID: 2100000, guid: 298b2c432f1588042915e1d6446b0f2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_PuertaGaraje
+    second: {fileID: 2100000, guid: 5855ad5ff5bbc6541826e891537a2dfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_PuertaValla
+    second: {fileID: 2100000, guid: c5d6c96d945f8b344bf6b364b9b66e18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Suelo
+    second: {fileID: 2100000, guid: 01530f88d7b90f54298c92160f9f9483, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Valla
+    second: {fileID: 2100000, guid: e156da7be13731a4eadf56d4089f004e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Ventilacion
+    second: {fileID: 2100000, guid: c42f45864e8cc174e94d627dd5a91772, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_Ventilacion2
+    second: {fileID: 2100000, guid: 235ff25ac9eee604a88285624c9d70fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Ca_escalerasPuerta
+    second: {fileID: 2100000, guid: 5f184538e289db842a848aa6e3a1154f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Barra
+    second: {fileID: 2100000, guid: 4559cac517ca5be43a06d32277e0872c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Disco
+    second: {fileID: 2100000, guid: a47a248e92947de42bb825369cf30c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Nevera
+    second: {fileID: 2100000, guid: 9db6818cf13b59745b32b20ac1b8cbb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Paredes
+    second: {fileID: 2100000, guid: ba8956e783907744285638cc2955f376, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Sofa
+    second: {fileID: 2100000, guid: b928df3259b2803428adc43ee0288656, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_R_Techo
+    second: {fileID: 2100000, guid: 047904570873ce842a16305c3a3b9cb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.211
+    second: {fileID: 2100000, guid: e0fa201514f25f442b0a9e8f72d9b50b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.217
+    second: {fileID: 2100000, guid: aa546422a5e5f914088e32171e928b8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_008
+    second: {fileID: 2100000, guid: 982840db10c46b04ba44a6768686b682, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_008.001
+    second: {fileID: 2100000, guid: 971060fa5d66e2d4d8d6254cbe477287, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chapa
+    second: {fileID: 2100000, guid: b172ab5d8e321b748a419d1987a0f541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chapa.001
+    second: {fileID: 2100000, guid: ca383a1aa37521748a85be76f0372a28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ventana
+    second: {fileID: 2100000, guid: 25f7e1e1fb2ecf7499792b701f6b8377, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ventana.001
+    second: {fileID: 2100000, guid: 4945007180f93144486046322873e25c, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Base_color_Spoon
@@ -23,7 +283,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Base_color
-    second: {fileID: 2800000, guid: 09bdde74ff7c87d43b42dc9dda9c367c, type: 3}
+    second: {fileID: 2800000, guid: abf89ed46ed607c4ba1d56e4b1e7f592, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -108,7 +368,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Metallic
-    second: {fileID: 2800000, guid: 5a82692f78400b841bf61a542c466ec0, type: 3}
+    second: {fileID: 2800000, guid: cefecb0559ec6404a81c75b6fc648bc1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -133,7 +393,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Roughness
-    second: {fileID: 2800000, guid: ebb363c44f8540e48b79c5bb61c97dbc, type: 3}
+    second: {fileID: 2800000, guid: 9c7ec189d5e6bf64397a9d76fb68872a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -163,12 +423,12 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Roughness_tablaCortar
-    second: {fileID: 2800000, guid: 75d551e95bbc1944aa65706bc9d30d6b, type: 3}
+    second: {fileID: 2800000, guid: e3bf88b23820ba2438698b7e9c3bd6c8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_World
-    second: {fileID: 2800000, guid: 51fcbc151e8c9fd4695b3a026b9ecb16, type: 3}
+    second: {fileID: 2800000, guid: f15afa4cc9bb1a14f900256e98d50bb9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -243,37 +503,37 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_wrold
-    second: {fileID: 2800000, guid: a12f1768b42bab143b8601c76a75a941, type: 3}
+    second: {fileID: 2800000, guid: 69ef1239fe0ffdc4f9f9dd660c459cca, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.001_Base_color
-    second: {fileID: 2800000, guid: 4b203ef38c0b6bb478586faec986c7b0, type: 3}
+    second: {fileID: 2800000, guid: 306bf9a62d789b34aae4365fe868aef0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.001_world
-    second: {fileID: 2800000, guid: 1c309dcf81d6b9f4d840c854cae07328, type: 3}
+    second: {fileID: 2800000, guid: e6122d18522425c488acfec97d71cbe2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.004_Base_color
-    second: {fileID: 2800000, guid: 51339290c637c6c42996da2f4fe13b32, type: 3}
+    second: {fileID: 2800000, guid: c5896ea6c1126434bbc2d0e15917f295, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.004_world
-    second: {fileID: 2800000, guid: f0d299dfa13c3bb44a4758aca9e90739, type: 3}
+    second: {fileID: 2800000, guid: bf691b44790efc94486d0fe211d724f8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.005_Base_color
-    second: {fileID: 2800000, guid: 91e92725a0c409d4ab1fa5bacda8f794, type: 3}
+    second: {fileID: 2800000, guid: 5bf9f48e841d8664c98ae38fe005588f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.005_world
-    second: {fileID: 2800000, guid: 4340e64035e4cbf4db27c37aa4969eb3, type: 3}
+    second: {fileID: 2800000, guid: e51782f0764315645a10a6e155b60f5c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -284,6 +544,386 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material_World_tenedor
     second: {fileID: 2800000, guid: 89c80d3c11e1d6c4c82c21776060b68c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Borde_Base_color
+    second: {fileID: 2800000, guid: 45810a775419fe440b5c215a5271f51a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Borde_World
+    second: {fileID: 2800000, guid: 7cb53ad413688704cac89a60836273e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchara_Base_color
+    second: {fileID: 2800000, guid: 696285cc29b71be4da5978319627e912, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchara_World
+    second: {fileID: 2800000, guid: 1f945b51df6c7354383c5419ac757f52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchillo_Base_Color
+    second: {fileID: 2800000, guid: 5f5adbb33dd895445a33be709e37bace, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchillo_Metallic
+    second: {fileID: 2800000, guid: 5d2a2ba07ce5ac54685c891fab353d20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchillo_Roughness
+    second: {fileID: 2800000, guid: 1737e8b28976d7349924e9be05a8087b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Cuchillo_World
+    second: {fileID: 2800000, guid: b13bbc2fe8f2089499906c0f69b3ff61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_ExtractorGr_Base_color
+    second: {fileID: 2800000, guid: 98f8470677a60dd40b1678840d7e36e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_ExtractorGr_World
+    second: {fileID: 2800000, guid: dbe96bf63a75db242847100aa9901f88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Extractor_Base_color
+    second: {fileID: 2800000, guid: b2951c77a35372f4f9843b67a0e51ffa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Extractor_World
+    second: {fileID: 2800000, guid: b968b08ceb5e3a4459a592a1c82148af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Floor_Base_Color
+    second: {fileID: 2800000, guid: 175d3fb11c7ad1946a8fa38e9ac34c49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Fogon_World
+    second: {fileID: 2800000, guid: a8f86040f087d9a42bf0ad844fd13bd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Fregadero_Base_color
+    second: {fileID: 2800000, guid: 1ad4234705e76f749a60825654026e37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Fregadero_World
+    second: {fileID: 2800000, guid: 238284b4e05c5784192d157a30b46a26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Freidora_Base_color
+    second: {fileID: 2800000, guid: 261e82f0d1e3a3b4588132b9a91544a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Freidora_Metallic
+    second: {fileID: 2800000, guid: bdc91bb541c726e4fa751da410cefe54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Freidora_Roughness
+    second: {fileID: 2800000, guid: 567d92da3bd2dcf469a7d8ef2da1155d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Freidora_World
+    second: {fileID: 2800000, guid: fec821b1bd44816418ff0b691db04094, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Frogon_Base_color
+    second: {fileID: 2800000, guid: cfea7d2a2d15e024faa766a739e9ca07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaCajon_Base_color
+    second: {fileID: 2800000, guid: 896260872159eb24ba87a08f8d81a276, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaCajon_World
+    second: {fileID: 2800000, guid: 75583282a5d07a4408404e611c04b1aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaHorno_Base_Color
+    second: {fileID: 2800000, guid: 5a3ff681e85130849994bf38f8970677, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaHorno_Metallic
+    second: {fileID: 2800000, guid: d6a0c8fc8a2d7324a92521c8b1c740d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaHorno_Roughness
+    second: {fileID: 2800000, guid: b00fd602f6ce6a94d95503c5b7ade352, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_MesaHorno_World
+    second: {fileID: 2800000, guid: 2d2263407c6a59b448f924732b799dee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Mesa_Base_Color
+    second: {fileID: 2800000, guid: 3487f5740dc1bcd40890d50db19c7818, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Mesa_World
+    second: {fileID: 2800000, guid: 8e0374117c3ff7c499b6b919a6f0933c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Pared_Base_Color
+    second: {fileID: 2800000, guid: 8991c8279bf128e4c9e93ca3e250ab65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoHondo_Base_color
+    second: {fileID: 2800000, guid: 7985bd4974c709142bc99ea920d34d3d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoHondo_Roughness
+    second: {fileID: 2800000, guid: 68e12e59205daec4a8e257e7ac579a52, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoHondo_World
+    second: {fileID: 2800000, guid: 1235557649cc9c546a5c64491dd2697a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoLlano_Base_color
+    second: {fileID: 2800000, guid: ed8d08f1a809638448a0f1c20fad1334, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoLlano_Roughness
+    second: {fileID: 2800000, guid: 16ab0c7e539127442bb076a3acc4860a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_PlatoLlano_World
+    second: {fileID: 2800000, guid: 3283d13b5b05d7446b0d442bde37a11f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_SacoCebolla_Base_color
+    second: {fileID: 2800000, guid: 870f362f3dc55bb4da900041be32200f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_SacoPan_Base_color
+    second: {fileID: 2800000, guid: f14e33c380e94f44e84a47335977db84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_SacoPimiento_Base_color
+    second: {fileID: 2800000, guid: 0594443320eb2454a98907b39d5463ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_SacoTomate_Base_color
+    second: {fileID: 2800000, guid: 0e549c1248d660f48861c38d5385fb4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Saco_World
+    second: {fileID: 2800000, guid: 84825cadbf8022f46b9470c0c3777975, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Tabla_Base_Color
+    second: {fileID: 2800000, guid: a76fc6c837dda0644a2dc950c17369c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Tabla_World
+    second: {fileID: 2800000, guid: 053d73af089e41e4dad4819472d9dab9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Tenedor_Base_color
+    second: {fileID: 2800000, guid: b0759a5ded4b3ed4aa9999ba35feae63, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_Tenedor_World
+    second: {fileID: 2800000, guid: d13f5f73ed1e8c54f84aea73323a3108, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_olla_Base_color
+    second: {fileID: 2800000, guid: 5d7971e7ca2686a4d86258a261fd8224, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_olla_Metallic
+    second: {fileID: 2800000, guid: 92ec44b0df9daa24d9941b4be7b83d5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_C_olla_World
+    second: {fileID: 2800000, guid: 253b0c79291162e47882aceae6a1693d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Bricks_Base_Color
+    second: {fileID: 2800000, guid: ecc2f7fdd063ae448ad86dc4fd2e55ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_CajaElectrica_Base_color
+    second: {fileID: 2800000, guid: a2688beeef9a107408ba8c5ba6450936, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_CajaElectrica_Metallic
+    second: {fileID: 2800000, guid: 31ad32cf4dd07614dbefbda445612ee9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_CajaElectrica_Roughness
+    second: {fileID: 2800000, guid: 835417c4950c4af499eb08b54e5e109e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_CajaElectrica_World
+    second: {fileID: 2800000, guid: 4f10bcd31e19a374195adc51acf014fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Contenedor_Base_color
+    second: {fileID: 2800000, guid: 87258aba96a66b549874eed542fc478d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Contenedor_Metallic
+    second: {fileID: 2800000, guid: 72d6c23c9d4b00a4782e59a93992ae11, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Contenedor_Roughness
+    second: {fileID: 2800000, guid: b9427ef9e5196aa489f936b748188372, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Contenedor_World
+    second: {fileID: 2800000, guid: c2f2fbf102de96a49acb66d8209b869a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio1_Base_color
+    second: {fileID: 2800000, guid: 8ead08df602614348bfe24b0d9c5c5ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio1_Roughness
+    second: {fileID: 2800000, guid: f300e8eff1d54d94eac557a6c74a5e71, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio1_World
+    second: {fileID: 2800000, guid: e53e56ecf1091184ab5d350683d61cdc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio2_Base_color
+    second: {fileID: 2800000, guid: cb4d182f22abf6a429fff751344b7308, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio2_Roughness
+    second: {fileID: 2800000, guid: 78958bf0217b67f41bd61396338fd224, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Edificio2_World
+    second: {fileID: 2800000, guid: 70daf8f93a601a9439d4ab0d986d8443, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Escaleras_Base_Color
+    second: {fileID: 2800000, guid: 28bae61e3540d8443a9e547a43d6226d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Escaleras_world
+    second: {fileID: 2800000, guid: 904f0e152860a74499abb12a52948c62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Luz1_Base_color
+    second: {fileID: 2800000, guid: 717f81a700b0c5e45815373aafde7d42, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Luz1_Metallic
+    second: {fileID: 2800000, guid: 2cf3a98baee6e584bb3a7b1f477043fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_Luz1_Roughness
+    second: {fileID: 2800000, guid: cbbe1ae301733fd4690ce95d59cc61ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_PuertaBUENA_Base_color
+    second: {fileID: 2800000, guid: f6c115bf6759c274fb13bb0fe0581d73, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_PuertaBUENA_Metallic
+    second: {fileID: 2800000, guid: 5cdf9beacb6d0334887b531fcd6b40b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_PuertaBUENA_Roughness
+    second: {fileID: 2800000, guid: 4df388c065e43be46ac74be6a001a82a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_PuertaGaraje_Base_color
+    second: {fileID: 2800000, guid: b81cd23469c632c45b4d38a56703f1de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_escalerasPuerta_Base_color
+    second: {fileID: 2800000, guid: 6ba6bc811d4fe8443b4cb8792dd45454, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_escalerasPuerta_Roughness
+    second: {fileID: 2800000, guid: 0f0a06c057ff1aa4c8c092bfb22f3a38, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_Ca_escalerasPuerta_World
+    second: {fileID: 2800000, guid: b078c50ef330b594a98cfceba9d8c277, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TEX_R_techo_Base_color
+    second: {fileID: 2800000, guid: c7b75c73240b26844ab1dd2e9af57fba, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule

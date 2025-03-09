@@ -39,15 +39,14 @@ public class SpawnerBehaviour : ActivableBehaviour
             }
             else
             {
-
+            
+                timer++;
+                if (timer >= interval)
                 {
-                    timer++;
-                    if (timer >= interval)
-                    {
-                        Spawn();
-                        timer = 0;
-                    }
+                    Spawn();
+                    timer = 0;
                 }
+            
             }
         }
         else timer = 0;
