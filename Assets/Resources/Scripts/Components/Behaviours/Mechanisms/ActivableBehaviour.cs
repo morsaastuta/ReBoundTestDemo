@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritance with a new script ActivableBehaviour
 {
     [Header("Customization (Activable)")]
-    [SerializeField] protected List<ActivatorBehaviour> activators;
+    [SerializeField] protected List<ActivatorBehaviour> activatorsAND;
+    [SerializeField] protected List<ActivatorBehaviour> activatorsOR;
     [SerializeField] protected bool permanent = false;
     [SerializeField] AudioClip activateClip;
     [SerializeField] AudioClip deactivateClip;
@@ -19,22 +20,27 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
 
     protected virtual void FixedUpdate()
     {
-        if (activators.Count > 0)
+        foreach (ActivatorBehaviour activator in activatorsOR)
         {
-            // Requirement is true by default
-            requirement = true;
-       
-            // Set requirement to false if any button is not pressed
-            foreach (ActivatorBehaviour activator in activators)
+            if (activator.active)
             {
-                if (!activator.active)
-                {
-                    requirement = false;
-                    break;
-                }
+                requirement = true;
+                break;
             }
+        }
+       
+        foreach (ActivatorBehaviour activator in activatorsAND)
+        {
+            if (!activator.active)
+            {
+                requirement = false;
+                break;
+            }
+        }
 
-            // Activation / Deactivation
+        if (activatorsAND.Count > 0 || activatorsOR.Count > 0)
+        {
+            // Automatic (de)activation
             if (requirement && !active) Activate();
             else if (!permanent && !requirement && active) Deactivate();
         }

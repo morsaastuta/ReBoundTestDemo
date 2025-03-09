@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SequenceBehaviour : MonoBehaviour
+public class SequenceBehaviour : ActivableBehaviour
 {
     [SerializeField] List<EventBehaviour> events = new();
     bool breakpoint;
     int index = 0;
-    bool inProgress = false;
     EventBehaviour currentEvent;
 
     public void Begin()
     {
         index = 0;
-        inProgress = true;
+        Activate();
         Continue();
     }
 
@@ -29,13 +28,8 @@ public class SequenceBehaviour : MonoBehaviour
 
         // Prepare next event
         index++;
-        if (index >= events.Count) End();
+        if (index >= events.Count) Deactivate();
         else StartCoroutine(AutoWait(index));
-    }
-
-    public void End()
-    {
-        inProgress = false;
     }
 
     IEnumerator AutoWait(int sessionIdx)
@@ -44,6 +38,6 @@ public class SequenceBehaviour : MonoBehaviour
 
         while (currentEvent.breakpoint) yield return new WaitForSeconds(0.1f);
 
-        if (inProgress && index == sessionIdx) Continue();
+        if (active && index == sessionIdx) Continue();
     }
 }

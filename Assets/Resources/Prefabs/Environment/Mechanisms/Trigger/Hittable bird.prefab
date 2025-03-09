@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6644026250753854106}
   - component: {fileID: 7991261388501596451}
+  - component: {fileID: 2088331876984109400}
   m_Layer: 0
   m_Name: Hittable bird
   m_TagString: Untagged
@@ -59,6 +60,18 @@ MonoBehaviour:
   offPos: {fileID: 0}
   audioSource: {fileID: 2269516184678208067}
   animator: {fileID: 3580403011254806655}
+--- !u!114 &2088331876984109400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028031361738099664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2005505772735115469
 PrefabInstance:
   m_ObjectHideFlags: 0
