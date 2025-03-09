@@ -10,7 +10,7 @@ public class TriggerBehaviour : ActivatorBehaviour
     [SerializeField] bool onBreak = false;
 
     [Header("References (Trigger)")]
-    [SerializeField] GameObject button;
+    [SerializeField] GameObject core;
     [SerializeField] Transform onPos;
     [SerializeField] Transform offPos;
     [SerializeField] AudioSource audioSource;
@@ -34,17 +34,27 @@ public class TriggerBehaviour : ActivatorBehaviour
 
         if (on)
         {
+            if (triggerClip != null)
+            {
+                audioSource.clip = triggerClip;
+                audioSource.Play();
+            }
+
             if (animator != null) animator.SetBool("on", true);
-            audioSource.clip = triggerClip;
-            audioSource.Play();
-            if (onPos != null) button.transform.DOMove(onPos.transform.position, .5f);
+
+            if (onPos != null) core.transform.DOMove(onPos.transform.position, .5f);
         }
         else
         {
+            if (resetClip != null)
+            {
+                audioSource.clip = resetClip;
+                audioSource.Play();
+            }
+
             if (animator != null) animator.SetBool("on", false);
-            audioSource.clip = resetClip;
-            audioSource.Play();
-            if (offPos != null) button.transform.DOMove(offPos.transform.position, .5f);
+
+            if (offPos != null) core.transform.DOMove(offPos.transform.position, .5f);
         }
     }
 
