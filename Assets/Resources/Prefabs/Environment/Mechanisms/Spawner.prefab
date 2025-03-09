@@ -53,6 +53,8 @@ MonoBehaviour:
   deactivateClip: {fileID: 0}
   sequenceToTrigger: {fileID: 0}
   source: {fileID: 3338791819499952071}
+  active: 0
+  spawnOnDestroy: 0
   spawnPrefab: {fileID: 1837288042578470597, guid: d53be86a672648c4a8722b25d2aaa6af, type: 3}
   interval: 100
   trackDistance: 1000
@@ -119,8 +121,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9592e6cd1327bc0478c2e9fdee9cea0f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9592e6cd1327bc0478c2e9fdee9cea0f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

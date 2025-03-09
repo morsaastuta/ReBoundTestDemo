@@ -52,6 +52,8 @@ MonoBehaviour:
   expansion: []
   reboundClip: {fileID: 8300000, guid: 755fa39788adeb845a79120ad01d58a9, type: 3}
   anullClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
+  body: {fileID: 1267687145562228484}
+  audioSource: {fileID: 7741591627532067704}
   ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
 --- !u!135 &2946510528678901373
 SphereCollider:
@@ -164,8 +166,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 88b2c1bfc47a4a746baf438c5e35d15e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 88b2c1bfc47a4a746baf438c5e35d15e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

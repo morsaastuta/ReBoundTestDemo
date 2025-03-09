@@ -26,7 +26,6 @@ public class SpawnerBehaviour : ActivableBehaviour
     {
         base.FixedUpdate();
 
-        CheckSpawnProximity();
         
         if (spawnOnDestroy)
         {
@@ -38,6 +37,7 @@ public class SpawnerBehaviour : ActivableBehaviour
         else
         {
 
+            CheckSpawnProximity();
             if (active)
             {
                 timer++;
