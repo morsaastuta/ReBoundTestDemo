@@ -10,7 +10,6 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     [SerializeField] protected bool permanent = false;
     [SerializeField] AudioClip activateClip;
     [SerializeField] AudioClip deactivateClip;
-    [SerializeField] SequenceBehaviour sequenceToTrigger;
 
     [Header("References (Activable)")]
     [SerializeField] AudioSource source;
@@ -20,7 +19,6 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
 
     protected virtual void FixedUpdate()
     {
-
         if (activators.Count > 0)
         {
             // Requirement is true by default
@@ -40,9 +38,6 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
             if (requirement && !active) Activate();
             else if (!permanent && !requirement && active) Deactivate();
         }
-
-        
-
     }
 
     public virtual void Activate()
@@ -54,8 +49,6 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
             source.clip = activateClip;
             source.Play();
         }
-
-        if (sequenceToTrigger != null) sequenceToTrigger.Begin();
     }
 
     public virtual void Deactivate()

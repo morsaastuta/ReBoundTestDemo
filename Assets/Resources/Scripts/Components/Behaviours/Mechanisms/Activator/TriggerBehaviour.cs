@@ -7,6 +7,7 @@ public class TriggerBehaviour : ActivatorBehaviour
     [Header("Customization (Trigger)")]
     [SerializeField] AudioClip triggerClip;
     [SerializeField] AudioClip resetClip;
+    [SerializeField] bool onBreak = false;
 
     [Header("References (Trigger)")]
     [SerializeField] GameObject button;
@@ -17,7 +18,14 @@ public class TriggerBehaviour : ActivatorBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (!active && LayerMask.LayerToName(collision.collider.gameObject.layer).Equals(GetLayer(Layer.Ball))) Activate(true);
+        GameObject go = collision.collider.gameObject;
+
+        if (!active && LayerMask.LayerToName(go.layer).Equals(GetLayer(Layer.Ball)))
+        {
+            Ball ball = go.GetComponent<BallBehaviour>().ball;
+             
+            if (!onBreak || (onBreak && ball.reboundCount == ball.reboundLimit)) Activate(true);
+        }
     }
 
     protected override void Activate(bool on)
