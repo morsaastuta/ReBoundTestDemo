@@ -60,13 +60,6 @@ public class EventBehaviour : MonoBehaviour
         if (EventManager.instance.subtitled) EventManager.instance.SetSubtitles(subtitles);
         else EventManager.instance.ClearSubtitles();
 
-        // Mechanisms
-        foreach (ActivableBehaviour activableObject in activableObjects)
-        {
-            if (reversed[activableObjects.IndexOf(activableObject)]) activableObject.Deactivate();
-            else activableObject.Activate();
-        }
-
         // Functions
         functions.Invoke();
     }
@@ -80,6 +73,7 @@ public class EventBehaviour : MonoBehaviour
             if (monologue != null && monologue.length > length) length = monologue.length;
             foreach (AudioClip voiceClip in voiceClips) if (voiceClip != null && voiceClip.length > length) length = voiceClip.length;
         }
+        else length = fixedLength;
 
         return length + delay;
     }
