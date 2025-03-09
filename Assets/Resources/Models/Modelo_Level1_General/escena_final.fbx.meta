@@ -8,1487 +8,702 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Borde
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: 35135b577f063974ea832f67752cb56f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 30f214dc11aaea442a0b7aba6c9916da, type: 2}
->>>>>>> Stashed changes
+    second: {instanceID: 0}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Cuchara
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: dda76affa494e1b4da8188248cc20514, type: 2}
-=======
-    second: {fileID: 2100000, guid: 874d18c6420b1844ebd5f97b17cffadf, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Cuchillo
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: b9930016ae724b444a3c653c68b07385, type: 2}
-=======
-    second: {fileID: 2100000, guid: 1498f6d3a1cb47547bb908b4ffd021ca, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Extractor
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: da7284cc5a882284090da38321deac90, type: 2}
-=======
-    second: {fileID: 2100000, guid: c5807dc416d773d418b5523afa584cae, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_ExtractorGr
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 400c0419a0406c84d82ed4ab5da4839e, type: 2}
-=======
-    second: {fileID: 2100000, guid: add2db49a51d5a943bfd7ee2e53c4617, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Fregadero
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: f80cfc8d577cfc4468caffac26fbf97c, type: 2}
-=======
-    second: {fileID: 2100000, guid: 49c5cbe2e08b9bb4d8ee5fbf12e267c1, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Freidora
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: b6b1ad7af8e092b4b9ce9b6f27b51477, type: 2}
-=======
-    second: {fileID: 2100000, guid: dea5e72fe90c6ae469bd21cf525651a8, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Holla
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 4b348ce53030a9a48a6c176df34bc28f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 83f7668a3aca0884aa9fe434a9f1b429, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Mesa
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: d1f4409a615594a449412de512f93db4, type: 2}
-=======
-    second: {fileID: 2100000, guid: 20b63adfe4898a74282861f0f625dd75, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_MesaCajon
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 5eee33807ac90624baf38676f9b7faea, type: 2}
-=======
-    second: {fileID: 2100000, guid: dc7de1c06a19a714882bb6e6ead0fa18, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_MesaCajonFogon
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: d76d7980b89b9e549910d30a88c62490, type: 2}
-=======
-    second: {fileID: 2100000, guid: aa87e1aca917d774b893ad9f7b8c6b55, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_MesaHorno
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 078ac09d2d75eda479d1e897b8fd53ba, type: 2}
-=======
-    second: {fileID: 2100000, guid: ff6993a2ab9cef048b4f1cd850bbf84c, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Pared
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 4e62be4e1675c9541855264b2caf3ffa, type: 2}
-=======
-    second: {fileID: 2100000, guid: 46309ae839dc4614ab0b30b7d9025b67, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Paredes
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: cdef6382fee7b4348b70172a6735fc77, type: 2}
-=======
-    second: {fileID: 2100000, guid: 6c773563b21ce074fad1418745ed7bc2, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_PlatoHondo
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 5c4faa9e40c5e464baeda67cf85fce9f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 6f68c4655b584bd41b37bfbaf1a868c4, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_PlatoLlano
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 02e612d489cf60c4a9b6e074c7f59249, type: 2}
-=======
-    second: {fileID: 2100000, guid: 5a6f4df110e596d4c830ebefb3e5ffac, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_SacoCebolla
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 2ad618fca1a56154088e4290965053f2, type: 2}
-=======
-    second: {fileID: 2100000, guid: 258388424cdaff54ba2670a8f5ff376d, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_SacoPan
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 227fdac1dfd0f9e42828320d954a1b5b, type: 2}
-=======
-    second: {fileID: 2100000, guid: cdec76bd41d96e449b55c043a469a9e1, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_SacoPimiento
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 90d7e733053867b488ab3690bb69e353, type: 2}
-=======
-    second: {fileID: 2100000, guid: 2805a6e9fcb1f0045bc88db146db9e54, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_SacoTomate
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: fa2816e1646aa6440b5e67e383d8d3c1, type: 2}
-=======
-    second: {fileID: 2100000, guid: 80bc384ea363bfa45bc396f7be969623, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Tabla
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 79ba99a0ba7a9be4e972b8e208b3cb02, type: 2}
-=======
-    second: {fileID: 2100000, guid: 6647f08208360f14e8ccfc7d9c38d605, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_C_Tenedor
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 1e9b8f819c6528249a3129517cc8c79f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 9003e43fb82b6d242bcab486aafcce05, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Bricks
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 633c1495bc482e149a9347159eb46b62, type: 2}
-=======
-    second: {fileID: 2100000, guid: b780086e597240249be94c1c1ccbfbe7, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_CajaElectrica
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 3bd3512d04ad74b43b521120f52c014d, type: 2}
-=======
-    second: {fileID: 2100000, guid: 61a18c80d793f214fb74886c480caba8, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Contenedor
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 5d9974d7c5fb4e94cb96c03c83287313, type: 2}
-=======
-    second: {fileID: 2100000, guid: 9b5fddc5c2677e94797e4274f6c684ca, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Edificio1
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 714f9e0c2ee715241aa12db91f1deaef, type: 2}
-=======
-    second: {fileID: 2100000, guid: c41fbba1e383c494b9348328a7590e19, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Edificio2
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 96daefc0280081845ac886af1db9c36f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 76a4d95952c841f4ba38e3bdbdee5545, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Escaleras
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 6d929e247392d8b4594d99795aeb52f5, type: 2}
-=======
-    second: {fileID: 2100000, guid: aff1ffbd34d79bf4f8139e3cebd3ce75, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Luz1
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: cb628da359d8e6e48a5bd639797ad2fe, type: 2}
-=======
-    second: {fileID: 2100000, guid: 0211bdfa8321be34690b063286bd70a0, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Luz2
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 10e1b0858d74c6f4ebe3318eb03ebd69, type: 2}
-=======
-    second: {fileID: 2100000, guid: b9ab81ef2a8694b4888866d200ca8853, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_PuertaBUENA
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 298b2c432f1588042915e1d6446b0f2a, type: 2}
-=======
-    second: {fileID: 2100000, guid: ed3a2b18b84d5454c8150af958da6485, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_PuertaGaraje
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 5855ad5ff5bbc6541826e891537a2dfa, type: 2}
-=======
-    second: {fileID: 2100000, guid: eb2e3039a11eba64f9251277605d35dd, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_PuertaValla
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: c5d6c96d945f8b344bf6b364b9b66e18, type: 2}
-=======
-    second: {fileID: 2100000, guid: 1397407790d529344bb2c56f22b33015, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Suelo
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 01530f88d7b90f54298c92160f9f9483, type: 2}
-=======
-    second: {fileID: 2100000, guid: 97d08aa01444cb845b3662c7b2b624f7, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Valla
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: e156da7be13731a4eadf56d4089f004e, type: 2}
-=======
-    second: {fileID: 2100000, guid: e944fa462aa63204988317c2e26d2793, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Ventilacion
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: c42f45864e8cc174e94d627dd5a91772, type: 2}
-=======
-    second: {fileID: 2100000, guid: a40780f7a83118d48beb443253d97ba9, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_Ventilacion2
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 235ff25ac9eee604a88285624c9d70fd, type: 2}
-=======
-    second: {fileID: 2100000, guid: 1f5acfd1d7b89794fb3d50ea5320e87e, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Ca_escalerasPuerta
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 5f184538e289db842a848aa6e3a1154f, type: 2}
-=======
-    second: {fileID: 2100000, guid: 80c4ec6761efee949991d56917e18777, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Barra
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 4559cac517ca5be43a06d32277e0872c, type: 2}
-=======
-    second: {fileID: 2100000, guid: cc30368ab52984d4191a59cde1282b8a, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Disco
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: a47a248e92947de42bb825369cf30c08, type: 2}
-=======
-    second: {fileID: 2100000, guid: b163c3ae3d20e9e43b4cc27acbf1501f, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Nevera
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 9db6818cf13b59745b32b20ac1b8cbb3, type: 2}
-=======
-    second: {fileID: 2100000, guid: 12cb2896250e744499a01efb5697e1ef, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Paredes
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: ba8956e783907744285638cc2955f376, type: 2}
-=======
-    second: {fileID: 2100000, guid: 056830b3a6d03bb40a94f2a9443463a3, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Sofa
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: b928df3259b2803428adc43ee0288656, type: 2}
-=======
-    second: {fileID: 2100000, guid: fa52322c797c241428b1837ded33077b, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_R_Techo
-<<<<<<< Updated upstream
     second: {fileID: 2100000, guid: 047904570873ce842a16305c3a3b9cb5, type: 2}
-=======
-    second: {fileID: 2100000, guid: 62b87ec6d1ebe364d9c6a6c6b9ea2605, type: 2}
->>>>>>> Stashed changes
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.211
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: e0fa201514f25f442b0a9e8f72d9b50b, type: 2}
-=======
-    second: {fileID: 2100000, guid: 9a12e3e1490f20e458c2bee359588b41, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: e624b2e7bbf096c4b85f8b6a68036551, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.217
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: aa546422a5e5f914088e32171e928b8d, type: 2}
-=======
-    second: {fileID: 2100000, guid: 1cbffdd542d7e2745b5abe69671373fe, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: cd4f9c4f1683e9242873100e73dd5770, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_008
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: 982840db10c46b04ba44a6768686b682, type: 2}
-=======
-    second: {fileID: 2100000, guid: 70dd93fc97a811d4c9d94c153261c162, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: 1ea5077bc2e68424db1dc7b6565b2cd6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material_008.001
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: 971060fa5d66e2d4d8d6254cbe477287, type: 2}
-=======
-    second: {fileID: 2100000, guid: a202a896a2e94d34f825d1171594bd39, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: ffe6ef29634fa4a45a1112e2740eadeb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: chapa
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: b172ab5d8e321b748a419d1987a0f541, type: 2}
-=======
-    second: {fileID: 2100000, guid: 5f746f039601a1841835298757104044, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: 07996e7af10916c428291984a96bd86c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: chapa.001
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: ca383a1aa37521748a85be76f0372a28, type: 2}
-=======
-    second: {fileID: 2100000, guid: 96b12d8cdf28f404eab676bf5a7e9ff3, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: c5bbbf7f08ce5da48a2be51f8ebb78ea, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ventana
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: 25f7e1e1fb2ecf7499792b701f6b8377, type: 2}
-=======
-    second: {fileID: 2100000, guid: 328bf5302f01a6a4f9c4badcc54b798c, type: 2}
->>>>>>> Stashed changes
+    second: {fileID: 2100000, guid: 369b90149de77f647bea5815832c8d7d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ventana.001
-<<<<<<< Updated upstream
-    second: {fileID: 2100000, guid: 4945007180f93144486046322873e25c, type: 2}
-=======
-    second: {fileID: 2100000, guid: 111a5bc0cd5e65644acfdd77f253e762, type: 2}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Base_color_Spoon
-    second: {fileID: 2800000, guid: a60813cbeb8453149b91cf1acc64ec0b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_colo_cebolla
-    second: {fileID: 2800000, guid: c756730100eb1d24db681d1a5af5abfd, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_colo_pan
-    second: {fileID: 2800000, guid: 757dca48857755245be935af5c9f690e, type: 3}
+    second: {fileID: 2100000, guid: 7dc847949c61af24b8f96a267a78d276, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: abf89ed46ed607c4ba1d56e4b1e7f592, type: 3}
-=======
-    second: {fileID: 2800000, guid: 14608bdef9964ce44b65e7ed27cf313d, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_Cuchillo
-    second: {fileID: 2800000, guid: 2f9818db4c097804292e951fabe1816d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_bordeMetal
-    second: {fileID: 2800000, guid: 3c009c7b9445181429e1ed618cc918f0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_extractor
-    second: {fileID: 2800000, guid: c1ffae655fdaaf44ea964d516d24c6dc, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_holla
-    second: {fileID: 2800000, guid: 15d03d478bf15da42a1469adb61ac764, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_mesaCajonFogon
-    second: {fileID: 2800000, guid: bb4da1f0d6e358f4098df721c7ea8fe5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_mesaCajonFregadero
-    second: {fileID: 2800000, guid: 79472e6c46a40c645b61a636fb30d827, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_mesaCajonFreidora
-    second: {fileID: 2800000, guid: 5d373bdb12f251748b45289c1ab29e86, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_mesaCajonHorno
-    second: {fileID: 2800000, guid: 9c1211cabbfac54449223f3945f0a9c1, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_mesaSinCajon
-    second: {fileID: 2800000, guid: fe47943e62c60b544a597c67c98902c5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_midExtractor
-    second: {fileID: 2800000, guid: c0291ec551a04804594676cd3f09342f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_pimiento
-    second: {fileID: 2800000, guid: fdf2cd65a4952b84cb0bf2e0c2999dc4, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_platoHondo
-    second: {fileID: 2800000, guid: 95fb50eab66cd0e499ce9d5b852c3e30, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_platoLlano
-    second: {fileID: 2800000, guid: 6961d54fb38736246a8f1081088e5382, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_sacoCosas
-    second: {fileID: 2800000, guid: c38f3ff4cdf6e12438c0bbf1b415d874, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_tablaCortar
-    second: {fileID: 2800000, guid: c713290435a53064aab028b5583e1dab, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Base_color_tomate
-    second: {fileID: 2800000, guid: 732884ece96610a48a14562020767701, type: 3}
+    second: {fileID: 2800000, guid: fb082af9e4e2f2a4bacd57754a7f611b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: cefecb0559ec6404a81c75b6fc648bc1, type: 3}
-=======
-    second: {fileID: 2800000, guid: ae08a48b28809b7478901b1e15552518, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Metallic_Cuchillo
-    second: {fileID: 2800000, guid: 9a8bb39a4aabd0449bfb360bda44e0e4, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Metallic_holla
-    second: {fileID: 2800000, guid: 2f41f143094b4b64ebe9795648a67e6a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Metallic_mesaCajonFreidora
-    second: {fileID: 2800000, guid: b5189907beb3f204d9a0a086a72c1ffc, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Metallic_mesaCajonHorno
-    second: {fileID: 2800000, guid: e898cef01bca9334bae62862f2d3dc6e, type: 3}
+    second: {fileID: 2800000, guid: be86ecc70de3e4e46809045cb614750c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 9c7ec189d5e6bf64397a9d76fb68872a, type: 3}
-=======
-    second: {fileID: 2800000, guid: 60709194070d7a84a907131a8b5abe49, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Roughness_Cuchillo
-    second: {fileID: 2800000, guid: b952785324af3364491aa0e313d3fa96, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Roughness_mesaCajonFreidora
-    second: {fileID: 2800000, guid: 843fa08217691df429ef4c9e898822ad, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Roughness_mesaCajonHorno
-    second: {fileID: 2800000, guid: c177a918ebc16124bb0fee2198283451, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Roughness_platoHondo
-    second: {fileID: 2800000, guid: 9cca7a0d275ec3140abe84ff2129b397, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_Roughness_platoLlano
-    second: {fileID: 2800000, guid: 9aa009e3ab952914f908e51f69ce4da9, type: 3}
+    second: {fileID: 2800000, guid: f8920e1f1e405144893dabf03cd58083, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_Roughness_tablaCortar
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: e3bf88b23820ba2438698b7e9c3bd6c8, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2d3a7487ae813ed48bb302eff37e6286, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f4cde578ee0939b44a7ac40c20b326e7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: f15afa4cc9bb1a14f900256e98d50bb9, type: 3}
-=======
-    second: {fileID: 2800000, guid: 78205dcffd9533348a8d5f5cc48f57ac, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_Cuchillo
-    second: {fileID: 2800000, guid: ebd8acee40e9e83429d399a86c01feff, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_bordeMetal
-    second: {fileID: 2800000, guid: 4dc7d9030ede93849bd2a87da2a047dd, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_extractor
-    second: {fileID: 2800000, guid: 616886ba6222eb6418a0f1d842e6653e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_holla
-    second: {fileID: 2800000, guid: 792a315df8cae464c9661d74c299393c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_mesaCajonFogon
-    second: {fileID: 2800000, guid: dcf5d4fc6a0f0ce48ad143dff17050e8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_mesaCajonFregadero
-    second: {fileID: 2800000, guid: ed5d586a183878a4d906b14a932a694d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_mesaCajonFreidora
-    second: {fileID: 2800000, guid: 0914ff020b745f54ebe92a1c0f0d83ad, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_mesaCajonHorno
-    second: {fileID: 2800000, guid: f459d3d15cb35d7438f45e314f810b61, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_mesaSinCajon
-    second: {fileID: 2800000, guid: 7394b167a6109f14daa7578b84509f2b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_midExtractor
-    second: {fileID: 2800000, guid: 3601ff9b0ec6da24796bbcc01a9a03b9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_platoHondo
-    second: {fileID: 2800000, guid: 1d07bcd16640e2142af0febf88ae8c7b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_platoLlano
-    second: {fileID: 2800000, guid: 28d8f8d9af2b7a543849ead9bf98f7d0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_sacoCosas
-    second: {fileID: 2800000, guid: 7e56a79573d4a724ca6854570190afed, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: DefaultMaterial_World_tablaCortar
-    second: {fileID: 2800000, guid: 0cef2b7e0146d5441a71e0aa67f65b85, type: 3}
+    second: {fileID: 2800000, guid: 2fe744a9d397a29479a7966da3b62454, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial_wrold
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 69ef1239fe0ffdc4f9f9dd660c459cca, type: 3}
-=======
-    second: {fileID: 2800000, guid: 791e39f255d6b1944b54ae21d959b1a5, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a6bcc5264bf092b4a9d49e29d0d659c5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.001_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 306bf9a62d789b34aae4365fe868aef0, type: 3}
-=======
-    second: {fileID: 2800000, guid: 698c03ae9f16f2843a8d8bea96f27a59, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 7b7be25a829cd7b40a69ffcfc523091d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.001_world
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: e6122d18522425c488acfec97d71cbe2, type: 3}
-=======
-    second: {fileID: 2800000, guid: a7cd31b3f12a8f04eb432ecb92ea3e6c, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 2e754f49a757cb14ea23a80b2c171153, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.004_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: c5896ea6c1126434bbc2d0e15917f295, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6e605207a3a7a514d92151d14b775169, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: c779cfa190762234596477f76183968d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.004_world
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: bf691b44790efc94486d0fe211d724f8, type: 3}
-=======
-    second: {fileID: 2800000, guid: 06bf639534b81fc4f9194f5178405ac1, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f56197d27a336ee48869ef234e1788b0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.005_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5bf9f48e841d8664c98ae38fe005588f, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2d9ce4a1a60a187439e1fa43d2247781, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 7bcb08d538136a345bc99a55268f4e1f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Material.005_world
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: e51782f0764315645a10a6e155b60f5c, type: 3}
-=======
-    second: {fileID: 2800000, guid: b7c4639693a77d4449a04e6babaa6e62, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Material_Base_color_tenedor
-    second: {fileID: 2800000, guid: dd7bc3b6824ee1b4f94d4452f16697b7, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Material_World_tenedor
-    second: {fileID: 2800000, guid: 89c80d3c11e1d6c4c82c21776060b68c, type: 3}
+    second: {fileID: 2800000, guid: ee5966fc62b19a94abdc026c08c9d60f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Borde_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 45810a775419fe440b5c215a5271f51a, type: 3}
-=======
-    second: {fileID: 2800000, guid: 259314cb76e97f645b1694c66f7803fb, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 9f08e33a1faa3aa41b9984c31c45bf30, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Borde_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 7cb53ad413688704cac89a60836273e3, type: 3}
-=======
-    second: {fileID: 2800000, guid: 3951e11a4ced7c94785d90c68aaae16e, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 6746941bef4704941a40e92d86893513, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchara_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 696285cc29b71be4da5978319627e912, type: 3}
-=======
-    second: {fileID: 2800000, guid: f1effec56d2c33347a2342d71a2cceab, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 24f63493d0fd02a4dbfee5851889a384, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchara_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 1f945b51df6c7354383c5419ac757f52, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7b0c67964547290419abb3da1c5a429e, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 73118e483f0412b4ea5e66a1225fab50, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchillo_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5f5adbb33dd895445a33be709e37bace, type: 3}
-=======
-    second: {fileID: 2800000, guid: 30f643f425a5c574393ec3c6f3927ff3, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 5fcaaffe7e57a434c84c645712b353f9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchillo_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5d2a2ba07ce5ac54685c891fab353d20, type: 3}
-=======
-    second: {fileID: 2800000, guid: 01f51952369edfa458d3d9b3dfdf0ef3, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 610af024942345948837acc7fdd7b308, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchillo_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 1737e8b28976d7349924e9be05a8087b, type: 3}
-=======
-    second: {fileID: 2800000, guid: 776c0c9fb1815454a8ab0cbf579b9afa, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 9bd2fb4c797723c46b9b54566320b42e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Cuchillo_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b13bbc2fe8f2089499906c0f69b3ff61, type: 3}
-=======
-    second: {fileID: 2800000, guid: f1f0957a4f2b906488861d3428cd597a, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f8cf6662b0fc2454dac548cee90bb761, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_ExtractorGr_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 98f8470677a60dd40b1678840d7e36e0, type: 3}
-=======
-    second: {fileID: 2800000, guid: d900dac26038e7f4da740d3ff7f87711, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 84a8ac3ffd943374a906cb2330cd5a51, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_ExtractorGr_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: dbe96bf63a75db242847100aa9901f88, type: 3}
-=======
-    second: {fileID: 2800000, guid: 4b8ae0331c8e46d45a5da35445bd1092, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: c56b878d0469cea4fb63fa740f95e79e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Extractor_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b2951c77a35372f4f9843b67a0e51ffa, type: 3}
-=======
-    second: {fileID: 2800000, guid: 5b844cdbdfa6d5542bf455cb7ce4b2c2, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 685ebf04dde23134bbbf5339d9598a75, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Extractor_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b968b08ceb5e3a4459a592a1c82148af, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6cc7ecdf56ab8ee4894a346a1ab19f71, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 959f536087c25294097daf2abd0efa75, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Floor_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 175d3fb11c7ad1946a8fa38e9ac34c49, type: 3}
-=======
-    second: {fileID: 2800000, guid: 297d0c9872c2e794d96ad42b430fbd7d, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 89cf05f599d44aa46b20fb8e96804d60, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Fogon_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: a8f86040f087d9a42bf0ad844fd13bd6, type: 3}
-=======
-    second: {fileID: 2800000, guid: 417965c1f53f2484198be9fc919fa535, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 90fc6df8c8129cf4db111b1323212950, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Fregadero_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 1ad4234705e76f749a60825654026e37, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6f8ccefab595a274d924b685f5a3d7d8, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: d1a9e39baecdff747bdecd0e3e176f0c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Fregadero_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 238284b4e05c5784192d157a30b46a26, type: 3}
-=======
-    second: {fileID: 2800000, guid: 93f9db8acf6fe394ab1ec64b0e887441, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 917974ee91bf86c4c83fc59d7a16d8cc, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Freidora_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 261e82f0d1e3a3b4588132b9a91544a3, type: 3}
-=======
-    second: {fileID: 2800000, guid: d06d7c33ca324974a9d8fc6f3f09e800, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a0b5cb8dde746f548aba4e30cf5abdce, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Freidora_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: bdc91bb541c726e4fa751da410cefe54, type: 3}
-=======
-    second: {fileID: 2800000, guid: 626be7b6527ff314cb972723ace9db38, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f2f181ea6bbec704da81660646c1380f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Freidora_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 567d92da3bd2dcf469a7d8ef2da1155d, type: 3}
-=======
-    second: {fileID: 2800000, guid: 16b48a83baf8fe84fa35d3e1f697a3de, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: fa8e6fe94dbff644a83ebcef96011726, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Freidora_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: fec821b1bd44816418ff0b691db04094, type: 3}
-=======
-    second: {fileID: 2800000, guid: 77f2052718164894daa3ffd984fa721a, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 7deb39ee5fd154d4c8e9bfc0db332f1d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Frogon_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: cfea7d2a2d15e024faa766a739e9ca07, type: 3}
-=======
-    second: {fileID: 2800000, guid: f3d28be4baf37df40bfcd206ad7f35c0, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: b2c9f8e19fec21243965329baf296be2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaCajon_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 896260872159eb24ba87a08f8d81a276, type: 3}
-=======
-    second: {fileID: 2800000, guid: 9c14e5a52cf8d114f98d9f0c0188d8a0, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: e37de0b88a94ac0439bde2e74dbb6084, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaCajon_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 75583282a5d07a4408404e611c04b1aa, type: 3}
-=======
-    second: {fileID: 2800000, guid: cab9ed40fad33784b9e7c917eb9f349a, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: ead3d0f2d5d22544ab2a19539f428ecb, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaHorno_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5a3ff681e85130849994bf38f8970677, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6615eb572b12f234690be25206ff8e56, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f14533f17dc2e234dbca8aa31acc2ddb, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaHorno_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: d6a0c8fc8a2d7324a92521c8b1c740d2, type: 3}
-=======
-    second: {fileID: 2800000, guid: f634b0ff1414c554aa3a498a0309a800, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 22ab919127d90974ea246da70c8ed7da, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaHorno_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b00fd602f6ce6a94d95503c5b7ade352, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7542aa8a78d4c4b44a0857dc96d28fe3, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: b3792178d5d536745a25e542c8ce5dc4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_MesaHorno_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 2d2263407c6a59b448f924732b799dee, type: 3}
-=======
-    second: {fileID: 2800000, guid: f6fc58b677f6e0c4681c299d396a24a9, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f167b68bcb4e63248a814587c89e1bc9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Mesa_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 3487f5740dc1bcd40890d50db19c7818, type: 3}
-=======
-    second: {fileID: 2800000, guid: 93ddff36ba5277b448e707e1c98c2316, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a32866911b488eb44bcd6b41e64f6dbb, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Mesa_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 8e0374117c3ff7c499b6b919a6f0933c, type: 3}
-=======
-    second: {fileID: 2800000, guid: e1cb2e3a2e2452c47b98b8c73ff69149, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 6372de3a121a9f24bba019325dbcae38, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Pared_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 8991c8279bf128e4c9e93ca3e250ab65, type: 3}
-=======
-    second: {fileID: 2800000, guid: af444b08b6f934242a68149b0b963ea2, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: fc9ca8ecac8d3544097c600fc777e1f7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoHondo_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 7985bd4974c709142bc99ea920d34d3d, type: 3}
-=======
-    second: {fileID: 2800000, guid: cea6ab4b2b56a5445aa1c730c2fab0ba, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 0bf1b526f54c17e408900bcd8cb0bcd8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoHondo_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 68e12e59205daec4a8e257e7ac579a52, type: 3}
-=======
-    second: {fileID: 2800000, guid: 850ac680d07b18547a2878e9f057d3ee, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 834a1ccdd74e67f4b8a98696e0a83ebc, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoHondo_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 1235557649cc9c546a5c64491dd2697a, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7a4a19391a49ec143bdef8e8f3236608, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 66f447d806ce8db468cad0d0264e7b01, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoLlano_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: ed8d08f1a809638448a0f1c20fad1334, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6da4b190ec4f8c94a8c2220934a1b4be, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 01dbb0c1002c2cf4987a296441ec95f1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoLlano_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 16ab0c7e539127442bb076a3acc4860a, type: 3}
-=======
-    second: {fileID: 2800000, guid: f92ae199f55ddd046aee445ef89c4f45, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 332a0b15e28247544bd712d00f2cecf2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_PlatoLlano_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 3283d13b5b05d7446b0d442bde37a11f, type: 3}
-=======
-    second: {fileID: 2800000, guid: 17446b6b927f9d34e95b97106b2b2588, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 1e9c631b933f99a41831a62c71378c64, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_SacoCebolla_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 870f362f3dc55bb4da900041be32200f, type: 3}
-=======
-    second: {fileID: 2800000, guid: f458b885f95da6c489efbc1c43c0d28d, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 055d4c229c063f7428d7bb066faf382c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_SacoPan_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: f14e33c380e94f44e84a47335977db84, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2cece6d6395c26d488414fab4e3555c2, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 3dd90402fd9133c41b4c819a62ef1035, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_SacoPimiento_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 0594443320eb2454a98907b39d5463ef, type: 3}
-=======
-    second: {fileID: 2800000, guid: 044a2acaac500be498890ac99f64212f, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 3e3f073314eaa6645b7798862d8a9abf, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_SacoTomate_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 0e549c1248d660f48861c38d5385fb4e, type: 3}
-=======
-    second: {fileID: 2800000, guid: ef3a7037d92eeb1488c02d23d190d831, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 36092e427c8fb034498743f597b9cddd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Saco_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 84825cadbf8022f46b9470c0c3777975, type: 3}
-=======
-    second: {fileID: 2800000, guid: fa489c704f281b140b20fdbb1bb46fd8, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 50f2d540ff8e51f4489de932be67e02e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Tabla_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: a76fc6c837dda0644a2dc950c17369c8, type: 3}
-=======
-    second: {fileID: 2800000, guid: d5a89cb5957c07740959d3a9491a896e, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: bcdd10670777ad542ad35409c33c04e8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Tabla_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 053d73af089e41e4dad4819472d9dab9, type: 3}
-=======
-    second: {fileID: 2800000, guid: d70f31b69b2bf9e4cb2f04ac06782d52, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 4dd8027b68ca154419f8f291ed540e2f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Tenedor_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b0759a5ded4b3ed4aa9999ba35feae63, type: 3}
-=======
-    second: {fileID: 2800000, guid: 60f194d0cc231c848862520ed9c7ac00, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 4fc4a300309392a46b12e70dc93605b8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_Tenedor_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: d13f5f73ed1e8c54f84aea73323a3108, type: 3}
-=======
-    second: {fileID: 2800000, guid: 9e81cb047aa5f814d9634871ce148c93, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: c3c2f57b5d7bdd24bab5015ae159c666, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_olla_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5d7971e7ca2686a4d86258a261fd8224, type: 3}
-=======
-    second: {fileID: 2800000, guid: 28e4e3b82a6864a4fb3d7e34a9c6b71f, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 4842ca6c4951eed4ca93a313cd8fb1ba, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_olla_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 92ec44b0df9daa24d9941b4be7b83d5e, type: 3}
-=======
-    second: {fileID: 2800000, guid: 89524dab1f0dc6a499391c810ca7121e, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: ef1556ca8b1dcad43a722e9a11693272, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_C_olla_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 253b0c79291162e47882aceae6a1693d, type: 3}
-=======
-    second: {fileID: 2800000, guid: 82e393129f5e5ca46bc64242150e025e, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 8650e45709c1e4c4084197d144befd47, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Bricks_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: ecc2f7fdd063ae448ad86dc4fd2e55ba, type: 3}
-=======
-    second: {fileID: 2800000, guid: d4265dfa45c200f46abdf97d35017379, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: d59dd6b5015696a4fbbe08d7040e96c4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_CajaElectrica_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: a2688beeef9a107408ba8c5ba6450936, type: 3}
-=======
-    second: {fileID: 2800000, guid: 84dacca1ab988814683a0b83659669ae, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: fe1fa76c04bdce248bebfa863f3b7254, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_CajaElectrica_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 31ad32cf4dd07614dbefbda445612ee9, type: 3}
-=======
-    second: {fileID: 2800000, guid: 502fbf754aa4de944972c1a61467c631, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 92ee352e6d569444d8aeed9bbdaa4456, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_CajaElectrica_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 835417c4950c4af499eb08b54e5e109e, type: 3}
-=======
-    second: {fileID: 2800000, guid: 283b6dd2296d6ad40ba329592890bb29, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 68ff299682cdbf140b4494146890f090, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_CajaElectrica_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 4f10bcd31e19a374195adc51acf014fb, type: 3}
-=======
-    second: {fileID: 2800000, guid: d8a0858b0bfb06042b83e108fb571de4, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 3514500d55f39634ab68d44c4bafe9c8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Contenedor_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 87258aba96a66b549874eed542fc478d, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7feaaf9310b9e7c40ba511b4bf784a97, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: c953ab14310cfab48ba0354fe3b71547, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Contenedor_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 72d6c23c9d4b00a4782e59a93992ae11, type: 3}
-=======
-    second: {fileID: 2800000, guid: 6c07b2e5bffde274e970e89bd1bd9628, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: b0a33ba313945154cb616b8668343e96, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Contenedor_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b9427ef9e5196aa489f936b748188372, type: 3}
-=======
-    second: {fileID: 2800000, guid: 16dc90aabfd38f64c8cc5eefb3b9df9f, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: f5df81a52c7241f4c82920a335c67158, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Contenedor_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: c2f2fbf102de96a49acb66d8209b869a, type: 3}
-=======
-    second: {fileID: 2800000, guid: 74d049110f115eb48a12c3bcee64674c, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 0297429f65a482e4ea2f3dbf133970ca, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio1_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 8ead08df602614348bfe24b0d9c5c5ae, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7366252fe8a759d409e903209d60007f, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a564b9855e7b0d04d988d9916fb32b1d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio1_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: f300e8eff1d54d94eac557a6c74a5e71, type: 3}
-=======
-    second: {fileID: 2800000, guid: 1ab022bf6a6b9ad48bf5f6c25858a552, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a631fa93ce631944c8606abe7c88d317, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio1_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: e53e56ecf1091184ab5d350683d61cdc, type: 3}
-=======
-    second: {fileID: 2800000, guid: f99da8b4a0f76ba44b155ec7af596045, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: a758db4653815594f89d83eb29382335, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio2_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: cb4d182f22abf6a429fff751344b7308, type: 3}
-=======
-    second: {fileID: 2800000, guid: 40086ae41cf51e647b23208a9785371c, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: c27ccd738bb2aec4aa5ed4fa8dc3efd4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio2_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 78958bf0217b67f41bd61396338fd224, type: 3}
-=======
-    second: {fileID: 2800000, guid: dd2d34de506320d47a488fb000486e29, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 58c3b88ab57718742af5ff473f36e30b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Edificio2_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 70daf8f93a601a9439d4ab0d986d8443, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2d04a42cd6dd8a446a45226ba9c1b3c0, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 3c83dba9402c53b4e9d33c0703b8bb60, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Escaleras_Base_Color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 28bae61e3540d8443a9e547a43d6226d, type: 3}
-=======
-    second: {fileID: 2800000, guid: 451bf12403093c84b94b2adbcd6a1a9d, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 15abddaee2497e844a4929f9d620b4fd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Escaleras_world
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 904f0e152860a74499abb12a52948c62, type: 3}
-=======
-    second: {fileID: 2800000, guid: a30a7abe2923bd8428bb07d6e98348c5, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 1e609720307e6fc409c2d16e258bbc5c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Luz1_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 717f81a700b0c5e45815373aafde7d42, type: 3}
-=======
-    second: {fileID: 2800000, guid: 0bcf056267a64d4468b40052db47c192, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: b3a71f0420812e04787b22a2efbf5144, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Luz1_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 2cf3a98baee6e584bb3a7b1f477043fb, type: 3}
-=======
-    second: {fileID: 2800000, guid: 237d366946684d94a8cbf16ce0ad1253, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 3c1f24c927440804593e0e7f9ae93c77, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_Luz1_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: cbbe1ae301733fd4690ce95d59cc61ec, type: 3}
-=======
-    second: {fileID: 2800000, guid: 77771e97b3dabc445b25999864eda667, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 38723a5e918be0f46aafe80d94c05c57, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_PuertaBUENA_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: f6c115bf6759c274fb13bb0fe0581d73, type: 3}
-=======
-    second: {fileID: 2800000, guid: d81dcebfe5b96434aaa580a5e0d7fd36, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 9553ccab4eb39b5468744ac2a9570a10, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_PuertaBUENA_Metallic
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 5cdf9beacb6d0334887b531fcd6b40b1, type: 3}
-=======
-    second: {fileID: 2800000, guid: 14b6de37a1cdbe94ea0b907f35ce7379, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 2d632f5e477d84d4fa03eae808040ab8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_PuertaBUENA_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 4df388c065e43be46ac74be6a001a82a, type: 3}
-=======
-    second: {fileID: 2800000, guid: ee534fdb2c85e9f459a56884e4debf4d, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 8544f19cd743ad34aadd49f235d2a145, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_PuertaGaraje_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b81cd23469c632c45b4d38a56703f1de, type: 3}
-=======
-    second: {fileID: 2800000, guid: 7ed251c04c614184aaa8fff4570a1c81, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 33ee77e28ce9d5d4fb72f2e5c074e4e4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_escalerasPuerta_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 6ba6bc811d4fe8443b4cb8792dd45454, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2f9d3b767b6c11f45a1215ad8df42376, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: b6652e55ce8e7ef46bbed14d8de280b7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_escalerasPuerta_Roughness
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: 0f0a06c057ff1aa4c8c092bfb22f3a38, type: 3}
-=======
-    second: {fileID: 2800000, guid: 9b49468e70031fb43900dc07735231d8, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: 1a4c81461c7dfa0419d6da9bcf65d5b0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_Ca_escalerasPuerta_World
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: b078c50ef330b594a98cfceba9d8c277, type: 3}
-=======
-    second: {fileID: 2800000, guid: 2bb0ae48a3851b84aa84244aeecf0611, type: 3}
->>>>>>> Stashed changes
+    second: {fileID: 2800000, guid: deab50c960cad804292f478bf1b4f102, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TEX_R_techo_Base_color
-<<<<<<< Updated upstream
-    second: {fileID: 2800000, guid: c7b75c73240b26844ab1dd2e9af57fba, type: 3}
-=======
-    second: {fileID: 2800000, guid: 95913bb55987fbb4bb5d7a730f2433cc, type: 3}
->>>>>>> Stashed changes
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: World_Spoon
-    second: {fileID: 2800000, guid: 00ddcd0684ea7564990981d90b0d48d8, type: 3}
+    second: {fileID: 2800000, guid: 0dfdff51550131f49b2b5318dd08d8cc, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -1543,20 +758,20 @@ ModelImporter:
     optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
-    secondaryUVAngleDistortion: 18
-    secondaryUVAreaDistortion: 12
-    secondaryUVHardAngle: 55
-    secondaryUVMarginMethod: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
-    secondaryUVPackMargin: 30
+    secondaryUVPackMargin: 4
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 3
+    normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
