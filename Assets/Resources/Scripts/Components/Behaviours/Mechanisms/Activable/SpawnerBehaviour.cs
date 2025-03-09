@@ -27,7 +27,8 @@ public class SpawnerBehaviour : ActivableBehaviour
         base.FixedUpdate();
 
         CheckSpawnProximity();
-        Debug.Log(active);
+        
+        
         if (active) 
         { 
             if (spawnOnDestroy)
@@ -70,7 +71,6 @@ public class SpawnerBehaviour : ActivableBehaviour
         {
             if (trackedSpawn == null)
             {
-                Debug.Log("NULL");
 
                 delete = true;
                 index = trackedSpawns.IndexOf(trackedSpawn);
@@ -78,7 +78,6 @@ public class SpawnerBehaviour : ActivableBehaviour
             }
             else if (Vector3.Distance(transform.position, trackedSpawn.transform.position) > trackDistance)
             {
-                Debug.Log("TOO FAR");
 
                 delete = true;
                 index = trackedSpawns.IndexOf(trackedSpawn);
