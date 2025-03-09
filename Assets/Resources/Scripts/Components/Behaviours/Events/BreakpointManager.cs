@@ -12,10 +12,13 @@ public class BreakpointManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if ((keys[0].isInt && keys[0].Check(rules[0])) ||
-            (!keys[0].isInt && Convert.ToInt32(keys[0].Check()) == rules[0]))
+        if (breakpoints.Count > 0)
         {
-            Break();
+            if ((keys[0].isInt && keys[0].Check(rules[0])) ||
+                (!keys[0].isInt && Convert.ToInt32(keys[0].Check()) == rules[0]))
+            {
+                Break();
+            }
         }
     }
 
