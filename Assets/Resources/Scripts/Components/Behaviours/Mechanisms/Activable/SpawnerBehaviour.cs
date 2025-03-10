@@ -17,7 +17,7 @@ public class SpawnerBehaviour : ActivableBehaviour
     List<GameObject> trackedSpawns = new();
 
     bool skibidiBorrame = true;
-
+    [SerializeField] bool alternativeActivation;
     protected void Start()
     {
         timer = 0;
@@ -27,33 +27,43 @@ public class SpawnerBehaviour : ActivableBehaviour
     {
         base.FixedUpdate();
 
-        CheckSpawnValidity();
-
-
-        if (active)
+        if (!alternativeActivation)
         {
-            if (spawnOnDestroy)
+            
+            CheckSpawnValidity();
+
+
+            if (active)
             {
-                if (trackedSpawns.Count == 0 && skibidiBorrame)
+                if (spawnOnDestroy)
                 {
-                    StartCoroutine(Spawn());
+                    if (trackedSpawns.Count == 0 && skibidiBorrame)
+                    {
+                        StartCoroutine(Spawn());
+                    }
+                }
+                else
+                {
+
+                    timer++;
+                    if (timer >= interval)
+                    {
+                        StartCoroutine(Spawn());
+                        timer = 0;
+                    }
+
                 }
             }
-            else
-            {
-
-                timer++;
-                if (timer >= interval)
-                {
-                    StartCoroutine(Spawn());
-                    timer = 0;
-                }
-
-            }
+            else timer = 0;
         }
-        else timer = 0;
     }
     
+    public void DoSpawn()
+    {
+        active = true;
+        StartCoroutine(Spawn());
+    }
+
     IEnumerator Spawn()
     {
         skibidiBorrame = false;
