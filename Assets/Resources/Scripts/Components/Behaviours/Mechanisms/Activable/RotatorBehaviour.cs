@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System;
 using UnityEngine;
 
 public class RotatorBehaviour : ActivableBehaviour
@@ -11,7 +10,6 @@ public class RotatorBehaviour : ActivableBehaviour
 
     [Header("Customization (Rotator)")]
     [SerializeField] float rotationAngles = 90;
-    [SerializeField] bool positive = true;
     [SerializeField] float duration = 1;
     [SerializeField] RotateDirection rotateDirection = RotateDirection.Y;
 
@@ -21,9 +19,9 @@ public class RotatorBehaviour : ActivableBehaviour
 
         switch (rotateDirection)
         {
-            case RotateDirection.X: RotateX(rotationAngles * Convert.ToInt32(positive)); break;
-            case RotateDirection.Y: RotateY(rotationAngles * Convert.ToInt32(positive)); break;
-            case RotateDirection.Z: RotateZ(rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.X: RotateX(rotationAngles); break;
+            case RotateDirection.Y: RotateY(rotationAngles); break;
+            case RotateDirection.Z: RotateZ(rotationAngles); break;
         }
     }
 
@@ -33,9 +31,9 @@ public class RotatorBehaviour : ActivableBehaviour
 
         switch (rotateDirection)
         {
-            case RotateDirection.X: RotateX(-rotationAngles * Convert.ToInt32(positive)); break;
-            case RotateDirection.Y: RotateY(-rotationAngles * Convert.ToInt32(positive)); break;
-            case RotateDirection.Z: RotateZ(-rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.X: RotateX(-rotationAngles); break;
+            case RotateDirection.Y: RotateY(-rotationAngles); break;
+            case RotateDirection.Z: RotateZ(-rotationAngles); break;
         }
     }
 

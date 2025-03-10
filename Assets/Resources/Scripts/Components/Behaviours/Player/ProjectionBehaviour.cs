@@ -2,27 +2,30 @@ using UnityEngine;
 
 public class ProjectionBehaviour : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] Mesh emptyMesh;
+
     public Ball ball;
 
     void Start()
     {
-        UpdateVisuals();
+        UpdateVisuals(false);
     }
 
     void FixedUpdate()
     {
-        transform.rotation *= Quaternion.Euler(0, ball.angularSpeed, 0);
+        if (ball != null) transform.rotation *= Quaternion.Euler(0, ball.angularSpeed, 0);
     }
 
-    public void UpdateVisuals()
+    public void UpdateVisuals(bool gloveOn)
     {
-        GetComponent<MeshFilter>().sharedMesh = ball.mesh;
-        GetComponent<MeshRenderer>().material = ball.material;
+        if (gloveOn) GetComponent<MeshFilter>().sharedMesh = ball.mesh;
+        else GetComponent<MeshFilter>().sharedMesh = emptyMesh;
     }
 
-    public void UpdateBall(Ball b)
+    public void UpdateBall(Ball b, bool gloveOn)
     {
         ball = b;
-        UpdateVisuals();
+        UpdateVisuals(gloveOn);
     }
 }

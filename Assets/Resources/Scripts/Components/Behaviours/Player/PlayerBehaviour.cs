@@ -76,7 +76,7 @@ public class PlayerBehaviour : MonoBehaviour
         foreach (Ball ball in demoBalls) ObtainBall(ball);
 
         // Set default projection using first ball if it exists
-        if (balls.Count < 0) glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        if (balls.Count > 0) glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
     }
 
     public void SetGameMode(GameMode gm)
@@ -95,6 +95,7 @@ public class PlayerBehaviour : MonoBehaviour
     public void GloveOn(bool on)
     {
         gloveOn = on;
+        if (balls.Count > 0) glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
     }
 
     public void TeleportOn(bool on)
@@ -141,6 +142,7 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(balls.Count);
         switch (gameMode)
         {
             // Controllers exclusive
@@ -180,7 +182,7 @@ public class PlayerBehaviour : MonoBehaviour
                     if (!shot)
                     {
                         // Update the aim beam rendering
-                        if (Vector3.Angle(eyes.forward, glove.palm.forward) <= 90) ProjectAimBeam(true);
+                        if (Vector3.Angle(eyes.forward, glove.palm.forward) <= 90) ProjectAimBeam(gloveOn);
                         else ProjectAimBeam(false);
 
                         // Pinch index finger to shoot ball
@@ -210,8 +212,8 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
 
-        if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(true);
-        else glove.palm.GetComponent<AimBeam>().Clear();
+        if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
+        else ProjectAimBeam(false);
 
         if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
 
@@ -232,7 +234,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ProjectAimBeam(bool on)
     {
-        if (on && balls.Count > 0)
+        if (gloveOn && on && balls.Count > 0)
         {
             glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
         }
@@ -251,7 +253,7 @@ public class PlayerBehaviour : MonoBehaviour
             if (selectedBall < 0) selectedBall = balls.Count - 1;
             else if (selectedBall >= balls.Count) selectedBall = 0;
 
-            glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+            glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
         }
     }
 
@@ -268,12 +270,9 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void ObtainBall(Ball ball)
     {
-        if (gloveOn)
-        {
-            balls.Add(ball);
-            selectedBall = balls.Count - 1;
-            glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
-        }
+        balls.Add(ball);
+        selectedBall = balls.Count - 1;
+        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
     }
 
     public void Preview(bool on, bool isPalm)
@@ -303,7 +302,7 @@ public class PlayerBehaviour : MonoBehaviour
     void SelectBall(int idx)
     {
         selectedBall = idx;
-        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall]);
+        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
     }
 
     IEnumerator Shot()

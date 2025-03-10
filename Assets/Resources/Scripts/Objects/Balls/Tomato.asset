@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bef0e3f852f1b241abded75040da0c0, type: 3}
-  m_Name: Apple
+  m_Name: Tomato
   m_EditorClassIdentifier: 
-  title: Apple
-  description: Rebounds once and explodes on the second impact.
+  title: Tomato
+  description: 
   ballType: 0
   prefab: {fileID: 1837288042578470597, guid: 16900d78d6435d24bba3ac69fab0ded5, type: 3}
   mesh: {fileID: -3831308358674686178, guid: c8b6a38994dcf8c43b5609ea977205c5, type: 3}
