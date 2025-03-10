@@ -5,6 +5,7 @@ using static Glossary;
 public class BallBehaviour : MonoBehaviour
 {
     [Header("Customization")]
+    [SerializeField] public Ball ball;
     [SerializeField] List<GameObject> expansion = new();
     [SerializeField] AudioClip reboundClip;
     [SerializeField] AudioClip anullClip;
@@ -13,9 +14,14 @@ public class BallBehaviour : MonoBehaviour
     [SerializeField] Rigidbody body;
     [SerializeField] AudioSource audioSource;
 
-    [HideInInspector] public Ball ball;
     Vector3 lastVertex = new();
     List<Collider> bypassedColliders = new();
+
+
+    private void Awake()
+    {
+        ball = Instantiate(ball);   
+    }
 
     void Start()
     {

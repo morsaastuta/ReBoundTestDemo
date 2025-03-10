@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +7,8 @@ public class SpawnerBehaviour : ActivableBehaviour
     [Header("Customization (Spawner)")]
 
     [SerializeField] bool spawnOnDestroy;
-
+    [SerializeField] float Delay = 0.25f;
+    
     [SerializeField] GameObject spawnPrefab;
     [SerializeField] int interval = 0;
     int timer = 0;
@@ -14,8 +16,7 @@ public class SpawnerBehaviour : ActivableBehaviour
 
     List<GameObject> trackedSpawns = new();
 
-
-    GameObject newSpawn;
+    bool skibidiBorrame = true;
 
     protected void Start()
     {
@@ -26,43 +27,51 @@ public class SpawnerBehaviour : ActivableBehaviour
     {
         base.FixedUpdate();
 
-        CheckSpawnProximity();
-        
-        
-        if (active) 
-        { 
+        CheckSpawnValidity();
+
+
+        if (active)
+        {
             if (spawnOnDestroy)
             {
-                if (newSpawn == null)
+                if (trackedSpawns.Count == 0 && skibidiBorrame)
                 {
-                    Spawn();
+                    StartCoroutine(Spawn());
                 }
             }
             else
             {
-            
+
                 timer++;
                 if (timer >= interval)
                 {
-                    Spawn();
+                    StartCoroutine(Spawn());
                     timer = 0;
                 }
-            
+
             }
         }
         else timer = 0;
     }
     
-    void Spawn()
+    IEnumerator Spawn()
     {
+        skibidiBorrame = false;
+        yield return new WaitForSecondsRealtime(Delay);
+        skibidiBorrame = true;
+        
+        if (active)
+        {
+            GameObject newSpawn;
 
-        newSpawn = Instantiate(spawnPrefab);
-        newSpawn.transform.position = transform.position;
-        newSpawn.transform.rotation = transform.rotation;
-        trackedSpawns.Add(newSpawn);
+            newSpawn = Instantiate(spawnPrefab);
+            newSpawn.transform.position = transform.position;
+            newSpawn.transform.rotation = transform.rotation;
+            trackedSpawns.Add(newSpawn);
+        }
     }
 
-    void CheckSpawnProximity()
+    void CheckSpawnValidity()
     {
         bool delete = false;
         int index = 0;
@@ -71,10 +80,10 @@ public class SpawnerBehaviour : ActivableBehaviour
         {
             if (trackedSpawn == null)
             {
-
+                Debug.Log("jiji");
                 delete = true;
                 index = trackedSpawns.IndexOf(trackedSpawn);
-                return;
+                break;
             }
             else if (Vector3.Distance(transform.position, trackedSpawn.transform.position) > trackDistance)
             {
@@ -86,6 +95,6 @@ public class SpawnerBehaviour : ActivableBehaviour
             }
         }
 
-        if (delete) trackedSpawns.RemoveAt(index);
+        if (delete) {trackedSpawns.RemoveAt(index); Debug.Log("jaja"); }
     }
 }

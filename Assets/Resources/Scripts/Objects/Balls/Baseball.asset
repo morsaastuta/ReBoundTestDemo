@@ -22,6 +22,7 @@ MonoBehaviour:
   reboundCount: 0
   reboundLimit: 3
   reboundInfinitely: 0
+  auxiliar: 0
   sticky: 0
   gyroscope: 0
   persistent: 0

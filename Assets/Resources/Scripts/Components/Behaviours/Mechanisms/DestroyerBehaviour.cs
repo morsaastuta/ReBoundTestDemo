@@ -11,7 +11,9 @@ public class DestroyerBehaviour : CheckerBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+
         quantityDestroyed++;
+        print(quantityDestroyed);
         if (other.CompareTag(tagName)) 
             Destroy(other.gameObject, timeToDestroy);
     }
