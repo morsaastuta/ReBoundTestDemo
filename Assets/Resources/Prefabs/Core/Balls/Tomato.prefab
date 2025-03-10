@@ -49,12 +49,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dddf96266a85e04ea729a9a98b2cafe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 11400000, guid: 789fb760d50da51418fb1d9873f846a2, type: 2}
   expansion: []
   reboundClip: {fileID: 8300000, guid: a75ce4445ee05274498e85bd4a647da9, type: 3}
   anullClip: {fileID: 8300000, guid: a75ce4445ee05274498e85bd4a647da9, type: 3}
   body: {fileID: 1267687145562228484}
   audioSource: {fileID: 7741591627532067704}
-  ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
 --- !u!33 &1255015598427142218
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837288042578470597}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -3831308358674686178, guid: c8b6a38994dcf8c43b5609ea977205c5, type: 3}
 --- !u!23 &3317881648018934840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

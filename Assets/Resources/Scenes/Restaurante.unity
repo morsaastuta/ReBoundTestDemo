@@ -171,7 +171,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Yeah, sure."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -233,7 +233,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"They are passed in many ways - raquets, throwing, bats..."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -295,7 +295,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Balls can help developing and showcasing balance and accuracy, so
     they are very helpful in all kinds of sports."'
   musicClip: {fileID: 0}
@@ -739,79 +739,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1001 &118424438
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.803
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.022
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
-      objectReference: {fileID: 0}
-    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4527866932529651897, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-      propertyPath: m_Name
-      value: Woman (Sofa)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
---- !u!114 &118424439 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1767385016741431246, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-  m_PrefabInstance: {fileID: 118424438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &118424440 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7343931560947397640, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
-  m_PrefabInstance: {fileID: 118424438}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &125485228
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +912,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"That too, but there is a great variety of ball games out there. Even
     some athletics and gymnastics practices use balls."'
   musicClip: {fileID: 0}
@@ -1351,7 +1278,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Woah!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -1604,63 +1531,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!1001 &259345438
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8541382947725734110, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_Name
-      value: Alley door
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.522
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.574
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999948
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.0032192848
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.369
-      objectReference: {fileID: 0}
-    - target: {fileID: 8977157947650382624, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b3a4fba4310c86a4cadda007cb3e3115, type: 3}
 --- !u!1001 &267802722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1897,7 +1767,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Ah... Well, I like sports."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -2041,7 +1911,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Pays the bills. And it''s not like I could do anything else."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -2103,7 +1973,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Ball games are so interesing, having to take into account strength,
     trajectory, rebound angles..."'
   musicClip: {fileID: 0}
@@ -2619,7 +2489,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"And they don''t always have to be used in team sports! Many ball games
     can be played solo, like golf or bowling. There is no passing to other people,
     just you and the ball."'
@@ -2926,7 +2796,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"If you are so good at throwing balls, why don''t you try and hit the
     fire alarm?"'
   musicClip: {fileID: 0}
@@ -3111,7 +2981,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Don''t worry, I just finished my shift."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -3121,14 +2991,14 @@ MonoBehaviour:
   functions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118424439}
+      - m_Target: {fileID: 1611929861}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
+        m_MethodName: Pose
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3794,7 +3664,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Huh?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -3808,8 +3678,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 362731752447966381}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
+        m_MethodName: Pose
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3820,8 +3690,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 267802723}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
+        m_MethodName: Pose
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3832,8 +3702,8 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1652248704}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
+        m_MethodName: Pose
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3918,7 +3788,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Someone do something!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -4223,7 +4093,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Surely you have some skills or ambitions! When I worked as a barista
     at my town I couldn''t wait to finish my studies and begin working as a teacher."'
   musicClip: {fileID: 0}
@@ -4286,7 +4156,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Ah, good to know... I didn''t want to cause a bad impression."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -4459,7 +4329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4527866932529651897, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
       propertyPath: m_Name
-      value: Woman (Door)
+      value: Girl (Door)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4904,7 +4774,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"So, like... soccer and basketball?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -5095,18 +4965,6 @@ MonoBehaviour:
   functions:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 749867260}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2056294008}
         m_TargetAssemblyTypeName: RotatorBehaviour, Assembly-CSharp
         m_MethodName: Deactivate
@@ -5122,6 +4980,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1604336674}
         m_TargetAssemblyTypeName: RotatorBehaviour, Assembly-CSharp
         m_MethodName: Deactivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 749867260}
+        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5360,7 +5230,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Jeez, you actually did it!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -5446,7 +5316,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"You are skilled at throwing balls, I assume this ties into your hobby?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -5895,7 +5765,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Hahaha! Don''t worry, I get you. I go crazy too when I talk with someone
     about films."'
   musicClip: {fileID: 0}
@@ -6000,7 +5870,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"We have to repeat sometime, though. Promise?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -6062,7 +5932,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Haha, maybe I''ve learned something over the years."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -6256,7 +6126,7 @@ MonoBehaviour:
   soundClips:
   - {fileID: 8300000, guid: caef2450134201c458d4b2a1b776bf5d, type: 3}
   soundSources:
-  - {fileID: 0}
+  - {fileID: 362731752447966382}
   functions:
     m_PersistentCalls:
       m_Calls:
@@ -6432,7 +6302,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Promise."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -6494,7 +6364,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Ah... Sorry. I just went on a rant."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -6919,7 +6789,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Hahaha, this was fun... But I have to get going, or else I''ll soak!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -6940,7 +6810,7 @@ GameObject:
   - component: {fileID: 1237320640}
   - component: {fileID: 1237320641}
   m_Layer: 0
-  m_Name: B09. Girl is surprised
+  m_Name: B09. Girl is thankful
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6981,7 +6851,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Oh, thank you!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -7238,7 +7108,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Hey, that gives me an idea!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -7842,8 +7712,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 749867260}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
+        m_MethodName: Pose
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8312,7 +8182,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"And the effort paid out! Now I have enough quality of life to enjoy
     my hobbies without worrying about the bills."'
   musicClip: {fileID: 0}
@@ -8615,9 +8485,9 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"No way! What kind? I love athletics and gymnastics."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -8817,6 +8687,79 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &1611929860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.785
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.097
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.112
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.037954133
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9992795
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -175.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 516456157593314952, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527866932529651897, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+      propertyPath: m_Name
+      value: Girl (Sofa)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+--- !u!114 &1611929861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1767385016741431246, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+  m_PrefabInstance: {fileID: 1611929860}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1611929862 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7343931560947397640, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+  m_PrefabInstance: {fileID: 1611929860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1652248703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9494,7 +9437,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"I''m more interested in ball games."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -9556,7 +9499,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Ah!! The place is full of birds!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -9618,7 +9561,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"Speaking of which, what do you do in your free time?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -10638,7 +10581,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"What a burst! The doors even got stuck."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -10659,6 +10602,10 @@ PrefabInstance:
     - target: {fileID: 4418664203564605217, guid: 6a721c3c967d67b40858ba9a3e971893, type: 3}
       propertyPath: positive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4418664203564605217, guid: 6a721c3c967d67b40858ba9a3e971893, type: 3}
+      propertyPath: rotationAngles
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8541382947725734110, guid: 6a721c3c967d67b40858ba9a3e971893, type: 3}
       propertyPath: m_Name
@@ -10966,7 +10913,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"What a scare...!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -11044,6 +10991,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4418664203564605217, guid: faa6c24d6fb3c494289918dffa7aaedc, type: 3}
+      propertyPath: rotationAngles
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 8541382947725734110, guid: faa6c24d6fb3c494289918dffa7aaedc, type: 3}
       propertyPath: m_Name
       value: Restaurant door A
@@ -11484,7 +11435,7 @@ MonoBehaviour:
   voiceClips:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
-  - {fileID: 118424440}
+  - {fileID: 1611929862}
   subtitles: '"So... How is working as a cook here?"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -11825,7 +11776,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4216109448628855628, guid: 6f5c453b14d32aa4ea7bb2555d9ef505, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.521
+      value: 12.351
       objectReference: {fileID: 0}
     - target: {fileID: 4216109448628855628, guid: 6f5c453b14d32aa4ea7bb2555d9ef505, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13322,7 +13273,7 @@ SceneRoots:
   - {fileID: 2056294007}
   - {fileID: 1604336673}
   - {fileID: 749867259}
-  - {fileID: 118424438}
+  - {fileID: 1611929860}
   - {fileID: 1720656075073380038}
   - {fileID: 5914442570646585818}
   - {fileID: 362731752447966380}
@@ -13340,5 +13291,4 @@ SceneRoots:
   - {fileID: 740010595}
   - {fileID: 1347139664}
   - {fileID: 561232323}
-  - {fileID: 259345438}
   - {fileID: 2832969703208964613}

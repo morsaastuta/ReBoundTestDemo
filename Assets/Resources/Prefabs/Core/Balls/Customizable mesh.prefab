@@ -49,10 +49,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dddf96266a85e04ea729a9a98b2cafe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
   expansion: []
   reboundClip: {fileID: 8300000, guid: 755fa39788adeb845a79120ad01d58a9, type: 3}
   anullClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
-  ball: {fileID: 11400000, guid: 65132384830da5749bae1a59f1dea728, type: 2}
+  body: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!64 &3741950557183011280
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -212,7 +214,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

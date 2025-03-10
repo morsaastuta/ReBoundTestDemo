@@ -1,42 +1,36 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using System.Collections.Generic;
+using System.Collections;
 
-public class PhantomBehaviour : ActivableBehaviour
+public class PhantomBehaviour : MonoBehaviour
 {
-    [Header("Customization (Phantom)")]
-    [SerializeField] List<AnimationClip> animations = new();
+    [Header("Customization")]
+    [SerializeField] List<Renderer> renderers;
+    [SerializeField] float fadeWait = 2f;
 
-    [Header("References (Phantom)")]
-    [SerializeField] Renderer renderer;
-    [SerializeField] GameObject animationRoot;
+    Vector3 destination;
 
-    public override void Activate()
+    void Start()
     {
-        base.Activate();
-        StartCoroutine(Fade(true));
+        Hide();
     }
 
-    public override void Deactivate()
+    public void Hide()
     {
-        base.Deactivate();
-        StartCoroutine(Fade(false));
+        foreach (Renderer renderer in renderers) Fade(renderer, false);
     }
 
-    public void Animate(int animIdx)
+    public void Pose(int idx)
     {
-        animations[animIdx].SampleAnimation(animationRoot, animations[animIdx].length);
+        Hide();
+        Fade(renderers[idx], true);
     }
 
-    IEnumerator Fade(bool on)
+    void Fade(Renderer renderer, bool on)
     {
         Color rendererColor = renderer.material.color;
-        renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(on)), 2f);
-
-        if (on) renderer.enabled = true;
-        yield return new WaitForSeconds(2f);
-        if (!on) renderer.enabled = false;
+        renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(on)), fadeWait);
     }
 }

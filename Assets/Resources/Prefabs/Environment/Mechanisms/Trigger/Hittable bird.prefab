@@ -72,17 +72,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activatorsAND: []
-  activatorsOR: []
-  permanent: 0
-  activateClip: {fileID: 0}
-  deactivateClip: {fileID: 0}
-  source: {fileID: 2269516184678208067}
-  active: 0
-  animations:
-  - {fileID: 7400000, guid: 1dc2931e3f69a8d4989484616cdff9b7, type: 2}
-  renderer: {fileID: 8692022684078587325}
-  animationRoot: {fileID: 8822932800513428978}
+  renderers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fadeWait: 2
 --- !u!1001 &2005505772735115469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,15 +294,5 @@ AudioSource:
 --- !u!4 &2044147845449275174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 740d8b7ebfc67324ca7a4a8377a984a2, type: 3}
-  m_PrefabInstance: {fileID: 2005505772735115469}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &8692022684078587325 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -2056816493865530000, guid: 740d8b7ebfc67324ca7a4a8377a984a2, type: 3}
-  m_PrefabInstance: {fileID: 2005505772735115469}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8822932800513428978 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7036213049465896255, guid: 740d8b7ebfc67324ca7a4a8377a984a2, type: 3}
   m_PrefabInstance: {fileID: 2005505772735115469}
   m_PrefabAsset: {fileID: 0}
