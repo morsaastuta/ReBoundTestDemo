@@ -34,25 +34,33 @@ public class PhantomBehaviour : MonoBehaviour
         renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(intro)), fadeWait);
     }
 
-    public void SequenceIn(int[] indexes)
+    public void SequenceIn(string indexes)
     {
-        StartCoroutine(Transit(indexes, true));
+        List<int> idxs = new();
+        foreach (string idx in indexes.Split(' ')) idxs.Add(Convert.ToInt32(idx));
+        StartCoroutine(Transit(idxs, true));
     }
 
-    public void SequenceOut(int[] indexes)
+    public void SequenceOut(string indexes)
     {
-        StartCoroutine(Transit(indexes, false));
+        List<int> idxs = new();
+        foreach (string idx in indexes.Split(' ')) idxs.Add(Convert.ToInt32(idx));
+        StartCoroutine(Transit(idxs, false));
     }
-
-    IEnumerator Transit(int[] indexes, bool intro)
+    
+    IEnumerator Transit(List<int> indexes, bool intro)
     {
+        int remainingIndexes = indexes.Count;
+
         foreach (int idx in indexes)
         {
-            Fade(renderers[idx], true);
+            remainingIndexes--;
+
+            Pose(idx);
 
             yield return new WaitForSeconds(fadeWait);
 
-            Hide();
+            if (!intro && remainingIndexes == 0) Hide();
         }
     }
 }

@@ -2134,7 +2134,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   voiceSources:
   - {fileID: 1611929862}
-  subtitles: '"Ball games are so interesing, having to take into account strength,
+  subtitles: '"Ball games are so interesting, having to take into account strength,
     trajectory, rebound angles..."'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -2903,7 +2903,19 @@ MonoBehaviour:
   soundSources: []
   functions:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1611929861}
+        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &522711782
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,62 +3850,38 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 362731752447966381}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Pose
-        m_Mode: 3
+        m_MethodName: SequenceIn
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0 1 2
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 267802723}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Pose
-        m_Mode: 3
+        m_MethodName: SequenceIn
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0 1 2
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1652248704}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Pose
-        m_Mode: 3
+        m_MethodName: SequenceIn
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0 1 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &676915628
@@ -5408,7 +5396,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -90
+          m_FloatArgument: -135
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -5420,7 +5408,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 90
+          m_FloatArgument: 135
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -6286,128 +6274,44 @@ MonoBehaviour:
   soundClips:
   - {fileID: 8300000, guid: caef2450134201c458d4b2a1b776bf5d, type: 3}
   soundSources:
-  - {fileID: 0}
+  - {fileID: 362731752447966382}
   functions:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 362731752447966381}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Animate
-        m_Mode: 3
+        m_MethodName: SequenceOut
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 362731752447966381}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 3 4
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 267802723}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Animate
-        m_Mode: 3
+        m_MethodName: SequenceOut
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 267802723}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 3 4
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1652248704}
         m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Animate
-        m_Mode: 3
+        m_MethodName: SequenceOut
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1652248704}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Animate
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Animate
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PhantomBehaviour, Assembly-CSharp
-        m_MethodName: Deactivate
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 3 4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1119045743
@@ -10779,6 +10683,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2056294008}
+        m_TargetAssemblyTypeName: RotatorBehaviour, Assembly-CSharp
+        m_MethodName: RotateY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 135
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1604336674}
+        m_TargetAssemblyTypeName: RotatorBehaviour, Assembly-CSharp
+        m_MethodName: RotateY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -135
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2050938579
 GameObject:
   m_ObjectHideFlags: 0
@@ -11484,6 +11412,83 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1001 &2141408785
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.089
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06422174
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.838
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7090366871804574597, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Name
+      value: Reboundable plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885150050749515664, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.36295286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885150050749515664, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5247846
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885150050749515664, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0068977773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885150050749515664, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2506189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885150050749515664, guid: 4941ec72053ef3440945e8874012768a, type: 3}
+      propertyPath: m_Center.z
+      value: 2.6082897e-15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4941ec72053ef3440945e8874012768a, type: 3}
 --- !u!1001 &362731752447966380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11816,6 +11821,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &362731752447966382 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8651710243245243994, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
+  m_PrefabInstance: {fileID: 362731752447966380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &362731752447966386 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7991261388501596451, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
@@ -11835,6 +11845,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 877628470620340968, guid: 6f5c453b14d32aa4ea7bb2555d9ef505, type: 3}
+      propertyPath: isInt
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4216109448628855628, guid: 6f5c453b14d32aa4ea7bb2555d9ef505, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.351
@@ -12938,7 +12952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7113751173778339428, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_TagString
-      value: Reboundable
+      value: Annulling
       objectReference: {fileID: 0}
     - target: {fileID: 7113751173778339428, guid: f8d56d34a871eff4986dae13d45d4760, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -13276,6 +13290,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.15770087
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.15770078
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.68929714
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.689297
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756807662035881339, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 205.773
+      objectReference: {fileID: 0}
     - target: {fileID: 6652969464319817659, guid: be6e71dde50637f4b926c578f01cdb28, type: 3}
       propertyPath: m_Name
       value: Banqueta
@@ -13351,3 +13389,4 @@ SceneRoots:
   - {fileID: 1347139664}
   - {fileID: 561232323}
   - {fileID: 2832969703208964613}
+  - {fileID: 2141408785}
