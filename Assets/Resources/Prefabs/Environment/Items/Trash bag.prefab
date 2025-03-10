@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 614928831346438897}
   - component: {fileID: 4135748074887833790}
   - component: {fileID: 657681716861140646}
-  - component: {fileID: 3086804023404653247}
   - component: {fileID: 6059248829330608296}
+  - component: {fileID: 5182544417008430570}
   m_Layer: 10
   m_Name: Trash bag
-  m_TagString: Untagged
+  m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,14 +28,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23753701342443138}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8192208417752561821}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &4135748074887833790
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23753701342443138}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 665085963770613444, guid: 6009d47938439b34ea74633281a40b8e, type: 3}
 --- !u!23 &657681716861140646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 08c5f3bbf21a85641ae410d6fceb47db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,28 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3086804023404653247
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23753701342443138}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &6059248829330608296
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -138,6 +116,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &5182544417008430570
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23753701342443138}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 665085963770613444, guid: 6009d47938439b34ea74633281a40b8e, type: 3}
 --- !u!1001 &328679225923247926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,6 +146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 614928831346438897}
     m_Modifications:
+    - target: {fileID: 12452075291636684, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
+      propertyPath: m_TagString
+      value: Trash
+      objectReference: {fileID: 0}
     - target: {fileID: 2076688569240031941, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
       propertyPath: _rigidbody
       value: 
@@ -162,6 +166,10 @@ PrefabInstance:
       propertyPath: _rigidbody
       value: 
       objectReference: {fileID: 6059248829330608296}
+    - target: {fileID: 4675427894334082883, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
+      propertyPath: m_TagString
+      value: Trash
+      objectReference: {fileID: 0}
     - target: {fileID: 4866321334696180600, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
       propertyPath: _filter
       value: 
@@ -177,6 +185,10 @@ PrefabInstance:
     - target: {fileID: 7282505366849226089, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
       propertyPath: m_Name
       value: Grab interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282505366849226089, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
+      propertyPath: m_TagString
+      value: Trash
       objectReference: {fileID: 0}
     - target: {fileID: 7597017493795965357, guid: 8642348ee1e1d8b4d9202f6d86c664b5, type: 3}
       propertyPath: _rigidbody
