@@ -22,7 +22,6 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     protected virtual void Start()
     {
         if (active) Activate();
-        else Deactivate();
     }
 
     protected virtual void FixedUpdate()
