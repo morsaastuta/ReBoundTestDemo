@@ -10,15 +10,15 @@ public class SettingsGeneralController : MonoBehaviour
 
     void OnEnable()
     {
-        subtitled.isOn = EventManager.instance.subtitled;
-        subtitleHeight.value = EventManager.instance.subtitleHeight;
-        subtitleDepth.value = EventManager.instance.subtitleDepth;
+        subtitled.isOn = SubtitleManager.instance.subtitled;
+        subtitleHeight.value = SubtitleManager.instance.subtitleHeight;
+        subtitleDepth.value = SubtitleManager.instance.subtitleDepth;
     }
 
     public void SaveSettings()
     {
-        EventManager.instance.subtitled = subtitled.isOn;
-        EventManager.instance.subtitleDepth = subtitleDepth.value;
-        EventManager.instance.subtitleHeight = subtitleHeight.value;
+        SubtitleManager.instance.subtitled = subtitled.isOn;
+        SubtitleManager.instance.subtitleDepth = subtitleDepth.value;
+        SubtitleManager.instance.subtitleHeight = subtitleHeight.value;
     }
 }

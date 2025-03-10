@@ -1,21 +1,39 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
+using System.Collections.Generic;
 
-public class MemoryBehaviour : ActivableBehaviour
+public class PhantomBehaviour : ActivableBehaviour
 {
-    [Header("References")]
-    [SerializeField] MeshRenderer renderer;
+    [Header("Customization (Phantom)")]
+    [SerializeField] List<AnimationClip> animations = new();
 
-    public void Show(bool on)
+    [Header("References (Phantom)")]
+    [SerializeField] Renderer renderer;
+    [SerializeField] Animation animator;
+
+    public override void Activate()
     {
-        Fade(on);
+        base.Activate();
+        Fade(true);
     }
 
-    IEnumerator Fade(bool i)
+    public override void Deactivate()
+    {
+        base.Deactivate();
+        Fade(false);
+    }
+
+    public void Animate(int animIdx)
+    {
+        animator.clip = animations[animIdx];
+        animator.Play();
+    }
+
+    void Fade(bool on)
     {
         Color rendererColor = renderer.material.color;
-        //renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(i)), 1f);
-        yield return new WaitForEndOfFrame();
+        renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(on)), 2f);
     }
 }

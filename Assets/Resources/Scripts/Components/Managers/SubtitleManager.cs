@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class EventManager : MonoBehaviour
+public class SubtitleManager : MonoBehaviour
 {
-    public static EventManager instance;
+    public static SubtitleManager instance;
 
     [Header("References")]
     [SerializeField] Canvas canvas;

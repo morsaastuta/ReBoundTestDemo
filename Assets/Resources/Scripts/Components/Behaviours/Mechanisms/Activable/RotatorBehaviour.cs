@@ -1,43 +1,56 @@
 using DG.Tweening;
+using System;
 using UnityEngine;
 
 public class RotatorBehaviour : ActivableBehaviour
 {
-    [Header("Customization (Rotator)")]
-    [SerializeField] bool bridge = false;
-    [SerializeField] float rotationAngles = 90;
-    [SerializeField] bool clockwise = true;
-    [SerializeField] float duration = 1;
+    enum RotateDirection
+    {
+        X, Y, Z
+    }
 
-    override public void Activate()
+    [Header("Customization (Rotator)")]
+    [SerializeField] float rotationAngles = 90;
+    [SerializeField] bool positive = true;
+    [SerializeField] float duration = 1;
+    [SerializeField] RotateDirection rotateDirection = RotateDirection.Y;
+
+    public override void Activate()
     {
         base.Activate();
 
-        if (!bridge)
+        switch (rotateDirection)
         {
-            if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
-            else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
-        }
-        else
-        {
-            if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(-rotationAngles, 0, 0), duration);
-            else transform.DORotate(transform.rotation.eulerAngles + new Vector3(rotationAngles, 0, 0), duration);
+            case RotateDirection.X: RotateX(rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.Y: RotateY(rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.Z: RotateZ(rotationAngles * Convert.ToInt32(positive)); break;
         }
     }
 
-    override public void Deactivate()
+    public override void Deactivate()
     {
         base.Deactivate();
 
-        if (!bridge)
+        switch (rotateDirection)
         {
-            if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, rotationAngles, 0), duration);
-            else transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, -rotationAngles, 0), duration);
+            case RotateDirection.X: RotateX(-rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.Y: RotateY(-rotationAngles * Convert.ToInt32(positive)); break;
+            case RotateDirection.Z: RotateZ(-rotationAngles * Convert.ToInt32(positive)); break;
         }
-        else
-        {
-            if (!clockwise) transform.DORotate(transform.rotation.eulerAngles + new Vector3(rotationAngles, 0, 0), duration);
-            else transform.DORotate(transform.rotation.eulerAngles + new Vector3(-rotationAngles, 0, 0), duration);
-        }
+    }
+
+    public void RotateX(float amount)
+    {
+        transform.DORotate(transform.rotation.eulerAngles + new Vector3(amount, 0, 0), duration);
+    }
+    
+    public void RotateY(float amount)
+    {
+        transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, amount, 0), duration);
+    }
+
+    public void RotateZ(float amount)
+    {
+        transform.DORotate(transform.rotation.eulerAngles + new Vector3(0, 0, amount), duration);
     }
 }

@@ -19,6 +19,12 @@ public class ActivableBehaviour : MonoBehaviour // TO-DO: Create class inheritan
     bool requirement = false;
     public bool active = false;
 
+    protected virtual void Start()
+    {
+        if (active) Activate();
+        else Deactivate();
+    }
+
     protected virtual void FixedUpdate()
     {
         foreach (ActivatorBehaviour activator in activatorsOR)

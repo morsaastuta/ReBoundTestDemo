@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 0690b6f5-04ab-4027-b71a-a9f62f31b246
+  instanceId: 18b21926-bc47-4926-8730-bc775e9eea36
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: c20427f7-c482-4259-9ca4-dc9a65959667
+  instanceId: 565a9557-0474-40bb-a87f-1a14eb45a693
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 1f958188-0cab-40a7-997c-b639de511aff
+  instanceId: 0230c97a-914b-413f-84c1-74d222cfe62f
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 2a193851-56db-40ec-be34-be308791b412
+  instanceId: eb48e7c3-a012-4835-ad38-150389930b3b
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -18748,7 +18748,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1.8
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3

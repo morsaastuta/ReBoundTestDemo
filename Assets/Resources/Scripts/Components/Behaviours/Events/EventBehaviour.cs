@@ -23,10 +23,6 @@ public class EventBehaviour : MonoBehaviour
     [SerializeField] List<AudioClip> soundClips = new();
     [SerializeField] List<AudioSource> soundSources = new();
 
-    [Header("Mechanisms")]
-    [SerializeField] List<ActivableBehaviour> activableObjects = new();
-    [SerializeField] List<bool> reversed = new();
-
     [Header("Functions")]
     [SerializeField] UnityEvent functions = new();
 
@@ -57,8 +53,8 @@ public class EventBehaviour : MonoBehaviour
         }
 
         // Subtitles
-        if (EventManager.instance.subtitled) EventManager.instance.SetSubtitles(subtitles);
-        else EventManager.instance.ClearSubtitles();
+        if (SubtitleManager.instance.subtitled) SubtitleManager.instance.SetSubtitles(subtitles);
+        else SubtitleManager.instance.ClearSubtitles();
 
         // Functions
         functions.Invoke();
