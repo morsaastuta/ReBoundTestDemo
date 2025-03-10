@@ -9,12 +9,12 @@ public class EmitterBehaviour : ActivableBehaviour
     override public void Activate()
     {
         base.Activate();
-
+        particles = Instantiate(particles, transform);
     }
 
     override public void Deactivate()
     {
         base.Deactivate();
-
+        Destroy(particles);
     }
 }
