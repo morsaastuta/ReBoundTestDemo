@@ -11,29 +11,32 @@ public class PhantomBehaviour : ActivableBehaviour
 
     [Header("References (Phantom)")]
     [SerializeField] Renderer renderer;
-    [SerializeField] Animation animator;
+    [SerializeField] GameObject animationRoot;
 
     public override void Activate()
     {
         base.Activate();
-        Fade(true);
+        StartCoroutine(Fade(true));
     }
 
     public override void Deactivate()
     {
         base.Deactivate();
-        Fade(false);
+        StartCoroutine(Fade(false));
     }
 
     public void Animate(int animIdx)
     {
-        animator.clip = animations[animIdx];
-        animator.Play();
+        animations[animIdx].SampleAnimation(animationRoot, animations[animIdx].length);
     }
 
-    void Fade(bool on)
+    IEnumerator Fade(bool on)
     {
         Color rendererColor = renderer.material.color;
         renderer.material.DOColor(new Color(rendererColor.r, rendererColor.g, rendererColor.b, Convert.ToInt32(on)), 2f);
+
+        if (on) renderer.enabled = true;
+        yield return new WaitForSeconds(2f);
+        if (!on) renderer.enabled = false;
     }
 }

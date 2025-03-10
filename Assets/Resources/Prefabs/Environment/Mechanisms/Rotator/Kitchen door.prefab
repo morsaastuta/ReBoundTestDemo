@@ -164,10 +164,10 @@ MonoBehaviour:
   deactivateClip: {fileID: 8300000, guid: b0416ac8aa2e14e4e9f3ec30dfef14d9, type: 3}
   source: {fileID: 9121976069682564210}
   active: 0
-  bridge: 0
   rotationAngles: 90
   positive: 1
   duration: 1
+  rotateDirection: 1
 --- !u!82 &9121976069682564210
 AudioSource:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

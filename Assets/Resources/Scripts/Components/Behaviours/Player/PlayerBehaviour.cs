@@ -180,18 +180,18 @@ public class PlayerBehaviour : MonoBehaviour
                     if (!shot)
                     {
                         // Update the aim beam rendering
-                        if (Vector3.Angle(eyes.forward, glove.palm.forward) <= 90) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
-                        else glove.palm.GetComponent<AimBeam>().Clear();
+                        if (Vector3.Angle(eyes.forward, glove.palm.forward) <= 90) ProjectAimBeam(true);
+                        else ProjectAimBeam(false);
 
                         // Pinch index finger to shoot ball
                         if (glove.hand.GetFingerIsPinching(OVRHand.HandFinger.Index)) Shoot();
                     }
-                    else glove.palm.GetComponent<AimBeam>().Clear();
+                    else ProjectAimBeam(false);
 
                     // Pinch middle finger to delete all auxiliar balls
                     if (glove.hand.GetFingerIsPinching(OVRHand.HandFinger.Middle)) ClearAuxiliars();
                 }
-                else glove.palm.GetComponent<AimBeam>().Clear();
+                else ProjectAimBeam(false);
 
                 break;
 
@@ -210,7 +210,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
 
-        if (InputManager.instance.Holding(InputManager.instance.aim)) glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+        if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(true);
         else glove.palm.GetComponent<AimBeam>().Clear();
 
         if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
@@ -223,11 +223,20 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        if (gloveOn && !shot)
+        if (gloveOn && !shot && balls.Count > 0)
         {
             AudioManager.instance.PlaySound(shootClip, glove.audioSource);
             StartCoroutine(Shot());
         }
+    }
+
+    void ProjectAimBeam(bool on)
+    {
+        if (on && balls.Count > 0)
+        {
+            glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+        }
+        else glove.palm.GetComponent<AimBeam>().Clear();
     }
 
     public void SwapBall(bool right)

@@ -28,7 +28,7 @@ public class TriggerBehaviour : ActivatorBehaviour
         }
     }
 
-    protected override void Activate(bool on)
+    public override void Activate(bool on)
     {
         base.Activate(on);
 
