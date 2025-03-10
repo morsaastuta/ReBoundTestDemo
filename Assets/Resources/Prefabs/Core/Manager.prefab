@@ -524,7 +524,6 @@ MonoBehaviour:
   soundClips: []
   voiceSource: {fileID: 8449912371956194429}
   voiceClips: []
-  subtitles: {fileID: 0}
   globalVolume: 1
   musicVolume: 0.5
   soundVolume: 0.5
@@ -571,14 +570,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5035027892454465766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d43402a6a0051f1418d41c463d9a8b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1246019357b7daf4cbb62eee310007c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 6432910283037542132}
   subtitleMesh: {fileID: 6884267848208811451}
   subtitled: 1
   subtitleDepth: 0.9
-  subtitleHeight: 128
+  subtitleHeight: 256
 --- !u!1 &5232182991639182649
 GameObject:
   m_ObjectHideFlags: 0

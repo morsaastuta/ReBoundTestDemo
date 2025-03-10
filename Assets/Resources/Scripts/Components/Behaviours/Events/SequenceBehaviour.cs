@@ -9,6 +9,11 @@ public class SequenceBehaviour : ActivableBehaviour
     int index = 0;
     EventBehaviour currentEvent;
 
+    protected override void Start()
+    {
+        if (active) Begin();
+    }
+
     public void Begin()
     {
         index = 0;
@@ -21,7 +26,7 @@ public class SequenceBehaviour : ActivableBehaviour
 
         // Clear and ready
         if (!events[index].keepVoice) AudioManager.instance.StopVoice(true);
-        EventManager.instance.ClearSubtitles();
+        SubtitleManager.instance.ClearSubtitles();
 
         // Get event and play it
         currentEvent = events[index];

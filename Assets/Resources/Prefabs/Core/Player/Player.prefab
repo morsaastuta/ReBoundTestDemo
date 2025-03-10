@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 0690b6f5-04ab-4027-b71a-a9f62f31b246
+  instanceId: 333b99d3-b372-4d53-bd04-10011980329c
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: c20427f7-c482-4259-9ca4-dc9a65959667
+  instanceId: 691197c5-0263-454c-b8c7-3af350661157
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 1f958188-0cab-40a7-997c-b639de511aff
+  instanceId: d4147b90-4466-4a31-ac65-2be4919d99e5
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 2a193851-56db-40ec-be34-be308791b412
+  instanceId: 9bcf02b7-f999-4dd3-8736-86db050de14f
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -18475,11 +18475,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1615136151010715426}
     - targetCorrespondingSourceObject: {fileID: 2483171112401766338, guid: f54012181eacade4ea242c65f804720f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5697520621593665661}
+      insertIndex: 1
+      addedObject: {fileID: 9049617697440407623}
     - targetCorrespondingSourceObject: {fileID: 2483171112401766338, guid: f54012181eacade4ea242c65f804720f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9049617697440407623}
+      addedObject: {fileID: 5697520621593665661}
     - targetCorrespondingSourceObject: {fileID: 2483171112401766336, guid: f54012181eacade4ea242c65f804720f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2362675572129728660}
@@ -18516,7 +18516,10 @@ MonoBehaviour:
   leftMode: 0
   canvasVR: {fileID: 6705178659893479539, guid: 6fa873087b8a7a2488fdd9661ad6fbbf, type: 3}
   canvasVRPos: {fileID: 815882670445779981}
-  teleportInteractors: []
+  teleportInteractors:
+  - {fileID: 5851676776167462003}
+  - {fileID: 285777422579033138}
+  - {fileID: 6330230865927786467}
   shootClip: {fileID: 8300000, guid: 8f55442d3af984a4fb16e67e114f8f6f, type: 3}
   swapClip: {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
   clearClip: {fileID: 8300000, guid: c8c5b3338e1e35a458de6d5e93ef5e09, type: 3}
@@ -18702,6 +18705,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2483171112401766338, guid: f54012181eacade4ea242c65f804720f, type: 3}
   m_PrefabInstance: {fileID: 3949298534753533496}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &9049617697440407623
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493863497724623354}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 9727
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5697520621593665661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18730,31 +18758,6 @@ MonoBehaviour:
   EnableLinearMovement: 0
   EnableRotation: 1
   RotationEitherThumbstick: 0
---- !u!143 &9049617697440407623
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493863497724623354}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 9727
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1493863497724623356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2483171112401766340, guid: f54012181eacade4ea242c65f804720f, type: 3}
@@ -18945,6 +18948,11 @@ GameObject:
 --- !u!4 &5571057224350071531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8907808972874319059, guid: f54012181eacade4ea242c65f804720f, type: 3}
+  m_PrefabInstance: {fileID: 3949298534753533496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5851676776167462003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7492845265316555339, guid: f54012181eacade4ea242c65f804720f, type: 3}
   m_PrefabInstance: {fileID: 3949298534753533496}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &5976217869343444715 stripped

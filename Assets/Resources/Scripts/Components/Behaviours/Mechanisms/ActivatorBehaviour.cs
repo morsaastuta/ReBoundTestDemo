@@ -24,7 +24,7 @@ public abstract class ActivatorBehaviour : CheckerBehaviour
         }
     }
 
-    protected virtual void Activate(bool on)
+    public virtual void Activate(bool on)
     {
         active = on;
 
