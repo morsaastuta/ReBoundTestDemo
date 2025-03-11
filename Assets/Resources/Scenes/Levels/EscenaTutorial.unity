@@ -187,6 +187,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eb65963ced1734a91272dd94fd2a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1142279 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7343931560947397640, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
+  m_PrefabInstance: {fileID: 1142277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7273539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,7 +640,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 1
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -699,7 +704,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 62f62b4f55b2aa44986a2b79df7f67c1, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Jeez, you actually did it!"'
@@ -914,7 +919,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 8c991036838128846bb4134ef7dce82b, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"And the effort paid out! Now I have enough quality of life to enjoy
@@ -977,7 +982,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 72a6d4a0400a32a4ba175688672438dd, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Hey, that gives me an idea!"'
@@ -1033,10 +1038,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 1
+  delay: 0
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -1099,7 +1104,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 26907beebf71927468584f9a6ae838b7, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"No way! What kind? I love athletics and gymnastics."'
@@ -1433,10 +1438,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 6
+  delay: 0
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -1494,15 +1499,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
+  fixedLength: 4
   delay: 0.5
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
-  voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
-  voiceSources:
-  - {fileID: 1238395121}
+  voiceClips: []
+  voiceSources: []
   subtitles: '"Someone do something!"'
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -1559,7 +1562,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -1707,7 +1710,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: e6801df84a989474ba4321024d6f35c7, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"I''m more interested in ball games."'
@@ -1910,7 +1913,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 138153f03f592ca469942d9e4bf590ce, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Ball games are so interesting, having to take into account strength,
@@ -12563,7 +12566,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -12686,7 +12689,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 45c675c2c81422847a0075a8e50dec29, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Surely you have some skills or ambitions! When I worked as a barista
@@ -12749,7 +12752,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: ae3048e31ec061746b8702956b0d7763, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"If you are so good at throwing balls, why don''t you try and hit the
@@ -13087,7 +13090,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: b2d74854b28760c4a9048abfb3ea5d21, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"They are passed in many ways - raquets, throwing, bats..."'
@@ -13150,6 +13153,10 @@ PrefabInstance:
     - target: {fileID: 760219089989747444, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205715374644419665, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: sceneID
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13302,7 +13309,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: eb90c01b90832294cae4409f357482c9, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"So, like... soccer and basketball?"'
@@ -18403,7 +18410,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 4e2128cf6730008428c727041117baaf, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Yeah, sure."'
@@ -18465,7 +18472,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 189035f3fbb87714db7dfd31c1d100a3, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Oh, thank you!"'
@@ -18526,8 +18533,10 @@ MonoBehaviour:
   breakpoint: 1
   keepVoice: 0
   monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
+  voiceClips:
+  - {fileID: 8300000, guid: 5a48b8a0e7e0765488e69050798e063c, type: 3}
+  voiceSources:
+  - {fileID: 1142279}
   subtitles: '
 
 '
@@ -19067,7 +19076,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 2ea8fb1fac076f4499d48cfae5498604, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Ah... Sorry. I just went on a rant."'
@@ -28956,7 +28965,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: a702f1a7101958149a67fb0871fa6e6a, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"What a scare...!"'
@@ -34116,7 +34125,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 326b774242f67bb42ba847906ca98570, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Huh?"'
@@ -39256,7 +39265,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: b4e50c296e2bbd3489f9e00f41d6967a, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Woah!"'
@@ -39868,7 +39877,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 1
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -40290,7 +40299,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 6bb11bc070187d04d871ede46ed09a8d, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Pays the bills. And it''s not like I could do anything else."'
@@ -40520,7 +40529,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 061b862576e7f654b849f930f7f7ed41, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Don''t worry, I just finished my shift."'
@@ -40591,7 +40600,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -40732,13 +40741,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 4
+  delay: 0
   breakpoint: 0
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 7956f1118161f184582471881b6d9ff3, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Ah!! The place is full of birds!"'
@@ -40800,7 +40809,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 04fafeb982b62ef4ea582d76ec0e0214, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Promise."'
@@ -40915,7 +40924,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: d02bd89e3fd2ef448947b44380620e0b, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Ah... Well, I like sports."'
@@ -41144,10 +41153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 3
+  delay: 0
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -41204,13 +41213,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 3
+  delay: 0
   breakpoint: 0
   keepVoice: 0
   monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
+  voiceClips:
+  - {fileID: 8300000, guid: f6fadccb1ede883468e293b8902bb4f3, type: 3}
+  voiceSources:
+  - {fileID: 1142279}
   subtitles: "\u201CYou don\u2019t have to say anything. I finally get it.\u201D"
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -41326,8 +41337,10 @@ MonoBehaviour:
   breakpoint: 0
   keepVoice: 0
   monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
+  voiceClips:
+  - {fileID: 8300000, guid: 4dd577731819b9745a50454a1e543ba0, type: 3}
+  voiceSources:
+  - {fileID: 1142279}
   subtitles: "\u201CLook, I really like you a lot, but I can\u2019t stand how you
     spend all your time working here.\u201D"
   musicClip: {fileID: 0}
@@ -41493,7 +41506,7 @@ MonoBehaviour:
   fixedLength: 0
   delay: 0.5
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -41769,7 +41782,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 0da3737a87a11fc488a5965945bcbf0e, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"You are skilled at throwing balls, I assume this ties into your hobby?"'
@@ -41891,7 +41904,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: d6ac56ead05e14542bcbbbcffab40599, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"So... How is working as a cook here?"'
@@ -42144,7 +42157,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 8b02e4a3b89c704488fbaba85fa79778, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"What a burst! The doors even got stuck."'
@@ -42725,13 +42738,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 3
+  delay: 0
   breakpoint: 0
   keepVoice: 0
   monologue: {fileID: 0}
-  voiceClips: []
-  voiceSources: []
+  voiceClips:
+  - {fileID: 8300000, guid: b3c0a098c697e674baae83758169d768, type: 3}
+  voiceSources:
+  - {fileID: 1142279}
   subtitles: "\u201CIt\u2019s not like I need more.\u201D"
   musicClip: {fileID: 0}
   musicSource: {fileID: 0}
@@ -42785,10 +42800,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 1
+  delay: 0
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -43081,7 +43096,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 842cc2ee447fa3d4594e3710682b17a1, type: 3}
   voiceSources:
   - {fileID: 2127902141}
   subtitles: '"Hey! Sorry I''m a bit late, hope you didn''t have to wait too much!"'
@@ -43238,7 +43253,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 131e2e92c29a3884c97d76c04d89eb14, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Speaking of which, what do you do in your free time?"'
@@ -43300,7 +43315,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 44bfce7378f35bd4dbcaedd705ae6498, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"That too, but there is a great variety of ball games out there. Even
@@ -43462,7 +43477,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 6a9789b0f1ed8094da317d06268e8a06, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"We have to repeat sometime, though. Promise?"'
@@ -43955,7 +43970,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: b881ba53dacd4204084551c5007f4582, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"And they don''t always have to be used in team sports! Many ball games
@@ -44376,7 +44391,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 7a0f982727c9ae149bdae7859dbfb364, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Ah, good to know... I didn''t want to cause a bad impression."'
@@ -44536,7 +44551,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: b15f5c4fa79c8ea40a55f44a765fc75a, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Hahaha, this was fun... But I have to get going, or else I''ll soak!"'
@@ -44777,7 +44792,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 1c9867f2c7e2dfd4f9e6229700b6a62f, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Balls can help developing and showcasing balance and accuracy, so
@@ -44928,7 +44943,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: cf923eecef2b1f84fbcce49a8eb6983f, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Hahaha! Don''t worry, I get you. I go crazy too when I talk with someone
@@ -45137,7 +45152,7 @@ MonoBehaviour:
   keepVoice: 0
   monologue: {fileID: 0}
   voiceClips:
-  - {fileID: 8300000, guid: c0639612c2afc0344a14767a8ae6a2ad, type: 3}
+  - {fileID: 8300000, guid: 89660dd4379a24940853deabd0a41da7, type: 3}
   voiceSources:
   - {fileID: 1238395121}
   subtitles: '"Haha, maybe I''ve learned something over the years."'
@@ -45175,7 +45190,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967492163}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1967492165
 Camera:
   m_ObjectHideFlags: 0
@@ -45183,7 +45198,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967492163}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -45918,10 +45933,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 1
+  delay: 0
   breakpoint: 1
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []
@@ -51336,10 +51351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 942c3920fd98bae438061af1d9a9e8e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fixedLength: 0
-  delay: 0.5
+  fixedLength: 4
+  delay: 0
   breakpoint: 0
-  keepVoice: 0
+  keepVoice: 1
   monologue: {fileID: 0}
   voiceClips: []
   voiceSources: []

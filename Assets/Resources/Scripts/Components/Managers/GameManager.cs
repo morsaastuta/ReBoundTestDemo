@@ -33,12 +33,12 @@ public class GameManager : MonoBehaviour
         if (on && !paused)
         {
             paused = true;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
         }
         else if (!on && paused)
         {
             paused = false;
-            Time.timeScale = 1.0f;
+            //Time.timeScale = 1.0f;
         }
     }
 

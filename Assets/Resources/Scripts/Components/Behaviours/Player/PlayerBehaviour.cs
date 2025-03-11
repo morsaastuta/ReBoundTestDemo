@@ -142,7 +142,6 @@ public class PlayerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(balls.Count);
         switch (gameMode)
         {
             // Controllers exclusive
@@ -343,6 +342,7 @@ public class PlayerBehaviour : MonoBehaviour
                 {
                     case GameMode.Hands:
                     case GameMode.Controllers:
+                        Debug.Log("???");
                         canvasVRInstance = Instantiate(canvasVR);
                         canvasVRInstance.transform.position = canvasVRPos.position;
                         canvasVRInstance.transform.rotation = Quaternion.Euler(canvasVRPos.rotation.eulerAngles.x, canvasVRPos.rotation.eulerAngles.y, 0);
