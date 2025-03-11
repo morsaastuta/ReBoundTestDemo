@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public OVROverlay overlay_Background;
+
     public static GameManager instance;
 
     [Header("Customization")]
@@ -45,16 +47,26 @@ public class GameManager : MonoBehaviour
     public void GoToScene(int id)
     {
         Pause(false);
-        StartCoroutine(SceneTransition(id));
+        StartCoroutine(ShowOverlayAndLoad(id));
     }
 
-    IEnumerator SceneTransition(int id)
+    IEnumerator ShowOverlayAndLoad(int sceneIndex)
     {
-        loadScreen.DOColor(new Color(0,0,0,1), 0.5f);
-        yield return new WaitForSeconds(0.6f);
-        SceneManager.LoadSceneAsync("Scene" + id.ToString("00"));
-        yield return new WaitForSeconds(1.4f);
-        loadScreen.DOColor(new Color(0, 0, 0, 0), 0.5f);
+        // activamos los componentes
+        overlay_Background.enabled = true;
+        GameObject centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
+
+        yield return new WaitForSeconds(4f);
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneIndex);
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+
+        overlay_Background.enabled = false;
+        yield return null;
     }
 
     public void QuitGame()

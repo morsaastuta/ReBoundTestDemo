@@ -752,6 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04bc687060545504b83ea28352889d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  overlay_Background: {fileID: 2463357529492765164, guid: 3cb7ff3feb9df424faf6b2c545fc7a70, type: 3}
   sceneID: 0
   loadScreen: {fileID: 4578159903281881872}
   paused: 0
