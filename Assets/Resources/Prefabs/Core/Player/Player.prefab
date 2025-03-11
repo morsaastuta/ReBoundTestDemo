@@ -6624,7 +6624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 32a974a9-8118-4e31-b041-7cded4c70bc4
+  instanceId: 39c9ce28-5f0f-426c-9bb3-b37f21c4952c
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -7693,7 +7693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: 5dbe433c-fb48-4b00-b9dd-39920b6ae7f1
+  instanceId: b932f25c-39d0-423e-902b-db7fd453f730
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 5817f7c0-f2a5-45f9-a5ca-64264e0166e8
-  instanceId: d90e3a1a-2958-4d90-b581-1d91ac179b98
+  instanceId: 4df424a5-e157-4679-b487-819c9a38c7c5
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -9613,7 +9613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 8b26b298-7bf4-490e-b245-a039c0184303
-  instanceId: 5f954c4b-15dd-4d35-a17f-ede34c74f25d
+  instanceId: 8d2db93a-d813-4ae5-a519-0b7014770aee
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -18692,7 +18692,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -18864,7 +18864,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -18913,7 +18913,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
