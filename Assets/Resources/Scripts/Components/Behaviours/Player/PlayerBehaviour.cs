@@ -224,7 +224,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        if (gloveOn && !shot && balls.Count > 0)
+        if (!GameManager.instance.paused && gloveOn && !shot && balls.Count > 0)
         {
             AudioManager.instance.PlaySound(shootClip, glove.audioSource);
             StartCoroutine(Shot());
@@ -342,7 +342,6 @@ public class PlayerBehaviour : MonoBehaviour
                 {
                     case GameMode.Hands:
                     case GameMode.Controllers:
-                        Debug.Log("???");
                         canvasVRInstance = Instantiate(canvasVR);
                         canvasVRInstance.transform.position = canvasVRPos.position;
                         canvasVRInstance.transform.rotation = Quaternion.Euler(canvasVRPos.rotation.eulerAngles.x, canvasVRPos.rotation.eulerAngles.y, 0);

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int sceneID = 0;
 
     [Header("References")]
-    [SerializeField] Image loadScreen;
+    [SerializeField] GameObject loadCanvas;
 
     public bool paused = false;
 
@@ -26,6 +27,12 @@ public class GameManager : MonoBehaviour
         }
         else instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Update()
+    {
+        Transform eyes = GameObject.Find("CenterEyeAnchor").transform;
+        loadCanvas.transform.position = new(eyes.transform.position.x, eyes.transform.position.y, eyes.transform.position.z + 1);
     }
 
     public void Pause(bool on)
@@ -45,16 +52,20 @@ public class GameManager : MonoBehaviour
     public void GoToScene(int id)
     {
         Pause(false);
-        StartCoroutine(SceneTransition(id));
+        StartCoroutine(ShowOverlayAndLoad(id));
     }
 
-    IEnumerator SceneTransition(int id)
+    IEnumerator ShowOverlayAndLoad(int sceneIndex)
     {
-        loadScreen.DOColor(new Color(0,0,0,1), 0.5f);
-        yield return new WaitForSeconds(0.6f);
-        SceneManager.LoadSceneAsync("Scene" + id.ToString("00"));
-        yield return new WaitForSeconds(1.4f);
-        loadScreen.DOColor(new Color(0, 0, 0, 0), 0.5f);
+        Image tempImg = loadCanvas.GetComponent<Image>();
+
+        tempImg.DOColor(new Color(0, 0, 0, 1), 2f);
+        yield return new WaitForSeconds(2f);
+
+        yield return SceneManager.LoadSceneAsync(sceneIndex);
+
+        tempImg.DOColor(new Color(0, 0, 0, 0), 2f);
+        yield return new WaitForSeconds(2f);
     }
 
     public void QuitGame()
@@ -65,8 +76,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator QuitTransition()
     {
-        loadScreen.DOColor(new Color(0, 0, 0, 1), 2f);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
         Application.Quit();
     }
 }
