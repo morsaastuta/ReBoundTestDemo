@@ -2,14 +2,13 @@ using UnityEngine;
 using System.Collections.Generic;
 using static Glossary;
 
-public class AimBeam : MonoBehaviour
+public class AimBehaviour : MonoBehaviour
 {
-    LineRenderer beam;
+    [SerializeField] LineRenderer beam;
     List<Vector3> beamIndices = new();
 
     void Start()
     {
-        beam = GetComponent<LineRenderer>();
         SetAnnulling();
     }
 

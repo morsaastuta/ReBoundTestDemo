@@ -42,9 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5492091138801647105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683f9adff5b0f0e40b80bee9ef904ab2, type: 3}
+  m_Script: {fileID: 11500000, guid: bb25105456e0eef458b3c65446021599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  beam: {fileID: 3665015933824014723}
 --- !u!120 &3665015933824014723
 LineRenderer:
   serializedVersion: 2
@@ -480,6 +481,7 @@ MonoBehaviour:
   wrist: {fileID: 3334492049405339425}
   palm: {fileID: 2334301153739233231}
   audioSource: {fileID: 5357761663463377255}
+  animator: {fileID: 0}
   hand: {fileID: 0}
 --- !u!4 &7420067790101733323 stripped
 Transform:

@@ -1,6 +1,6 @@
+using Oculus.Haptics;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using static Glossary;
 
@@ -17,7 +17,8 @@ public class PlayerBehaviour : MonoBehaviour
     List<Ball> balls = new();
     int selectedBall = 0;
     List<GameObject> auxiliarBalls = new();
-    Glove glove;
+    GloveBehaviour glove;
+    GloveBehaviour hand;
 
     [Header("VR references")]
     [SerializeField] GameObject canvasVR;
@@ -28,6 +29,7 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] List<GameObject> teleportInteractors = new();
 
     // VR commons
+    Controller gloveHand;
     bool aiming = false;
     GameObject canvasVRInstance;
 
@@ -47,13 +49,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Hands references")]
     [SerializeField] List<GameObject> handsExclusives = new();
-    [SerializeField] Glove HR_glove;
-    [SerializeField] Glove HL_glove;
+    [SerializeField] GloveBehaviour HR_glove;
+    [SerializeField] GloveBehaviour HL_glove;
 
     [Header("Controllers references")]
     [SerializeField] List<GameObject> controllersExclusives = new();
-    [SerializeField] Glove CR_glove;
-    [SerializeField] Glove CL_glove;
+    [SerializeField] GloveBehaviour CR_glove;
+    [SerializeField] GloveBehaviour CL_glove;
     [SerializeField] GameObject C_grabInteractorL;
     [SerializeField] GameObject C_distanceGrabInteractorL;
     [SerializeField] GameObject C_grabInteractorR;
@@ -61,8 +63,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("Desktop references")]
     [SerializeField] List<GameObject> desktopExclusives = new();
-    [SerializeField] Glove DR_glove;
-    [SerializeField] Glove DL_glove;
+    [SerializeField] GloveBehaviour DR_glove;
+    [SerializeField] GloveBehaviour DL_glove;
     [SerializeField] Rigidbody D_body;
     [SerializeField] GameObject D_canvas;
 
@@ -79,6 +81,11 @@ public class PlayerBehaviour : MonoBehaviour
         if (balls.Count > 0) glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
     }
 
+    public void AmbientFeedback(HapticClip feedback)
+    {
+        HapticsManager.instance.Play(feedback, Controller.Both);
+    }
+
     public void SetGameMode(GameMode gm)
     {
         gameMode = gm;
@@ -88,7 +95,12 @@ public class PlayerBehaviour : MonoBehaviour
     public void SetHandedness(bool left)
     {
         leftMode = left;
+
+        if (!leftMode) gloveHand = Oculus.Haptics.Controller.Right;
+        else gloveHand = Oculus.Haptics.Controller.Left;
+
         InputManager.instance.SetHandedness(leftMode);
+
         UpdateComponents();
     }
 
@@ -169,6 +181,9 @@ public class PlayerBehaviour : MonoBehaviour
                     C_grabInteractorR.SetActive(true);
                 }
 
+                if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
+                else ProjectAimBeam(false);
+
                 break;
 
             // Hands exclusive
@@ -205,14 +220,34 @@ public class PlayerBehaviour : MonoBehaviour
 
                 Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look);
                 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + vLook.x, transform.rotation.eulerAngles.z);
-                
+
+                if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
+                else ProjectAimBeam(false);
+
                 break;
         }
 
         if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
 
-        if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
-        else ProjectAimBeam(false);
+        if (InputManager.instance.Holding(InputManager.instance.grabL) || InputManager.instance.Holding(InputManager.instance.distanceGrabL))
+        {
+            if (leftMode) glove.Pose(1);
+            else hand.Pose(1);
+        }
+        else if (!shot)
+        {
+            glove.Pose(0); hand.Pose(0);
+        }
+
+        if (InputManager.instance.Holding(InputManager.instance.grabR) || InputManager.instance.Holding(InputManager.instance.distanceGrabR))
+        {
+            if (!leftMode) glove.Pose(1);
+            else hand.Pose(1);
+        }
+        else if (!shot)
+        {
+            glove.Pose(0); hand.Pose(0);
+        }
 
         if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
 
@@ -226,6 +261,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!GameManager.instance.paused && gloveOn && !shot && balls.Count > 0)
         {
+            HapticsManager.instance.Play(HapticsManager.instance.gloveFeedback, gloveHand);
             AudioManager.instance.PlaySound(shootClip, glove.audioSource);
             StartCoroutine(Shot());
         }
@@ -235,9 +271,15 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (gloveOn && on && balls.Count > 0)
         {
-            glove.palm.GetComponent<AimBeam>().Cast(balls[selectedBall]);
+            glove.Pose(2);
+            Preview(true, true);
+            glove.palm.GetComponent<AimBehaviour>().Cast(balls[selectedBall]);
         }
-        else glove.palm.GetComponent<AimBeam>().Clear();
+        else
+        {
+            Preview(true, false);
+            glove.palm.GetComponent<AimBehaviour>().Clear();
+        }
     }
 
     public void SwapBall(bool right)
@@ -307,6 +349,7 @@ public class PlayerBehaviour : MonoBehaviour
     IEnumerator Shot()
     {
         Preview(false, false);
+        glove.Pose(2);
         shot = true;
 
         GameObject ball = Instantiate(balls[selectedBall].prefab);
@@ -326,6 +369,7 @@ public class PlayerBehaviour : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         shot = false;
+        glove.Pose(0);
         Preview(true, true);
     }
 
