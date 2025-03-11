@@ -1,20 +1,19 @@
 using DG.Tweening;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public OVROverlay overlay_Background;
-
     public static GameManager instance;
 
     [Header("Customization")]
     [SerializeField] public int sceneID = 0;
 
     [Header("References")]
-    [SerializeField] Image loadScreen;
+    [SerializeField] GameObject loadCanvas;
 
     public bool paused = false;
 
@@ -28,6 +27,12 @@ public class GameManager : MonoBehaviour
         }
         else instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void Update()
+    {
+        Transform eyes = GameObject.Find("CenterEyeAnchor").transform;
+        loadCanvas.transform.position = new(eyes.transform.position.x, eyes.transform.position.y, eyes.transform.position.z + 1);
     }
 
     public void Pause(bool on)
@@ -52,21 +57,15 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ShowOverlayAndLoad(int sceneIndex)
     {
-        // activamos los componentes
-        overlay_Background.enabled = true;
-        GameObject centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
+        Image tempImg = loadCanvas.GetComponent<Image>();
 
-        yield return new WaitForSeconds(4f);
+        tempImg.DOColor(new Color(0, 0, 0, 1), 2f);
+        yield return new WaitForSeconds(2f);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneIndex);
+        yield return SceneManager.LoadSceneAsync(sceneIndex);
 
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-
-        overlay_Background.enabled = false;
-        yield return null;
+        tempImg.DOColor(new Color(0, 0, 0, 0), 2f);
+        yield return new WaitForSeconds(2f);
     }
 
     public void QuitGame()
@@ -77,8 +76,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator QuitTransition()
     {
-        loadScreen.DOColor(new Color(0, 0, 0, 1), 2f);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
         Application.Quit();
     }
 }
