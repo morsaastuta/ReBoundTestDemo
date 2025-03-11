@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028031361738099664, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4945923968023051069, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17895,7 +17895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028031361738099664, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4945923968023051069, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57226,7 +57226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4527866932529651897, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58360,7 +58360,7 @@ MonoBehaviour:
   activateClip: {fileID: 0}
   deactivateClip: {fileID: 0}
   source: {fileID: 0}
-  active: 1
+  active: 0
   events:
   - {fileID: 1101396639}
   - {fileID: 319709444}
@@ -67507,7 +67507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 306950616966972728, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1453345344826311889, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68857,7 +68857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028031361738099664, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4945923968023051069, guid: 67a7d96ae840deb42aef7de57237a2c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74988,7 +74988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4527866932529651897, guid: 7a751364974bef14daee7ba5082e6950, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

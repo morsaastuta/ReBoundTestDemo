@@ -56,6 +56,8 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] List<GameObject> controllersExclusives = new();
     [SerializeField] GloveBehaviour CR_glove;
     [SerializeField] GloveBehaviour CL_glove;
+    [SerializeField] GloveBehaviour CR_hand;
+    [SerializeField] GloveBehaviour CL_hand;
     [SerializeField] GameObject C_grabInteractorL;
     [SerializeField] GameObject C_distanceGrabInteractorL;
     [SerializeField] GameObject C_grabInteractorR;
@@ -96,8 +98,8 @@ public class PlayerBehaviour : MonoBehaviour
     {
         leftMode = left;
 
-        if (!leftMode) gloveHand = Oculus.Haptics.Controller.Right;
-        else gloveHand = Oculus.Haptics.Controller.Left;
+        if (!leftMode) gloveHand = Controller.Right;
+        else gloveHand = Controller.Left;
 
         InputManager.instance.SetHandedness(leftMode);
 
@@ -135,8 +137,16 @@ public class PlayerBehaviour : MonoBehaviour
 
             case GameMode.Controllers:
                 foreach (GameObject go in controllersExclusives) go.SetActive(true);
-                if (!leftMode) glove = CR_glove;
-                else glove = CL_glove;
+                if (!leftMode)
+                {
+                    glove = CR_glove;
+                    hand = CL_hand;
+                }
+                else
+                {
+                    glove = CL_glove;
+                    hand = CR_hand;
+                }
                 break;
 
             case GameMode.Desktop:
@@ -236,7 +246,8 @@ public class PlayerBehaviour : MonoBehaviour
         }
         else if (!shot)
         {
-            glove.Pose(0); hand.Pose(0);
+            if (leftMode) glove.Pose(0);
+            else hand.Pose(0);
         }
 
         if (InputManager.instance.Holding(InputManager.instance.grabR) || InputManager.instance.Holding(InputManager.instance.distanceGrabR))
@@ -246,7 +257,8 @@ public class PlayerBehaviour : MonoBehaviour
         }
         else if (!shot)
         {
-            glove.Pose(0); hand.Pose(0);
+            if (!leftMode) glove.Pose(0);
+            else hand.Pose(0);
         }
 
         if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
@@ -314,6 +326,12 @@ public class PlayerBehaviour : MonoBehaviour
         balls.Add(ball);
         selectedBall = balls.Count - 1;
         glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(balls[selectedBall], gloveOn);
+    }
+
+    public void ClearBalls()
+    {
+        balls.Clear();
+        glove.projection.GetComponent<ProjectionBehaviour>().UpdateBall(null, false);
     }
 
     public void Preview(bool on, bool isPalm)
