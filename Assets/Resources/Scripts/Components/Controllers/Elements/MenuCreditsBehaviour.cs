@@ -6,22 +6,16 @@ using UnityEngine.UI;
 public class MenuCreditsBehaviour : MonoBehaviour
 {
     [Header("Customization")]
-    [SerializeField] string user;
+    [SerializeField] string member;
     [SerializeField] List<string> work;
-    [SerializeField] string url;
 
     [Header("References")]
-    [SerializeField] TextMeshPro userText;
+    [SerializeField] TextMeshPro memberText;
     [SerializeField] TextMeshPro workText;
 
     void Start()
     {
-        userText.SetText(user);
+        memberText.SetText(member);
         foreach (string job in work) workText.SetText(workText.text + job + "\n");
-    }
-
-    public void Open()
-    {
-        if (url != null && url.Length > 0) Application.OpenURL("http://" + url);
     }
 }
