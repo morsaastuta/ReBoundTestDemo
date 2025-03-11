@@ -3,7 +3,27 @@ guid: c8b6a38994dcf8c43b5609ea977205c5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Bread
+    second: {fileID: 2100000, guid: af866ca25dcdb7d46a7a59f14e1a98cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Onion
+    second: {fileID: 2100000, guid: a1dcbc112c500a3498810f02a0c463b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Pepper
+    second: {fileID: 2100000, guid: 4183ffa186f28354b9a3244106d61faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_C_Tomato
+    second: {fileID: 2100000, guid: 0c0e65b3738121d44952bff561b1ca29, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.19999999
+    globalScale: 20
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
