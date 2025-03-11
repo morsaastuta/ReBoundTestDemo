@@ -15,7 +15,7 @@ public class ButtonController : MonoBehaviour
     void Start()
     {
         text.SetText(title);
-        if (icon != null) image.sprite = icon;
+        if (icon != null && image != null) image.sprite = icon;
     }
 
     public void Press()
