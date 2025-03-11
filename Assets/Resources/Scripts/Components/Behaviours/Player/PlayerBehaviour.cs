@@ -372,11 +372,14 @@ public class PlayerBehaviour : MonoBehaviour
 
         GameObject ball = Instantiate(balls[selectedBall].prefab);
 
-        // Set ball
-        if (ball.GetComponent<BallBehaviour>()) ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
+        if (balls[selectedBall].ballType != Ball.BallType.ItemSpawn)
+        {
+            // Set ball
+            if (ball.GetComponent<BallBehaviour>()) ball.GetComponent<BallBehaviour>().ball = Instantiate(balls[selectedBall]);
+        }
 
         // If ball is auxiliar, track it
-        if (ball.GetComponent<BallBehaviour>().ball.auxiliar) auxiliarBalls.Add(ball);
+        if (balls[selectedBall].auxiliar) auxiliarBalls.Add(ball);
 
         // Set position (Palm)
         ball.transform.position = glove.palm.position;

@@ -236,8 +236,7 @@ MonoBehaviour:
   source: {fileID: 6970693954308708022}
   active: 0
   rotationAngles: 90
-  positive: 1
-  duration: 1
+  duration: 0.5
   rotateDirection: 2
 --- !u!82 &6970693954308708022
 AudioSource:

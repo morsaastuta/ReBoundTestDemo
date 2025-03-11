@@ -579,7 +579,7 @@ MonoBehaviour:
   subtitleMesh: {fileID: 6884267848208811451}
   subtitled: 1
   subtitleDepth: 0.9
-  subtitleHeight: 256
+  subtitleHeight: 320
 --- !u!1 &5232182991639182649
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +913,10 @@ PrefabInstance:
     - target: {fileID: 7368032842462197148, guid: cb9e2766bb56e0d45a2223f5c009d817, type: 3}
       propertyPath: m_Name
       value: Subtitle UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645746753986978862, guid: cb9e2766bb56e0d45a2223f5c009d817, type: 3}
+      propertyPath: m_text
+      value: m
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
