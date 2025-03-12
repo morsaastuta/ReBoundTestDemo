@@ -19138,7 +19138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eyes: {fileID: 1493863497724585436}
   demoBalls: []
-  gameMode: 0
+  gameMode: 1
   leftMode: 0
   canvasVR: {fileID: 6705178659893479539, guid: 6fa873087b8a7a2488fdd9661ad6fbbf, type: 3}
   canvasVRPos: {fileID: 815882670445779981}
@@ -19406,7 +19406,7 @@ Rigidbody:
     m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 9696
+    m_Bits: 9697
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0

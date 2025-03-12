@@ -14,7 +14,6 @@ public class PhantomBehaviour : MonoBehaviour
 
     void Start()
     {
-        Hide();
     }
 
     public void Hide()
