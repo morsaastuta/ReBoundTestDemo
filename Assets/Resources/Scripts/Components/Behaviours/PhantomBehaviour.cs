@@ -1,8 +1,8 @@
-using System;
-using UnityEngine;
 using DG.Tweening;
-using System.Collections.Generic;
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PhantomBehaviour : MonoBehaviour
 {

@@ -9,8 +9,10 @@ public class TranslatorBehaviour : ActivableBehaviour
 
     Vector3 ogPos = new();
 
-    protected void Start()
+    protected override void Start()
     {
+        base.Start();
+
         ogPos = transform.position;
     }
 

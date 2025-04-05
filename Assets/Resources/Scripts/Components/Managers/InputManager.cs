@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static Glossary;
 
 public class InputManager : MonoBehaviour
 {

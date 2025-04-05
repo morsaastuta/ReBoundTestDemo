@@ -12,7 +12,7 @@ public abstract class ActivatorBehaviour : CheckerBehaviour
 
     protected void Start()
     {
-        Activate(active);
+        if (active) Activate(active);
     }
 
     protected void FixedUpdate()

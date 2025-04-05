@@ -17,7 +17,6 @@ public class BallBehaviour : MonoBehaviour
     Vector3 lastVertex = new();
     List<Collider> bypassedColliders = new();
 
-
     private void Awake()
     {
         ball = Instantiate(ball);   

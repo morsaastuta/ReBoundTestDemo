@@ -18,8 +18,11 @@ public class SpawnerBehaviour : ActivableBehaviour
 
     bool skibidiBorrame = true;
     [SerializeField] bool alternativeActivation;
-    protected void Start()
+
+    protected override void Start()
     {
+        base.Start();
+
         timer = 0;
     }
 

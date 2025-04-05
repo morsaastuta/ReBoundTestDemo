@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-
 
 public class DestroyerBehaviour : CheckerBehaviour
 {
@@ -11,11 +9,9 @@ public class DestroyerBehaviour : CheckerBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-
         quantityDestroyed++;
-        print(quantityDestroyed);
-        if (other.CompareTag(tagName)) 
-            Destroy(other.gameObject, timeToDestroy);
+
+        if (other.CompareTag(tagName)) Destroy(other.gameObject, timeToDestroy);
     }
 
     public override bool Check(int rule)

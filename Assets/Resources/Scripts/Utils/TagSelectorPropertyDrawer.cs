@@ -1,14 +1,7 @@
-using UnityEngine;
 using UnityEditor;
-using System;
+using UnityEngine;
 
-#region Tag Selector Attribute
-public class TagSelectorAttribute : PropertyAttribute
-{
-    public TagSelectorAttribute() { }
-}
-#endregion
-
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(TagSelectorAttribute))]
 public class TagSelectorPropertyDrawer : PropertyDrawer
 {
@@ -26,3 +19,4 @@ public class TagSelectorPropertyDrawer : PropertyDrawer
         }
     }
 }
+#endif
