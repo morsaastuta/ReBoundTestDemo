@@ -30,8 +30,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Transform eyes = GameObject.Find("CenterEyeAnchor").transform;
-        loadCanvas.transform.position = new(eyes.transform.position.x, eyes.transform.position.y, eyes.transform.position.z + 1);
+        if (GameObject.Find("CenterEyeAnchor") != null)
+        {
+            Transform eyes = GameObject.Find("CenterEyeAnchor").transform;
+            loadCanvas.transform.position = new(eyes.transform.position.x, eyes.transform.position.y, eyes.transform.position.z + 1);
+        }
     }
 
     public void Pause(bool on)

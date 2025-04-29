@@ -67,8 +67,11 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] List<GameObject> desktopExclusives = new();
     [SerializeField] GloveBehaviour DR_glove;
     [SerializeField] GloveBehaviour DL_glove;
+    [SerializeField] GloveBehaviour DR_hand;
+    [SerializeField] GloveBehaviour DL_hand;
     [SerializeField] Rigidbody D_body;
     [SerializeField] GameObject D_canvas;
+    [SerializeField] Transform D_eyes;
 
     void Start()
     {
@@ -151,8 +154,17 @@ public class PlayerBehaviour : MonoBehaviour
 
             case GameMode.Desktop:
                 foreach (GameObject go in desktopExclusives) go.SetActive(true);
-                if (!leftMode) glove = DR_glove;
-                else glove = DL_glove;
+
+                if (!leftMode)
+                {
+                    hand = DL_hand;
+                    glove = DR_glove;
+                }
+                else
+                {
+                    glove = DL_glove;
+                    hand = DR_hand;
+                }
                 break;
         }
 
@@ -228,8 +240,15 @@ public class PlayerBehaviour : MonoBehaviour
                 velSide = vMove.x;
                 velForward = vMove.y;
 
-                Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look);
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + vLook.x, transform.rotation.eulerAngles.z);
+                Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look) / 3.5f;
+                D_body.rotation = Quaternion.Euler(D_body.rotation.eulerAngles.x, D_body.rotation.eulerAngles.y + vLook.x, D_body.rotation.eulerAngles.z);
+                float eyeRot = D_eyes.rotation.eulerAngles.x - vLook.y;
+                if (eyeRot > 60 && eyeRot < 300)
+                {
+                    if (vLook.y < 0) eyeRot = 59;
+                    else eyeRot = 300;
+                }
+                D_eyes.rotation = Quaternion.Euler(eyeRot, D_eyes.rotation.eulerAngles.y, D_eyes.rotation.eulerAngles.z);
 
                 if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
                 else ProjectAimBeam(false);
@@ -271,6 +290,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
+        Debug.Log("bim");
         if (!GameManager.instance.paused && gloveOn && !shot && balls.Count > 0)
         {
             HapticsManager.instance.Play(HapticsManager.instance.gloveFeedback, gloveHand);
@@ -455,7 +475,10 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (gameMode == GameMode.Desktop)
         {
-            D_body.linearVelocity = new Vector3(speed * velSide, D_body.linearVelocity.y, speed * velForward);
+            D_body.linearVelocity =
+                speed * velForward * D_body.transform.forward +
+                speed * velSide * D_body.transform.right +
+                D_body.linearVelocity.y * D_body.transform.up;
         }
     }
 

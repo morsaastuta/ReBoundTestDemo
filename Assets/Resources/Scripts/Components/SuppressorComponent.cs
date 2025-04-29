@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Suppressor : MonoBehaviour
+public class SuppressorComponent : MonoBehaviour
 {
     [SerializeField] List<Component> suppressedComponents = new();
     [SerializeField] List<GameObject> suppressedObjects = new();

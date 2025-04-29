@@ -142,6 +142,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a72a5396-5e90-4eee-895e-e40e2284bc8b",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ed80d9b3-c7b8-4398-8586-252b5346ae06",
                     "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
                     "interactions": "",
@@ -237,11 +248,33 @@
                 },
                 {
                     "name": "",
+                    "id": "b7bb163a-64af-45a8-8e34-e73a43e48fce",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "DistanceGrabR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d91a3192-766b-487a-abf7-1d45f281f509",
                     "path": "<OculusTouchController>{LeftHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
+                    "action": "DistanceGrabL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "100a680b-3fa0-40d9-b152-0f72f1928906",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "DistanceGrabL",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -303,7 +336,29 @@
                 },
                 {
                     "name": "",
-                    "id": "b7873f63-69fa-4882-8e61-ff487c618116",
+                    "id": "9408f91c-78cb-4148-a02c-41d3c7f054c1",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "GrabR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f90aa768-927a-4dac-bf9e-467d32ad6f8a",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "GrabL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d41f068d-c786-4e1a-8ce0-4146ed3ea2cf",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
@@ -449,6 +504,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";XR",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "01b72a1f-4233-4275-af2d-b7d88d0b620d",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
