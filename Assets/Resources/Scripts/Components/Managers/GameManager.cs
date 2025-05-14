@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager Instance;
 
     [Header("Customization")]
     [SerializeField] public int sceneID = 0;
@@ -18,13 +18,13 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
-            instance.sceneID = sceneID;
+            Instance.sceneID = sceneID;
             Destroy(gameObject);
             return;
         }
-        else instance = this;
+        else Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 

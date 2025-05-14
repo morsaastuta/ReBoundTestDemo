@@ -374,10 +374,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projection: {fileID: 7310115666883836889}
   wrist: {fileID: 5823772032885741032}
-  palm: {fileID: 1182580269468666493}
+  palm: {fileID: 8777066358869839118}
   audioSource: {fileID: 5580650288663743713}
   animator: {fileID: 769301935714488948}
   hand: {fileID: 0}
+  grabbedItem: {fileID: 0}
+  okItem: 0
 --- !u!95 &769301935714488948
 Animator:
   serializedVersion: 7

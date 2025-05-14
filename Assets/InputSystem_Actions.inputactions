@@ -76,6 +76,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8525ed99-63c4-47f4-b39b-ede1e2229bcf",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "fd33f7ac-bebb-41fc-a69a-1c0affe7514e",
                     "path": "<OculusTouchController>{RightHand}/secondaryButton",
                     "interactions": "",
@@ -92,6 +103,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b41c8ad-35fb-4921-81e3-8df70d4f5e8a",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -131,6 +153,17 @@
                 },
                 {
                     "name": "",
+                    "id": "54a220ba-dde9-409d-a3e0-75a7d0734d16",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "40229d41-53df-4c49-b4ca-975d66075ab4",
                     "path": "<OculusTouchController>{LeftHand}/secondaryButton",
                     "interactions": "",
@@ -153,6 +186,28 @@
                 },
                 {
                     "name": "",
+                    "id": "1b1151bd-23bf-46a5-b49c-8a0d2be0b79c",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c59d145b-a7f4-4838-bfcf-db9d8a3a49ad",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ed80d9b3-c7b8-4398-8586-252b5346ae06",
                     "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
                     "interactions": "",
@@ -169,6 +224,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Clear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "75f7c0f8-fe66-4a49-835b-bd9103d604e0",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Clear",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -249,10 +315,21 @@
                 {
                     "name": "",
                     "id": "b7bb163a-64af-45a8-8e34-e73a43e48fce",
-                    "path": "<Keyboard>/shift",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "DistanceGrabR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7dc6098e-f06a-4256-997a-5b608b277de2",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "DistanceGrabR",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -271,10 +348,21 @@
                 {
                     "name": "",
                     "id": "100a680b-3fa0-40d9-b152-0f72f1928906",
-                    "path": "<Keyboard>/shift",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "DistanceGrabL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "61a1a8c3-7dad-4499-9bdd-522c553e9262",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "DistanceGrabL",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -336,11 +424,33 @@
                 },
                 {
                     "name": "",
+                    "id": "ebbc2c7a-7369-4319-be68-f8bf86555dbf",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9408f91c-78cb-4148-a02c-41d3c7f054c1",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "GrabR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d097962-0de8-4eff-a2d3-24e73cc8af52",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "GrabR",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -358,11 +468,33 @@
                 },
                 {
                     "name": "",
+                    "id": "ee3cfc1e-6e48-4a8d-8200-dfe3bc91badd",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "GrabL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d41f068d-c786-4e1a-8ce0-4146ed3ea2cf",
                     "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bf88c843-6ffb-47f0-a409-b78ca9f8fd3e",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -444,6 +576,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0ac5d039-943b-47b5-8619-d49f1d59d56e",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c7f4ee3d-684f-4771-8981-f29bd5d52564",
                     "path": "<OculusTouchController>{LeftHand}/secondaryButton",
                     "interactions": "",
@@ -460,6 +603,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1e80120-9da4-4f3e-8130-eeee21b7e444",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -499,6 +653,17 @@
                 },
                 {
                     "name": "",
+                    "id": "592dc798-2c46-4f27-87ae-17f92e070a18",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Swap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "206b2f47-eb6e-4698-92e9-57e1d3b8be9e",
                     "path": "<OculusTouchController>{RightHand}/secondaryButton",
                     "interactions": "",
@@ -521,6 +686,28 @@
                 },
                 {
                     "name": "",
+                    "id": "63679b60-efd9-4e02-bbf9-403dd4bf87c1",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25e2d0df-278f-4cdb-88fb-074411db02e6",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b4cb8a67-0cec-4af9-ad63-70bb50c16c7c",
                     "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
                     "interactions": "",
@@ -537,6 +724,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Clear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d89f3d1c-d255-46ff-a3f3-b1e35e6fe380",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Clear",
                     "isComposite": false,
                     "isPartOfComposite": false

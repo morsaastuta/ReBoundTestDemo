@@ -22,7 +22,7 @@ public class MenuVRController : MonoBehaviour
 
     public void ResetAll()
     {
-        GameManager.instance.paused = false;
+        GameManager.Instance.paused = false;
         foreach (GameObject go in settingsExclusive) go.SetActive(false);
         foreach (GameObject go in creditsExclusive) go.SetActive(false);
 
@@ -37,13 +37,13 @@ public class MenuVRController : MonoBehaviour
     public void Play()
     {
         ResetAll();
-        GameManager.instance.GoToScene(1);
+        GameManager.Instance.GoToScene(1);
     }
 
     public void Settings()
     {
         ResetAll();
-        GameManager.instance.paused = true;
+        GameManager.Instance.paused = true;
         foreach (GameObject go in settingsExclusive) go.SetActive(true);
     }
 
@@ -58,6 +58,6 @@ public class MenuVRController : MonoBehaviour
     public void Exit()
     {
         ResetAll();
-        GameManager.instance.QuitGame();
+        GameManager.Instance.QuitGame();
     }
 }

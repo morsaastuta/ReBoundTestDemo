@@ -70,8 +70,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] GloveBehaviour DR_hand;
     [SerializeField] GloveBehaviour DL_hand;
     [SerializeField] Rigidbody D_body;
-    [SerializeField] GameObject D_canvas;
+    [SerializeField] GameObject D_pauseMenu;
     [SerializeField] Transform D_eyes;
+    [SerializeField] ItemDetectorBehaviour D_itemDetector;
 
     void Start()
     {
@@ -104,7 +105,7 @@ public class PlayerBehaviour : MonoBehaviour
         if (!leftMode) gloveHand = Controller.Right;
         else gloveHand = Controller.Left;
 
-        InputManager.instance.SetHandedness(leftMode);
+        InputManager.Instance.SetHandedness(leftMode);
 
         UpdateComponents();
     }
@@ -181,7 +182,7 @@ public class PlayerBehaviour : MonoBehaviour
             // Controllers exclusive
             case GameMode.Controllers:
 
-                if (InputManager.instance.Holding(InputManager.instance.distanceGrabL))
+                if (InputManager.Instance.Holding(InputManager.Instance.distanceGrabL))
                 {
                     C_distanceGrabInteractorL.SetActive(true);
                     C_grabInteractorL.SetActive(false);
@@ -192,7 +193,7 @@ public class PlayerBehaviour : MonoBehaviour
                     C_grabInteractorL.SetActive(true);
                 }
 
-                if (InputManager.instance.Holding(InputManager.instance.distanceGrabR))
+                if (InputManager.Instance.Holding(InputManager.Instance.distanceGrabR))
                 {
                     C_distanceGrabInteractorR.SetActive(true);
                     C_grabInteractorR.SetActive(false);
@@ -203,7 +204,7 @@ public class PlayerBehaviour : MonoBehaviour
                     C_grabInteractorR.SetActive(true);
                 }
 
-                if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
+                if (InputManager.Instance.Holding(InputManager.Instance.aim)) ProjectAimBeam(gloveOn);
                 else ProjectAimBeam(false);
 
                 break;
@@ -236,62 +237,82 @@ public class PlayerBehaviour : MonoBehaviour
             // Desktop exclusive
             case GameMode.Desktop:
 
-                Vector2 vMove = InputManager.instance.Inclination(InputManager.instance.move);
+                Vector2 vMove = Vector2.zero;
+                Vector2 vLook = Vector2.zero;
+
+                if (!GameManager.Instance.paused)
+                {
+                    vMove = InputManager.Instance.Inclination(InputManager.Instance.move);
+
+                    vLook = InputManager.Instance.Inclination(InputManager.Instance.look) / 3.5f;
+                    D_body.rotation = Quaternion.Euler(D_body.rotation.eulerAngles.x, D_body.rotation.eulerAngles.y + vLook.x, D_body.rotation.eulerAngles.z);
+                    float eyeRot = D_eyes.rotation.eulerAngles.x - vLook.y;
+                    if (eyeRot > 60 && eyeRot < 300)
+                    {
+                        if (vLook.y < 0) eyeRot = 59;
+                        else eyeRot = 300;
+                    }
+                    D_eyes.rotation = Quaternion.Euler(eyeRot, D_eyes.rotation.eulerAngles.y, D_eyes.rotation.eulerAngles.z);
+
+                    if (InputManager.Instance.Holding(InputManager.Instance.aim)) ProjectAimBeam(gloveOn);
+                    else ProjectAimBeam(false);
+
+                    if (InputManager.Instance.Pressed(InputManager.Instance.grabL)) D_itemDetector.GetItem(hand);
+                    else if (InputManager.Instance.Released(InputManager.Instance.grabL)) hand.DropItem();
+
+                    if (InputManager.Instance.Pressed(InputManager.Instance.grabR)) D_itemDetector.GetItem(glove);
+                    else if (InputManager.Instance.Released(InputManager.Instance.grabR)) glove.DropItem();
+                }
+
                 velSide = vMove.x;
                 velForward = vMove.y;
-
-                Vector2 vLook = InputManager.instance.Inclination(InputManager.instance.look) / 3.5f;
-                D_body.rotation = Quaternion.Euler(D_body.rotation.eulerAngles.x, D_body.rotation.eulerAngles.y + vLook.x, D_body.rotation.eulerAngles.z);
-                float eyeRot = D_eyes.rotation.eulerAngles.x - vLook.y;
-                if (eyeRot > 60 && eyeRot < 300)
-                {
-                    if (vLook.y < 0) eyeRot = 59;
-                    else eyeRot = 300;
-                }
-                D_eyes.rotation = Quaternion.Euler(eyeRot, D_eyes.rotation.eulerAngles.y, D_eyes.rotation.eulerAngles.z);
-
-                if (InputManager.instance.Holding(InputManager.instance.aim)) ProjectAimBeam(gloveOn);
-                else ProjectAimBeam(false);
 
                 break;
         }
 
-        if (InputManager.instance.Holding(InputManager.instance.shoot)) Shoot();
-
-        if (InputManager.instance.Holding(InputManager.instance.grabL) || InputManager.instance.Holding(InputManager.instance.distanceGrabL))
+        // Normal cycle if the game is not paused. If it is, keep cycle only while VR
+        if (!GameManager.Instance.paused || gameMode != GameMode.Desktop)
         {
-            if (leftMode) glove.Pose(1);
-            else hand.Pose(1);
-        }
-        else if (!shot)
-        {
-            if (leftMode) glove.Pose(0);
-            else hand.Pose(0);
-        }
+            if (InputManager.Instance.Holding(InputManager.Instance.shoot)) Shoot();
 
-        if (InputManager.instance.Holding(InputManager.instance.grabR) || InputManager.instance.Holding(InputManager.instance.distanceGrabR))
-        {
-            if (!leftMode) glove.Pose(1);
-            else hand.Pose(1);
-        }
-        else if (!shot)
-        {
-            if (!leftMode) glove.Pose(0);
-            else hand.Pose(0);
-        }
+            if (InputManager.Instance.Holding(InputManager.Instance.grabL) || InputManager.Instance.Holding(InputManager.Instance.distanceGrabL))
+            {
+                if (leftMode) glove.Pose(1);
+                else hand.Pose(1);
+            }
+            else if (!shot && !aiming)
+            {
+                if (leftMode) glove.Pose(0);
+                else hand.Pose(0);
+            }
 
-        if (InputManager.instance.Pressed(InputManager.instance.swap)) SwapBall(true);
+            if (InputManager.Instance.Holding(InputManager.Instance.grabR) || InputManager.Instance.Holding(InputManager.Instance.distanceGrabR))
+            {
+                if (!leftMode) glove.Pose(1);
+                else hand.Pose(1);
+            }
+            else if (!shot && !aiming)
+            {
+                if (!leftMode) glove.Pose(0);
+                else hand.Pose(0);
+            }
 
-        if (InputManager.instance.Pressed(InputManager.instance.clear)) ClearAuxiliars();
+            if (InputManager.Instance.Pressed(InputManager.Instance.swap)) SwapBall(true);
+
+            if (InputManager.Instance.Pressed(InputManager.Instance.clear)) ClearAuxiliars();
+        }
+        else
+        {
+
+        }
 
         // Can't pause on MainMenu (ID 0)
-        if (GameManager.instance.sceneID != 0 && InputManager.instance.Pressed(InputManager.instance.pause)) StartCoroutine(CallPause());
+        if (GameManager.Instance.sceneID != 0 && InputManager.Instance.Pressed(InputManager.Instance.pause)) StartCoroutine(CallPause());
     }
 
     public void Shoot()
     {
-        Debug.Log("bim");
-        if (!GameManager.instance.paused && gloveOn && !shot && balls.Count > 0)
+        if (!GameManager.Instance.paused && gloveOn && !shot && balls.Count > 0)
         {
             HapticsManager.instance.Play(HapticsManager.instance.gloveFeedback, gloveHand);
             AudioManager.instance.PlaySound(shootClip, glove.audioSource);
@@ -301,6 +322,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     void ProjectAimBeam(bool on)
     {
+        aiming = on;
+
         if (gloveOn && on && balls.Count > 0)
         {
             glove.Pose(2);
@@ -416,13 +439,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     IEnumerator CallPause()
     {
-        if (!GameManager.instance.paused)
+        if (!GameManager.Instance.paused)
         {
             yield return new WaitForSeconds(0.5f);
 
-            if (InputManager.instance.Holding(InputManager.instance.pause))
+            if (InputManager.Instance.Holding(InputManager.Instance.pause))
             {
-                GameManager.instance.Pause(true);
+                GameManager.Instance.Pause(true);
                 switch (gameMode)
                 {
                     case GameMode.Hands:
@@ -432,16 +455,16 @@ public class PlayerBehaviour : MonoBehaviour
                         canvasVRInstance.transform.rotation = Quaternion.Euler(canvasVRPos.rotation.eulerAngles.x, canvasVRPos.rotation.eulerAngles.y, 0);
                         break;
                     case GameMode.Desktop:
-                        D_canvas.SetActive(true);
+                        D_pauseMenu.SetActive(true);
                         break;
                 }
             }
         }
         else
         {
-            GameManager.instance.Pause(false);
+            GameManager.Instance.Pause(false);
             Destroy(canvasVRInstance);
-            D_canvas.SetActive(false);
+            D_pauseMenu.SetActive(false);
         }
     }
 

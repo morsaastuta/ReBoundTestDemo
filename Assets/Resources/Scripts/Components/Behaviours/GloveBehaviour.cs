@@ -1,4 +1,6 @@
+using NaughtyAttributes;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class GloveBehaviour : MonoBehaviour
 {
@@ -12,8 +14,35 @@ public class GloveBehaviour : MonoBehaviour
     [Header("Handtracking exclusives")]
     [SerializeField] public OVRHand hand;
 
+    [Header("Desktop exclusives")]
+    [ReadOnly] public Transform grabbedItem;
+    [ReadOnly] public bool okItem;
+
     public void Pose(int idx)
     {
         if (animator != null) animator.SetInteger("pose", idx);
+    }
+
+    public void GrabItem(Transform item)
+    {
+        DropItem();
+        if (item != null && item.root == item)
+        {
+            grabbedItem = item;
+            okItem = grabbedItem.GetComponent<Rigidbody>().isKinematic;
+            grabbedItem.GetComponent<Rigidbody>().isKinematic = true;
+            grabbedItem.transform.position = palm.position;
+            item.SetParent(transform);
+        }
+    }
+
+    public void DropItem()
+    {
+        if (grabbedItem != null)
+        {
+            grabbedItem.SetParent(null);
+            grabbedItem.GetComponent<Rigidbody>().isKinematic = okItem;
+            grabbedItem = null;
+        }
     }
 }

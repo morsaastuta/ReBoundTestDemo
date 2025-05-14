@@ -19,7 +19,6 @@ public class SensorBehaviour : ActivatorBehaviour
     {
         if (collider.CompareTag(tagName))
         {
-            print(once);
             Activate(true);
         }
     }

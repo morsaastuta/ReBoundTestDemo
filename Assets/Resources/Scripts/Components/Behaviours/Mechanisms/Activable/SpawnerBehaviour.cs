@@ -93,7 +93,6 @@ public class SpawnerBehaviour : ActivableBehaviour
         {
             if (trackedSpawn == null)
             {
-                Debug.Log("jiji");
                 delete = true;
                 index = trackedSpawns.IndexOf(trackedSpawn);
                 break;
@@ -108,6 +107,9 @@ public class SpawnerBehaviour : ActivableBehaviour
             }
         }
 
-        if (delete) {trackedSpawns.RemoveAt(index); Debug.Log("jaja"); }
+        if (delete)
+        {
+            trackedSpawns.RemoveAt(index);
+        }
     }
 }

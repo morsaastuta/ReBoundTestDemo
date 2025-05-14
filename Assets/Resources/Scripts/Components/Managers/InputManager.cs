@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    public static InputManager instance;
+    public static InputManager Instance;
 
     #region INPUT ACTION REFERENCES
 
@@ -38,18 +38,23 @@ public class InputManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        else instance = this;
+        else Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
     public bool Pressed(InputActionReference input)
     {
         return input.action.triggered;
+    }
+
+    public bool Released(InputActionReference input)
+    {
+        return input.action.WasReleasedThisFrame();
     }
 
     public bool Holding(InputActionReference input)

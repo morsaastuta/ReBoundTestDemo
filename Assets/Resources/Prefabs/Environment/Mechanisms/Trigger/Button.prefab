@@ -146,7 +146,8 @@ MonoBehaviour:
       m_Calls: []
   triggerClip: {fileID: 8300000, guid: 5225af94610ba5243b86090f828e63b5, type: 3}
   resetClip: {fileID: 8300000, guid: 6c71434e5deb3724f82a5edb02fa1ea6, type: 3}
-  button: {fileID: 3874502660480511138}
+  onBreak: 0
+  core: {fileID: 3874502660480511138}
   onPos: {fileID: 7118903695055658349}
   offPos: {fileID: 8378557620646878617}
   audioSource: {fileID: 5954829085062027681}
@@ -354,7 +355,7 @@ GameObject:
   - component: {fileID: 8282371188493421686}
   - component: {fileID: 6203280469296149394}
   m_Layer: 8
-  m_Name: Button
+  m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,8 +1,9 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ButtonController : MonoBehaviour
+public class ButtonController : MonoBehaviour, IPointerEnterHandler
 {
     [Header("Customization")]
     [SerializeField] string title;
@@ -20,6 +21,11 @@ public class ButtonController : MonoBehaviour
 
     public void Press()
     {
+        Debug.Log("pressed " + title);
+    }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("im here");
     }
 }

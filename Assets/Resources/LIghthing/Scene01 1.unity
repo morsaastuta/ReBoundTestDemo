@@ -616,6 +616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleport block interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4037183518712888970, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
       propertyPath: _collider
       value: 
@@ -2070,7 +2074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132776232}
   - component: {fileID: 132776233}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18631,7 +18635,7 @@ GameObject:
   - component: {fileID: 292100245}
   - component: {fileID: 292100244}
   - component: {fileID: 292100243}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20252,6 +20256,26 @@ PrefabInstance:
       propertyPath: sceneID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3975552854073864457, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975552854073864457, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975552854073864457, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3975552854073864457, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 196
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884267848208811451, guid: b80797b3516b2084991e3ee659873c0e, type: 3}
+      propertyPath: m_text
+      value: sddddddddddddddddddddddddddd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20269,7 +20293,7 @@ GameObject:
   - component: {fileID: 448775949}
   - component: {fileID: 448775948}
   - component: {fileID: 448775947}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.050 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38309,7 +38333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.385
+      value: 12.088
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38317,7 +38341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.962
+      value: 6.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38350,6 +38374,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_Name
       value: BanquetaFixed
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43457,7 +43485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820904426}
   - component: {fileID: 820904427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48818,6 +48846,10 @@ PrefabInstance:
       value: Teleport interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -53872,7 +53904,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.042
+      value: 11.056
       objectReference: {fileID: 0}
     - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -53880,7 +53912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.824
+      value: 5.252
       objectReference: {fileID: 0}
     - target: {fileID: 4073200592202492681, guid: 4941ec72053ef3440945e8874012768a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53973,15 +54005,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.53
+      value: 12.167
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.43964446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.607
+      value: 7.907999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54014,6 +54046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_Name
       value: BanquetaFixed (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -54309,6 +54345,10 @@ PrefabInstance:
     - target: {fileID: 1956720352481603202, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
       propertyPath: m_Name
       value: Teleport block interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4037183518712888970, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
       propertyPath: _collider
@@ -54793,6 +54833,10 @@ PrefabInstance:
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_Name
       value: Teleport interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -57405,7 +57449,7 @@ GameObject:
   - component: {fileID: 1161781380}
   - component: {fileID: 1161781379}
   - component: {fileID: 1161781378}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57811,7 +57855,7 @@ GameObject:
   - component: {fileID: 1207603658}
   - component: {fileID: 1207603657}
   - component: {fileID: 1207603656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58034,7 +58078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6611917770776409526, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.863
+      value: 13.788
       objectReference: {fileID: 0}
     - target: {fileID: 6611917770776409526, guid: a8e8bef48862fa848b16bbc7d561887e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -59405,7 +59449,7 @@ GameObject:
   - component: {fileID: 1338383243}
   - component: {fileID: 1338383242}
   - component: {fileID: 1338383241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59575,7 +59619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1346293381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60604,7 +60648,7 @@ GameObject:
   - component: {fileID: 1463896669}
   - component: {fileID: 1463896668}
   - component: {fileID: 1463896667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66433,7 +66477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1558104192}
   - component: {fileID: 1558104193}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68271,7 +68315,7 @@ GameObject:
   - component: {fileID: 1716303749}
   - component: {fileID: 1716303748}
   - component: {fileID: 1716303747}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.050 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68451,6 +68495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleport block interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4037183518712888970, guid: e51e77af6c2e6ce4e984186a185c8b01, type: 3}
       propertyPath: _collider
       value: 
@@ -68572,15 +68620,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.835
+      value: 10.788
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.43964446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.093
+      value: 6.498
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68613,6 +68661,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_Name
       value: BanquetaFixed (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -69312,8 +69364,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1615136151010715426, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: gameMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1615136151010715426, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
+      propertyPath: demoBalls.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1615136151010715426, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
+      propertyPath: 'demoBalls.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: aa01243519643ae4f8674beccd711b4c, type: 2}
     - target: {fileID: 2648413638953584608, guid: 9c8a50bbea30db94c98ba41e264276ea, type: 3}
       propertyPath: instanceId
       value: 40b1647c-de98-4a62-bea5-099374567a04
@@ -69672,6 +69732,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 63c44b2a93f7fb64c98c543991cd6287, type: 3}
       propertyPath: m_Name
       value: Botella
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63c44b2a93f7fb64c98c543991cd6287, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 63c44b2a93f7fb64c98c543991cd6287, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -71183,15 +71247,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.974
+      value: 10.838
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.43964446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.535
+      value: 7.887
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71224,6 +71288,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_Name
       value: BanquetaFixed (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78de2da71a1c4a44b81bf5a5d6ffa9c0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -77310,7 +77378,7 @@ GameObject:
   - component: {fileID: 3915817993555494527}
   - component: {fileID: 6721718036015320300}
   - component: {fileID: 6500482316202684801}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77375,7 +77443,7 @@ GameObject:
   - component: {fileID: 2858092022428567520}
   - component: {fileID: 9115655868957013603}
   - component: {fileID: 4131091797483959442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extractor.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77490,7 +77558,7 @@ GameObject:
   - component: {fileID: 6583001197068945731}
   - component: {fileID: 2755416581605963429}
   - component: {fileID: 7745328247344471671}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77712,7 +77780,7 @@ GameObject:
   - component: {fileID: 7413709837743453994}
   - component: {fileID: 8364689273505442614}
   - component: {fileID: 8319208501409337483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFinaSinCajon.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77841,7 +77909,7 @@ GameObject:
   - component: {fileID: 3577068052467854082}
   - component: {fileID: 4215923197806143390}
   - component: {fileID: 8077021912285622425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77874,7 +77942,7 @@ GameObject:
   - component: {fileID: 3125005087182668815}
   - component: {fileID: 1774851953514140165}
   - component: {fileID: 6378151011936310044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77892,7 +77960,7 @@ GameObject:
   - component: {fileID: 4929860890850470577}
   - component: {fileID: 4927137760229565287}
   - component: {fileID: 1547118437875314437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77911,7 +77979,7 @@ GameObject:
   - component: {fileID: 744769053862222101}
   - component: {fileID: 5959743427024705498}
   - component: {fileID: 8018712025305060132}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77929,7 +77997,7 @@ GameObject:
   - component: {fileID: 3551036572797074732}
   - component: {fileID: 1521806451387469955}
   - component: {fileID: 5469890225242420190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78088,7 +78156,7 @@ GameObject:
   - component: {fileID: 2005564083569661224}
   - component: {fileID: 3772526908305608791}
   - component: {fileID: 4755128536215933492}
-  m_Layer: 12
+  m_Layer: 9
   m_Name: Edificio1.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78248,7 +78316,7 @@ GameObject:
   - component: {fileID: 5873274254469293579}
   - component: {fileID: 1547334578972092352}
   - component: {fileID: 4561362115796781991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78705,7 +78773,7 @@ GameObject:
   - component: {fileID: 2429283874635950811}
   - component: {fileID: 4529542327908905125}
   - component: {fileID: 2275287371980042362}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78724,7 +78792,7 @@ GameObject:
   - component: {fileID: 8043549499356011063}
   - component: {fileID: 8554977047077030775}
   - component: {fileID: 1263860950126146982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78824,7 +78892,7 @@ GameObject:
   - component: {fileID: 10331086789298660}
   - component: {fileID: 4330821103693846096}
   - component: {fileID: 1893500279737688352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79022,7 +79090,7 @@ GameObject:
   - component: {fileID: 3493238540877160152}
   - component: {fileID: 4315626975971858120}
   - component: {fileID: 8134495866738243338}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.168
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79086,7 +79154,7 @@ GameObject:
   - component: {fileID: 2649234292706255126}
   - component: {fileID: 3080417605785211278}
   - component: {fileID: 647946982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79104,7 +79172,7 @@ GameObject:
   - component: {fileID: 2268954272533790113}
   - component: {fileID: 1180476913701001094}
   - component: {fileID: 211580139295943707}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79227,7 +79295,7 @@ GameObject:
   - component: {fileID: 3631498394066624804}
   - component: {fileID: 8079634507178124110}
   - component: {fileID: 7869551139572434898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79269,7 +79337,7 @@ GameObject:
   - component: {fileID: 3758524770789734838}
   - component: {fileID: 2943780029787300204}
   - component: {fileID: 4402906546192712270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79332,7 +79400,9 @@ GameObject:
   - component: {fileID: 7099683616263326681}
   - component: {fileID: 8764969050638096146}
   - component: {fileID: 8701254897208088903}
-  m_Layer: 0
+  - component: {fileID: 8764969050638096148}
+  - component: {fileID: 8764969050638096147}
+  m_Layer: 9
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79571,7 +79641,7 @@ GameObject:
   - component: {fileID: 1807647877322370658}
   - component: {fileID: 8489883232881925507}
   - component: {fileID: 8733016723838245069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFinaSinCajon.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79613,7 +79683,7 @@ GameObject:
   - component: {fileID: 4824918115394991705}
   - component: {fileID: 851859939360207004}
   - component: {fileID: 3355708898223602469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79826,7 +79896,7 @@ GameObject:
   - component: {fileID: 3292893591210799598}
   - component: {fileID: 4634867914637400199}
   - component: {fileID: 711872204127160962}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoLlano.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80002,7 +80072,7 @@ GameObject:
   - component: {fileID: 3027368977034169082}
   - component: {fileID: 8854611115032470111}
   - component: {fileID: 4725530707660353850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80098,7 +80168,7 @@ GameObject:
   - component: {fileID: 3217316580502955361}
   - component: {fileID: 2765946933126923908}
   - component: {fileID: 5015714806316809519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80124,7 +80194,7 @@ GameObject:
   - component: {fileID: 7683480473319246544}
   - component: {fileID: 6497423190255855143}
   - component: {fileID: 3842477965820807486}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80212,7 +80282,7 @@ GameObject:
   - component: {fileID: 8273488063363934539}
   - component: {fileID: 3711087150044914109}
   - component: {fileID: 256511871132660042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80248,7 +80318,7 @@ GameObject:
   - component: {fileID: 620902031067288459}
   - component: {fileID: 889475041942824088}
   - component: {fileID: 4137212201331274810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80324,7 +80394,7 @@ GameObject:
   - component: {fileID: 382327825562482204}
   - component: {fileID: 5520766541305202394}
   - component: {fileID: 1156013142604786487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80448,7 +80518,7 @@ GameObject:
   - component: {fileID: 2550430688434052084}
   - component: {fileID: 115423039029887071}
   - component: {fileID: 3954954283048760089}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80467,7 +80537,7 @@ GameObject:
   - component: {fileID: 8605619233872783491}
   - component: {fileID: 2844902845625110655}
   - component: {fileID: 4188733640230383256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80516,6 +80586,10 @@ PrefabInstance:
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_Name
       value: Teleport interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1956720352481603202, guid: 8ef22109e3e8bb04a83d5af47d05ce1f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -80607,7 +80681,7 @@ GameObject:
   - component: {fileID: 3785224233243904477}
   - component: {fileID: 5301482695169836316}
   - component: {fileID: 5333412130673583055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80744,7 +80818,7 @@ GameObject:
   - component: {fileID: 355567009091605718}
   - component: {fileID: 4591610873266854547}
   - component: {fileID: 2705503722049436432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchara.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80814,7 +80888,7 @@ GameObject:
   - component: {fileID: 372776387058402994}
   - component: {fileID: 4006478117588304061}
   - component: {fileID: 9219283607919219281}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81058,7 +81132,7 @@ GameObject:
   - component: {fileID: 552026808811366588}
   - component: {fileID: 7831661362371239734}
   - component: {fileID: 1275205763304002576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81715,7 +81789,7 @@ GameObject:
   - component: {fileID: 4015264872660107869}
   - component: {fileID: 6325006777699836321}
   - component: {fileID: 3305842913492450140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81748,7 +81822,7 @@ GameObject:
   - component: {fileID: 5203472441224276020}
   - component: {fileID: 7576847082554896797}
   - component: {fileID: 5275515152784829629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81774,7 +81848,7 @@ GameObject:
   - component: {fileID: 7928931405217875626}
   - component: {fileID: 1274964800088154427}
   - component: {fileID: 3839068887521452136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81824,7 +81898,7 @@ GameObject:
   - component: {fileID: 6618752761162006930}
   - component: {fileID: 3642875856094285960}
   - component: {fileID: 6967222064892681119}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81885,7 +81959,7 @@ GameObject:
   - component: {fileID: 6758032088436411195}
   - component: {fileID: 2290975825945434525}
   - component: {fileID: 9086188951609296420}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81903,7 +81977,7 @@ GameObject:
   - component: {fileID: 1733725723783324212}
   - component: {fileID: 7151214233013372385}
   - component: {fileID: 1359948274225350441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.163
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82139,7 +82213,7 @@ GameObject:
   - component: {fileID: 5630875815850616155}
   - component: {fileID: 7020939257398402071}
   - component: {fileID: 2264729030474614860}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82267,7 +82341,7 @@ GameObject:
   - component: {fileID: 8917735702984442660}
   - component: {fileID: 4779165813373775568}
   - component: {fileID: 2379570135994886931}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82300,7 +82374,7 @@ GameObject:
   - component: {fileID: 3557385457459534326}
   - component: {fileID: 7169837104230022062}
   - component: {fileID: 3811406657800415585}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoLlano.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82484,7 +82558,7 @@ GameObject:
   - component: {fileID: 3550804335187887674}
   - component: {fileID: 2744213277627170648}
   - component: {fileID: 2673306184473507738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82635,7 +82709,7 @@ GameObject:
   - component: {fileID: 4298006905445836736}
   - component: {fileID: 7711461064953282729}
   - component: {fileID: 746779234534773305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82797,7 +82871,7 @@ GameObject:
   - component: {fileID: 582177697085437002}
   - component: {fileID: 8695922046454863846}
   - component: {fileID: 5177315025127354255}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82823,7 +82897,7 @@ GameObject:
   - component: {fileID: 9013071095980854510}
   - component: {fileID: 3334921489862596227}
   - component: {fileID: 669678217925421818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.174
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82919,7 +82993,7 @@ GameObject:
   - component: {fileID: 3136136281916268928}
   - component: {fileID: 8738581151697541164}
   - component: {fileID: 4774286507440339057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extractor.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83050,7 +83124,7 @@ GameObject:
   - component: {fileID: 4574894905469927722}
   - component: {fileID: 6528043641240265533}
   - component: {fileID: 4477300923047651722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFreidora.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83128,7 +83202,7 @@ GameObject:
   - component: {fileID: 7589474430522955833}
   - component: {fileID: 7354187549128923836}
   - component: {fileID: 178696401295524252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83279,7 +83353,7 @@ GameObject:
   - component: {fileID: 4216015983890199614}
   - component: {fileID: 6297650509602421589}
   - component: {fileID: 134098992676028305}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83379,7 +83453,7 @@ GameObject:
   - component: {fileID: 8859337857705305947}
   - component: {fileID: 8507738009978453349}
   - component: {fileID: 1880371034263522987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83486,7 +83560,7 @@ GameObject:
   - component: {fileID: 2457917422781835157}
   - component: {fileID: 8335779124542328002}
   - component: {fileID: 6922341382232419522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83504,7 +83578,7 @@ GameObject:
   - component: {fileID: 4876516397831404714}
   - component: {fileID: 4615679992521329584}
   - component: {fileID: 8480204964226754073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83537,7 +83611,7 @@ GameObject:
   - component: {fileID: 6757912954073358918}
   - component: {fileID: 5190833508389393939}
   - component: {fileID: 5975236471531804103}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.170
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83870,7 +83944,7 @@ GameObject:
   - component: {fileID: 6199402733719549019}
   - component: {fileID: 8745121693028636343}
   - component: {fileID: 2001349118568038341}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83888,7 +83962,7 @@ GameObject:
   - component: {fileID: 3844503310152717680}
   - component: {fileID: 1348893116002138736}
   - component: {fileID: 1456199756103641405}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84092,7 +84166,7 @@ GameObject:
   - component: {fileID: 3841962363883383709}
   - component: {fileID: 1829429466925571506}
   - component: {fileID: 3437438422975083196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Edificio2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84149,7 +84223,7 @@ GameObject:
   - component: {fileID: 8387327557271859886}
   - component: {fileID: 6560663725441791950}
   - component: {fileID: 2573513425947478104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84367,7 +84441,7 @@ GameObject:
   - component: {fileID: 1382028549211264199}
   - component: {fileID: 5588330674126394382}
   - component: {fileID: 4879421623471433619}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84438,7 +84512,7 @@ GameObject:
   - component: {fileID: 2656693068486970380}
   - component: {fileID: 5153182581346865039}
   - component: {fileID: 1116071639129713485}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFinaSinCajon.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84547,7 +84621,7 @@ GameObject:
   - component: {fileID: 2473259962555525388}
   - component: {fileID: 525109509868970710}
   - component: {fileID: 7899153018221508570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84594,7 +84668,7 @@ GameObject:
   - component: {fileID: 6657374017790360854}
   - component: {fileID: 2140400937901612456}
   - component: {fileID: 8348772718600285191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AireAcondicionao.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84774,7 +84848,7 @@ GameObject:
   - component: {fileID: 6916624233721849391}
   - component: {fileID: 6757371111354529078}
   - component: {fileID: 8738131075071557837}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84947,7 +85021,7 @@ GameObject:
   - component: {fileID: 386400703788324141}
   - component: {fileID: 2828440963468261682}
   - component: {fileID: 4841160521113289367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaPileta.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85068,7 +85142,7 @@ GameObject:
   - component: {fileID: 305023228687439555}
   - component: {fileID: 5902580470141331937}
   - component: {fileID: 1623023303053384500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85192,7 +85266,7 @@ GameObject:
   - component: {fileID: 4480212555694120363}
   - component: {fileID: 9032507524897258843}
   - component: {fileID: 3292085592899265427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85354,7 +85428,7 @@ GameObject:
   - component: {fileID: 7071151278005272680}
   - component: {fileID: 696159769492618540}
   - component: {fileID: 2051815217085253018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.167
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85417,7 +85491,7 @@ GameObject:
   - component: {fileID: 2788152930471185874}
   - component: {fileID: 7548449094033681165}
   - component: {fileID: 5491998384316805830}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85435,7 +85509,7 @@ GameObject:
   - component: {fileID: 576742454509865572}
   - component: {fileID: 4243147247490568064}
   - component: {fileID: 6311295855215123644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85550,7 +85624,7 @@ GameObject:
   - component: {fileID: 4842214065524784038}
   - component: {fileID: 1225889956644984933}
   - component: {fileID: 9068077259009893779}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz1.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85763,7 +85837,7 @@ GameObject:
   - component: {fileID: 544856623678038760}
   - component: {fileID: 2643676065447354352}
   - component: {fileID: 7817769697142042215}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85826,7 +85900,7 @@ GameObject:
   - component: {fileID: 1617706002092679183}
   - component: {fileID: 8964938945912637912}
   - component: {fileID: 1911344542101884480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85845,7 +85919,7 @@ GameObject:
   - component: {fileID: 7439760007105876313}
   - component: {fileID: 2455233604292850140}
   - component: {fileID: 4087073847612086290}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85939,7 +86013,7 @@ GameObject:
   - component: {fileID: 8570162230576018638}
   - component: {fileID: 1049394903642366595}
   - component: {fileID: 3996521794562871394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85957,7 +86031,7 @@ GameObject:
   - component: {fileID: 2701449146671559680}
   - component: {fileID: 7137385052860044184}
   - component: {fileID: 2123382976294805282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.172
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86153,7 +86227,7 @@ GameObject:
   - component: {fileID: 7692736031618606098}
   - component: {fileID: 1546178020768376761}
   - component: {fileID: 6767637113277565302}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.175
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86256,7 +86330,7 @@ GameObject:
   - component: {fileID: 6840824551295865590}
   - component: {fileID: 9217842358702252803}
   - component: {fileID: 3235112636189202588}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaGruesaSinCajon.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86773,7 +86847,7 @@ GameObject:
   - component: {fileID: 799756487866686492}
   - component: {fileID: 7861415096269156656}
   - component: {fileID: 2658053471049504028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86899,7 +86973,7 @@ GameObject:
   - component: {fileID: 4144824484199979845}
   - component: {fileID: 548596911531444008}
   - component: {fileID: 9049600464116091814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86917,7 +86991,7 @@ GameObject:
   - component: {fileID: 6385887586579428082}
   - component: {fileID: 8362901495215491382}
   - component: {fileID: 176983165963413055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86971,7 +87045,7 @@ GameObject:
   - component: {fileID: 5961303325104225458}
   - component: {fileID: 4723479465621148304}
   - component: {fileID: 4787992618450014373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86989,7 +87063,7 @@ GameObject:
   - component: {fileID: 4769684402700775085}
   - component: {fileID: 6473797520923797342}
   - component: {fileID: 3812365454245713390}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.086
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87092,7 +87166,7 @@ Transform:
   m_GameObject: {fileID: 6057009816205272387}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0.00000013767878, z: -0.00000013767878, w: 0.7071068}
-  m_LocalPosition: {x: 8.143564, y: 0.010355532, z: 1.847596}
+  m_LocalPosition: {x: 7.97, y: 0.01, z: 2.26}
   m_LocalScale: {x: 0.7098058, y: 0.7098059, z: 0.7098059}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87138,7 +87212,7 @@ GameObject:
   - component: {fileID: 2222970481281803199}
   - component: {fileID: 721244050974674670}
   - component: {fileID: 905168363343424384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz1.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87270,7 +87344,7 @@ GameObject:
   - component: {fileID: 238008329573738552}
   - component: {fileID: 7084403801472806026}
   - component: {fileID: 8662836590000099744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaPileta.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87356,7 +87430,7 @@ GameObject:
   - component: {fileID: 6198994219346090519}
   - component: {fileID: 1172222411622824946}
   - component: {fileID: 5301867405456911072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87441,7 +87515,7 @@ GameObject:
   - component: {fileID: 4671297311053915276}
   - component: {fileID: 1091685615759857674}
   - component: {fileID: 1456534332870980137}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87655,7 +87729,7 @@ GameObject:
   - component: {fileID: 2402120461937827770}
   - component: {fileID: 6802369138941841799}
   - component: {fileID: 8257754254949519630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87673,7 +87747,7 @@ GameObject:
   - component: {fileID: 1153886024110195934}
   - component: {fileID: 6515188997723182801}
   - component: {fileID: 1197357339036463650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.090
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87691,7 +87765,7 @@ GameObject:
   - component: {fileID: 6279908983283033023}
   - component: {fileID: 6363302188332626660}
   - component: {fileID: 6687409702822831151}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Escaleras.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87710,7 +87784,7 @@ GameObject:
   - component: {fileID: 5097162176446279114}
   - component: {fileID: 4698640617131403646}
   - component: {fileID: 5461593276047675065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87789,7 +87863,7 @@ GameObject:
   - component: {fileID: 7451269129769606279}
   - component: {fileID: 1435017072318270014}
   - component: {fileID: 1564398341200765300}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz1.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87807,7 +87881,7 @@ GameObject:
   - component: {fileID: 1447190387577380199}
   - component: {fileID: 5829538503741005931}
   - component: {fileID: 11788631104171900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87920,7 +87994,7 @@ GameObject:
   - component: {fileID: 515419733626491009}
   - component: {fileID: 4953922659325649589}
   - component: {fileID: 3350489763164001633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.165
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87998,7 +88072,7 @@ GameObject:
   - component: {fileID: 8636431660836153922}
   - component: {fileID: 849820959236072517}
   - component: {fileID: 2795178153173455941}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Contenedor2.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88016,7 +88090,7 @@ GameObject:
   - component: {fileID: 7542798147836000366}
   - component: {fileID: 6762507198791293898}
   - component: {fileID: 1365752538562840115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88065,7 +88139,7 @@ GameObject:
   - component: {fileID: 9198749110014645659}
   - component: {fileID: 2407285483439717393}
   - component: {fileID: 362792870935999451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoLlano.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88089,7 +88163,7 @@ GameObject:
   - component: {fileID: 6306558615422295169}
   - component: {fileID: 8613264596439843064}
   - component: {fileID: 7039548734177985033}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaPileta.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88183,7 +88257,7 @@ GameObject:
   - component: {fileID: 8795221751546953926}
   - component: {fileID: 548276720111961727}
   - component: {fileID: 5761464122672764730}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88246,7 +88320,7 @@ GameObject:
   - component: {fileID: 4445892062473206481}
   - component: {fileID: 7702337667195906379}
   - component: {fileID: 3044906703011553596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoHondo.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88317,7 +88391,7 @@ GameObject:
   - component: {fileID: 4965862870723736011}
   - component: {fileID: 2948419371502225736}
   - component: {fileID: 8657278034096484961}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88373,7 +88447,7 @@ GameObject:
   - component: {fileID: 204934420618888163}
   - component: {fileID: 8293949630626576147}
   - component: {fileID: 5888655061004654091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88391,7 +88465,7 @@ GameObject:
   - component: {fileID: 3674666196168426128}
   - component: {fileID: 7714802226575996676}
   - component: {fileID: 8769817096201182885}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88611,7 +88685,7 @@ GameObject:
   - component: {fileID: 4880042041494309790}
   - component: {fileID: 4668584437484932003}
   - component: {fileID: 4058582880497586849}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Contenedor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88690,7 +88764,7 @@ GameObject:
   - component: {fileID: 6165217653042538322}
   - component: {fileID: 4779609179836432430}
   - component: {fileID: 1864825607}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Suelo.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88711,7 +88785,7 @@ GameObject:
   - component: {fileID: 2581830190179797614}
   - component: {fileID: 6623748163656758837}
   - component: {fileID: 5445540536225544866}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFinaSinCajon.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88729,7 +88803,7 @@ GameObject:
   - component: {fileID: 809487655954435432}
   - component: {fileID: 7706377970682009768}
   - component: {fileID: 7698198262947577478}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Escaleras.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88830,7 +88904,7 @@ GameObject:
   - component: {fileID: 5075170792122176021}
   - component: {fileID: 205488895294324389}
   - component: {fileID: 6448603916398230234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88920,7 +88994,7 @@ GameObject:
   - component: {fileID: 8305789156853830258}
   - component: {fileID: 8116657417548386811}
   - component: {fileID: 5046974918994996780}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaGruesaSinCajon.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89022,7 +89096,7 @@ GameObject:
   - component: {fileID: 7892942028905558936}
   - component: {fileID: 1621701683954180483}
   - component: {fileID: 4056500295592891577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89055,7 +89129,7 @@ GameObject:
   - component: {fileID: 396799648140622436}
   - component: {fileID: 4578801799528809945}
   - component: {fileID: 2595444995602068874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89133,7 +89207,7 @@ GameObject:
   - component: {fileID: 8381170354797886825}
   - component: {fileID: 1817839734623727064}
   - component: {fileID: 3456600711889624242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Olla.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89263,7 +89337,7 @@ GameObject:
   - component: {fileID: 3918124598549438335}
   - component: {fileID: 7120894285001564254}
   - component: {fileID: 4654828388828353385}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89290,7 +89364,7 @@ GameObject:
   - component: {fileID: 497543421417102615}
   - component: {fileID: 3419910186674627216}
   - component: {fileID: 6929070114527735544}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89518,7 +89592,7 @@ GameObject:
   - component: {fileID: 8244356456021683620}
   - component: {fileID: 2899077219090393217}
   - component: {fileID: 5028056749255654048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Contenedor2.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89634,7 +89708,7 @@ GameObject:
   - component: {fileID: 332200578946854916}
   - component: {fileID: 7770074047076435512}
   - component: {fileID: 1316352629531646268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89778,7 +89852,7 @@ GameObject:
   - component: {fileID: 7128511561498064145}
   - component: {fileID: 4323256291150311493}
   - component: {fileID: 871016133904908567}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.177
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89856,7 +89930,7 @@ GameObject:
   - component: {fileID: 3752233974045966539}
   - component: {fileID: 3311024161163895387}
   - component: {fileID: 7494968410619397246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Escaleras.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89890,7 +89964,7 @@ GameObject:
   - component: {fileID: 9048669465903800216}
   - component: {fileID: 2645708241308757461}
   - component: {fileID: 1709967507940972775}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Suelo.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89917,7 +89991,7 @@ GameObject:
   - component: {fileID: 6174465490930063478}
   - component: {fileID: 1855456303945972128}
   - component: {fileID: 3828826188117955410}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90086,7 +90160,7 @@ GameObject:
   - component: {fileID: 5275083559024751950}
   - component: {fileID: 7814671799694028336}
   - component: {fileID: 746545432819814872}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.019 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90125,7 +90199,7 @@ GameObject:
   - component: {fileID: 2829391001273513071}
   - component: {fileID: 5064472601784603297}
   - component: {fileID: 3280655792572990334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90145,7 +90219,7 @@ GameObject:
   - component: {fileID: 3573030611855939811}
   - component: {fileID: 3654323496941867279}
   - component: {fileID: 2157939080140209307}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90163,7 +90237,7 @@ GameObject:
   - component: {fileID: 924834762115537999}
   - component: {fileID: 7067288496138984595}
   - component: {fileID: 4221302665969072565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90226,7 +90300,7 @@ GameObject:
   - component: {fileID: 2594875508942208032}
   - component: {fileID: 320098431300994841}
   - component: {fileID: 3557703042437404645}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90425,7 +90499,7 @@ GameObject:
   - component: {fileID: 8117048799441650296}
   - component: {fileID: 6929474024754095346}
   - component: {fileID: 283691595121232984}
-  m_Layer: 12
+  m_Layer: 9
   m_Name: Edificio1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90512,7 +90586,7 @@ GameObject:
   - component: {fileID: 1839903162585625851}
   - component: {fileID: 1871607193314243558}
   - component: {fileID: 5424102186303163754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90546,7 +90620,7 @@ GameObject:
   - component: {fileID: 703281486005781982}
   - component: {fileID: 1888971664409132228}
   - component: {fileID: 2681981063151837843}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90566,7 +90640,7 @@ GameObject:
   - component: {fileID: 3770895231529830749}
   - component: {fileID: 7475145079772067184}
   - component: {fileID: 95402034111796722}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFreidora.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90654,7 +90728,7 @@ GameObject:
   - component: {fileID: 4029894073726567612}
   - component: {fileID: 3471835155053618476}
   - component: {fileID: 3850836729861701478}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90703,7 +90777,7 @@ GameObject:
   - component: {fileID: 4810362283444352751}
   - component: {fileID: 6430679051094729606}
   - component: {fileID: 5614666035238315174}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz2.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90766,7 +90840,7 @@ GameObject:
   - component: {fileID: 7683011161605507894}
   - component: {fileID: 841702568420593725}
   - component: {fileID: 3451856536041299543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90784,7 +90858,7 @@ GameObject:
   - component: {fileID: 8303080311271144358}
   - component: {fileID: 7947811704741642196}
   - component: {fileID: 5141585234461834536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TubVentilacion.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90820,7 +90894,7 @@ GameObject:
   - component: {fileID: 2392924132871034877}
   - component: {fileID: 2774400257814999892}
   - component: {fileID: 1798240009231723127}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90838,7 +90912,7 @@ GameObject:
   - component: {fileID: 7633512841518823098}
   - component: {fileID: 1713104520703281457}
   - component: {fileID: 6124885542989530359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaCajon.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90877,7 +90951,7 @@ GameObject:
   - component: {fileID: 1009237736208663673}
   - component: {fileID: 2557123909931565562}
   - component: {fileID: 3429764233500998244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: platoLlano.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91029,7 +91103,7 @@ GameObject:
   - component: {fileID: 8101197234818692094}
   - component: {fileID: 4838016962029883003}
   - component: {fileID: 3676594722197029028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFinaSinCajon.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91078,7 +91152,7 @@ GameObject:
   - component: {fileID: 1230674370580599942}
   - component: {fileID: 1173316641138499717}
   - component: {fileID: 6378405264049908124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Luz1.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91137,7 +91211,7 @@ GameObject:
   - component: {fileID: 5812501940558663412}
   - component: {fileID: 6753590566700398236}
   - component: {fileID: 2350766087635111457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91627,7 +91701,7 @@ GameObject:
   - component: {fileID: 4083500033769969054}
   - component: {fileID: 7533216102782148227}
   - component: {fileID: 3009347911171384433}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91762,7 +91836,7 @@ GameObject:
   - component: {fileID: 573907450357908177}
   - component: {fileID: 1359474280069495572}
   - component: {fileID: 5098333984359801135}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.176
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91857,7 +91931,7 @@ GameObject:
   - component: {fileID: 664262116464946926}
   - component: {fileID: 2645006645622083599}
   - component: {fileID: 7688291713962142415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91875,7 +91949,7 @@ GameObject:
   - component: {fileID: 8778100362519671328}
   - component: {fileID: 5649575146943817249}
   - component: {fileID: 4345759055804034597}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91932,7 +92006,7 @@ GameObject:
   - component: {fileID: 3053287009720130522}
   - component: {fileID: 6032687911908487477}
   - component: {fileID: 4015841339706595580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Extractor.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91952,7 +92026,7 @@ GameObject:
   - component: {fileID: 1852523328571194132}
   - component: {fileID: 4977549425744207811}
   - component: {fileID: 1012363827940844821}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91971,7 +92045,7 @@ GameObject:
   - component: {fileID: 1566512134938895011}
   - component: {fileID: 7695709714209795204}
   - component: {fileID: 3187096644816212373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91997,7 +92071,7 @@ GameObject:
   - component: {fileID: 8592592546967611109}
   - component: {fileID: 6372967021198233194}
   - component: {fileID: 6255615377297003817}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92089,7 +92163,7 @@ GameObject:
   - component: {fileID: 5129158624439142985}
   - component: {fileID: 6584372724309103736}
   - component: {fileID: 3868438068458463590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Edificio2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92250,7 +92324,7 @@ GameObject:
   - component: {fileID: 8963684675230904194}
   - component: {fileID: 4286367931582576864}
   - component: {fileID: 622932315023955972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92268,7 +92342,7 @@ GameObject:
   - component: {fileID: 8577173708146058417}
   - component: {fileID: 5440057232482857804}
   - component: {fileID: 7634966392692189893}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92286,7 +92360,7 @@ GameObject:
   - component: {fileID: 4659149362487222419}
   - component: {fileID: 1703075078084146872}
   - component: {fileID: 6377898614265801051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.164
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92343,7 +92417,7 @@ GameObject:
   - component: {fileID: 8235968868783390271}
   - component: {fileID: 7241547972410648487}
   - component: {fileID: 4618033393237429210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Saco.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92421,7 +92495,7 @@ GameObject:
   - component: {fileID: 4163380113576895200}
   - component: {fileID: 2559768353211641364}
   - component: {fileID: 35728571741547786}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MesaFogon.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92447,7 +92521,7 @@ GameObject:
   - component: {fileID: 2886917201820148299}
   - component: {fileID: 2066872959247422555}
   - component: {fileID: 7631752395758631481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.169
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92524,7 +92598,7 @@ GameObject:
   - component: {fileID: 266371247850013370}
   - component: {fileID: 1758102268535269056}
   - component: {fileID: 1168961410232200617}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Escaleras.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92542,7 +92616,7 @@ GameObject:
   - component: {fileID: 2272790572580579426}
   - component: {fileID: 1442977620627639834}
   - component: {fileID: 2312572290130078782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fork.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92581,7 +92655,7 @@ GameObject:
   - component: {fileID: 7565845703434656106}
   - component: {fileID: 2893869790434555031}
   - component: {fileID: 4895590555108816359}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VAlla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92701,7 +92775,7 @@ GameObject:
   - component: {fileID: 3842562525947818594}
   - component: {fileID: 5018731392303209905}
   - component: {fileID: 4111128595812465731}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92727,7 +92801,7 @@ GameObject:
   - component: {fileID: 202327930543825643}
   - component: {fileID: 2806963266710333425}
   - component: {fileID: 2637427934999273949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Border.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92753,7 +92827,7 @@ GameObject:
   - component: {fileID: 4807186900580629501}
   - component: {fileID: 5680106458360333476}
   - component: {fileID: 268195888283310976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92771,7 +92845,7 @@ GameObject:
   - component: {fileID: 5494589155934358583}
   - component: {fileID: 8401201541185986932}
   - component: {fileID: 2252734086177696097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tabla.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92790,7 +92864,7 @@ GameObject:
   - component: {fileID: 2401575847370312633}
   - component: {fileID: 7470472573711143464}
   - component: {fileID: 8866055933487150244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92853,7 +92927,7 @@ GameObject:
   - component: {fileID: 7990926558484497400}
   - component: {fileID: 8603106263805873979}
   - component: {fileID: 5875004214278469622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93287,7 +93361,7 @@ GameObject:
   - component: {fileID: 107210656912370693}
   - component: {fileID: 2811576994597704837}
   - component: {fileID: 3924598672166782642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AireAcondicionao.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93306,7 +93380,7 @@ GameObject:
   - component: {fileID: 2725343907250937833}
   - component: {fileID: 8827405727285188596}
   - component: {fileID: 537605244244754222}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93468,6 +93542,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208760499844308040}
   m_Mesh: {fileID: -8678823145569952518, guid: 2a3068c1345902045a8de599b5981a7a, type: 3}
+--- !u!65 &8764969050638096147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208760499844308040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.3008845, y: 1.4281875, z: 0.8167046}
+  m_Center: {x: 0.0000047024982, y: 0.19072106, z: -0.44851333}
+--- !u!65 &8764969050638096148
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208760499844308040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.3008845, y: 0.6672775, z: 0.9319942}
+  m_Center: {x: 0.000004702498, y: -0.18973519, z: 0.4334555}
 --- !u!23 &8769817096201182885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93547,7 +93663,7 @@ GameObject:
   - component: {fileID: 2048843107467327097}
   - component: {fileID: 2533929070911820643}
   - component: {fileID: 6895634752010759629}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93563,7 +93679,7 @@ Transform:
   m_GameObject: {fileID: 7113751175059880917}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0.00000013767878, z: -0.00000013767878, w: 0.7071068}
-  m_LocalPosition: {x: 8.143564, y: 0.010355532, z: 1.95}
+  m_LocalPosition: {x: 8.16, y: 0.01, z: 2.3}
   m_LocalScale: {x: 0.7098058, y: 0.7098059, z: 0.7098059}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93595,7 +93711,7 @@ GameObject:
   - component: {fileID: 5879410367183692520}
   - component: {fileID: 3824567257549938728}
   - component: {fileID: 7941524691886610563}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93800,7 +93916,7 @@ GameObject:
   - component: {fileID: 9057279515012286085}
   - component: {fileID: 8776267098788821759}
   - component: {fileID: 670281831206143073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.162
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93818,7 +93934,7 @@ GameObject:
   - component: {fileID: 3388131565707130645}
   - component: {fileID: 6623720568563649345}
   - component: {fileID: 8421242228161183407}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AireAcondicionao.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94124,7 +94240,7 @@ GameObject:
   - component: {fileID: 7893875790851373296}
   - component: {fileID: 1435463298376491710}
   - component: {fileID: 8120799475728564375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuchillo.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94142,7 +94258,7 @@ GameObject:
   - component: {fileID: 2147089381645650394}
   - component: {fileID: 2880376631563958290}
   - component: {fileID: 4326807577899413474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube.152
   m_TagString: Untagged
   m_Icon: {fileID: 0}
