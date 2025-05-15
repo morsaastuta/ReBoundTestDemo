@@ -1,11 +1,10 @@
 using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class ItemDetectorBehaviour : MonoBehaviour
 {
-    [SerializeField][ReadOnly] List<Transform> detectedItems = new();
+    [SerializeField][ReadOnly] public List<Transform> detectedItems = new();
 
     void Update()
     {
@@ -20,7 +19,6 @@ public class ItemDetectorBehaviour : MonoBehaviour
     {
         if (item.transform.root.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
-            Debug.Log("found " + item.transform.root.gameObject);
             detectedItems.Add(item.transform.root);
         }
     }
@@ -29,7 +27,6 @@ public class ItemDetectorBehaviour : MonoBehaviour
     {
         if (item.transform.root.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
-            Debug.Log("lost " + item.transform.root.gameObject);
             detectedItems.Remove(item.transform.root);
         }
     }

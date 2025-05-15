@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 4927317987785284826}
   - component: {fileID: 280969779942738955}
   - component: {fileID: 8559544065380754325}
+  - component: {fileID: 5543229330921887393}
   m_Layer: 0
   m_Name: Hanger
   m_TagString: Untagged
@@ -257,6 +258,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02581191, y: 0.14174175, z: 0.042675912}
   m_Center: {x: -0.005040765, y: -0.16763616, z: 0.061585873}
+--- !u!114 &5543229330921887393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721424157805403688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c48f61125a436d94fab7831e122d2307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snappos: {fileID: 2825601012556913741}
 --- !u!1 &7957345971860274755
 GameObject:
   m_ObjectHideFlags: 0

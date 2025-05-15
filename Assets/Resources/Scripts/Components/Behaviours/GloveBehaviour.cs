@@ -16,7 +16,6 @@ public class GloveBehaviour : MonoBehaviour
 
     [Header("Desktop exclusives")]
     [ReadOnly] public Transform grabbedItem;
-    [ReadOnly] public bool okItem;
 
     public void Pose(int idx)
     {
@@ -29,7 +28,6 @@ public class GloveBehaviour : MonoBehaviour
         if (item != null && item.root == item)
         {
             grabbedItem = item;
-            okItem = grabbedItem.GetComponent<Rigidbody>().isKinematic;
             grabbedItem.GetComponent<Rigidbody>().isKinematic = true;
             grabbedItem.transform.position = palm.position;
             item.SetParent(transform);
@@ -41,7 +39,7 @@ public class GloveBehaviour : MonoBehaviour
         if (grabbedItem != null)
         {
             grabbedItem.SetParent(null);
-            grabbedItem.GetComponent<Rigidbody>().isKinematic = okItem;
+            grabbedItem.GetComponent<Rigidbody>().isKinematic = false;
             grabbedItem = null;
         }
     }
