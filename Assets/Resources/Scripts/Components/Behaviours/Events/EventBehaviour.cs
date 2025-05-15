@@ -62,6 +62,8 @@ public class EventBehaviour : MonoBehaviour
 
     public float GetLength()
     {
+        if (InputManager.Instance.clear != null && InputManager.Instance.Holding(InputManager.Instance.clear)) return 0.1f;
+
         float length = 0;
 
         if (fixedLength <= 0)

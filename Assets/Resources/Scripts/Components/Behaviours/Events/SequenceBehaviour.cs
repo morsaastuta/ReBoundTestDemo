@@ -23,7 +23,6 @@ public class SequenceBehaviour : ActivableBehaviour
 
     public void Continue()
     {
-
         // Clear and ready
         if (!events[index].keepVoice) AudioManager.instance.StopVoice(true);
         SubtitleManager.instance.ClearSubtitles();
