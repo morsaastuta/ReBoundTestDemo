@@ -1,6 +1,5 @@
 using NaughtyAttributes;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class GloveBehaviour : MonoBehaviour
 {
