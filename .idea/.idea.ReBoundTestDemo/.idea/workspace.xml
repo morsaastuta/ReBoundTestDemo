@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f85e4f16-7115-409f-9cd0-fcfb3331ea3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/DesktopSnapperBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DesktopSnapperBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemDetectorBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ItemDetectorBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/LightingDataCallejon.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/LightingDataCallejon.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-0_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-0_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-1_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-1_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-1_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-1_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-2_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-2_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-2_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestCallejon/Lightmap-2_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/LightingDataRestaurante.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/LightingDataRestaurante.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-0_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-0_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-1_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-1_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-1_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-1_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-2_comp_dir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-2_comp_dir.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-2_comp_light.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/LightTestsRestaurante/Lightmap-2_comp_light.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/New Lighting Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/New Lighting Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Scene01 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Scene01 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Scene01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Scene01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/Box Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/Box Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/Global Volume Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/Global Volume Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/PostPorcessCallejon Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/PostPorcessCallejon Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/PostProcessBar Profile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LIghthing/Volumes/PostProcessBar Profile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Callejon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Cocina.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Restaurante.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/paso2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Borde.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Borde.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Cuchara.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Cuchara.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Cuchillo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Cuchillo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Extractor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Extractor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_ExtractorGr.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_ExtractorGr.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Fregadero.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Fregadero.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Freidora.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Freidora.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Holla.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Holla.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Mesa.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Mesa.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaCajon.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaCajon.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaCajonFogon.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaCajonFogon.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaHorno.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_MesaHorno.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Nevera.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Nevera.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Pared.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Pared.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Paredes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Paredes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_PlatoHondo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_PlatoHondo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_PlatoLlano.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_PlatoLlano.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoCebolla.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoCebolla.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoPan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoPan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoPimiento.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoPimiento.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoTomate.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_SacoTomate.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Tabla.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Tabla.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Tenedor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_C_Tenedor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_BasuraResidual.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_BasuraResidual.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Bricks.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Bricks.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_CajaBotellas.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_CajaBotellas.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_CajaElectrica.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_CajaElectrica.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Contenedor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Contenedor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Edificio1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Edificio1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Edificio2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Edificio2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Escaleras.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Escaleras.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Luz1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Luz1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Luz2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Luz2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Papelera.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Papelera.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaBUENA.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaBUENA.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaGaraje.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaGaraje.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaValla.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_PuertaValla.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Suelo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Suelo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Tubo1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Tubo1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Tubo2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Tubo2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Valla.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Valla.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Ventilacion.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Ventilacion.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Ventilacion2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_Ventilacion2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_escalerasPuerta.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_Ca_escalerasPuerta.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_MesaCuadrada.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_MesaCuadrada.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_MesaRedonda.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_MesaRedonda.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Alfombra.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Alfombra.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Barra.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Barra.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_BarraTop.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_BarraTop.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Botellas.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Botellas.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Cristal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Cristal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Disco.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Disco.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Lampara.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Lampara.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Mueble.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Mueble.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Nevera.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Nevera.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Paredes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Paredes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_PuertaCocina.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_PuertaCocina.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_PuertaRes.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_PuertaRes.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Sofa.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Sofa.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Techo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Materials/MAT_R_Techo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_C_Lampara_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_C_Lampara_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_C_Lampara_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_C_Lampara_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion2_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_Ca_Ventilacion_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_BanquetaPetit_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_BanquetaPetit_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_BanquetaPetit_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_BanquetaPetit_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_world_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Barra_world_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Disco_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Disco_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Disco_wrold.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Disco_wrold.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_world_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Nevera_world_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_world_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Paredes_world_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_world_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Sofa_world_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Techo_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Techo_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Techo_world_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_Techo_world_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_techo_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/TEX_R_techo_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Borde_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Borde_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Borde_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Borde_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchara_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchara_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchara_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchara_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Cuchillo_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_ExtractorGr_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_ExtractorGr_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_ExtractorGr_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_ExtractorGr_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Extractor_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Extractor_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Extractor_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Extractor_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Floor_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Floor_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fogon_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fogon_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fregadero_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fregadero_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fregadero_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Fregadero_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Freidora_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Frogon_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Frogon_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaCajon_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaCajon_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaCajon_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaCajon_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_MesaHorno_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_World_TangentSpace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Mesa_World_TangentSpace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Pared_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Pared_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoHondo_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_PlatoLlano_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoCebolla_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoCebolla_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoPan_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoPan_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoPimiento_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoPimiento_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoTomate_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_SacoTomate_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Saco_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Saco_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tabla_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tabla_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tabla_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tabla_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tenedor_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tenedor_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tenedor_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_Tenedor_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_C_olla_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_BasuraResidual_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Bricks_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaBotellas_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_CajaElectrica_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Contenedor_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio1_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Edificio2_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Escaleras_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Escaleras_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Escaleras_world.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Escaleras_world.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Luz1_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Papelera_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaBUENA_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaGaraje_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaGaraje_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_PuertaValla_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Suelo_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo1_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Tubo2_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_Valla_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_Ca_escalerasPuerta_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Albfombra_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Albfombra_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Albfombra_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Albfombra_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_BarraTop_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_BarraTop_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_BarraTop_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_BarraTop_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Botellas_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Botellas_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Botellas_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_Botellas_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaCuadrada_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaCuadrada_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaCuadrada_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaCuadrada_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaRedonda_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaRedonda_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaRedonda_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_MesaRedonda_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaCocina_Base_Color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaCocina_Base_Color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaCocina_World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaCocina_World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaRes_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_PuertaRes_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_techo_Base_color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/TEX_R_techo_Base_color.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/Textures/desktop.ini.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/escena_final.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/escena_final.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/escena_final.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Models/Modelo_Level1_General/escena_final.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Core/Player/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Core/Player/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Levels.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Levels/EscenaTutorial.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Levels/EscenaTutorial.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Levels/Test.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Levels/Test.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Scene00.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Scene00.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/UISet.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/UISet.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/testingGrounds.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/testingGrounds.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/testingGrounds2.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/testingGrounds2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/Callejon.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/Cocina.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/ReBound_portada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/ReBound_portada.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/Restaurante.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Textures/paso.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples.meta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "morsaastuta"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/morsaastuta/ReBoundTestDemo.git",
+    "accountId": "2b738027-baa9-4892-9dac-07e7c309a3cb"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2zK87lVjmquEb6ZUwd7kM8CybQy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "rere",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.8f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\naujz\Desktop\Gamedev\Projects\ReBound\ReBoundTestDemo -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\naujz\Desktop\Gamedev\Projects\ReBound\ReBoundTestDemo" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.1.8f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\naujz\Desktop\Gamedev\Projects\ReBound\ReBoundTestDemo -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\naujz\Desktop\Gamedev\Projects\ReBound\ReBoundTestDemo" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f85e4f16-7115-409f-9cd0-fcfb3331ea3d" name="Changes" comment="" />
+      <created>1751468242948</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751468242948</updated>
+      <workItem from="1751468242952" duration="639000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
